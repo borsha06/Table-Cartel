@@ -98,5 +98,5 @@
     <platform name="chrome">
         <icon height="128" src="/platforms/chrome/icon.png" width="128" />
     </platform>
-    <engine name="android" spec="~6.2.3" />
+    <engine name="android" spec="^6.2.3" />
 </widget>
