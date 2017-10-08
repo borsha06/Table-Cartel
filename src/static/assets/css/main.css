@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+
 .left_side_button>.button--light{
 background: white !important;
     border: none;
@@ -14,9 +15,12 @@ background: white !important;
 
 }
 .background{
-    background: transparent;
+    background: #A5A6A7;
     margin-top: 40px;
     z-index: 9999;
+    overflow: auto;
+    position: relative;
+    height: 319px;
 
 }
 .header_top{
@@ -60,7 +64,7 @@ text-align: center !important;
     font-size: 30px;
 }
 .cuisine_footer_carousel{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 999;
     width: 100%;
@@ -70,9 +74,7 @@ text-align: center !important;
     width: 64% !important;
  overflow: inherit !important;
 }
-.page__content{
 
-}
 #gray_bg{
     background: rgba(165, 166, 167, 0.72) !important;
 }

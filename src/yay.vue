@@ -24,7 +24,7 @@
             </ons-row>
             <ons-row align="">
                 <ons-col width="100%">
-                    <div class="left_side_search_heading">
+                    <div class="left_side_button">
                         <button class="button button--light button_customize" @click="cuisine">Cuisine</button>
                         <button class="button button--light button_customize" @click="area">Area</button>
                     </div>
