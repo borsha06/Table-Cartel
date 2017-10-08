@@ -17,20 +17,15 @@
 		    </ons-col>
 		    <ons-col width="20%">
 		      <div class="cross_icon">
-		      	<i class="fa fa-times-circle-o" aria-hidden="true"></i>
+		      	<i @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
 		      </div>
 		    </ons-col>
 	  	</ons-row>
 	    <ons-row align="center">
 		    <ons-col width="100%">
-		      <div class="left_side_button">
-		      	<button class="button button--light button_customize">Continental</button>
-		      	<button class="button button--light button_customize">Italian</button>
-		      	<button class="button button--light button_customize">Spanish</button>
-		      	<button class="button button--light button_customize">Japanese</button>
-		      	<button class="button button--light button_customize">French</button>
-		      	<button class="button button--light button_customize">Indian</button>
-		      	<button class="button button--light button_customize">Iranian</button>
+		      	
+		      <div class="left_side_button" v-for="resttexo in restauranttexo">
+		      	<button class="button button--light button_customize" @click="rest_list(resttexo.term_id)">{{ resttexo.name }}</button>
 		      </div>
 		    </ons-col>
 	  	</ons-row>
@@ -88,38 +83,63 @@
   </v-ons-page>
 </template>
 
-
-
-
-
-
-
-
-
-
-
 <script>
-	import carousel from "assets/carousel.jpg"
-
+	  import carousel from "assets/carousel.jpg"
+      import axios from 'axios'
+	  import cuisine_rest from './cuisine_rest'
+	  export default {
 
   export default {
   	data (){
   		return {
-  			footercarousel: carousel
+  			footercarousel: carousel,
+  			restauranttexo: {}
   		}
-  	},
+  	}, 
+     created () {
+          this.fetchData()
+      },
+     watch: {
+          '$route': 'fetchData'
+     },
      methods: {
+	     fetchData () {
+			 this.loading= true
+			 axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/wp/v2/all-terms?term=cuisine_type')
+				 .then((resp) => {
+					 this.restauranttexo = resp.data
+	          console.log('--------------------------------')
+	          console.log(resp.data)
+					 this.loading = false
+					 this.pageloading = true
+				 })
+				 .catch((err) => {
+					 console.log(err)
+				 })
+	   },
+	   rest_list(id) {
+           this.pageStack.push({
+               extends: cuisine_rest,
+               data() {
+                   return {
+                       data: {'id': id}
+                   }
+               }
+           });
+       },
        pop(){
          this.pageStack.pop();
        },
        push() {
-         this.pageStack.push(page2);
+           this.pageStack.push(cuisine_rest)
        }
      },
      props: ['pageStack']
   }
 </script>
 <style scoped>
-	
+	.button{
+		float:left;
+	}
 
 </style>

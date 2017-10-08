@@ -7,12 +7,12 @@
 <script>
   import page1 from './Page1';
   import page2 from './Page2';
-  import cuisine from './cuisine';
+  import yay from './yay';
 
   export default {
     data() {
       return {
-        pageStack: [cuisine]
+        pageStack: [yay]
       }
     }
   }

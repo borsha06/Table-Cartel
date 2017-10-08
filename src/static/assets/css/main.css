@@ -9,16 +9,23 @@ background: white !important;
     border-radius: 18px;
     color: #444;
     font-weight: bold;
+<<<<<<< HEAD
     text-transform:uppercase;
     cursor:pointer;
+=======
+    cursor: pointer;
+>>>>>>> 4b561797d1f5a6e7872649b52f9cfa561ca0badc
 
 }
 .background{
     background: transparent;
     margin-top: 40px;
     z-index: 9999;
+<<<<<<< HEAD
     position: relative;
 
+=======
+>>>>>>> 4b561797d1f5a6e7872649b52f9cfa561ca0badc
 }
 .header_top{
     font-weight: bold;
