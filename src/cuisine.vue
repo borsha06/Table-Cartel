@@ -84,11 +84,9 @@
 </template>
 
 <script>
-	  import carousel from "assets/carousel.jpg"
-      import axios from 'axios'
-	  import cuisine_rest from './cuisine_rest'
-	  export default {
-
+  import carousel from "assets/carousel.jpg"
+  import axios from 'axios'
+  import cuisine_rest from './cuisine_rest'
   export default {
   	data (){
   		return {
