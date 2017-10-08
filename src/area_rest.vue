@@ -1,0 +1,83 @@
+<template>
+    <v-ons-page>
+        <div class="header_top">
+            <ons-row align="top" width="100%">
+                <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
+                <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
+                <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
+            </ons-row>
+        </div>
+        <div class="background">
+            <ons-row align="center">
+                <ons-col width="80%">
+                    <div class="left_side_search_heading">
+                        <h2>Listings for Italians</h2>
+                        <p>Select place you want to go!</p>
+                    </div>
+                </ons-col>
+                <ons-col width="20%">
+                    <div class="cross_icon">
+                        <i @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </ons-col>
+            </ons-row>
+            <ons-row align="">
+                <ons-col width="100%">
+                    <div class="left_side_search_heading" v-for="rest in restaurant">
+                        <button class="button button--light button_customize">{{ rest.post_title }}</button>
+                    </div>
+                </ons-col>
+            </ons-row>
+        </div>
+
+
+
+
+    </v-ons-page>
+</template>
+
+<script>
+    import axios from 'axios'
+    export default {
+        data () {
+            return {
+                restaurant: {}
+            }
+        },
+        created () {
+            this.fetchData()
+        },
+        watch: {
+            '$route': 'fetchData'
+        },
+        methods: {
+            fetchData () {
+                this.loading= true
+                axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-rest-by-loc/' + this.data.id + '/')
+                    .then((resp) => {
+                        this.restaurant = resp.data
+                        console.log('--------------------------------')
+                        console.log(resp.data)
+                        this.loading = false
+                        this.pageloading = true
+                    })
+                    .catch((err) => {
+                        console.log(err)
+                    })
+            },
+            pop(){
+                this.pageStack.pop();
+            },
+            push() {
+
+            }
+        },
+        props: ['pageStack']
+    }
+</script>
+<style scoped>
+    .button{
+        float:left;
+    }
+
+</style>

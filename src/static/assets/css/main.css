@@ -8,11 +8,13 @@ background: white !important;
     border-radius: 18px;
     color: #444;
     font-weight: bold;
+    cursor: pointer;
 
 }
 .background{
 	background:#A5A6A7;
     margin-top: 40px;
+    z-index: 9999;
 }
 .header_top{
 	    margin-top: 10px;
