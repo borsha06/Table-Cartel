@@ -1,42 +1,57 @@
-.left_side_search_heading>.button--light{
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+.left_side_button>.button--light{
 background: white !important;
     border: none;
     margin-bottom: 9px;
     padding: 0px 20px;
-    font-size: 13px;
+    font-size: 10px;
     margin-right: 3px;
     border-radius: 18px;
     color: #444;
     font-weight: bold;
+    text-transform:uppercase;
+    cursor:pointer;
 
 }
 .background{
-	background:#A5A6A7;
+    background: transparent;
     margin-top: 40px;
+    z-index: 9999;
+    position: relative;
+
 }
 .header_top{
-	    margin-top: 10px;
     font-weight: bold;
+    background: #fff;
+    padding: 14px 0px;
+    position: fixed;
+    width: 100%;
 }
 .header_top>ons-row>ons-col{
 text-align: center !important;
 }
+
 #table-cartel-heading{
 	text-align:center;
 	text-transform:uppercase;
 }
-.left_side_search_heading{
+.left_side_button{
 	margin-left:13px;
 }
+.left_side_search_heading{
+    margin-left:13px;
+}
 .left_side_search_heading h2{
-    font-weight: normal;
+    font-weight: bold;
     margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
 
 }
 .left_side_search_heading p{
 	color:#5C5C5D;
 	padding: 0;
     margin-top: -15px;
+    font-family: 'Nunito', sans-serif;
 
 }
 .cross_icon{
@@ -44,4 +59,56 @@ text-align: center !important;
     position: absolute;
     right: 10px;
     font-size: 30px;
+}
+.cuisine_footer_carousel{
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: 120px;
+}
+.cuisine_footer_carousel>ons-carousel{
+    width: 64% !important;
+ overflow: inherit !important;
+}
+.page__content{
+
+}
+#gray_bg{
+    background: rgba(165, 166, 167, 0.72) !important;
+}
+.carousel_heading{
+    position: absolute;
+    top: -44px;
+    padding-left: 13px;
+
+
+}
+.image_footer img{
+        width: 100%;
+    height: 120px;
+}
+.image_overlay_content{
+    position: absolute;
+    top: 0px;
+    background: rgba(8, 8, 8, 0.44);
+    width: 100%;
+    height: 100%;
+}
+.image_overlay_content p{
+    font-size: 10px;
+    padding-left: 13px;
+    color: #fff;
+    padding-right: 13px;
+}
+.image_overlay_content h4{
+    padding-top: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 13px;
+}
+.carousel_heading{
+        font-size: 14px;
+    color: #000;
 }
