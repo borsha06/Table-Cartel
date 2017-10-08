@@ -7,11 +7,12 @@
 <script>
   import page1 from './Page1';
   import page2 from './Page2';
+  import cuisine from './cuisine';
 
   export default {
     data() {
       return {
-        pageStack: [page1]
+        pageStack: [cuisine]
       }
     }
   }

@@ -1,0 +1,47 @@
+.left_side_search_heading>.button--light{
+background: white !important;
+    border: none;
+    margin-bottom: 9px;
+    padding: 0px 20px;
+    font-size: 13px;
+    margin-right: 3px;
+    border-radius: 18px;
+    color: #444;
+    font-weight: bold;
+
+}
+.background{
+	background:#A5A6A7;
+    margin-top: 40px;
+}
+.header_top{
+	    margin-top: 10px;
+    font-weight: bold;
+}
+.header_top>ons-row>ons-col{
+text-align: center !important;
+}
+#table-cartel-heading{
+	text-align:center;
+	text-transform:uppercase;
+}
+.left_side_search_heading{
+	margin-left:13px;
+}
+.left_side_search_heading h2{
+    font-weight: normal;
+    margin-top: 20px;
+
+}
+.left_side_search_heading p{
+	color:#5C5C5D;
+	padding: 0;
+    margin-top: -15px;
+
+}
+.cross_icon{
+	top: 10px;
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+}
