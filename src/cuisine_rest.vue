@@ -81,10 +81,12 @@
 </template>
 
 <script>
+    import carousel from "assets/carousel.jpg"
     import axios from 'axios'
     export default {
         data () {
             return {
+                footercarousel: carousel,
                 restaurant: {}
             }
         },
