@@ -27,6 +27,7 @@
                     <div class="left_side_button">
                         <button class="button button--light button_customize" @click="cuisine">Cuisine</button>
                         <button class="button button--light button_customize" @click="area">Area</button>
+                        <!--<h2 v-for="foo in food['foods']">{{foo.ID}}/10</h2>-->
                     </div>
                 </ons-col>
             </ons-row>
@@ -37,60 +38,32 @@
                     </div>
                 </ons-col>
             </ons-row>
-            <!--Footer Carousel-->
-              <div class="cuisine_footer_carousel">
-                <ons-row class="carousel_heading">
-                    <p>Today's Special</p>
-                </ons-row>
-                  <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-                    <ons-carousel-item style="background-color: #085078;">
-                      <div class="image_footer">
-                            <img :src="footercarousel" alt="" />
-                            <div class="image_overlay_content">
-                                <h4>Lorem Ipsum Doller sit</h4>
-                                <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                            </div>
-                      </div>
-                    </ons-carousel-item>
-                    <ons-carousel-item style="background-color: #085078;">
-                      <div class="image_footer">
-                            <img :src="footercarousel" alt="" />
-                            <div class="image_overlay_content">
-                                <h4>Lorem Ipsum Doller sit</h4>
-                                <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                            </div>
-                      </div>
-                    </ons-carousel-item>
-                    <ons-carousel-item style="background-color: #085078;">
-                      <div class="image_footer">
-                            <img :src="footercarousel" alt="" />
-                            <div class="image_overlay_content">
-                                <h4>Lorem Ipsum Doller sit</h4>
-                                <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                            </div>
-                      </div>
-                    </ons-carousel-item>
-                    <ons-carousel-item style="background-color: #085078;">
-                      <div class="image_footer">
-                            <img :src="footercarousel" alt="" />
-                            <div class="image_overlay_content">
-                                <h4>Lorem Ipsum Doller sit</h4>
-                                <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                            </div>
-                      </div>
-                    </ons-carousel-item>
-                  </ons-carousel>
-              </div>
-            <!--Footer Carousel-->
-
-
-
-
-
         </div>
 
 
+        <!--Footer Carousel-->
+        <div class="cuisine_footer_carousel">
+            <ons-row class="carousel_heading">
+                <p>Today's Special</p>
+            </ons-row>
+            <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
 
+                <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
+                    <div class="image_footer">
+                        <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
+                        <a href="" v-else><img :src="footercarousel" /></a>
+
+                        <!--<img :src="footercarousel" alt="" />-->
+                        <div class="image_overlay_content">
+                            <h4 v-html="foo.short_title"></h4>
+                            <p v-html="foo.short_content"> </p>
+                        </div>
+                    </div>
+                </ons-carousel-item>
+
+            </ons-carousel>
+        </div>
+        <!--Footer Carousel-->
 
     </v-ons-page>
 </template>
@@ -100,11 +73,13 @@
     import axios from 'axios'
     import cuisine from './cuisine'
     import area from './area'
+    import { dataBus } from './main.js';
     export default {
         data () {
             return {
                 footercarousel: carousel,
-                restauranttexo: {}
+                restauranttexo: {},
+                food: dataBus.$data
             }
         },
         methods: {

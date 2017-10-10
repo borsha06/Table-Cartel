@@ -11,7 +11,7 @@
             <ons-row align="center">
                 <ons-col width="80%">
                     <div class="left_side_search_heading">
-                        <h2>Listings for Italians</h2>
+                        <h2>Listings for {{this.data.name}}</h2>
                         <p>Select place you want to go!</p>
                     </div>
                 </ons-col>
@@ -28,53 +28,36 @@
                     </div>
                 </ons-col>
             </ons-row>
+            <div v-if="loading" class="loading" v-cloak>
+                <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                <!--<span>Loading...</span>-->
+            </div>
         </div>
 
 
-  <div class="cuisine_footer_carousel">
-    <ons-row class="carousel_heading">
-        <p>Today's Special</p>
-    </ons-row>
-      <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-        <ons-carousel-item style="background-color: #085078;">
-          <div class="image_footer">
-                <img :src="footercarousel" alt="" />
-                <div class="image_overlay_content">
-                    <h4>Lorem Ipsum Doller sit</h4>
-                    <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                </div>
-          </div>
-        </ons-carousel-item>
-        <ons-carousel-item style="background-color: #085078;">
-          <div class="image_footer">
-                <img :src="footercarousel" alt="" />
-                <div class="image_overlay_content">
-                    <h4>Lorem Ipsum Doller sit</h4>
-                    <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                </div>
-          </div>
-        </ons-carousel-item>
-        <ons-carousel-item style="background-color: #085078;">
-          <div class="image_footer">
-                <img :src="footercarousel" alt="" />
-                <div class="image_overlay_content">
-                    <h4>Lorem Ipsum Doller sit</h4>
-                    <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                </div>
-          </div>
-        </ons-carousel-item>
-        <ons-carousel-item style="background-color: #085078;">
-          <div class="image_footer">
-                <img :src="footercarousel" alt="" />
-                <div class="image_overlay_content">
-                    <h4>Lorem Ipsum Doller sit</h4>
-                    <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                </div>
-          </div>
-        </ons-carousel-item>
-      </ons-carousel>
-  </div>
+        <!--Footer Carousel-->
+        <div class="cuisine_footer_carousel">
+            <ons-row class="carousel_heading">
+                <p>Today's Special</p>
+            </ons-row>
+            <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
 
+                <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
+                    <div class="image_footer">
+                        <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
+                        <a href="" v-else><img :src="footercarousel" /></a>
+
+                        <!--<img :src="footercarousel" alt="" />-->
+                        <div class="image_overlay_content">
+                            <h4 v-html="foo.short_title"></h4>
+                            <p v-html="foo.short_content"> </p>
+                        </div>
+                    </div>
+                </ons-carousel-item>
+
+            </ons-carousel>
+        </div>
+        <!--Footer Carousel-->
 
 
     </v-ons-page>
@@ -83,11 +66,14 @@
 <script>
     import carousel from "assets/carousel.jpg"
     import axios from 'axios'
+    import { dataBus } from './main.js';
     export default {
         data () {
             return {
                 footercarousel: carousel,
-                restaurant: {}
+                restaurant: {},
+                food: dataBus.$data,
+                loading:true,
             }
         },
         created () {
@@ -105,7 +91,6 @@
                         console.log('--------------------------------')
                         console.log(resp.data)
                         this.loading = false
-                        this.pageloading = true
                     })
                     .catch((err) => {
                         console.log(err)
@@ -125,5 +110,9 @@
     .button{
         float:left;
     }
-
+    .loading{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 </style>

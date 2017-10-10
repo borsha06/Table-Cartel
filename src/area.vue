@@ -24,56 +24,40 @@
             <ons-row align="">
                 <ons-col width="100%">
                     <div class="left_side_button" v-for="restarea in restaurantarea">
-                        <button class="button button--light button_customize" @click="rest_list(restarea.term_id)">{{ restarea.name }}</button>
+                        <button class="button button--light button_customize" @click="rest_list(restarea.term_id,restarea.name)">{{ restarea.name }}</button>
                     </div>
                 </ons-col>
             </ons-row>
+            <div v-if="loading" class="loading">
+                <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                <!--<span>Loading...</span>-->
+            </div>
         </div>
-            <!--Footer Carousel-->
-              <div class="cuisine_footer_carousel">
-                <ons-row class="carousel_heading">
-                    <p>Today's Special</p>
-                </ons-row>
-                  <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-                    <ons-carousel-item style="background-color: #085078;">
-                      <div class="image_footer">
-                            <img :src="footercarousel" alt="" />
-                            <div class="image_overlay_content">
-                                <h4>Lorem Ipsum Doller sit</h4>
-                                <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                            </div>
-                      </div>
-                    </ons-carousel-item>
-                    <ons-carousel-item style="background-color: #085078;">
-                      <div class="image_footer">
-                            <img :src="footercarousel" alt="" />
-                            <div class="image_overlay_content">
-                                <h4>Lorem Ipsum Doller sit</h4>
-                                <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                            </div>
-                      </div>
-                    </ons-carousel-item>
-                    <ons-carousel-item style="background-color: #085078;">
-                      <div class="image_footer">
-                            <img :src="footercarousel" alt="" />
-                            <div class="image_overlay_content">
-                                <h4>Lorem Ipsum Doller sit</h4>
-                                <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                            </div>
-                      </div>
-                    </ons-carousel-item>
-                    <ons-carousel-item style="background-color: #085078;">
-                      <div class="image_footer">
-                            <img :src="footercarousel" alt="" />
-                            <div class="image_overlay_content">
-                                <h4>Lorem Ipsum Doller sit</h4>
-                                <p>Lorem ipsum doller site amet.Lorem ipsum doller site amet. </p>
-                            </div>
-                      </div>
-                    </ons-carousel-item>
-                  </ons-carousel>
-              </div>
-            <!--Footer Carousel-->
+
+
+        <!--Footer Carousel-->
+        <div class="cuisine_footer_carousel">
+            <ons-row class="carousel_heading">
+                <p>Today's Special</p>
+            </ons-row>
+            <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+
+                <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
+                    <div class="image_footer">
+                        <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
+                        <a href="" v-else><img :src="footercarousel" /></a>
+
+                        <!--<img :src="footercarousel" alt="" />-->
+                        <div class="image_overlay_content">
+                            <h4 v-html="foo.short_title"></h4>
+                            <p v-html="foo.short_content"> </p>
+                        </div>
+                    </div>
+                </ons-carousel-item>
+
+            </ons-carousel>
+        </div>
+        <!--Footer Carousel-->
 
 
 
@@ -84,11 +68,14 @@
     import carousel from "assets/carousel.jpg"
     import axios from 'axios'
     import area_rest from './area_rest'
+    import { dataBus } from './main.js';
     export default {
         data () {
             return {
                 footercarousel: carousel,
-                restaurantarea: {}
+                restaurantarea: {},
+                food: dataBus.$data,
+                loading:true,
             }
         },
         created () {
@@ -106,18 +93,17 @@
                         console.log('--------------------------------')
                         console.log(resp.data)
                         this.loading = false
-                        this.pageloading = true
                     })
                     .catch((err) => {
                         console.log(err)
                     })
             },
-            rest_list(id) {
+            rest_list(id,name) {
                 this.pageStack.push({
                     extends: area_rest,
                     data() {
                         return {
-                            data: {'id': id}
+                            data: {'id': id,'name': name}
                         }
                     }
                 });
@@ -135,6 +121,11 @@
 <style scoped>
     .button{
         float:left;
+    }
+    .loading{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
 </style>
