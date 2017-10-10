@@ -6,6 +6,7 @@ import 'onsenui';
 require('onsenui/css-components-src/src/onsen-css-components.css');
 require('onsenui/css/onsenui.css');
 require('static/assets/css/main.css');
+require('static/assets/js/custom.js');
 
 import App from './App';
 

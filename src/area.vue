@@ -23,7 +23,7 @@
             </ons-row>
             <ons-row align="">
                 <ons-col width="100%">
-                    <div class="left_side_search_heading" v-for="restarea in restaurantarea">
+                    <div class="left_side_button" v-for="restarea in restaurantarea">
                         <button class="button button--light button_customize" @click="rest_list(restarea.term_id)">{{ restarea.name }}</button>
                     </div>
                 </ons-col>

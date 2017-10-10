@@ -23,7 +23,7 @@
             </ons-row>
             <ons-row align="">
                 <ons-col width="100%">
-                    <div class="left_side_search_heading" v-for="rest in restaurant">
+                    <div class="left_side_button" v-for="rest in restaurant">
                         <button class="button button--light button_customize">{{ rest.post_title }}</button>
                     </div>
                 </ons-col>
