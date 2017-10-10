@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 .left_side_button>.button--light{
 background: white !important;
@@ -29,6 +30,7 @@ background: white !important;
     padding: 14px 0px;
     position: fixed;
     width: 100%;
+    z-index:99999;
 }
 .header_top>ons-row>ons-col{
 text-align: center !important;
@@ -127,4 +129,187 @@ text-align: center !important;
     padding: 0px 35px;
     font-family: 'Nunito', sans-serif;
 
+}
+/*Vapianos css*/
+.vapianos_cross_icon{
+    top: 10px;
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+}
+.vapianos_left_side_heading{
+    margin-left:13px;
+}
+.vapianos_left_side_heading h2{
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size:30px;
+
+}
+.vapianos_left_side_heading p{
+    color:#5C5C5D;
+    padding: 0;
+    margin-top: -15px;
+    font-family: 'Nunito', sans-serif;
+
+}
+.background_white{
+    background:white;
+    margin-top: 40px;
+    z-index: 9999;
+    overflow: auto;
+    position: relative;
+
+
+}
+.load_wallet{
+    
+    
+}
+
+.load_wallet strong{
+    font-size: 12px;
+    color: #444;
+    font-family: 'Nunito', sans-serif;
+
+}
+.vapianos_left_side_wallet{
+margin-left: 13px !important;
+    margin-top: 15px;
+}
+.progress-bar__primary{
+    background-color: rgba(228, 228, 228, 0.81);
+        border-radius: 50px !important;
+}
+.progress-bar{
+    background-color: #000000;
+    height: 4px;
+    width: 50%;
+    border-radius: 50px !important;
+}
+.wallet_progressr{
+    margin-top:15px;
+}
+.cusine_type{}
+.cusine_type strong{
+    font-size: 12px;
+    color: #444;
+    font-family: 'Nunito', sans-serif;
+}
+.cusine_type p{
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 8px;
+    color: #666;
+    font-size: 12px;
+}
+.vapianos_right_side_rating{
+    overflow: hidden;
+}
+.vapianos_right_side_rating>.card{
+    text-align: center;
+    background: #000;
+    padding: 0px !important;
+    width: 70px;
+    float: right;
+    margin-right: 15px;
+}
+.card_text{
+    
+    border-radius: 10px;
+    color: #fff; 
+    text-align: center;
+}
+.card_text span{
+    font-size: 25px;
+    font-weight: normal;
+    display: block;
+    margin-top: 10px;
+}
+.card_text p{
+    margin-top: 3px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 4px;
+}
+.vapianos_address{}
+.vapianos_address strong{
+    font-size: 12px;
+    color: #444;
+    font-family: 'Nunito', sans-serif;
+}
+.vapianos_address p{
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 8px;
+    color: #666;
+    font-size: 11px;   
+}
+.reserv_button{
+    float:right;
+    margin-right:13px;
+}
+.reserv_button button{
+    border-radius: 40px;
+    font-size: 10px;
+    padding: 0px 11px;
+    border: 1px solid rgba(221, 221, 221, 0.73);
+    box-shadow: 0px 1px 0px rgba(68, 68, 68, 0.2);
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.vapianos_menu_button_text{}
+.vapianos_menu_button_text button{
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px 0px;
+    margin-top: 30px;
+    border: 1px solid #666;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+    font-family: 'Nunito', sans-serif;
+}
+.icon{
+    width: 35px;
+    background: #02C793;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 8px;
+    float:left;
+}
+.icon img{
+    width: 65%;
+    padding-top: 4px;
+}
+.margin-left{
+    margin-left:13px;
+    margin-top: 20px;
+    position:relative;
+}
+.icon_text strong{
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    color: #000;
+}
+.icon_text{
+    float:right;
+    width:60%;
+}
+.icon_text p{
+    margin-top: 0px;
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 4px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.vapianos_icon_row{
+padding-top: 10px;
+    padding-bottom: 8px;
+
+}
+.vapianos_icon_right_des{
+    position:absolute;
+    top:10px;
 }
