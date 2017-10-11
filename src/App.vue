@@ -7,12 +7,12 @@
 <script>
   import page1 from './Page1';
   import page2 from './Page2';
-  import yay from './yay';
+  import hellojorge from './hellojorge';
 
   export default {
     data() {
       return {
-        pageStack: [yay]
+        pageStack: [hellojorge]
       }
     }
   }
