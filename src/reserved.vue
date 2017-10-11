@@ -17,7 +17,7 @@
                 </ons-col>
                 <ons-col width="20%">
                     <div class="reserved_cross_icon">
-                        <i @click="" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                        <i @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
                     </div>
                 </ons-col>
             </ons-row>
@@ -111,6 +111,11 @@
                 restaurant: {},
                 food: dataBus.$data,
                 loading:false,
+            }
+        },
+        methods:{
+            pop () {
+                this.pageStack.pop()
             }
         },
         props: ['pageStack']

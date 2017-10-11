@@ -18,7 +18,7 @@
                 </ons-col>
                 <ons-col width="20%">
                     <div class="cross_icon">
-                        <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                        <i  @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
                     </div>
                 </ons-col>
             </ons-row>
