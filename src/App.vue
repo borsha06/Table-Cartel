@@ -6,16 +6,12 @@
 
 <script>
   import Vue from 'vue'
-<<<<<<< HEAD
-//  import page1 from './Page1';
-//  import page2 from './Page2';
-  import welcome from './welcome';
+  import reserved from './reserved';
   import restaurant2 from './restaurant2';
-  import welcome from './welcome';
   export default {
     data() {
       return {
-        pageStack: [welcome]
+        pageStack: [reserved]
       }
     }
   }
