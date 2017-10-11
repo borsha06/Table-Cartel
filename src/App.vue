@@ -6,14 +6,13 @@
 
 <script>
   import Vue from 'vue'
-//  import page1 from './Page1';
-//  import page2 from './Page2';
   import yay from './yay';
   import restaurant2 from './restaurant2';
+  import welcome from './welcome';
   export default {
     data() {
       return {
-        pageStack: [yay]
+        pageStack: [welcome]
       }
     }
   }

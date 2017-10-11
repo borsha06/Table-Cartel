@@ -11,7 +11,7 @@
             <ons-row align="" class="hello_jorge_headding_area">
                 <ons-col width="100%">
                     <div class="hello_jorge_heading">
-                        <h2>Hello Jorge!</h2>                   
+                        <h2>Hello Jorge!</h2>
                         <p>Today is good day to eat out. Why not plan something?</p>
                     </div>
                 </ons-col>
@@ -19,8 +19,8 @@
             <ons-row align="" class="hello_jorge_button_area">
                 <ons-col width="100%">
                     <div class="hello_jorge_button">
-                        <button class="button button--light nay_button">Nay!</button>
-                        <button class="button button--light yay_button">Yay!</button>
+                        <button class="button button--light nay_button" @click="nyapage">Nay!</button>
+                        <button class="button button--light yay_button" @click="yaypage">Yay!</button>
                     </div>
                 </ons-col>
             </ons-row>
@@ -59,12 +59,12 @@
                 </ons-col>
                 <ons-col width="45%">
                     <div class="discover_button">
-                         <button class="button button--light">Discover</button>
+                         <button class="button button--light" @click="yaypage">Discover</button>
                     </div>
                 </ons-col>
                 <ons-col width="25%">
                     <div class="reserve_button">
-                        <button class="button button--light reserve_button_customize">Reserve</button>
+                        <button class="button button--light reserve_button_customize" @click="reservedpage">Reserve</button>
                     </div>
                 </ons-col>
             </ons-row>
@@ -84,6 +84,9 @@
     import footerlogo from "assets/apple-touch-icon.png"
     import axios from 'axios'
     import { dataBus } from './main.js';
+    import yay from "./yay"
+    import nya from "./nya"
+    import reserved from './reserved'
     export default {
         data () {
             return {
@@ -93,6 +96,17 @@
                 food: dataBus.$data,
                 loading:false,
             }
+        },
+        methods:{
+           yaypage () {
+               this.pageStack.push(yay)
+           },
+            nyapage () {
+                this.pageStack.push(nya)
+            },
+            reservedpage () {
+                this.pageStack.push(reserved)
+            },
         },
         props: ['pageStack']
     }

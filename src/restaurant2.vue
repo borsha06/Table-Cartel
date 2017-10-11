@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="reserv_button">
-                            <button class="button button--light">Reserve</button>
+                            <button class="button button--light" @click="reservedpage">Reserve</button>
                         </div>
                     </ons-col>
                 </ons-row>
@@ -183,6 +183,7 @@
     import axios from 'axios'
     import cuisine from './cuisine'
     import area from './area'
+    import reserved from './reserved'
     export default {
         data () {
             return {
@@ -213,6 +214,9 @@
                     .catch((err) => {
                         console.log(err)
                     })
+            },
+            reservedpage () {
+                this.pageStack.push(reserved)
             },
             pop() {
                 this.pageStack.pop();
