@@ -6,7 +6,8 @@
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
                 <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
             </ons-row>
-        </div>
+        </div> 
+        <form>  
         <div class="reserve_background reserved_side">
             <ons-row align="center">
                 <ons-col width="80%">
@@ -29,7 +30,7 @@
                 </ons-col>
                 <ons-col width="100%">
                     <div class="reserve_top_button">
-                       	 <button class="button button--light">Vapianos italian's gourment</button>
+                    	<input type="text" class="text-input" placeholder="Vapianos italian's gourment" value="">
                     </div>
                 </ons-col>
             </ons-row>
@@ -41,7 +42,8 @@
                 </ons-col>
                 <ons-col width="100%">
                     <div class="reserve_second_top_button">
-                       	 <button class="button button--light">Headcount</button>
+                    	<input type="text" class="text-input" placeholder="Headcount" value="">
+                       	 <!-- <button class="button button--light">Headcount</button> -->
                     </div>
                 </ons-col>
             </ons-row>
@@ -53,7 +55,8 @@
                 </ons-col>
                 <ons-col width="100%">
                     <div class="reserve_third_top_button">
-                       	 <button class="button button--light">DD/MM</button>
+                    	<input type="date" class="text-input" placeholder="Headcount" value="">
+                       	 <!-- <button class="button button--light">DD/MM</button> -->
                     </div>
                 </ons-col>
             </ons-row>
@@ -66,6 +69,7 @@
             </ons-row>
 
         </div>
+    </form>
 
         <!--Footer Carousel-->
         <div class="cuisine_footer_carousel">
