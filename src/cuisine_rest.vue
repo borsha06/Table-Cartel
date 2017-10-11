@@ -24,7 +24,7 @@
             <ons-row align="">
                 <ons-col width="100%">
                     <div class="left_side_button" v-for="rest in restaurant">
-                        <button class="button button--light button_customize">{{ rest.post_title }}</button>
+                        <button class="button button--light button_customize" @click="restaurants(rest.ID)">{{ rest.post_title }}</button>
                     </div>
                 </ons-col>
             </ons-row>
@@ -66,6 +66,7 @@
 <script>
     import carousel from "assets/carousel.jpg"
     import axios from 'axios'
+    import restaurant from './restaurant'
     import { dataBus } from './main.js';
     export default {
         data () {
@@ -96,12 +97,19 @@
                         console.log(err)
                     })
             },
+            restaurants (id) {
+                this.pageStack.push({
+                    extends: restaurant,
+                    data() {
+                        return {
+                            data: {'id': id}
+                        }
+                    }
+                });
+            },
             pop(){
                 this.pageStack.pop();
             },
-            push() {
-
-            }
         },
         props: ['pageStack']
     }

@@ -1,5 +1,5 @@
 <template>
-    <v-ons-page>
+    <v-ons-page id="gray_bg">
         <div class="header_top">
             <ons-row align="top" width="100%">
                 <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
@@ -11,7 +11,7 @@
             <ons-row align="center">
                 <ons-col width="80%">
                     <div class="left_side_search_heading">
-                        <h2>search by area</h2>
+                        <h2>search by cuisine</h2>
                         <p>Here is the list of cuisinnes on offer!</p>
                     </div>
                 </ons-col>
@@ -21,18 +21,20 @@
                     </div>
                 </ons-col>
             </ons-row>
-            <ons-row align="">
+            <ons-row align="center">
                 <ons-col width="100%">
-                    <div class="left_side_button" v-for="restarea in restaurantarea">
-                        <button class="button button--light button_customize" @click="rest_list(restarea.term_id,restarea.name)">{{ restarea.name }}</button>
+
+                    <div class="left_side_button" v-for="resttexo in restauranttexo">
+                        <button class="button button--light button_customize" @click="rest_list(resttexo.term_id,resttexo.name)">{{ resttexo.name }}</button>
                     </div>
                 </ons-col>
             </ons-row>
-            <div v-if="loading" class="loading">
+            <div v-if="loading" class="loading" v-cloak>
                 <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
                 <!--<span>Loading...</span>-->
             </div>
         </div>
+
 
 
         <!--Footer Carousel-->
@@ -61,21 +63,22 @@
 
 
 
+
     </v-ons-page>
 </template>
 
 <script>
     import carousel from "assets/carousel.jpg"
     import axios from 'axios'
-    import area_rest from './area_rest'
+    import arearest from './arearest'
     import { dataBus } from './main.js';
     export default {
-        data () {
+        data (){
             return {
                 footercarousel: carousel,
-                restaurantarea: {},
+                restauranttexo: {},
                 food: dataBus.$data,
-                loading:true,
+                loading:false,
             }
         },
         created () {
@@ -89,7 +92,7 @@
                 this.loading= true
                 axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/wp/v2/all-terms?term=location')
                     .then((resp) => {
-                        this.restaurantarea = resp.data
+                        this.restauranttexo = resp.data
                         console.log('--------------------------------')
                         console.log(resp.data)
                         this.loading = false
@@ -100,10 +103,10 @@
             },
             rest_list(id,name) {
                 this.pageStack.push({
-                    extends: area_rest,
+                    extends: arearest,
                     data() {
                         return {
-                            data: {'id': id,'name': name}
+                            data: {'id': id,'name':name}
                         }
                     }
                 });
