@@ -5,9 +5,11 @@
 </template>
 
 <script>
-  import page1 from './Page1';
-  import page2 from './Page2';
+  import Vue from 'vue'
+//  import page1 from './Page1';
+//  import page2 from './Page2';
   import yay from './yay';
+  import restaurant2 from './restaurant2';
 
   export default {
     data() {

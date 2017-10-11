@@ -26,7 +26,7 @@
                 <ons-col width="100%">
                     <div class="left_side_button">
                         <button class="button button--light button_customize" @click="cuisine">Cuisine</button>
-                        <button class="button button--light button_customize" @click="area">Area</button>
+                        <button class="button button--light button_customize" @click="area__a">Area</button>
                         <!--<h2 v-for="foo in food['foods']">{{foo.ID}}/10</h2>-->
                     </div>
                 </ons-col>
@@ -34,11 +34,12 @@
             <ons-row align="">
                 <ons-col width="100%">
                     <div class="i_know_button">
-                        <button class="button button--light button_customize" >I know what i want</button>
+                        <button class="button button--light button_customize" >I know what i ------ want</button>
                     </div>
                 </ons-col>
             </ons-row>
         </div>
+
 
 
         <!--Footer Carousel-->
@@ -72,6 +73,7 @@
     import carousel from "assets/carousel.jpg"
     import axios from 'axios'
     import cuisine from './cuisine'
+    import restaurant from './restaurant'
     import area from './area'
     import { dataBus } from './main.js';
     export default {
@@ -83,10 +85,20 @@
             }
         },
         methods: {
+            hello (id) {
+                this.pageStack.push({
+                    extends: restaurant,
+                    data() {
+                        return {
+                            data: {'id': id}
+                        }
+                    }
+                });
+            },
             pop(){
                 this.pageStack.pop();
             },
-            area() {
+            area__a() {
                 this.pageStack.push(area)
             },
             cuisine() {
