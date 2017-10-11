@@ -8,12 +8,12 @@
   import Vue from 'vue'
 //  import page1 from './Page1';
 //  import page2 from './Page2';
-  import yay from './yay';
+  import welcome from './welcome';
   import restaurant2 from './restaurant2';
   export default {
     data() {
       return {
-        pageStack: [yay]
+        pageStack: [welcome]
       }
     }
   }

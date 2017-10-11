@@ -45,6 +45,7 @@ text-align: center !important;
 }
 .left_side_search_heading{
     margin-left:13px;
+
 }
 .left_side_search_heading h2{
     font-weight: bold;
@@ -131,6 +132,9 @@ text-align: center !important;
 
 }
 /*Vapianos css*/
+.vapianos_order_load_wallet{
+    background: #A5A6A7;
+}
 .vapianos_cross_icon{
     top: 10px;
     position: absolute;
@@ -161,6 +165,10 @@ text-align: center !important;
     overflow: auto;
     position: relative;
 
+
+}
+#bg-restaurant{
+    background: #A5A6A7;
 
 }
 .load_wallet{
@@ -246,6 +254,7 @@ margin-left: 13px !important;
 .reserv_button{
     float:right;
     margin-right:13px;
+    margin-bottom: 10px;
 }
 .reserv_button button{
     border-radius: 40px;
@@ -262,13 +271,14 @@ margin-left: 13px !important;
     width: 100%;
     border-radius: 20px;
     padding: 0px 0px;
-    margin-top: 30px;
+    margin-top: 14px;
     border: 1px solid #666;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
     color: #444;
     font-family: 'Nunito', sans-serif;
+    margin-bottom: -5px;
 }
 .icon{
     width: 35px;
@@ -310,8 +320,8 @@ padding-top: 10px;
 
 }
 .vapianos_icon_right_des{
-    position:absolute;
-    top:10px;
+    top: -179px;
+    position: relative;
 }
 
 /*Reserved Css*/
@@ -457,7 +467,7 @@ padding:0px 13px;
     color:#fff;
 }
 .hello_jorge_footer_area{
-        padding: 25px 0px;
+    padding: 16px 0px;
 }
 .hello_jorge_button{}
 .hello_jorge_button button{
@@ -488,7 +498,7 @@ padding:0px 13px;
 
 }
 #hellojorge-area{
-    bottom: 18%;
+    bottom: 15%;
 }
 .reserve_button_customize{
     background: #fff;
@@ -505,6 +515,10 @@ padding:0px 13px;
         font-size: 14px;
     color: #000;
     margin-top: -42px;
+
+}
+.hellojorge_carousel_heading p{
+    margin-left:13px;
 }
 .left_logo{
         margin-left: 13px;
@@ -516,3 +530,24 @@ padding:0px 13px;
     margin-top: 66px;
 
 }
+.vapianos_menu_button{
+
+
+}
+.menu_bottom_item{
+    background: #A5A6A7;
+}
+/*Logo Area*/
+.logo-area{}
+.logos{
+    margin: auto;
+    width: 65%;
+}
+.logos img{
+    width:100%;
+
+}
+.{}
+.{}
+.{}
+.{}

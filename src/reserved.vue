@@ -6,7 +6,7 @@
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
                 <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
             </ons-row>
-        </div>
+        </div>   
         <div class="reserve_background reserved_side">
             <ons-row align="center">
                 <ons-col width="80%">
