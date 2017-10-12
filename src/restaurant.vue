@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="reserv_button">
-                            <button class="button button--light" @click="reservedpage(rest.ID)">Reserve</button>
+                            <button class="button button--light" @click="reservedpage(rest.ID,rest.post_title)">Reserve</button>
                         </div>
                     </ons-col>
                 </ons-row>
@@ -216,13 +216,13 @@
                         console.log(err)
                     })
             },
-            reservedpage (id) {
+            reservedpage (id,name) {
 //                this.pageStack.push(reserved)
                 this.pageStack.push({
                     extends: reserved,
                     data() {
                         return {
-                            data: {'id': id}
+                            data: {'id': id,'name':name}
                         }
                     }
                 });

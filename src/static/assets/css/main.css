@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
-::-webkit-placeholder{
-    color:blue !important;
-
-}
 ::-moz-placeholder{
-    color:blue;
+    color:#444;
  
 }
 ::placeholder{
-    color:blue;
+    color:#444;
 
 }
 .left_side_button>.button--light{
@@ -368,7 +364,7 @@ padding:0px 13px;
     font-size: 16px;
     margin-bottom: 8px;
 }
-.reserve_top_button{
+.reserve_top_button p{
     width: 100%;
     border-radius: 25px;
     background: #fff;
@@ -376,7 +372,8 @@ padding:0px 13px;
     font-weight: bolder;
     font-size: 11px;
     text-transform: uppercase;
-    padding: 1px 0px;    
+    padding: 1px 0px;
+    text-align: center;
 }
 .reserve_top_button input{
     padding: 0px 16px;
@@ -578,7 +575,3 @@ padding:0px 13px;
     width:100%;
 
 }
-.{}
-.{}
-.{}
-.{}

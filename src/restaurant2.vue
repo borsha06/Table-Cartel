@@ -15,7 +15,7 @@
 
 
         <div v-show="pageloading">
-            <div class="background_white">
+            <div class="background_white" id="bg-restaurant">
                 <ons-row align="center">
                     <ons-col width="80%">
                         <div class="vapianos_left_side_heading">
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="reserv_button">
-                            <button class="button button--light" @click="reservedpage">Reserve</button>
+                            <button class="button button--light" @click="reservedpage(rest.ID,rest.post_title)">Reserve</button>
                         </div>
                     </ons-col>
                 </ons-row>
@@ -164,7 +164,8 @@
                             </div>
                             <div class="icon_text">
                                 <strong>Description</strong>
-                                <p v-html="rest.post_content"></p>
+                                <!--  <p v-html="rest.post_content"></p> -->
+                                <p>Lorem ipsum dollar site emiteLorem ipsum dollar site emiteLorem ipsum dollar site emiteLorem ipsum dollar site emite</p>
                             </div>
                         </ons-row>
                     </ons-col>
@@ -215,8 +216,16 @@
                         console.log(err)
                     })
             },
-            reservedpage () {
-                this.pageStack.push(reserved)
+            reservedpage (id,name) {
+//                this.pageStack.push(reserved)
+                this.pageStack.push({
+                    extends: reserved,
+                    data() {
+                        return {
+                            data: {'id': id,'name':name}
+                        }
+                    }
+                });
             },
             pop() {
                 this.pageStack.pop();
