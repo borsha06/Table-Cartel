@@ -27,10 +27,8 @@ export const dataBus = new Vue({
                 .then((resp) => {
                     this.foods = resp.data
 
-                    // console.log('--------------------------------')
-                    // console.log(resp.data)
-//                        console.log('--------------------------------')
-//                        console.log(this.paginate)
+                    console.log('--------------------------------')
+                    console.log(resp.data)
                 })
                 .catch((err) => {
                     console.log(err)

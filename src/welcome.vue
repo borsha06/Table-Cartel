@@ -35,8 +35,8 @@
 
                 <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
                     <div class="image_footer">
-                        <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
-                        <a href="" v-else><img :src="footercarousel" /></a>
+                        <!--<a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>-->
+                        <a href="" ><img :src="footercarousel" /></a>
 
                         <!--<img :src="footercarousel" alt="" />-->
                         <div class="image_overlay_content">
@@ -86,7 +86,7 @@
     import { dataBus } from './main.js';
     import yay from "./yay"
     import nya from "./nya"
-    import reserved from './reserved'
+    import reserved from './reserved2'
     export default {
         data () {
             return {

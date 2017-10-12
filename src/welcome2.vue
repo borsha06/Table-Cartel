@@ -86,7 +86,7 @@
     import { dataBus } from './main.js';
     import yay from "./yay"
     import nya from "./nya"
-    import reserved from './reserved'
+    import reserved from './reserved2'
     export default {
         data () {
             return {

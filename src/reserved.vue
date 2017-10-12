@@ -7,68 +7,140 @@
                 <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
             </ons-row>
         </div> 
-        <form>  
-        <div class="reserve_background reserved_side">
-            <ons-row align="center">
-                <ons-col width="80%">
-                    <div class="left_side_reserved_heading">
-                        <h2>Reservations</h2>
-                        <p>You are almost there!</p>
+        <form v-on:submit.prevent="permit">
+            <div class="reserve_background reserved_side">
+                <ons-row align="center">
+                    <ons-col width="80%">
+                        <div class="left_side_reserved_heading">
+                            <h2>Reservations</h2>
+                            <p>You are almost there!</p>
+                        </div>
+                    </ons-col>
+                    <ons-col width="20%">
+                        <div class="reserved_cross_icon">
+                            <i @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                        </div>
+                    </ons-col>
+                </ons-row>
+                <ons-row align="center" class="top_button_area">
+                    <ons-col width="100%">
+                        <div class="reserve_top_button_text">
+                            <p>You want us to reserve you seats at</p>
+                        </div>
+                    </ons-col>
+                    <ons-col width="100%">
+                        <div class="reserve_top_button">
+                            <!--<input type="text" class="text-input" v-model="restaurant = this.data.name" placeholder="Vapianos italian's gourment" value="">-->
+                             <p class="button button--light">{{this.data.name}}</p>
+                            <input type="hidden"  v-model="restaurant_id = this.data.id">
+                            <input type="hidden"  v-model="restaurant = this.data.name">
+                        </div>
+                    </ons-col>
+                </ons-row>
+                <ons-row align="center" class="top_second_button_area">
+                    <ons-col width="100%">
+                        <div class="reserve_top_second_button_text">
+                            <p>It will be table/s for</p>
+                        </div>
+                    </ons-col>
+                    <ons-col width="100%">
+                        <div class="reserve_second_top_button">
+                            <input type="number" class="text-input" v-model="people" placeholder="Headcount" value="">
+                             <!-- <button class="button button--light">Headcount</button> -->
+                        </div>
+                    </ons-col>
+                </ons-row>
+                <ons-row align="center" class="top_third_button_area">
+                    <ons-col width="100%">
+                        <div class="reserve_top_third_button_text">
+                            <p>It will be joining them on</p>
+                        </div>
+                    </ons-col>
+                    <ons-col width="100%">
+                        <div class="reserve_third_top_button">
+                            <!--<input type="date" class="text-input" placeholder="Headcount" value="">-->
+                            <date-picker :date="date" :option="option"  :limit="limit" class="datepicker text-input"  ></date-picker>
+                             <!-- <button class="button button--light">DD/MM</button> -->
+                        </div>
+                    </ons-col>
+                </ons-row>
+                <ons-row align="center" class="reserve_button_area">
+                    <ons-col width="100%">
+                        <div class="reserve_button_text">
+                          <button class="button button--light" type="submit">Reserve</button>
+                        </div>
+                    </ons-col>
+                </ons-row>
+                <modal name="permit-modal"
+                       transition="nice-modal-fade"
+                       :min-width="200"
+                       :min-height="200"
+                       :pivot-y="0.65"
+                       width="60%"
+                       height="auto"
+                       :delay="100"
+                >
+                    <div class="example-modal-content">
+                        <div class="dialogs"> <font color="green"> <center>Tablebooking ???</center> </font></div>
+                        <button class="yes_button" @click="onSubmit">YES</button>
                     </div>
-                </ons-col>
-                <ons-col width="20%">
-                    <div class="reserved_cross_icon">
-                        <i @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                </modal>
+                <modal name="success-modal"
+                       transition="nice-modal-fade"
+                       :min-width="200"
+                       :min-height="200"
+                       :pivot-y="0.65"
+                       width="60%"
+                       height="auto"
+                       :delay="100"
+                >
+                    <div class="example-modal-content">
+                        <div class="dialogs"> <font color="green"> <center>Tablebooking Success</center> </font></div>
+                        <button class="yes_button" @click="pop">OK</button>
                     </div>
-                </ons-col>
-            </ons-row>
-            <ons-row align="center" class="top_button_area">
-                <ons-col width="100%">
-                    <div class="reserve_top_button_text">                        
-                        <p>You want us to reserve you seats at</p>
+                </modal>
+                <modal name="error-modal"
+                       transition="nice-modal-fade"
+                       :min-width="200"
+                       :min-height="200"
+                       :pivot-y="0.65"
+                       width="60%"
+                       height="auto"
+                       :delay="100"
+                >
+                    <div class="example-modal-content errors">
+                        <font color="#8b0000"> <center>Booking Time is Empty.</center> </font>
                     </div>
-                </ons-col>
-                <ons-col width="100%">
-                    <div class="reserve_top_button">
-                    	<input type="text" class="text-input" placeholder="Vapianos italian's gourment" value="">
+                </modal>
+                <modal name="error2-modal"
+                       transition="nice-modal-fade"
+                       :min-width="200"
+                       :min-height="200"
+                       :pivot-y="0.65"
+                       width="60%"
+                       height="auto"
+                       :delay="100"
+                >
+                    <div class="example-modal-content errors">
+                        <font color="#8b0000"> <center>Tablebooking Failed</center> </font>
                     </div>
-                </ons-col>
-            </ons-row>
-            <ons-row align="center" class="top_second_button_area">
-                <ons-col width="100%">
-                    <div class="reserve_top_second_button_text">                        
-                        <p>It will be table/s for</p>
+                </modal>
+                <modal name="loading-modal"
+                       transition="nice-modal-fade"
+                       :min-width="200"
+                       :min-height="200"
+                       :pivot-y="0.45"
+                       width="60%"
+                       height="auto"
+                       :delay="100"
+                       classes="false"
+                >
+                    <div v-if="loading" class="loadingp">
+                        <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                        <!--<span>Loading...</span>-->
                     </div>
-                </ons-col>
-                <ons-col width="100%">
-                    <div class="reserve_second_top_button">
-                    	<input type="text" class="text-input" placeholder="Headcount" value="">
-                       	 <!-- <button class="button button--light">Headcount</button> -->
-                    </div>
-                </ons-col>
-            </ons-row>
-            <ons-row align="center" class="top_third_button_area">
-                <ons-col width="100%">
-                    <div class="reserve_top_third_button_text">                        
-                        <p>It will be joining them on</p>
-                    </div>
-                </ons-col>
-                <ons-col width="100%">
-                    <div class="reserve_third_top_button">
-                    	<input type="date" class="text-input" placeholder="Headcount" value="">
-                       	 <!-- <button class="button button--light">DD/MM</button> -->
-                    </div>
-                </ons-col>
-            </ons-row>
-            <ons-row align="center" class="reserve_button_area">
-                <ons-col width="100%">
-                    <div class="reserve_button_text">                        
-                      <button class="button button--light">Reserve</button>
-                    </div>
-                </ons-col>
-            </ons-row>
-
-        </div>
+                </modal>
+            </div>
     </form>
 
         <!--Footer Carousel-->
@@ -107,20 +179,109 @@
 <script>
     import carousel from "assets/carousel.jpg"
     import axios from 'axios'
+    import $ from 'jquery';
+    import VModal from 'vue-js-modal';
     import { dataBus } from './main.js';
+    import myDatepicker from 'vue-datepicker';
+    import Vue from 'vue';
+    Vue.use(VModal)
     export default {
         data () {
             return {
+                restaurant_id: '',
+                restaurant: '',
+                people: '',
+                mobile: '',
+                email: '',
+                order_time: '',
+                confirm:'Yes',
                 footercarousel: carousel,
-                restaurant: {},
+                restaurants: {},
                 food: dataBus.$data,
                 loading:false,
+                startTime: {
+                    time: ''
+                },
+                endtime: {
+                    time: ''
+                },
+                option: {
+                    type: 'min',
+                    week: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+                    month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                    format: 'YYYY-MM-DD HH:mm',
+                    placeholder: 'YYYY-MM-DD HH:mm',
+                    required: true,
+                },
+                limit: [{},
+                    {
+                        type: 'fromto',
+                        from: new Date(new Date() -1 * 86400000),
+                        to: '2040-02-20'
+                    }],
+                date: {
+                    time: ''
+                },
+                required: true
             }
         },
         methods:{
+            onSubmit: function () {
+                this.loading= true
+                this.$modal.hide('permit-modal')
+                this.$modal.show('loading-modal')
+                if(this.date.time) {
+                    $.ajax({
+                        method: "POST",
+                        url: 'http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/orders',
+                        data: {
+                            restaurant_id: this.restaurant_id,
+                            title: 'Riaydh',
+//                            mobile: this.mobile,
+//                            email: this.email,
+                            restaurant: this.restaurant,
+                            table_number: this.people,
+                            booking_time: this.date.time,
+                            confirm: this.confirm,
+                            username: 'itsd@dmin',
+                            password: 'itsd321#',
+                        }
+                    }).then((resp) => {
+                        console.log(resp);
+                        this.name= '';
+                        this.mobile= '';
+                        this.email= '';
+                        this.table_number= '';
+                        this.date.time = '';
+                        this.loading= false
+                        this.$modal.hide('loading-modal');
+                        this.$modal.show('success-modal');
+                    })
+                        .catch((err) => {
+                            console.log(err)
+                            this.$modal.show('error2-modal');
+                        })
+                }
+                else{
+                    console.log( 'empty' );
+//                    this.$modal.show('error-modal');
+                }
+            },
+            permit(){
+                if(this.date.time) {
+                    this.$modal.show('permit-modal');
+                }
+                else{
+                    console.log( 'empty' );
+                    this.$modal.show('error-modal');
+                }
+            },
             pop () {
                 this.pageStack.pop()
             }
+        },
+        components: {
+            'date-picker': myDatepicker,
         },
         props: ['pageStack']
     }
@@ -133,6 +294,27 @@
         text-align: center;
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+    .dialogs{
+        margin-top: 6px;
+    }
+    .errors{
+        margin: 6px;
+    }
+    .loadingp{
+        text-align: center;
+        /*color: white;*/
+        /*margin-top: 250px;*/
+        /*margin-bottom: 150px;*/
+    }
+    .yes_button{
+        background: black;
+        border: 1px solid rgba(255, 255, 255, 0.86);
+        color: #fff;
+        padding: 4px 20px;
+        width: 100%;
+        margin-top: 8px
+
     }
 
 </style>

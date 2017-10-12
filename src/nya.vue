@@ -77,7 +77,7 @@
     import axios from 'axios'
     import { dataBus } from './main.js';
     import yay from "./yay"
-    import reserved from './reserved'
+    import reserved from './reserved2'
     import welcome from './welcome2';
     export default {
         data () {

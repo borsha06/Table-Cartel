@@ -2,16 +2,767 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nya.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/welcome2.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reserved2.vue" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/css-beautify" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/css-beautify.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/editorconfig.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/esparse" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/esparse.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/esvalidate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/esvalidate.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/he" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/he.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/html-beautify" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/html-beautify.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/js-beautify" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/js-beautify.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/js-yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/js-yaml.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/json5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/json5.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/mkdirp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/mkdirp.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/nopt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/nopt.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/semver" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/semver.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/abbrev/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/abbrev/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/abbrev/abbrev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/abbrev/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ansi-regex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ansi-regex/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ansi-regex/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ansi-regex/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ansi-styles/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ansi-styles/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ansi-styles/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ansi-styles/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/append.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/append/constant.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/count.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/help.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/store/constant.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/store/false.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/store/true.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/subparsers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/version.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action_container.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argparse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argument/error.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argument/exclusive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argument/group.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argument_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/const.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/help/added_formatters.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/help/formatter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/namespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/argparse/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/big.js/LICENCE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/big.js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/big.js/big.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/big.js/big.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/big.js/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/any.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/assert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/bind.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/bluebird.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/call_get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/cancel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/catch_filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/context.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/debuggability.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/direct_resolve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/each.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/errors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/es5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/finally.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/generators.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/join.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/method.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/nodeback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/nodeify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/promise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/promise_array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/promisify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/props.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/race.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/reduce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/schedule.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/settle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/some.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/synchronous_inspection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/thenables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/timers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/using.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/bluebird/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chalk/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chalk/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chalk/node_modules/supports-color/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chalk/node_modules/supports-color/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chalk/node_modules/supports-color/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chalk/node_modules/supports-color/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chalk/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chalk/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/commander/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/commander/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/commander/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/commander/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/commander/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/LICENCE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/broken.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/broken.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/chain-class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/find-file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/ignore-unfound-file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/ini.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/save.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/consolidate/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/consolidate/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/consolidate/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/consolidate/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/consolidate/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/consolidate/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/consolidate/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/consolidate/lib/consolidate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/consolidate/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/lib/createExplorer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/lib/loadDefinedFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/lib/loadJs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/lib/loadPackageProp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/lib/loadRc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/lib/parseJson.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/lib/readFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/example/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/all_bool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/bool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/dash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/default_bool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/dotted.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/kv_short.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/long.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/num.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/parse_modified.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/short.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/stop_early.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/unknown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/node_modules/minimist/test/whitespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/de-indent/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/de-indent/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/de-indent/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/de-indent/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/bin/editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/editorconfig.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/lib/fnmatch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/lib/ini.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/CONTRIBUTORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/lib/lru-cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/test/foreach.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/test/memory-leak.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/test/overflow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/node_modules/lru-cache/test/serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/editorconfig/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/emojis-list/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/emojis-list/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/emojis-list/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/emojis-list/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/emojis-list/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/error-ex/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/error-ex/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/error-ex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/error-ex/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/escape-string-regexp/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/escape-string-regexp/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/escape-string-regexp/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/escape-string-regexp/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/esprima/ChangeLog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/esprima/LICENSE.BSD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/esprima/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/esprima/bin/esparse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/esprima/bin/esvalidate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/esprima/dist/esprima.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/esprima/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/flatten/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/flatten/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/flatten/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/flatten/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/flatten/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/has-ansi/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/has-ansi/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/has-ansi/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/has-ansi/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/has-flag/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/has-flag/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/has-flag/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/has-flag/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/.jshintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/changelog.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/hash-sum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/hash-sum/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/he/LICENSE-MIT.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/he/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/he/bin/he" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/he/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/he/man/he.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/he/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/indexes-of/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/indexes-of/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/indexes-of/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/indexes-of/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/indexes-of/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/indexes-of/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ini/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ini/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ini/ini.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ini/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-arrayish/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-arrayish/.istanbul.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-arrayish/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-arrayish/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-arrayish/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-arrayish/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-arrayish/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-arrayish/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-directory/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-directory/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-directory/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/is-directory/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/1x1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/base64.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/base64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/base64.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/base64_utf8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/old/base64-1.7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-base64/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/bin/css-beautify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/bin/html-beautify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/bin/js-beautify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/config/defaults.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/lib/beautify-css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/lib/beautify-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/lib/beautify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/lib/cli.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/lib/unpackers/javascriptobfuscator_unpacker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/lib/unpackers/myobfuscate_unpacker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/lib/unpackers/p_a_c_k_e_r_unpacker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/lib/unpackers/urlencode_unpacker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/core/acorn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/core/inputscanner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/core/options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/core/output.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/core/token.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/css/beautifier.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/css/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/html/beautifier.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/html/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/javascript/beautifier.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/javascript/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/src/javascript/tokenizer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/amd-beautify-tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/generated/beautify-css-tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/generated/beautify-html-tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/generated/beautify-javascript-tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/node-beautify-html-perf-tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/node-beautify-perf-tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/node-beautify-tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/requirejs-html-beautify.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/configerror/.jsbeautifyrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/configerror/subDir1/subDir2/empty.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/editorconfig/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/editorconfig/cr/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/editorconfig/crlf/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/editorconfig/error/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/editorconfig/example-base.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/example1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/indent11chars/.jsbeautifyrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/resources/indent11chars/subDir1/subDir2/empty.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/run-tests" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/sanitytest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/js/test/shell-smoke-test.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-beautify/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/bin/js-yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/dist/js-yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/dist/js-yaml.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/dumper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/exception.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/loader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/mark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/default_full.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/failsafe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/json.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/binary.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/bool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/float.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/int.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/js/function.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/js/regexp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/js/undefined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/merge.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/null.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/omap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/pairs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/seq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/str.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/timestamp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/js-yaml/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/json5/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/json5/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/json5/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/json5/lib/cli.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/json5/lib/json5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/json5/lib/require.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/json5/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/loader-utils/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/loader-utils/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/loader-utils/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/loader-utils/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/lru-cache/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/lru-cache/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/lru-cache/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/lru-cache/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/example/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/test/dash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/test/default_bool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/test/dotted.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/test/long.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/test/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/test/parse_modified.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/test/short.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/minimist/test/whitespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/bin/cmd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/bin/usage.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/examples/pow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/chmod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/clobber.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/mkdirp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/opts_fs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/opts_fs_sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/perm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/perm_sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/race.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/rel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/return.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/return_sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/root.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/umask.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mkdirp/test/umask_sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/bin/nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/examples/my-program.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/lib/nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/object-assign/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/object-assign/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/object-assign/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/object-assign/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-homedir/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-homedir/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-homedir/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-homedir/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/parse-json/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/parse-json/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/parse-json/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/parse-json/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/parse-json/vendor/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/parse-json/vendor/unicode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-options/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-options/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-options/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-options/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-options/lib/options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-options/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-plugins/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-plugins/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-plugins/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-plugins/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-plugins/lib/plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-load-plugins/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/API.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/processor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/attribute.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/className.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/combinator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/comment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/container.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/namespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/nesting.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/pseudo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/root.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/selector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/tag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/types.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/selectors/universal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/sortAscending.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/dist/tokenize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss-selector-parser/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/docs/guidelines/plugin.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/docs/guidelines/runner.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/docs/source-maps.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/docs/syntax.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/at-rule.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/comment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/container.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/css-syntax-error.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/declaration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/input.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/lazy-result.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/map-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/postcss.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/postcss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/previous-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/processor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/result.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/root.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/rule.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/stringifier.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/terminal-highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/tokenize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/vendor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/warn-once.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/lib/warning.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/postcss/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/proto-list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/pseudomap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/pseudomap/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/pseudomap/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/pseudomap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/pseudomap/pseudomap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/pseudomap/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/require-from-string/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/require-from-string/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/require-from-string/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/require-from-string/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/bin/semver" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/range.bnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/semver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sigmund/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sigmund/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sigmund/bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sigmund/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sigmund/sigmund.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sigmund/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/dist/source-map.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/array-set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/base64-vlq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/base64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/binary-search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/mapping-list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/quick-sort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-consumer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/lib/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/source-map/source-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/demo/angular.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/src/angular-sprintf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/src/sprintf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/test/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/strip-ansi/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/strip-ansi/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/strip-ansi/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/strip-ansi/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/supports-color/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/supports-color/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/supports-color/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/supports-color/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/supports-color/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uniq/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uniq/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uniq/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uniq/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uniq/test/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uniq/uniq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-hot-reload-api/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-hot-reload-api/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-hot-reload-api/dist/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-hot-reload-api/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/.github/ISSUE_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/lib/addStylesClient.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/lib/addStylesServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/lib/listToStyles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/getCurrentRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/getHashDigest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/getOptions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/getRemainingRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/interpolateName.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/isUrlRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/parseQuery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/parseString.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/stringifyRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/lib/urlToRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/node_modules/loader-utils/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/test/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-style-loader/yarn.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-template-es2015-compiler/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-template-es2015-compiler/buble.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-template-es2015-compiler/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/vue-template-es2015-compiler/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/iterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/yallist/yallist.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/create.cmd" afterPath="$PROJECT_DIR$/node_modules/.bin/create.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/.bin/nopt.cmd" afterPath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/.bin/nopt.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/.bin/semver.cmd" afterPath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/.bin/semver.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/.bin/shjs.cmd" afterPath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/.bin/shjs.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/cordova-common/src/CordovaLogger.js" afterPath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/cordova-common/src/CordovaLogger.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/cordova-common/src/PluginManager.js" afterPath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/cordova-common/src/PluginManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/xmldom/__package__.js" afterPath="$PROJECT_DIR$/node_modules/cordova-android/node_modules/xmldom/__package__.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/.bin/cssesc.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/.bin/cssesc.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/.eslintrc" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/.eslintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/.npmignore" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/lib/Parser.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/lib/Parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/test/Parser.test.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/fastparse/test/Parser.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/regexpu-core/node_modules/.bin/regjsparser.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/regexpu-core/node_modules/.bin/regjsparser.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/regexpu-core/node_modules/regjsgen/LICENSE.txt" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/regexpu-core/node_modules/regjsgen/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/regexpu-core/node_modules/regjsparser/node_modules/.bin/jsesc.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/css-selector-tokenizer/node_modules/regexpu-core/node_modules/regjsparser/node_modules/.bin/jsesc.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/autoprefixer/node_modules/.bin/browserslist.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/autoprefixer/node_modules/.bin/browserslist.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/dist/browser/math-expression-evaluator.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/dist/browser/math-expression-evaluator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/formula_evaluator.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/formula_evaluator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/lexer.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/lexer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/math_function.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/math_function.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/postfix.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/postfix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/postfix_evaluator.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/src/postfix_evaluator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/test/index.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-calc/node_modules/reduce-css-calc/node_modules/math-expression-evaluator/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/.npmignore" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/index.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/test.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-convert/node_modules/color-name/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/.npmignore" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/index.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/test.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-colormin/node_modules/colormin/node_modules/color/node_modules/color-string/node_modules/color-name/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-merge-rules/node_modules/.bin/browserslist.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-merge-rules/node_modules/.bin/browserslist.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-params/node_modules/alphanum-sort/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-params/node_modules/alphanum-sort/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-params/node_modules/alphanum-sort/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-params/node_modules/alphanum-sort/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-params/node_modules/alphanum-sort/lib/compare.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-params/node_modules/alphanum-sort/lib/compare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-selectors/node_modules/alphanum-sort/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-selectors/node_modules/alphanum-sort/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-selectors/node_modules/alphanum-sort/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-selectors/node_modules/alphanum-sort/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-selectors/node_modules/alphanum-sort/lib/compare.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-minify-selectors/node_modules/alphanum-sort/lib/compare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/.bin/svgo.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/.bin/svgo.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/.npmignore" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/.bin/csso.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/.bin/csso.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/.bin/js-yaml.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/.bin/js-yaml.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/.bin/mkdirp.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/.bin/mkdirp.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/csso/node_modules/clap/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/csso/node_modules/clap/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/js-yaml/node_modules/.bin/esparse.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/js-yaml/node_modules/.bin/esparse.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/js-yaml/node_modules/.bin/esvalidate.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/js-yaml/node_modules/.bin/esvalidate.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-unique-selectors/node_modules/alphanum-sort/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-unique-selectors/node_modules/alphanum-sort/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-unique-selectors/node_modules/alphanum-sort/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-unique-selectors/node_modules/alphanum-sort/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-unique-selectors/node_modules/alphanum-sort/lib/compare.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/cssnano/node_modules/postcss-unique-selectors/node_modules/alphanum-sort/lib/compare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/icss-utils/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/loader-utils/node_modules/.bin/json5.cmd" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/loader-utils/node_modules/.bin/json5.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/loader-utils/node_modules/big.js/LICENCE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/loader-utils/node_modules/big.js/LICENCE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/loader-utils/node_modules/big.js/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/loader-utils/node_modules/big.js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/loader-utils/node_modules/big.js/big.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/loader-utils/node_modules/big.js/big.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-extract-imports/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-local-by-default/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-scope/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-modules-values/node_modules/postcss/node_modules/chalk/node_modules/ansi-styles/node_modules/color-convert/node_modules/color-name/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-value-parser/LICENSE" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-value-parser/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-value-parser/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-value-parser/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-value-parser/lib/stringify.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-value-parser/lib/stringify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-value-parser/lib/walk.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/postcss-value-parser/lib/walk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/README.md" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/CodeNode.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/CodeNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/MappingsContext.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/MappingsContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/SingleLineNode.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/SingleLineNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/SourceListMap.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/SourceListMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/SourceNode.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/SourceNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/base64-vlq.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/base64-vlq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/fromStringWithSourceMap.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/fromStringWithSourceMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/helpers.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/helpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/css-loader/node_modules/source-list-map/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/onsenui/css/material-design-iconic-font/css/material-design-iconic-font.css" afterPath="$PROJECT_DIR$/node_modules/onsenui/css/material-design-iconic-font/css/material-design-iconic-font.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/onsenui/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" afterPath="$PROJECT_DIR$/node_modules/onsenui/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vue-loader/package.json" afterPath="$PROJECT_DIR$/node_modules/vue-loader/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vue-template-compiler/package.json" afterPath="$PROJECT_DIR$/node_modules/vue-template-compiler/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/area.vue" afterPath="$PROJECT_DIR$/src/area.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nya.vue" afterPath="$PROJECT_DIR$/src/nya.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved.vue" afterPath="$PROJECT_DIR$/src/reserved.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/restaurant.vue" afterPath="$PROJECT_DIR$/src/restaurant.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/restaurant2.vue" afterPath="$PROJECT_DIR$/src/restaurant2.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/yay.vue" afterPath="$PROJECT_DIR$/src/yay.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hellojorge.vue" afterPath="$PROJECT_DIR$/src/welcome.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/assets/css/main.css" afterPath="$PROJECT_DIR$/src/static/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/welcome.vue" afterPath="$PROJECT_DIR$/src/welcome.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/welcome2.vue" afterPath="$PROJECT_DIR$/src/welcome2.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,93 +776,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-                <element signature="e#291#315#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="restaurant.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/restaurant.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2024">
-              <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+            <state relative-caret-position="272">
+              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="32" />
               <folding>
-                <element signature="e#8134#8175#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome2.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1455">
-              <caret line="22" column="59" lean-forward="false" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-              <folding>
-                <element signature="e#3286#3328#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reserved.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/reserved.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/welcome.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="61" column="67" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="127" selection-end-column="8" />
-              <folding>
-                <element signature="e#3280#3322#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nya.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nya.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1027">
-              <caret line="80" column="35" lean-forward="false" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arearest.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/arearest.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="101" column="16" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="108" selection-end-column="19" />
-              <folding>
-                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#2257#2278#0" expanded="true" />
+                <marker date="1507781879599" expanded="true" signature="8118:8156" ph="..." />
               </folding>
             </state>
           </provider>
@@ -120,11 +791,98 @@
       <file leaf-file-name="restaurant2.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/restaurant2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1223">
-              <caret line="78" column="86" lean-forward="false" selection-start-line="78" selection-start-column="86" selection-end-line="78" selection-end-column="86" />
+            <state relative-caret-position="1163">
+              <caret line="245" column="8" lean-forward="false" selection-start-line="245" selection-start-column="8" selection-end-line="245" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reserved2.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="37" column="146" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="146" />
               <folding>
-                <element signature="e#8119#8160#0" expanded="true" />
+                <element signature="e#9010#9052#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#291#315#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cuisine_rest.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="13" column="57" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="57" />
+              <folding>
+                <element signature="e#2693#2735#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reserved.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reserved.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4930">
+              <caret line="308" column="5" lean-forward="true" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
+              <folding>
+                <element signature="e#8102#8144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/welcome.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1394">
+              <caret line="88" column="37" lean-forward="false" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome2.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="88" column="37" lean-forward="false" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nya.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nya.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="79" column="37" lean-forward="false" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,8 +891,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bu</find>
       <find>re</find>
+      <find>bu</find>
+      <find>reserve_top_button</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,25 +902,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
         <option value="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/cuisine.vue" />
-        <option value="$PROJECT_DIR$/src/cuisine_rest.vue" />
         <option value="$PROJECT_DIR$/src/arias_rest.vue" />
         <option value="$PROJECT_DIR$/src/arias_restaurant.vue" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/area_rest.vue" />
         <option value="$PROJECT_DIR$/src/Page2.vue" />
         <option value="$PROJECT_DIR$/src/area.vue" />
-        <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/yay.vue" />
-        <option value="$PROJECT_DIR$/src/restaurant2.vue" />
-        <option value="$PROJECT_DIR$/src/reserved.vue" />
-        <option value="$PROJECT_DIR$/src/welcome.vue" />
-        <option value="$PROJECT_DIR$/src/nya.vue" />
-        <option value="$PROJECT_DIR$/src/welcome2.vue" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/arearest.vue" />
+        <option value="$PROJECT_DIR$/src/cuisine_rest.vue" />
         <option value="$PROJECT_DIR$/src/restaurant.vue" />
+        <option value="$PROJECT_DIR$/src/reserved.vue" />
+        <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/src/restaurant2.vue" />
+        <option value="$PROJECT_DIR$/src/welcome2.vue" />
+        <option value="$PROJECT_DIR$/src/nya.vue" />
+        <option value="$PROJECT_DIR$/src/welcome.vue" />
+        <option value="$PROJECT_DIR$/src/reserved2.vue" />
       </list>
     </option>
   </component>
@@ -207,6 +968,12 @@
               <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
               <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -254,7 +1021,7 @@
       <workItem from="1507442440680" duration="15170000" />
       <workItem from="1507572355063" duration="353000" />
       <workItem from="1507606785260" duration="24398000" />
-      <workItem from="1507693143002" duration="23888000" />
+      <workItem from="1507693143002" duration="46822000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -274,7 +1041,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64463000" />
+    <option name="totallyTimeSpent" value="87397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -283,7 +1050,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17113096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20949264" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -314,43 +1081,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#291#315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cuisine.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2170#2212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/area.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2125">
           <caret line="128" column="5" lean-forward="true" selection-start-line="124" selection-start-column="4" selection-end-line="128" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2737#2779#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#2737#2779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -360,7 +1097,7 @@
         <state relative-caret-position="3519">
           <caret line="210" column="47" lean-forward="false" selection-start-line="210" selection-start-column="47" selection-end-line="210" selection-end-column="47" />
           <folding>
-            <element signature="e#8134#8175#0" expanded="true" />
+            <marker date="1507781879599" expanded="true" signature="8118:8156" ph="..." />
           </folding>
         </state>
       </provider>
@@ -370,8 +1107,8 @@
         <state relative-caret-position="1122">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3118#3160#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#3118#3160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -381,7 +1118,7 @@
         <state relative-caret-position="1309">
           <caret line="80" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="125" selection-end-column="8" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#2693#2735#0" expanded="true" />
           </folding>
         </state>
@@ -407,7 +1144,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#189#210#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -427,8 +1166,8 @@
         <state relative-caret-position="1955">
           <caret line="117" column="16" lean-forward="false" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2170#2212#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#2170#2212#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -446,8 +1185,8 @@
         <state relative-caret-position="476">
           <caret line="28" column="94" lean-forward="false" selection-start-line="28" selection-start-column="94" selection-end-line="28" selection-end-column="94" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3118#3160#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#3118#3160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -465,7 +1204,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#2693#2735#0" expanded="true" />
           </folding>
         </state>
@@ -476,8 +1215,8 @@
         <state relative-caret-position="204">
           <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2737#2779#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#2737#2779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -494,7 +1233,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#189#210#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -514,8 +1255,8 @@
         <state relative-caret-position="272">
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2737#2779#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#2737#2779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -533,8 +1274,8 @@
         <state relative-caret-position="476">
           <caret line="28" column="94" lean-forward="false" selection-start-line="28" selection-start-column="94" selection-end-line="28" selection-end-column="94" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3118#3160#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#3118#3160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -552,7 +1293,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#2693#2735#0" expanded="true" />
           </folding>
         </state>
@@ -563,8 +1304,8 @@
         <state relative-caret-position="1955">
           <caret line="117" column="16" lean-forward="false" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2170#2212#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#2170#2212#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -588,7 +1329,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#189#210#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -596,14 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -646,14 +1381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/area_rest.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -667,30 +1394,8 @@
         <state relative-caret-position="160">
           <caret line="66" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="133" selection-end-column="8" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2170#2212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="113" column="28" lean-forward="false" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2693#2735#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#291#315#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#2170#2212#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -700,8 +1405,8 @@
         <state relative-caret-position="772">
           <caret line="102" column="14" lean-forward="true" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3118#3160#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#3118#3160#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -711,84 +1416,146 @@
         <state relative-caret-position="323">
           <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="38" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2737#2779#0" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#2737#2779#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="3" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="33" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="e#378#420#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hello.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="204">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#189#210#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/arearest.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="69" column="42" lean-forward="true" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="57" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="57" />
+          <folding>
+            <element signature="e#2693#2735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#291#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nya.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="79" column="37" lean-forward="false" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="88" column="37" lean-forward="false" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/welcome.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="61" column="67" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="127" selection-end-column="8" />
-          <folding>
-            <element signature="e#3280#3322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nya.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1027">
-          <caret line="80" column="35" lean-forward="false" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+        <state relative-caret-position="1394">
+          <caret line="88" column="37" lean-forward="false" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/arearest.vue">
+    <entry file="file://$PROJECT_DIR$/src/reserved.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="101" column="16" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="108" selection-end-column="19" />
+        <state relative-caret-position="4930">
+          <caret line="308" column="5" lean-forward="true" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2257#2278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/restaurant2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1223">
-          <caret line="78" column="86" lean-forward="false" selection-start-line="78" selection-start-column="86" selection-end-line="78" selection-end-column="86" />
-          <folding>
-            <element signature="e#8119#8160#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1455">
-          <caret line="22" column="59" lean-forward="false" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-          <folding>
-            <element signature="e#3286#3328#0" expanded="true" />
+            <element signature="e#8102#8144#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/restaurant.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2024">
-          <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="32" />
           <folding>
-            <element signature="e#8134#8175#0" expanded="true" />
+            <marker date="1507781879599" expanded="true" signature="8118:8156" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reserved.vue">
+    <entry file="file://$PROJECT_DIR$/src/restaurant2.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="1163">
+          <caret line="245" column="8" lean-forward="false" selection-start-line="245" selection-start-column="8" selection-end-line="245" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="37" column="146" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="146" />
+          <folding>
+            <element signature="e#9010#9052#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
