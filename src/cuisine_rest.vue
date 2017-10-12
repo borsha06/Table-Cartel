@@ -4,7 +4,7 @@
             <ons-row align="top" width="100%">
                 <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
+                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
         <div class="background">
@@ -65,12 +65,14 @@
 
 <script>
     import carousel from "assets/carousel.jpg"
+    import notification from "assets/notification.svg"
     import axios from 'axios'
     import restaurant from './restaurant'
     import { dataBus } from './main.js';
     export default {
         data () {
             return {
+                notificationicon: notification,
                 footercarousel: carousel,
                 restaurant: {},
                 food: dataBus.$data,

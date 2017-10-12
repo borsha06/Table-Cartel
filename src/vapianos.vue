@@ -4,7 +4,7 @@
             <ons-row align="top" width="100%">
                 <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
+                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
         <div class="background_white">
@@ -89,7 +89,7 @@
         </div>
         <div class="menu_bottom_item">
             <ons-row align="center" class="margin-left">
-                <ons-col width="50%">
+                <ons-col width="50%" class="vapianos_left_content">
                     <ons-row align="left" class="vapianos_icon_row">
                         <div class="icon">
                             <img :src="phone" alt="" />
@@ -145,7 +145,7 @@
                             <p>Casual</p>
                         </div>
                     </ons-row>
-                </ons-col>
+                </ons-col><!-- 
                 <ons-col width="50%">
                     <ons-row class="vapianos_icon_right_des">
                         <div class="icon">
@@ -156,7 +156,7 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
                         </div>
                     </ons-row>
-                </ons-col>
+                </ons-col> -->
             </ons-row>
         </div>
 
@@ -169,6 +169,7 @@
 
 <script>
     import phone from "assets/phone-call.svg"
+    import notification from "assets/notification.svg"
     import axios from 'axios'
     import cuisine from './cuisine'
     import area from './area'
@@ -176,6 +177,7 @@
         data () {
             return {
                 phone: phone,
+                notificationicon: notification,
                 restauranttexo: {}
             }
         },

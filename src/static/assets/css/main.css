@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 
 ::-moz-placeholder{
     color:#444;
@@ -9,18 +10,38 @@
     color:#444;
 
 }
-.left_side_button>.button--light{
-background: white !important;
+.left_side_button button{
+    background: white !important;
     border: none;
     margin-bottom: 9px;
     padding: 0px 20px;
     font-size: 10px;
-    margin-right: 3px;
     border-radius: 18px;
     color: #444;
     font-weight: bold;
-    text-transform:uppercase;
-    cursor:pointer;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px white;
+    margin-right: 8px;
+
+}
+.left_side_button_customize{
+    margin-left:13px;
+}
+.left_side_button_customize button{
+    background: white !important;
+    border: none;
+    margin-bottom: 9px;
+    padding: 0px 20px;
+    font-size: 10px;
+    border-radius: 18px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 82px;
+    box-shadow: 0px 0px 1px white;
+    margin-right: 8px;
 
 }
 .background{
@@ -40,32 +61,63 @@ background: white !important;
     width: 100%;
     z-index:99999;
 }
+.header_right_icon{
+        margin-right: 3px;
+}
+.header_right_icon img{
+    height: 35px;
+    margin-top: -19px;
+    margin-bottom: -9px;
+}
 .header_top>ons-row>ons-col{
 text-align: center !important;
 }
 
 #table-cartel-heading{
 	text-align:center;
-	text-transform:uppercase;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 12px;
 }
 .left_side_button{
 	margin-left:13px;
 }
 .left_side_search_heading{
-    margin-left:13px;
+    margin-left: 13px;
+/*    margin-top: 75px;*/
+
+}
+.yah_side_search_heading{
+    margin-left: 13px;
+    margin-top: 75px;
 
 }
 .left_side_search_heading h2{
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 20px;
     font-family: 'Nunito', sans-serif;
 
 }
+.yah_side_search_heading h2{
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+
+}
 .left_side_search_heading p{
+    color:#5C5C5D;
+    padding: 0;
+    margin-top: -24px;
+    font-family: 'Nunito', sans-serif;
+
+}
+.yah_side_search_heading p{
 	color:#5C5C5D;
 	padding: 0;
-    margin-top: -15px;
+    margin-top: -24px;
     font-family: 'Nunito', sans-serif;
+    padding-right:13px;
 
 }
 .cross_icon{
@@ -95,6 +147,13 @@ text-align: center !important;
     top: -44px;
     padding-left: 13px;
 
+
+}
+.carousel_heading p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    color: #444;
+    font-size: 12px;
 
 }
 .image_footer img{
@@ -142,6 +201,7 @@ text-align: center !important;
 /*Vapianos css*/
 .vapianos_order_load_wallet{
     background: #A5A6A7;
+    position:relative;
 }
 .vapianos_cross_icon{
     top: 10px;
@@ -186,7 +246,7 @@ text-align: center !important;
 
 .load_wallet strong{
     font-size: 12px;
-    color: #444;
+    color: #191919;
     font-family: 'Nunito', sans-serif;
 
 }
@@ -210,7 +270,7 @@ margin-left: 13px !important;
 .cusine_type{}
 .cusine_type strong{
     font-size: 12px;
-    color: #444;
+    color: #191919;
     font-family: 'Nunito', sans-serif;
 }
 .cusine_type p{
@@ -220,7 +280,7 @@ margin-left: 13px !important;
     font-size: 12px;
 }
 .vapianos_right_side_rating{
-    overflow: hidden;
+
 }
 .vapianos_right_side_rating>.card{
     text-align: center;
@@ -241,16 +301,19 @@ margin-left: 13px !important;
     font-weight: normal;
     display: block;
     margin-top: 10px;
+    font-family: 'Julius Sans One', sans-serif;
 }
 .card_text p{
     margin-top: 3px;
     font-family: 'Nunito Sans', sans-serif;
     margin-bottom: 4px;
+        font-size: 11px;
 }
 .vapianos_address{}
 .vapianos_address strong{
     font-size: 12px;
-    color: #444;
+color: #191919;
+
     font-family: 'Nunito', sans-serif;
 }
 .vapianos_address p{
@@ -264,15 +327,20 @@ margin-left: 13px !important;
     margin-right:13px;
     margin-bottom: 10px;
 }
+.reserv_modified{
+    margin-top: 7px;
+
+}
 .reserv_button button{
     border-radius: 40px;
-    font-size: 10px;
-    padding: 0px 11px;
-    border: 1px solid rgba(221, 221, 221, 0.73);
-    box-shadow: 0px 1px 0px rgba(68, 68, 68, 0.2);
-    color: #444;
+    font-size: 8px;
+    padding: 0px 17px;
+    border: 1px solid rgba(221, 221, 221, .73);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .37);
+    color: #191919;
     text-transform: uppercase;
     font-weight: bold;
+    background: #fff;
 }
 .vapianos_menu_button_text{}
 .vapianos_menu_button_text button{
@@ -280,13 +348,14 @@ margin-left: 13px !important;
     border-radius: 20px;
     padding: 0px 0px;
     margin-top: 14px;
-    border: 1px solid #666;
+    border: 1px solid rgba(102, 102, 102, 0.92);
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
     color: #444;
     font-family: 'Nunito', sans-serif;
     margin-bottom: -5px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.84);
 }
 .icon{
     width: 35px;
@@ -302,7 +371,7 @@ margin-left: 13px !important;
     padding-top: 4px;
 }
 .margin-left{
-    margin-left:13px;
+    padding-left:13px;
     margin-top: 20px;
     position:relative;
 }
@@ -322,14 +391,23 @@ margin-left: 13px !important;
     margin-bottom: 4px;
     font-family: 'Nunito Sans', sans-serif;
 }
+.vapianos_left_content{
+
+
+}
 .vapianos_icon_row{
 padding-top: 10px;
     padding-bottom: 8px;
 
 }
 .vapianos_icon_right_des{
-    top: -179px;
-    position: relative;
+    margin-top: 10px;
+}
+.another_icon_text{
+    width: 63% !important;
+}
+.single_left_content{
+    clear:both;
 }
 
 /*Reserved Css*/
@@ -342,10 +420,10 @@ padding:0px 13px;
 
 }
 .left_side_reserved_heading h2{
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 20px;
     font-size: 32px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 
 }
 .left_side_reserved_heading p{
@@ -381,6 +459,18 @@ padding:0px 13px;
     width:100%;
 
 }
+.reserve_top_button select{
+    width: 100%;
+    border-radius: 26px;
+    padding: 7px 5px;
+
+}
+.reserve_top_button select option{
+    width: 100%;
+    border-radius: 26px;
+    padding: 7px 5px;
+
+}
 
 .reserve_top_second_button_text{}
 .reserve_top_second_button_text p{
@@ -402,9 +492,11 @@ padding:0px 13px;
 .reserve_second_top_button input{
     padding: 0px 16px;
     text-align: center;
-    width:25%;
-        background: #fff;
-          border-radius: 25px;
+    width: 25%;
+    background: #fff;
+    border-radius: 25px;
+    height: 30px;
+    padding-bottom: 4px;
 
 }
 .reserve_top_third_button_text{}
@@ -424,13 +516,14 @@ padding:0px 13px;
 .reserve_third_top_button input{
     border-radius: 25px;
     background: #fff;
- 
-
-   color: #333;
+    color: #333;
     font-weight: bolder;
     font-size: 11px;
     text-transform: uppercase;
-    padding: 2px 10px;
+    padding: 9px 14px;
+    width: 92px;
+    text-align: center;
+    border: none;
 }
 .reserve_button_area{
     margin-top: 45px;
@@ -472,10 +565,10 @@ padding:0px 13px;
 }
 /*Hello Jorge CSS*/
 .hello_jorge_bg{
-     background: #A2A2A2;
+    background: #A2A2A2;
     margin-top: 46px;
     padding: 0px 13px;
-    height: 100%;
+    height: 85%;
 
 }
 .hello_jorge_footer_option{
@@ -499,7 +592,7 @@ padding:0px 13px;
 }
 .hello_jorge_button{}
 .hello_jorge_button button{
-
+font-size: 10px;
 
 }
 .nay_button{
@@ -526,7 +619,19 @@ padding:0px 13px;
 
 }
 #hellojorge-area{
-    bottom: 15%;
+    bottom: 14%;
+}
+.hello_jorge_heading h2{
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+    font-weight: normal;
+
+}
+.hello_jorge_heading p{
+    line-height: 24px;
+    color: #444;
+    margin-top: -16px;
 }
 .reserve_button_customize{
     background: #fff;
@@ -543,6 +648,7 @@ padding:0px 13px;
         font-size: 14px;
     color: #000;
     margin-top: -42px;
+    background: #a2a2a2;
 
 }
 .hellojorge_carousel_heading p{

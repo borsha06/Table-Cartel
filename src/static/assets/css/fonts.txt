@@ -1,3 +1,10 @@
 font-family: 'Nunito', sans-serif;
 font-family: 'Nunito Sans', sans-serif; 
 Paragraph
+
+font-family: 'Julius Sans One', sans-serif;
+
+color: #191919;
+
+
+

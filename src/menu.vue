@@ -81,6 +81,7 @@
 
 <script>
     import leftmenuicon from "assets/menu_icon_footer1.png"
+    import notification from "assets/notification.svg"
     import rightmenuicon from "assets/menu_icon_footer2.png"
     import carousel from "assets/carousel.jpg"
     import backarrow from "assets/back-arrow-circular-symbol.svg"
@@ -91,6 +92,7 @@
     export default {
         data () {
             return {
+                notificationicon: notification,
                 leftmenuicon: leftmenuicon,
                 rightmenuicon: rightmenuicon,
                 backarrow: backarrow,

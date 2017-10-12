@@ -4,13 +4,13 @@
             <ons-row align="top" width="100%">
                 <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
+                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
 
         <div v-if="loading" class="loading" v-cloak>
-            <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-            <!--<span>Loading...</span>-->
+                <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                <!--<span>Loading...</span>-->
         </div>
 
 
@@ -42,7 +42,7 @@
                                     </div>
                                     <div class="wallet_progressr">
                                         <div class="progress-bar">
-                                            <div class="progress-bar__primary" style="width: 60%"></div>
+                                          <div class="progress-bar__primary" style="width: 60%"></div>
 
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="reserv_button">
-                            <button class="button button--light" @click="reservedpage(rest.ID,rest.post_title)">Reserve</button>
+                            <button class="button button--light reserv_modified" @click="reservedpage(rest.ID,rest.post_title)">Reserve</button>
                         </div>
                     </ons-col>
                 </ons-row>
@@ -98,11 +98,11 @@
                 </ons-row>
             </div>
             <div class="menu_bottom_item">
-                <ons-row align="center" class="margin-left">
+                <ons-row align="left" class="margin-left">
                     <ons-col width="50%">
                         <ons-row align="left" class="vapianos_icon_row">
                             <div class="icon">
-                                <img :src="phone" alt="" />
+                                <img :src="phonecallicon" alt="" />
                             </div>
                             <div class="icon_text">
                                 <strong>Phone</strong>
@@ -111,7 +111,7 @@
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
                             <div class="icon">
-                                <img :src="phone" alt="" />
+                                <img :src="paymenticon" alt="" />
                             </div>
                             <div class="icon_text">
                                 <strong>Price</strong>
@@ -120,7 +120,7 @@
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
                             <div class="icon">
-                                <img :src="phone" alt="" />
+                                <img :src="menuicon" alt="" />
                             </div>
                             <div class="icon_text">
                                 <strong>Cuisine</strong>
@@ -131,7 +131,7 @@
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
                             <div class="icon">
-                                <img :src="phone" alt="" />
+                                <img :src="alarmicon" alt="" />
                             </div>
                             <div class="icon_text">
                                 <strong>Hours</strong>
@@ -140,7 +140,7 @@
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
                             <div class="icon">
-                                <img :src="phone" alt="" />
+                                <img :src="parkingicon" alt="" />
                             </div>
                             <div class="icon_text">
                                 <strong>Parking</strong>
@@ -149,7 +149,7 @@
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
                             <div class="icon">
-                                <img :src="phone" alt="" />
+                                <img :src="parkingicon" alt="" />
                             </div>
                             <div class="icon_text">
                                 <strong>Dresscode</strong>
@@ -160,12 +160,12 @@
                     <ons-col width="50%">
                         <ons-row class="vapianos_icon_right_des">
                             <div class="icon">
-                                <img :src="phone" alt="" />
+                                <img :src="parkingicon" alt="" />
                             </div>
-                            <div class="icon_text">
+                            <div class="icon_text another_icon_text">
                                 <strong>Description</strong>
-                                <!--  <p v-html="rest.post_content"></p> -->
-                                <p>Lorem ipsum dollar site emiteLorem ipsum dollar site emiteLorem ipsum dollar site emiteLorem ipsum dollar site emite</p>
+                                <p v-html="rest.post_content"></p>
+                               
                             </div>
                         </ons-row>
                     </ons-col>
@@ -180,7 +180,12 @@
 </template>
 
 <script>
-    import phone from "assets/phone-call.svg"
+    import parking from "assets/parking.svg"
+    import menu from "assets/menu.svg"
+    import notification from "assets/notification.svg"
+    import alarm from "assets/alarm-clock.svg"
+    import payment from "assets/payment.svg"
+    import phonecall from "assets/phone-call.svg"
     import axios from 'axios'
     import cuisine from './cuisine'
     import area from './area'
@@ -188,7 +193,12 @@
     export default {
         data () {
             return {
-                phone: phone,
+                phonecallicon: phonecall,
+                menuicon: menu,
+                alarmicon: alarm,
+                notificationicon: notification,
+                paymenticon: payment,
+                parkingicon: parking,
                 restauranttexo: {},
                 rest: {},
                 loading: false,

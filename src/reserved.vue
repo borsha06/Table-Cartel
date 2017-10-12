@@ -4,7 +4,7 @@
             <ons-row align="top" width="100%">
                 <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
+                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div> 
         <form v-on:submit.prevent="permit">
@@ -178,6 +178,8 @@
 
 <script>
     import carousel from "assets/carousel.jpg"
+    import paymenticon from "assets/carousel.jpg"
+	import notification from "assets/notification.svg"
     import axios from 'axios'
     import $ from 'jquery';
     import VModal from 'vue-js-modal';
@@ -195,6 +197,7 @@
                 email: '',
                 order_time: '',
                 confirm:'Yes',
+				notificationicon: notification,
                 footercarousel: carousel,
                 restaurants: {},
                 food: dataBus.$data,
@@ -209,8 +212,8 @@
                     type: 'min',
                     week: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
                     month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-                    format: 'YYYY-MM-DD HH:mm',
-                    placeholder: 'YYYY-MM-DD HH:mm',
+                    format: 'MM-DD HH:mm',
+                    placeholder: 'MM-DD HH:mm',
                     required: true,
                 },
                 limit: [{},
@@ -287,6 +290,15 @@
     }
 </script>
 <style scoped>
+
+::placeholder{
+    color:black;
+    text-transform: uppercase;
+    font-size:9px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    padding-top:-3px;
+};
     .button{
         float:left;
     }

@@ -4,14 +4,14 @@
             <ons-row align="top" width="100%">
                 <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
+                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
         <div class="background">
             <ons-row align="center">
                 <ons-col width="80%">
                     <div class="left_side_search_heading">
-                        <h2>search by aria</h2>
+                        <h2>search by area</h2>
                         <p>Here is the list of cuisinnes on offer!</p>
                     </div>
                 </ons-col>
@@ -69,12 +69,14 @@
 
 <script>
     import carousel from "assets/carousel.jpg"
+    import notification from "assets/notification.svg"
     import axios from 'axios'
     import arearest from './arearest'
     import { dataBus } from './main.js';
     export default {
         data (){
             return {
+                notificationicon: notification,
                 footercarousel: carousel,
                 restauranttexo: {},
                 food: dataBus.$data,
