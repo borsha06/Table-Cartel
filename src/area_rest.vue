@@ -65,7 +65,7 @@
 <script>
     import carousel from "assets/carousel.jpg"
     import axios from 'axios'
-    import { dataBus } from './main.js';
+    import {dataBus} from './static/assets/js/custom.js';
     export default {
         data () {
             return {

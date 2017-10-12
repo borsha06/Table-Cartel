@@ -75,7 +75,7 @@
     import cuisine from './cuisine'
     import restaurant from './restaurant'
     import area from './area'
-    import { dataBus } from './main.js';
+    import {dataBus} from './static/assets/js/custom.js';
     export default {
         data () {
             return {

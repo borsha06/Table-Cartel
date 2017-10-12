@@ -75,7 +75,7 @@
     import carousel from "assets/carousel.jpg"
     import footerlogo from "assets/apple-touch-icon.png"
     import axios from 'axios'
-    import { dataBus } from './main.js';
+    import {dataBus} from './static/assets/js/custom.js';
     import yay from "./yay"
     import reserved from './reserved2'
     import welcome from './welcome2';

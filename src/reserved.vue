@@ -181,7 +181,7 @@
     import axios from 'axios'
     import $ from 'jquery';
     import VModal from 'vue-js-modal';
-    import { dataBus } from './main.js';
+    import {dataBus} from './static/assets/js/custom.js';
     import myDatepicker from 'vue-datepicker';
     import Vue from 'vue';
     Vue.use(VModal)

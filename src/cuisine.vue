@@ -71,7 +71,7 @@
   import carousel from "assets/carousel.jpg"
   import axios from 'axios'
   import cuisine_rest from './cuisine_rest'
-  import { dataBus } from './main.js';
+  import {dataBus} from './static/assets/js/custom.js';
   export default {
   	data (){
   		return {
