@@ -4,7 +4,7 @@
             <ons-row align="top" width="100%">
                 <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><i class="fa fa-bell" aria-hidden="true"></i></ons-col>
+                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
         <div class="hello_jorge_bg">
@@ -12,7 +12,7 @@
                 <ons-col width="100%">
                     <div class="hello_jorge_heading">
                         <h2>Hello Jorge!</h2>
-                        <p>Today is good day to eat out. Why not plan something?</p>
+                        <p>Today is good day to<br /> eat out. Why not plan something?</p>
                     </div>
                 </ons-col>
             </ons-row>
@@ -82,6 +82,7 @@
 <script>
     import carousel from "assets/carousel.jpg"
     import footerlogo from "assets/apple-touch-icon.png"
+    import notification from "assets/notification.svg"
     import axios from 'axios'
     import {dataBus} from './static/assets/js/custom.js';
     import yay from "./yay"
@@ -92,6 +93,7 @@
             return {
                 footerlogo: footerlogo,
                 footercarousel: carousel,
+                notificationicon: notification,
                 restaurant: {},
                 food: dataBus.$data,
                 loading:false,
@@ -112,8 +114,8 @@
     }
 </script>
 <style scoped>
-.page--material__background{
-    background:#A2A2A2 !important;
+.welcome_bg{
+
 
 }
     .button{
