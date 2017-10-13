@@ -46,7 +46,7 @@
 
         <!--Footer Carousel-->
         <div class="cuisine_footer_carousel">
-            <ons-row class="carousel_heading">
+            <ons-row class="reserved_carousel_heading">
                 <p>Today's Special</p>
             </ons-row>
             <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
