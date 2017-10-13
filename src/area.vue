@@ -1,5 +1,5 @@
 <template>
-    <v-ons-page id="gray_bg">
+    <v-ons-page id="">
         <div class="header_top">
             <ons-row align="top" width="100%">
                 <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
@@ -37,29 +37,7 @@
 
 
 
-        <!--Footer Carousel-->
-        <div class="cuisine_footer_carousel">
-            <ons-row class="carousel_heading">
-                <p>Today's Special</p>
-            </ons-row>
-            <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
 
-                <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
-                    <div class="image_footer">
-                        <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
-                        <a href="" v-else><img :src="footercarousel" /></a>
-
-                        <!--<img :src="footercarousel" alt="" />-->
-                        <div class="image_overlay_content">
-                            <h4 v-html="foo.short_title"></h4>
-                            <p v-html="foo.short_content"> </p>
-                        </div>
-                    </div>
-                </ons-carousel-item>
-
-            </ons-carousel>
-        </div>
-        <!--Footer Carousel-->
 
 
 

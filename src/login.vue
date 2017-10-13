@@ -1,5 +1,5 @@
 <template>
-    <v-ons-page id="gray_bg">
+    <v-ons-page id="">
         <div class="login_bg">
             <ons-row align="center" class="logo-area">
                 <ons-col width="100%">
