@@ -19,7 +19,7 @@
             <ons-row align="" class="hello_jorge_button_area">
                 <ons-col width="100%">
                     <div class="hello_jorge_button">
-                        <button class="button button--light nay_button" @click="nyapage">Nay!</button>
+                        <!--<button class="button button&#45;&#45;light nay_button" @click="nyapage">Nay!</button>-->
                         <button class="button button--light yay_button" @click="yaypage">Yay!</button>
                     </div>
                 </ons-col>
