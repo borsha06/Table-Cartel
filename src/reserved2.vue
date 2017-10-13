@@ -23,7 +23,8 @@
                         </ons-col>
                         <ons-col width="20%">
                             <div class="reserved_cross_icon">
-                                <i @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                <!--  <i class="fa fa-times-circle-o" aria-hidden="true"></i> -->
+                                <img @click="pop" :src="close" alt="close" />
                             </div>
                         </ons-col>
                     </ons-row>
@@ -38,7 +39,7 @@
                                 <!--<input type="text" class="text-input" v-model="restaurant" placeholder="Vapianos italian's gourment" value="">-->
                                 <!--<p class="button button&#45;&#45;light">{{this.data.name}}</p>-->
                                 <select v-model="restaurant_id" required="">
-                                    <option v-for="item in restaurants" v-bind:value="item.ID">{{ item.post_title }}</option>
+                                    <option id="select_align" v-for="item in restaurants" v-bind:value="item.ID">{{ item.post_title }}</option>
                                 </select>
                             </div>
                         </ons-col>
@@ -187,6 +188,7 @@
     import Vue from 'vue';
     import carousel from "assets/carousel.jpg"
     import notification from "assets/notification.svg"
+    import closeicon from "assets/close.svg"
     import axios from 'axios'
     import $ from 'jquery';
     import VModal from 'vue-js-modal';
@@ -207,6 +209,7 @@
                 confirm:'Yes',
                 footercarousel: carousel,
                 notificationicon: notification,
+                close: closeicon,
                 restaurants: {},
                 food: dataBus.$data,
                 loading:false,
