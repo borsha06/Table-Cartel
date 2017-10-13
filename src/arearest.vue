@@ -32,7 +32,7 @@
         <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
         <!--<span>Loading...</span>-->
       </div>
-    </div>
+
 
 
     <!--Footer Carousel-->
@@ -41,6 +41,7 @@
         <p>Today's Special</p>
       </ons-row>
       <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+   
         <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
           <div class="image_footer">
             <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
@@ -57,6 +58,9 @@
       </ons-carousel>
     </div>
     <!--Footer Carousel-->
+
+    </div>
+
 
 
   </v-ons-page>

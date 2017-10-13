@@ -27,15 +27,19 @@
         </div>
 
         <!--Footer Carousel-->
+
         <div class="cuisine_footer_carousel" id="hellojorge-area">
-            <ons-row class="hellojorge_carousel_heading">
-                <p>Today's Special</p>
-            </ons-row>
+
+        <ons-row class="cuisine_footer_carousel" id="hellojorge-area">
+                <ons-row class="hellojorge_carousel_heading">
+                    <p>Today's Special</p>
+                </ons-row>
+
             <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
 
                 <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
                     <div class="image_footer">
-                        <!--<a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>-->
+                        <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
                         <a href="" ><img :src="footercarousel" /></a>
 
                         <!--<img :src="footercarousel" alt="" />-->
@@ -47,32 +51,28 @@
                 </ons-carousel-item>
 
             </ons-carousel>
+        </ons-row>
         </div>
-        <!--Footer Carousel-->
-
-        <div class="hello_jorge_footer_option">
-            <ons-row align="" class="hello_jorge_footer_area">
-                <ons-col width="25%">
-                    <div class="left_logo">
-                        <img :src="footerlogo" alt="" />
-                    </div>
-                </ons-col>
-                <ons-col width="45%">
-                    <div class="discover_button">
-                         <button class="button button--light" @click="yaypage">Discover</button>
-                    </div>
-                </ons-col>
-                <ons-col width="25%">
-                    <div class="reserve_button">
-                        <button class="button button--light reserve_button_customize" @click="reservedpage">Reserve</button>
-                    </div>
-                </ons-col>
-            </ons-row>
-        </div>
-
-
-
-
+            <!--Footer Carousel-->
+            <div class="hello_jorge_footer_option">
+                <ons-row align="" class="hello_jorge_footer_area">
+                    <ons-col width="25%">
+                        <div class="left_logo">
+                            <img :src="footerlogo" alt="" />
+                        </div>
+                    </ons-col>
+                    <ons-col width="45%">
+                        <div class="discover_button">
+                             <button class="button button--light" @click="yaypage">Discover</button>
+                        </div>
+                    </ons-col>
+                    <ons-col width="25%">
+                        <div class="reserve_button">
+                            <button class="button button--light reserve_button_customize" @click="reservedpage">Reserve</button>
+                        </div>
+                    </ons-col>
+                </ons-row>
+            </div>
 
     </v-ons-page>
 </template>

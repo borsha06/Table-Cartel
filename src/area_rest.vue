@@ -40,9 +40,16 @@
                     </div>
                 </ons-col>
             </ons-row>
+
         </div>
 
 
+
+
+            <div v-if="loading" class="loading" v-cloak>
+                <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                <!--<span>Loading...</span>-->
+            </div>
 
         <!--Footer Carousel-->
         <div class="cuisine_footer_carousel">
@@ -66,6 +73,7 @@
             </ons-carousel>
         </div>
         <!--Footer Carousel-->
+
 
     </v-ons-page>
 </template>

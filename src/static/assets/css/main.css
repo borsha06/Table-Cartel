@@ -50,7 +50,7 @@
     z-index: 9999;
     overflow: auto;
     position: relative;
-    height: 319px;
+    height: 100%;
 
 }
 .header_top{
@@ -144,8 +144,10 @@ text-align: center !important;
 }
 .carousel_heading{
     position: absolute;
-    top: -44px;
+    top: -40px;
     padding-left: 13px;
+        background: #f3f5f7;
+        width:100%;
 
 
 }
@@ -656,6 +658,7 @@ font-size: 10px;
     color: #000;
     margin-top: -42px;
     background: #f3f5f7;
+    width:100%;
 
 }
 .hellojorge_carousel_heading p{
