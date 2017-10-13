@@ -75,7 +75,7 @@
                        transition="nice-modal-fade"
                        :min-width="200"
                        :min-height="200"
-                       :pivot-y="0.65"
+                       :pivot-y="0.60"
                        width="60%"
                        height="auto"
                        :delay="100"
@@ -89,7 +89,7 @@
                        transition="nice-modal-fade"
                        :min-width="200"
                        :min-height="200"
-                       :pivot-y="0.65"
+                       :pivot-y="0.60"
                        width="60%"
                        height="auto"
                        :delay="100"
@@ -103,7 +103,7 @@
                        transition="nice-modal-fade"
                        :min-width="200"
                        :min-height="200"
-                       :pivot-y="0.65"
+                       :pivot-y="0.60"
                        width="60%"
                        height="auto"
                        :delay="100"
@@ -116,7 +116,7 @@
                        transition="nice-modal-fade"
                        :min-width="200"
                        :min-height="200"
-                       :pivot-y="0.65"
+                       :pivot-y="0.60"
                        width="60%"
                        height="auto"
                        :delay="100"
@@ -294,11 +294,11 @@
 ::placeholder{
     color:black;
     text-transform: uppercase;
-    font-size:9px;
+    font-size:10px;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
     padding-top:-3px;
-};
+}
     .button{
         float:left;
     }

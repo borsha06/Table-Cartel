@@ -6,11 +6,11 @@
 
 <script>
   import Vue from 'vue'
-  import welcome from './welcome';
+  import login from './login'
   export default {
     data() {
       return {
-        pageStack: [welcome]
+        pageStack: [login]
       }
     }
   }

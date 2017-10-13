@@ -7,7 +7,15 @@
                 <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
+
         <div class="hello_jorge_bg">
+            <ons-row align="right">
+                <ons-col width="100%">
+                    <div class="cross_icon">
+                        <i  @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </div>
+                </ons-col>
+            </ons-row>
             <ons-row align="" class="hello_jorge_headding_area">
                 <ons-col width="100%">
                     <div class="hello_jorge_heading">
@@ -100,6 +108,9 @@
             },
             welcomepage () {
                 this.pageStack.push(welcome)
+            },
+            pop () {
+                this.pageStack.pop()
             }
         },
         props: ['pageStack']

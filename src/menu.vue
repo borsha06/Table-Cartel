@@ -10,8 +10,8 @@
                     </div>
                 </ons-col>
                 <ons-col width="15%">
-                    <div class="back_icon">                        
-                       <img :src="backarrow" alt="icon" />
+                    <div @click="pop" class="back_icon">
+                       <img  :src="backarrowlogo" alt="icon" />
                     </div>
                 </ons-col>
             </ons-row>
@@ -88,20 +88,23 @@
     import connect from "assets/connect.png"
     import logo from "assets/logo.png"
     import axios from 'axios'
-    import { dataBus } from './main.js';
     export default {
         data () {
             return {
                 notificationicon: notification,
                 leftmenuicon: leftmenuicon,
                 rightmenuicon: rightmenuicon,
-                backarrow: backarrow,
+                backarrowlogo: backarrow,
                 connect: connect,
                 logo: logo,
                 footercarousel: carousel,
                 restaurant: {},
-                food: dataBus.$data,
                 loading:false,
+            }
+        },
+        methods: {
+            pop() {
+                this.pageStack.pop();
             }
         },
         props: ['pageStack']
@@ -113,18 +116,7 @@
     height:100%;
 
 }
-::-webkit-placeholder{
-color:#444;
-font-family: 'Nunito', sans-serif;
 
-
-}
-::-moz-placeholder{
-color:#444;
-font-family: 'Nunito', sans-serif;
-
-
-}
 ::placeholder{
 color:#444;
 font-family: 'Nunito', sans-serif;
@@ -134,11 +126,6 @@ font-weight:bold;
 }
     .button{
         float:left;
-    }
-    .loading{
-        text-align: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
    .card--material{
             border-radius: 12px;

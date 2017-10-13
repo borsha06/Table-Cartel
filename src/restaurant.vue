@@ -29,7 +29,6 @@
                         </div>
                     </ons-col>
                 </ons-row>
-
             </div>
             <div class="vapianos_order_load_wallet">
                 <ons-row align="left">
@@ -89,7 +88,7 @@
                     </ons-col>
                     <ons-col width="50%">
                         <div class="vapianos_menu_button_text">
-                            <button class="button button--light">Menu</button>
+                            <button class="button button--light" @click="menupage">Menu</button>
                         </div>
                     </ons-col>
                     <ons-col width="25%">
@@ -190,6 +189,7 @@
     import cuisine from './cuisine'
     import area from './area'
     import reserved from './reserved'
+    import menus from './menu'
     export default {
         data () {
             return {
@@ -236,6 +236,9 @@
                         }
                     }
                 });
+            },
+            menupage() {
+                this.pageStack.push(menus)
             },
             pop() {
                 this.pageStack.pop();

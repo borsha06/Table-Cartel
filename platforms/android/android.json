@@ -1,58 +1,58 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
-    },
-    "config_munge": {
-        "files": {
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "AndroidManifest.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-                            "count": 1
-                        }
-                    ]
-                }
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+              "count": 1
             }
+          ]
         }
-    },
-    "installed_plugins": {
-        "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.example.helloworld"
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            }
+          ]
         }
-    },
-    "dependent_plugins": {},
-    "modules": [
-        {
-            "id": "cordova-plugin-network-information.network",
-            "file": "plugins/cordova-plugin-network-information/www/network.js",
-            "pluginId": "cordova-plugin-network-information",
-            "clobbers": [
-                "navigator.connection",
-                "navigator.network.connection"
-            ]
-        },
-        {
-            "id": "cordova-plugin-network-information.Connection",
-            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
-            "pluginId": "cordova-plugin-network-information",
-            "clobbers": [
-                "Connection"
-            ]
-        }
-    ],
-    "plugin_metadata": {
-        "cordova-plugin-network-information": "1.3.3"
+      }
     }
+  },
+  "installed_plugins": {
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.example.helloworld"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-network-information.network",
+      "file": "plugins/cordova-plugin-network-information/www/network.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "navigator.connection",
+        "navigator.network.connection"
+      ]
+    },
+    {
+      "id": "cordova-plugin-network-information.Connection",
+      "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "Connection"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-network-information": "1.3.3"
+  }
 }

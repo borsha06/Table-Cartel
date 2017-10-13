@@ -51,7 +51,7 @@
                         </ons-col>
                         <ons-col width="100%">
                             <div class="reserve_second_top_button">
-                                <input type="number" class="text-input" v-model="people" placeholder="Headcount" value="">
+                                <input type="number" class="text-input" v-model="people" placeholder="Headcount" value="" >
                                 <!-- <button class="button button--light">Headcount</button> -->
                             </div>
                         </ons-col>
@@ -81,7 +81,7 @@
                            transition="nice-modal-fade"
                            :min-width="200"
                            :min-height="200"
-                           :pivot-y="0.65"
+                           :pivot-y="0.60"
                            width="60%"
                            height="auto"
                            :delay="100"
@@ -95,7 +95,7 @@
                            transition="nice-modal-fade"
                            :min-width="200"
                            :min-height="200"
-                           :pivot-y="0.65"
+                           :pivot-y="0.60"
                            width="60%"
                            height="auto"
                            :delay="100"
@@ -109,7 +109,7 @@
                            transition="nice-modal-fade"
                            :min-width="200"
                            :min-height="200"
-                           :pivot-y="0.65"
+                           :pivot-y="0.60"
                            width="60%"
                            height="auto"
                            :delay="100"
@@ -122,7 +122,7 @@
                            transition="nice-modal-fade"
                            :min-width="200"
                            :min-height="200"
-                           :pivot-y="0.65"
+                           :pivot-y="0.60"
                            width="60%"
                            height="auto"
                            :delay="100"
@@ -206,7 +206,7 @@
                 order_time: '',
                 confirm:'Yes',
                 footercarousel: carousel,
-                otificationicon: notification,
+                notificationicon: notification,
                 restaurants: {},
                 food: dataBus.$data,
                 loading:false,
@@ -330,11 +330,11 @@
 ::placeholder{
     color:black;
     text-transform: uppercase;
-    font-size:9px;
+    font-size:10px;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
     padding-top:-3px;
-};
+}
     .button{
         float:left;
     }
