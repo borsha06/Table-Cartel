@@ -32,11 +32,10 @@
                 <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
                 <!--<span>Loading...</span>-->
             </div>
-        </div>
 
 
         <!--Footer Carousel-->
-        <div class="cuisine_footer_carousel">
+         <div class="cuisine_footer_carousel">
             <ons-row class="carousel_heading">
                 <p>Today's Special</p>
             </ons-row>
@@ -47,7 +46,7 @@
                         <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
                         <a href="" v-else><img :src="footercarousel" /></a>
 
-                        <!--<img :src="footercarousel" alt="" />-->
+                        <img :src="footercarousel" alt="" />
                         <div class="image_overlay_content">
                             <h4 v-html="foo.short_title"></h4>
                             <p v-html="foo.short_content"> </p>
@@ -56,8 +55,15 @@
                 </ons-carousel-item>
 
             </ons-carousel>
-        </div>
+        </div> 
         <!--Footer Carousel-->
+
+
+            
+        </div>
+
+
+
 
 
     </v-ons-page>

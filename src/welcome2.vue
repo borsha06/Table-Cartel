@@ -27,7 +27,7 @@
         </div>
 
         <!--Footer Carousel-->
-        <div class="cuisine_footer_carousel" id="hellojorge-area">
+        <ons-row class="cuisine_footer_carousel" id="hellojorge-area">
 
             <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
                 <ons-row class="hellojorge_carousel_heading">
@@ -47,8 +47,6 @@
                 </ons-carousel-item>
 
             </ons-carousel>
-        </div>
-        <!--Footer Carousel-->
 
         <div class="hello_jorge_footer_option">
             <ons-row align="" class="hello_jorge_footer_area">
@@ -69,6 +67,11 @@
                 </ons-col>
             </ons-row>
         </div>
+
+            
+        </ons-row>
+        <!--Footer Carousel-->
+
 
 
 

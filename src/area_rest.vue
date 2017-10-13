@@ -32,7 +32,6 @@
                 <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
                 <!--<span>Loading...</span>-->
             </div>
-        </div>
         <!--Footer Carousel-->
         <div class="cuisine_footer_carousel">
             <ons-row class="carousel_heading">
@@ -56,6 +55,8 @@
             </ons-carousel>
         </div>
         <!--Footer Carousel-->
+        </div>
+
 
 
 
