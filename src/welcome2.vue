@@ -12,14 +12,14 @@
                 <ons-col width="100%">
                     <div class="hello_jorge_heading">
                         <h2>Hello Jorge!</h2>
-                        <p>Today is good day to eat out. Why not plan something?</p>
+                        <p>Today is good day to<br /> eat out. Why not plan something?</p>
                     </div>
                 </ons-col>
             </ons-row>
             <ons-row align="" class="hello_jorge_button_area">
                 <ons-col width="100%">
                     <div class="hello_jorge_button">
-                        <!--<button class="button button&#45;&#45;light nay_button" @click="nyapage">Nay!</button>-->
+                        <button class="button button--light nay_button" @click="nyapage">Nay!</button>
                         <button class="button button--light yay_button" @click="yaypage">Yay!</button>
                     </div>
                 </ons-col>
@@ -27,27 +27,33 @@
         </div>
 
         <!--Footer Carousel-->
-        <ons-row class="cuisine_footer_carousel" id="hellojorge-area">
 
-            <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+        <div class="cuisine_footer_carousel" id="hellojorge-area">
+
+            <ons-row class="cuisine_footer_carousel" id="hellojorge-area">
                 <ons-row class="hellojorge_carousel_heading">
                     <p>Today's Special</p>
                 </ons-row>
-                <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
-                    <div class="image_footer">
-                        <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
-                        <a href="" v-else><img :src="footercarousel" /></a>
 
-                        <!--<img :src="footercarousel" alt="" />-->
-                        <div class="image_overlay_content">
-                            <h4 v-html="foo.short_title"></h4>
-                            <p v-html="foo.short_content"> </p>
+                <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+
+                    <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
+                        <div class="image_footer">
+                            <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
+                            <a href="" ><img :src="footercarousel" /></a>
+
+                            <!--<img :src="footercarousel" alt="" />-->
+                            <div class="image_overlay_content">
+                                <h4 v-html="foo.short_title"></h4>
+                                <p v-html="foo.short_content"> </p>
+                            </div>
                         </div>
-                    </div>
-                </ons-carousel-item>
+                    </ons-carousel-item>
 
-            </ons-carousel>
-
+                </ons-carousel>
+            </ons-row>
+        </div>
+        <!--Footer Carousel-->
         <div class="hello_jorge_footer_option">
             <ons-row align="" class="hello_jorge_footer_area">
                 <ons-col width="25%">
@@ -68,15 +74,6 @@
             </ons-row>
         </div>
 
-            
-        </ons-row>
-        <!--Footer Carousel-->
-
-
-
-
-
-
     </v-ons-page>
 </template>
 
@@ -87,6 +84,7 @@
     import footerlogo from "assets/apple-touch-icon.png"
     import notification from "assets/notification.svg"
     import axios from 'axios'
+    import VModal from 'vue-js-modal';
     import {dataBus} from './static/assets/js/custom.js';
     import yay from "./yay"
     import nya from "./nya"
@@ -95,8 +93,8 @@
         data () {
             return {
                 footerlogo: footerlogo,
-                notificationicon: notification,
                 footercarousel: carousel,
+                notificationicon: notification,
                 restaurant: {},
                 food: dataBus.$data,
                 loading:false,
@@ -117,8 +115,8 @@
     }
 </script>
 <style scoped>
-    .page--material__background{
-        background:#A2A2A2 !important;
+    .welcome_bg{
+
 
     }
     .button{

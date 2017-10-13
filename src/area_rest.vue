@@ -11,8 +11,7 @@
             <ons-row align="right">
                 <ons-col width="100%">
                     <div class="cross_icon">
-                        <!--  <i class="fa fa-times-circle-o" aria-hidden="true"></i> -->
-                            <img @click="pop" :src="close" alt="close" />
+                        <i  @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
                     </div>
                 </ons-col>
             </ons-row>
@@ -42,33 +41,38 @@
                 </ons-col>
             </ons-row>
 
-        <!--Footer Carousel-->
-         <div class="cuisine_footer_carousel">
-            <ons-row class="carousel_heading">
-                    <p>Today's Special</p>
-                </ons-row>
-            <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+        </div>
 
+
+
+
+            <div v-if="loading" class="loading" v-cloak>
+                <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                <!--<span>Loading...</span>-->
+            </div>
+
+        <!--Footer Carousel-->
+        <div class="cuisine_footer_carousel">
+            <ons-row class="carousel_heading">
+                <p>Today's Special</p>
+            </ons-row>
+            <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
                 <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
                     <div class="image_footer">
                         <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
                         <a href="" v-else><img :src="footercarousel" /></a>
-                        <img :src="footercarousel" alt="" />
+
+                        <!--<img :src="footercarousel" alt="" />-->
                         <div class="image_overlay_content">
                             <h4 v-html="foo.short_title"></h4>
                             <p v-html="foo.short_content"> </p>
                         </div>
                     </div>
                 </ons-carousel-item>
+
             </ons-carousel>
-        </div> 
-        <!--Footer Carousel-->
-
-
         </div>
-
-
-
+        <!--Footer Carousel-->
 
 
     </v-ons-page>
@@ -77,7 +81,6 @@
 <script>
     import carousel from "assets/carousel.jpg"
     import notification from "assets/notification.svg"
-    import closeicon from "assets/close.svg"
     import axios from 'axios'
     import cuisine from './cuisine'
     import restaurant from './restaurant'
@@ -88,7 +91,6 @@
             return {
                 footercarousel: carousel,
                 notificationicon: notification,
-                close: closeicon,
                 restauranttexo: {},
                 food: dataBus.$data
             }

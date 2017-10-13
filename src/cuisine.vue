@@ -41,7 +41,6 @@
 			  <p>Today's Special</p>
 		  </ons-row>
 		  <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-
 			  <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
 				  <div class="image_footer">
 					  <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>

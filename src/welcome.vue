@@ -25,12 +25,16 @@
                 </ons-col>
             </ons-row>
         </div>
-        
+
         <!--Footer Carousel-->
+
+        <div class="cuisine_footer_carousel" id="hellojorge-area">
+
         <ons-row class="cuisine_footer_carousel" id="hellojorge-area">
                 <ons-row class="hellojorge_carousel_heading">
                     <p>Today's Special</p>
                 </ons-row>
+
             <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
 
                 <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
@@ -47,6 +51,9 @@
                 </ons-carousel-item>
 
             </ons-carousel>
+        </ons-row>
+        </div>
+            <!--Footer Carousel-->
             <div class="hello_jorge_footer_option">
                 <ons-row align="" class="hello_jorge_footer_area">
                     <ons-col width="25%">
@@ -67,15 +74,6 @@
                 </ons-row>
             </div>
 
-        </ons-row>
-        <!--Footer Carousel-->
-
-
-
-
-
-
-
     </v-ons-page>
 </template>
 
@@ -86,6 +84,7 @@
     import footerlogo from "assets/apple-touch-icon.png"
     import notification from "assets/notification.svg"
     import axios from 'axios'
+    import VModal from 'vue-js-modal';
     import {dataBus} from './static/assets/js/custom.js';
     import yay from "./yay"
     import nya from "./nya"
