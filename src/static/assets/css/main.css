@@ -359,7 +359,6 @@ color: #191919;
 }
 .icon{
     width: 35px;
-    background: #02C793;
     height: 35px;
     border-radius: 50%;
     text-align: center;
@@ -367,7 +366,7 @@ color: #191919;
     float:left;
 }
 .icon img{
-    width: 65%;
+    width: 100%;
     padding-top: 4px;
 }
 .margin-left{
@@ -548,6 +547,14 @@ padding:0px 13px;
 }
 .reserved_cross_icon{
     top: -25px;
+    position: relative;
+    right: 0px;
+    font-size: 30px;
+    float: right;
+
+}
+.nay_cross_icon{
+    top: 10px;
     position: relative;
     right: 0px;
     font-size: 30px;

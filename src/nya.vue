@@ -11,7 +11,7 @@
         <div class="hello_jorge_bg">
             <ons-row align="right">
                 <ons-col width="100%">
-                    <div class="cross_icon">
+                    <div class="nay_cross_icon">
                         <i  @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
                     </div>
                 </ons-col>
