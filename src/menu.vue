@@ -112,7 +112,7 @@
 </script>
 <style scoped>
 .login_bg{
-    background:#A2A2A2 !important;
+    background:#f3f5f7 !important;
     height:100%;
 
 }

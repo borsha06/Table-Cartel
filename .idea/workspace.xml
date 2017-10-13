@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/assets/css/main.css" afterPath="$PROJECT_DIR$/src/static/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/area.vue" afterPath="$PROJECT_DIR$/src/area.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/arearest.vue" afterPath="$PROJECT_DIR$/src/arearest.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cuisine.vue" afterPath="$PROJECT_DIR$/src/cuisine.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.vue" afterPath="$PROJECT_DIR$/src/login.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/menu.vue" afterPath="$PROJECT_DIR$/src/menu.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nya.vue" afterPath="$PROJECT_DIR$/src/nya.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/welcome.vue" afterPath="$PROJECT_DIR$/src/welcome.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/welcome2.vue" afterPath="$PROJECT_DIR$/src/welcome2.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/yay.vue" afterPath="$PROJECT_DIR$/src/yay.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,23 +24,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
+      <file leaf-file-name="cuisine.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cuisine.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="142" column="49" lean-forward="false" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#2156#2198#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reserved2.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
+      <file leaf-file-name="arearest.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/arearest.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="174" column="34" lean-forward="true" selection-start-line="152" selection-start-column="11" selection-end-line="174" selection-end-column="34" />
+            <state relative-caret-position="68">
+              <caret line="40" column="82" lean-forward="false" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
               <folding>
-                <element signature="e#9004#9026#0" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+                <marker date="1507874689706" expanded="true" signature="2565:2679" ph="{&quot;footercarousel&quot;: carousel...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="area.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/area.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+              <folding>
+                <element signature="e#2735#2777#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,7 +65,7 @@
       <file leaf-file-name="reserved.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reserved.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="-2125">
               <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="55" />
               <folding>
                 <element signature="e#8095#8137#0" expanded="true" />
@@ -51,14 +74,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restaurant.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/restaurant.vue">
+      <file leaf-file-name="cuisine_rest.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="241" column="14" lean-forward="false" selection-start-line="239" selection-start-column="11" selection-end-line="241" selection-end-column="14" />
-              <folding>
-                <element signature="e#8276#8316#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="262">
+              <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,45 +87,20 @@
       <file leaf-file-name="yay.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yay.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="68" column="30" lean-forward="false" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+            <state relative-caret-position="126">
+              <caret line="47" column="45" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restaurant2.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/restaurant2.vue">
+      <file leaf-file-name="welcome.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/welcome.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="30" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="143">
+              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
-                <element signature="e#8283#8323#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/menu.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-              <folding>
-                <element signature="e#3543#3598#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nya.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nya.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#3182#3224#0" expanded="true" />
+                <element signature="e#3292#3334#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,23 +109,24 @@
       <file leaf-file-name="welcome2.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="170">
+              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
-                <element signature="e#3264#3306#0" expanded="true" />
-                <marker date="1507868172887" expanded="true" signature="3748:3905" ph="{&quot;footerlogo&quot;: footerlogo...}" />
+                <element signature="e#3291#3333#0" expanded="true" />
+                <marker date="1507874877489" expanded="true" signature="3775:3932" ph="{&quot;footerlogo&quot;: footerlogo...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/welcome.vue">
+      <file leaf-file-name="nya.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nya.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+            <state relative-caret-position="765">
+              <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
               <folding>
-                <element signature="e#3280#3322#0" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#3194#3236#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,6 +151,7 @@
       <find>f3f5f7</find>
       <find>a</find>
       <find>background</find>
+      <find>gray_bg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,24 +166,24 @@
         <option value="$PROJECT_DIR$/src/Page2.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/static/assets/js/custom.js" />
-        <option value="$PROJECT_DIR$/src/area.vue" />
         <option value="$PROJECT_DIR$/src/area_rest.vue" />
-        <option value="$PROJECT_DIR$/src/arearest.vue" />
-        <option value="$PROJECT_DIR$/src/cuisine.vue" />
         <option value="$PROJECT_DIR$/src/cuisine_rest.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/login.vue" />
         <option value="$PROJECT_DIR$/src/restaurant.vue" />
-        <option value="$PROJECT_DIR$/src/menu.vue" />
         <option value="$PROJECT_DIR$/src/restaurant2.vue" />
         <option value="$PROJECT_DIR$/src/reserved2.vue" />
         <option value="$PROJECT_DIR$/src/reserved.vue" />
+        <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/src/menu.vue" />
+        <option value="$PROJECT_DIR$/src/login.vue" />
+        <option value="$PROJECT_DIR$/src/cuisine.vue" />
+        <option value="$PROJECT_DIR$/src/arearest.vue" />
+        <option value="$PROJECT_DIR$/src/area.vue" />
+        <option value="$PROJECT_DIR$/src/yay.vue" />
         <option value="$PROJECT_DIR$/src/welcome.vue" />
         <option value="$PROJECT_DIR$/src/welcome2.vue" />
         <option value="$PROJECT_DIR$/src/nya.vue" />
-        <option value="$PROJECT_DIR$/src/yay.vue" />
-        <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -278,7 +276,7 @@
       <workItem from="1507442440680" duration="15170000" />
       <workItem from="1507572355063" duration="353000" />
       <workItem from="1507606785260" duration="24398000" />
-      <workItem from="1507693143002" duration="69219000" />
+      <workItem from="1507693143002" duration="72378000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -298,7 +296,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109794000" />
+    <option name="totallyTimeSpent" value="112953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -577,64 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/area.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="73" column="57" lean-forward="false" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/area_rest.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="68" column="57" lean-forward="false" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
-          <folding>
-            <marker date="1507814262999" expanded="true" signature="2948:3104" ph="{&quot;footercarousel&quot;: carousel...}" />
-            <marker date="1507814262999" expanded="true" signature="2948:3114" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="2948:4046" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="2948:4055" ph="..." />
-            <marker date="1507814262999" expanded="true" signature="3135:3175" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3192:3237" ph="{&quot;$route&quot;: 'fetchData'...}" />
-            <marker date="1507814262999" expanded="true" signature="3256:4010" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3283:3891" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3487:3774" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3812:3876" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3910:3963" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3984:4000" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="4070:4224" ph="..." />
-            <marker date="1507814262999" expanded="true" signature="4083:4110" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="4123:4215" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/arearest.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="71" column="57" lean-forward="false" selection-start-line="71" selection-start-column="57" selection-end-line="71" selection-end-column="57" />
-          <folding>
-            <marker date="1507814262999" expanded="true" signature="2654:2768" ph="{&quot;footercarousel&quot;: carousel...}" />
-            <marker date="1507814262999" expanded="true" signature="2654:2778" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="2654:3927" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="2654:3936" ph="..." />
-            <marker date="1507814262999" expanded="true" signature="2799:2839" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="2856:2901" ph="{&quot;$route&quot;: 'fetchData'...}" />
-            <marker date="1507814262999" expanded="true" signature="2920:3891" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="2947:3507" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3151:3390" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3428:3492" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3538:3808" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3576:3792" ph="{&quot;extends&quot;: restaurant2...}" />
-            <marker date="1507814262999" expanded="true" signature="3647:3774" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3680:3752" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3827:3880" ph="{...}" />
-            <marker date="1507814262999" expanded="true" signature="3951:4080" ph="..." />
-            <marker date="1507814262999" expanded="true" signature="3962:3983" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hello.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -662,17 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#2686#2728#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -691,27 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cuisine.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="120" column="8" lean-forward="false" selection-start-line="118" selection-start-column="7" selection-end-line="120" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2163#2205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="e#1581#1622#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/back-arrow-circular-symbol.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -720,33 +628,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/welcome.vue">
+    <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+        <state relative-caret-position="401">
+          <caret line="174" column="34" lean-forward="true" selection-start-line="152" selection-start-column="11" selection-end-line="174" selection-end-column="34" />
           <folding>
-            <element signature="e#3280#3322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#3264#3306#0" expanded="true" />
-            <marker date="1507868172887" expanded="true" signature="3748:3905" ph="{&quot;footerlogo&quot;: footerlogo...}" />
+            <element signature="e#9004#9026#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/menu.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="211">
+          <caret line="117" column="1" lean-forward="true" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
           <folding>
             <element signature="e#3543#3598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="141" column="8" lean-forward="false" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding>
+            <element signature="e#1574#1615#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -761,9 +676,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/area_rest.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="68" column="57" lean-forward="false" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
+          <folding>
+            <marker date="1507814262999" expanded="true" signature="2948:3104" ph="{&quot;footercarousel&quot;: carousel...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cuisine.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#2156#2198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yay.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="47" column="45" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nya.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#3194#3236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/welcome.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#3292#3334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#3291#3333#0" expanded="true" />
+            <marker date="1507874877489" expanded="true" signature="3775:3932" ph="{&quot;footerlogo&quot;: footerlogo...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/restaurant.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
+        <state relative-caret-position="1547">
           <caret line="241" column="14" lean-forward="false" selection-start-line="239" selection-start-column="11" selection-end-line="241" selection-end-column="14" />
           <folding>
             <element signature="e#8276#8316#0" expanded="true" />
@@ -771,30 +755,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nya.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3182#3224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="174" column="34" lean-forward="true" selection-start-line="152" selection-start-column="11" selection-end-line="174" selection-end-column="34" />
-          <folding>
-            <element signature="e#9004#9026#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reserved.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="-2125">
           <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="55" />
           <folding>
             <element signature="e#8095#8137#0" expanded="true" />
@@ -802,19 +765,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/yay.vue">
+    <entry file="file://$PROJECT_DIR$/src/arearest.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="68" column="30" lean-forward="false" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="40" column="82" lean-forward="false" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+            <marker date="1507874689706" expanded="true" signature="2565:2679" ph="{&quot;footercarousel&quot;: carousel...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/src/area.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="142" column="49" lean-forward="false" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+          <folding>
+            <element signature="e#2735#2777#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

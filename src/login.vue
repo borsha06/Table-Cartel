@@ -1,5 +1,5 @@
 <template>
-    <v-ons-page id="gray_bg">
+    <v-ons-page id="">
         <div class="login_bg">
             <ons-row align="center" class="logo-area">
                 <ons-col width="100%">
@@ -62,7 +62,7 @@
 </script>
 <style scoped>
     .login_bg{
-        background:#A2A2A2 !important;
+        background:#f3f5f7 !important;
         height:100%;
 
     }
