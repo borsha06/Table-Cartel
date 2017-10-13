@@ -1,5 +1,5 @@
 <template>
-  <v-ons-page id="gray_bg">
+  <v-ons-page id="">
   	<div class="header_top">
   		<ons-row align="top" width="100%">
 		    <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
