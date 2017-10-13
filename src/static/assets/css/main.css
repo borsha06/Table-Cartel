@@ -207,7 +207,7 @@ text-align: center !important;
     position:relative;
 }
 .vapianos_cross_icon{
-    top: 10px;
+    top: 20px;
     position: absolute;
     right: 10px;
     font-size: 30px;
@@ -553,7 +553,7 @@ padding:0px 13px;
 
 }
 .reserved_cross_icon{
-    top: -25px;
+    top: -17px;
     position: relative;
     right: 0px;
     font-size: 30px;
@@ -568,7 +568,7 @@ padding:0px 13px;
     float: right;
 
 }
-.cross_icon img, .nay_cross_icon img{
+.cross_icon img, .nay_cross_icon img, .reserved_cross_icon img,.vapianos_cross_icon img{
     width:30px;
 }
 .reserved_carousel_heading{
