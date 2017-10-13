@@ -25,7 +25,8 @@
                     </ons-col>
                     <ons-col width="20%">
                         <div class="vapianos_cross_icon">
-                            <i @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                             <!--  <i class="fa fa-times-circle-o" aria-hidden="true"></i> -->
+                                <img @click="pop" :src="close" alt="close" />
                         </div>
                     </ons-col>
                 </ons-row>
@@ -182,6 +183,7 @@
     import parking from "assets/parking.svg"
     import menu from "assets/menu.svg"
     import notification from "assets/notification.svg"
+    import closeicon from "assets/close.svg"
     import alarm from "assets/alarm-clock.svg"
     import payment from "assets/payment.svg"
     import phonecall from "assets/phone-call.svg"
@@ -197,6 +199,7 @@
                 menuicon: menu,
                 alarmicon: alarm,
                 notificationicon: notification,
+                close: closeicon,
                 paymenticon: payment,
                 parkingicon: parking,
                 restauranttexo: {},

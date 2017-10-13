@@ -17,7 +17,8 @@
                 </ons-col>
                 <ons-col width="20%">
                     <div class="cross_icon">
-                        <i @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                        <!--  <i class="fa fa-times-circle-o" aria-hidden="true"></i> -->
+                        <img @click="pop" :src="close" alt="close" />
                     </div>
                 </ons-col>
             </ons-row>
@@ -71,6 +72,7 @@
 
 <script>
     import carousel from "assets/carousel.jpg"
+    import closeicon from "assets/close.svg"
     import notification from "assets/notification.svg"
     import axios from 'axios'
     import restaurant from './restaurant'
@@ -79,6 +81,7 @@
         data () {
             return {
                 notificationicon: notification,
+                close: closeicon,
                 footercarousel: carousel,
                 restaurant: {},
                 food: dataBus.$data,

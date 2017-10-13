@@ -18,7 +18,8 @@
                     </ons-col>
                     <ons-col width="20%">
                         <div class="reserved_cross_icon">
-                            <i @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                             <!--  <i class="fa fa-times-circle-o" aria-hidden="true"></i> -->
+                             <img @click="pop" :src="close" alt="close" />
                         </div>
                     </ons-col>
                 </ons-row>
@@ -180,6 +181,7 @@
     import carousel from "assets/carousel.jpg"
     import paymenticon from "assets/carousel.jpg"
 	import notification from "assets/notification.svg"
+    import closeicon from "assets/close.svg"
     import axios from 'axios'
     import $ from 'jquery';
     import VModal from 'vue-js-modal';
@@ -198,6 +200,7 @@
                 order_time: '',
                 confirm:'Yes',
 				notificationicon: notification,
+                close: closeicon,
                 footercarousel: carousel,
                 restaurants: {},
                 food: dataBus.$data,

@@ -12,7 +12,8 @@
             <ons-row align="right">
                 <ons-col width="100%">
                     <div class="nay_cross_icon">
-                        <i  @click="pop" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                        <!--  <i class="fa fa-times-circle-o" aria-hidden="true"></i> -->
+                        <img @click="pop" :src="close" alt="close" />
                     </div>
                 </ons-col>
             </ons-row>
@@ -80,6 +81,7 @@
 
 <script>
     import carousel from "assets/carousel.jpg"
+    import closeicon from "assets/close.svg"
     import footerlogo from "assets/apple-touch-icon.png"
     import notification from "assets/notification.svg"
     import axios from 'axios'
@@ -91,6 +93,7 @@
         data () {
             return {
                 footerlogo: footerlogo,
+                close: closeicon,
                 notificationicon: notification,
                 footercarousel: carousel,
                 restaurant: {},
