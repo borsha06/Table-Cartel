@@ -12,7 +12,7 @@
             <ons-row align="center" class="loginarea">
                 <ons-col width="100%">
                     <div class="login_form">                        
-                        <input type="text" class="text-input form_pass" placeholder="Jorge Sims" value="" />
+                        <input type="text" class="text-input form_name" placeholder="Jorge Sims" value="" />
                         <input type="password" class="text-input form_pass" placeholder="Password" value="" />
                     </div>
                 </ons-col>
