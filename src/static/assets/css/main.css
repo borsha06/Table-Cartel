@@ -699,6 +699,7 @@ font-size: 10px;
 }
 .logos img{
     width:100%;
+    padding-top: 40px;
 
 }
 /*Login Form*/
@@ -713,6 +714,7 @@ font-size: 10px;
     width: 100%;
     text-align: center;
     background: #fff;
+    margin-top: 3px;
 }
 .loginarea{
     background: #f3f5f7;
@@ -838,6 +840,7 @@ font-size: 10px;
 .menu_footer_right_icon{}
 .menu_footer_right_icon img{
     width: 25px;
+    padding-left: 15px;
 
 }
 .menu_footer_row_black{
@@ -857,6 +860,7 @@ font-size: 10px;
 .menu_footer_settings{
     font-size: 12px;
     text-align: center;
+    padding-left: 12px;
 
 }
 .menu_footer_fixed{

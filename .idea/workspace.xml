@@ -16,35 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="arearest.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/arearest.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <marker date="1507894630692" expanded="true" signature="2745:2907" ph="{&quot;footercarousel&quot;: carousel...}" />
-                <marker date="1507894630692" expanded="true" signature="2745:2917" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="2745:4066" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="2745:4075" ph="..." />
-                <marker date="1507894630692" expanded="true" signature="2793:2907" ph="{&quot;footercarousel&quot;: carousel...}" />
-                <marker date="1507894630692" expanded="true" signature="2938:2978" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="2995:3040" ph="{&quot;$route&quot;: 'fetchData'...}" />
-                <marker date="1507894630692" expanded="true" signature="3059:4030" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="3086:3646" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="3290:3529" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="3567:3631" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="3677:3947" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="3715:3931" ph="{&quot;extends&quot;: restaurant2...}" />
-                <marker date="1507894630692" expanded="true" signature="3786:3913" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="3819:3891" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="3966:4019" ph="{...}" />
-                <marker date="1507894630692" expanded="true" signature="4090:4219" ph="..." />
-                <marker date="1507894630692" expanded="true" signature="4101:4122" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="area_rest.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/area_rest.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,9 +100,21 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="570" column="64" lean-forward="false" selection-start-line="570" selection-start-column="64" selection-end-line="570" selection-end-column="64" />
+            <state relative-caret-position="254">
+              <caret line="711" column="1" lean-forward="true" selection-start-line="711" selection-start-column="1" selection-end-line="711" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/menu.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="64" />
+              <folding>
+                <element signature="e#3543#3598#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/restaurant.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="182" column="11" lean-forward="true" selection-start-line="182" selection-start-column="11" selection-end-line="182" selection-end-column="11" />
+              <caret line="182" column="11" lean-forward="false" selection-start-line="182" selection-start-column="11" selection-end-line="182" selection-end-column="11" />
               <folding>
                 <element signature="e#8352#8392#0" expanded="true" />
               </folding>
@@ -152,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/src/restaurant2.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="183" column="11" lean-forward="true" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
+              <caret line="183" column="11" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
               <folding>
                 <element signature="e#8356#8396#0" expanded="true" />
               </folding>
@@ -197,6 +180,8 @@
       <find>nay_cross_icon</find>
       <find>reserved_cross_icon</find>
       <find>vapianos_cross_icon</find>
+      <find>.menu_footer_right_icon img</find>
+      <find>from_pass</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -306,7 +291,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../map" />
     <property name="nodejs_interpreter_path" value="C:/Program Files (x86)/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
@@ -342,7 +327,7 @@
       <workItem from="1507442440680" duration="15170000" />
       <workItem from="1507572355063" duration="353000" />
       <workItem from="1507606785260" duration="24398000" />
-      <workItem from="1507693143002" duration="82327000" />
+      <workItem from="1507693143002" duration="84749000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -362,7 +347,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122902000" />
+    <option name="totallyTimeSpent" value="125324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -671,16 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="117" column="1" lean-forward="true" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
-          <folding>
-            <element signature="e#3543#3598#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -894,7 +869,7 @@
     <entry file="file://$PROJECT_DIR$/src/restaurant2.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="183" column="11" lean-forward="true" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
+          <caret line="183" column="11" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
           <folding>
             <element signature="e#8356#8396#0" expanded="true" />
           </folding>
@@ -904,17 +879,27 @@
     <entry file="file://$PROJECT_DIR$/src/restaurant.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="182" column="11" lean-forward="true" selection-start-line="182" selection-start-column="11" selection-end-line="182" selection-end-column="11" />
+          <caret line="182" column="11" lean-forward="false" selection-start-line="182" selection-start-column="11" selection-end-line="182" selection-end-column="11" />
           <folding>
             <element signature="e#8352#8392#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="64" />
+          <folding>
+            <element signature="e#3543#3598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="570" column="64" lean-forward="false" selection-start-line="570" selection-start-column="64" selection-end-line="570" selection-end-column="64" />
+        <state relative-caret-position="254">
+          <caret line="711" column="1" lean-forward="true" selection-start-line="711" selection-start-column="1" selection-end-line="711" selection-end-column="1" />
           <folding />
         </state>
       </provider>
