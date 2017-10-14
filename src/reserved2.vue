@@ -52,7 +52,7 @@
                         </ons-col>
                         <ons-col width="100%">
                             <div class="reserve_second_top_button">
-                                <input type="number" class="text-input" v-model="people" placeholder="Headcount" value="" >
+                                <input type="number" v-on:click="types" class="text-input" v-model="people" placeholder="Headcount" value="" >
                                 <!-- <button class="button button--light">Headcount</button> -->
                             </div>
                         </ons-col>
@@ -152,7 +152,7 @@
 
 
             <!--Footer Carousel-->
-            <div class="cuisine_footer_carousel">
+            <div v-show="typing"  class="cuisine_footer_carousel">
                 <ons-row class="reserved_carousel_heading">
                     <p>Today's Special</p>
                 </ons-row>
@@ -199,6 +199,7 @@
     export default {
         data () {
             return {
+                typing: true,
                 rest: '',
                 restaurant_id: '',
                 restaurant: '',
@@ -318,6 +319,9 @@
                     console.log( 'empty' );
                     this.$modal.show('error-modal');
                 }
+            },
+            types (){
+              this.typing = false
             },
             pop () {
                 this.pageStack.pop()

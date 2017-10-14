@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.vue" afterPath="$PROJECT_DIR$/src/login.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/assets/css/main.css" afterPath="$PROJECT_DIR$/src/static/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved2.vue" afterPath="$PROJECT_DIR$/src/reserved2.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,35 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="area.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/area.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="58" column="11" lean-forward="false" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-              <folding>
-                <marker date="1507894630691" expanded="true" signature="3271:3434" ph="{&quot;notificationicon&quot;: notification...}" />
-                <marker date="1507894630691" expanded="true" signature="3271:3444" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="3271:4669" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="3271:4678" ph="..." />
-                <marker date="1507894630691" expanded="true" signature="3465:3505" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="3522:3567" ph="{&quot;$route&quot;: 'fetchData'...}" />
-                <marker date="1507894630691" expanded="true" signature="3586:4633" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="3613:4153" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="3793:4036" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="4074:4138" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="4186:4465" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="4224:4449" ph="{&quot;extends&quot;: arearest...}" />
-                <marker date="1507894630691" expanded="true" signature="4292:4431" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="4325:4409" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="4484:4537" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="4558:4623" ph="{...}" />
-                <marker date="1507894630691" expanded="true" signature="4693:4847" ph="..." />
-                <marker date="1507894630691" expanded="true" signature="4706:4733" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="nya.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nya.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -85,11 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="715" column="21" lean-forward="false" selection-start-line="715" selection-start-column="21" selection-end-line="715" selection-end-column="21" />
+            <state relative-caret-position="441">
+              <caret line="722" column="21" lean-forward="false" selection-start-line="722" selection-start-column="21" selection-end-line="722" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reserved2.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -111,7 +92,17 @@
             <state relative-caret-position="228">
               <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="64" />
               <folding>
-                <element signature="e#3543#3598#0" expanded="true" />
+                <marker date="1507962769468" expanded="true" signature="3550:3904" ph="..." />
+                <marker date="1507962769468" expanded="true" signature="3924:4473" ph="{...}" />
+                <marker date="1507962769468" expanded="true" signature="3942:4335" ph="{...}" />
+                <marker date="1507962769468" expanded="true" signature="3963:4325" ph="{&quot;notificationicon&quot;: notification...}" />
+                <marker date="1507962769468" expanded="true" signature="4354:4437" ph="{...}" />
+                <marker date="1507962769468" expanded="true" signature="4374:4427" ph="{...}" />
+                <marker date="1507962769468" expanded="true" signature="4497:4756" ph="..." />
+                <marker date="1507962769468" expanded="true" signature="4508:4564" ph="{...}" />
+                <marker date="1507962769468" expanded="true" signature="4579:4649" ph="{...}" />
+                <marker date="1507962769468" expanded="true" signature="4661:4688" ph="{...}" />
+                <marker date="1507962769468" expanded="true" signature="4707:4747" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -123,7 +114,24 @@
             <state relative-caret-position="85">
               <caret line="182" column="11" lean-forward="false" selection-start-line="182" selection-start-column="11" selection-end-line="182" selection-end-column="11" />
               <folding>
-                <element signature="e#8352#8392#0" expanded="true" />
+                <marker date="1507962769469" expanded="true" signature="9029:9438" ph="{&quot;phonecallicon&quot;: phonecall...}" />
+                <marker date="1507962769469" expanded="true" signature="9029:9448" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="9029:10786" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="9029:10795" ph="..." />
+                <marker date="1507962769469" expanded="true" signature="9469:9509" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="9526:9571" ph="{&quot;$route&quot;: 'fetchData'...}" />
+                <marker date="1507962769469" expanded="true" signature="9590:10750" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="9617:10220" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="9822:10103" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="10141:10205" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="10257:10584" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="10343:10568" ph="{&quot;extends&quot;: reserved...}" />
+                <marker date="1507962769469" expanded="true" signature="10411:10550" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="10444:10528" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="10609:10667" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="10687:10740" ph="{...}" />
+                <marker date="1507962769469" expanded="true" signature="10810:10963" ph="..." />
+                <marker date="1507962769469" expanded="true" signature="10823:10850" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -135,7 +143,24 @@
             <state relative-caret-position="0">
               <caret line="183" column="11" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
               <folding>
-                <element signature="e#8356#8396#0" expanded="true" />
+                <marker date="1507962769470" expanded="true" signature="9053:9462" ph="{&quot;phonecallicon&quot;: phonecall...}" />
+                <marker date="1507962769470" expanded="true" signature="9053:9472" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="9053:10810" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="9053:10819" ph="..." />
+                <marker date="1507962769470" expanded="true" signature="9493:9533" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="9550:9595" ph="{&quot;$route&quot;: 'fetchData'...}" />
+                <marker date="1507962769470" expanded="true" signature="9614:10774" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="9641:10244" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="9846:10127" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="10165:10229" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="10281:10608" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="10367:10592" ph="{&quot;extends&quot;: reserved...}" />
+                <marker date="1507962769470" expanded="true" signature="10435:10574" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="10468:10552" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="10633:10691" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="10711:10764" ph="{...}" />
+                <marker date="1507962769470" expanded="true" signature="10834:10987" ph="..." />
+                <marker date="1507962769470" expanded="true" signature="10847:10874" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -198,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/restaurant.vue" />
-        <option value="$PROJECT_DIR$/src/reserved2.vue" />
         <option value="$PROJECT_DIR$/src/reserved.vue" />
         <option value="$PROJECT_DIR$/src/menu.vue" />
         <option value="$PROJECT_DIR$/src/nya.vue" />
@@ -212,6 +236,7 @@
         <option value="$PROJECT_DIR$/src/restaurant2.vue" />
         <option value="$PROJECT_DIR$/src/login.vue" />
         <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/src/reserved2.vue" />
       </list>
     </option>
   </component>
@@ -224,7 +249,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="11" />
     <option name="y" value="34" />
     <option name="width" value="1346" />
@@ -289,7 +314,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../map" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tablecartel" />
     <property name="nodejs_interpreter_path" value="C:/Program Files (x86)/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
@@ -325,7 +350,7 @@
       <workItem from="1507442440680" duration="15170000" />
       <workItem from="1507572355063" duration="353000" />
       <workItem from="1507606785260" duration="24398000" />
-      <workItem from="1507693143002" duration="85149000" />
+      <workItem from="1507693143002" duration="88057000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -345,10 +370,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125724000" />
+    <option name="totallyTimeSpent" value="128632000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17113096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -646,14 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="174" column="34" lean-forward="true" selection-start-line="152" selection-start-column="11" selection-end-line="174" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -859,7 +876,24 @@
         <state relative-caret-position="0">
           <caret line="183" column="11" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="11" />
           <folding>
-            <element signature="e#8356#8396#0" expanded="true" />
+            <marker date="1507962769470" expanded="true" signature="9053:9462" ph="{&quot;phonecallicon&quot;: phonecall...}" />
+            <marker date="1507962769470" expanded="true" signature="9053:9472" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="9053:10810" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="9053:10819" ph="..." />
+            <marker date="1507962769470" expanded="true" signature="9493:9533" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="9550:9595" ph="{&quot;$route&quot;: 'fetchData'...}" />
+            <marker date="1507962769470" expanded="true" signature="9614:10774" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="9641:10244" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="9846:10127" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="10165:10229" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="10281:10608" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="10367:10592" ph="{&quot;extends&quot;: reserved...}" />
+            <marker date="1507962769470" expanded="true" signature="10435:10574" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="10468:10552" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="10633:10691" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="10711:10764" ph="{...}" />
+            <marker date="1507962769470" expanded="true" signature="10834:10987" ph="..." />
+            <marker date="1507962769470" expanded="true" signature="10847:10874" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -869,7 +903,24 @@
         <state relative-caret-position="85">
           <caret line="182" column="11" lean-forward="false" selection-start-line="182" selection-start-column="11" selection-end-line="182" selection-end-column="11" />
           <folding>
-            <element signature="e#8352#8392#0" expanded="true" />
+            <marker date="1507962769469" expanded="true" signature="9029:9438" ph="{&quot;phonecallicon&quot;: phonecall...}" />
+            <marker date="1507962769469" expanded="true" signature="9029:9448" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="9029:10786" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="9029:10795" ph="..." />
+            <marker date="1507962769469" expanded="true" signature="9469:9509" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="9526:9571" ph="{&quot;$route&quot;: 'fetchData'...}" />
+            <marker date="1507962769469" expanded="true" signature="9590:10750" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="9617:10220" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="9822:10103" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="10141:10205" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="10257:10584" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="10343:10568" ph="{&quot;extends&quot;: reserved...}" />
+            <marker date="1507962769469" expanded="true" signature="10411:10550" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="10444:10528" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="10609:10667" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="10687:10740" ph="{...}" />
+            <marker date="1507962769469" expanded="true" signature="10810:10963" ph="..." />
+            <marker date="1507962769469" expanded="true" signature="10823:10850" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -887,15 +938,33 @@
         <state relative-caret-position="228">
           <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="64" />
           <folding>
-            <element signature="e#3543#3598#0" expanded="true" />
+            <marker date="1507962769468" expanded="true" signature="3550:3904" ph="..." />
+            <marker date="1507962769468" expanded="true" signature="3924:4473" ph="{...}" />
+            <marker date="1507962769468" expanded="true" signature="3942:4335" ph="{...}" />
+            <marker date="1507962769468" expanded="true" signature="3963:4325" ph="{&quot;notificationicon&quot;: notification...}" />
+            <marker date="1507962769468" expanded="true" signature="4354:4437" ph="{...}" />
+            <marker date="1507962769468" expanded="true" signature="4374:4427" ph="{...}" />
+            <marker date="1507962769468" expanded="true" signature="4497:4756" ph="..." />
+            <marker date="1507962769468" expanded="true" signature="4508:4564" ph="{...}" />
+            <marker date="1507962769468" expanded="true" signature="4579:4649" ph="{...}" />
+            <marker date="1507962769468" expanded="true" signature="4661:4688" ph="{...}" />
+            <marker date="1507962769468" expanded="true" signature="4707:4747" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="715" column="21" lean-forward="false" selection-start-line="715" selection-start-column="21" selection-end-line="715" selection-end-column="21" />
+        <state relative-caret-position="441">
+          <caret line="722" column="21" lean-forward="false" selection-start-line="722" selection-start-column="21" selection-end-line="722" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>
