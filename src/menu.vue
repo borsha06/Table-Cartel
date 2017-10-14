@@ -80,11 +80,11 @@
 
 
 <script>
-    import leftmenuicon from "assets/menu_icon_footer1.png"
+    import leftmenuicon from "assets/account.svg"
     import notification from "assets/notification.svg"
-    import rightmenuicon from "assets/menu_icon_footer2.png"
+    import rightmenuicon from "assets/settings.svg"
     import carousel from "assets/carousel.jpg"
-    import backarrow from "assets/back-arrow-circular-symbol.svg"
+    import backarrow from "assets/menuback.svg"
     import connect from "assets/connect.png"
     import logo from "assets/logo.png"
     import axios from 'axios'

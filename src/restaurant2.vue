@@ -150,7 +150,7 @@
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
                             <div class="icon">
-                                <img :src="parkingicon" alt="" />
+                                <img :src="tieicon" alt="" />
                             </div>
                             <div class="icon_text">
                                 <strong>Dresscode</strong>
@@ -161,7 +161,7 @@
                     <ons-col width="50%">
                         <ons-row class="vapianos_icon_right_des">
                             <div class="icon">
-                                <img :src="parkingicon" alt="" />
+                                <img :src="bookicon" alt="" />
                             </div>
                             <div class="icon_text another_icon_text">
                                 <strong>Description</strong>
@@ -182,6 +182,8 @@
 
 <script>
     import parking from "assets/parking.svg"
+    import book from "assets/book.svg"
+    import tie from "assets/tie.svg"    
     import menu from "assets/menu.svg"
     import notification from "assets/notification.svg"
     import closeicon from "assets/close.svg"
@@ -196,6 +198,8 @@
     export default {
         data () {
             return {
+                bookicon: book,
+                tieicon: tie,                
                 phonecallicon: phonecall,
                 menuicon: menu,
                 alarmicon: alarm,
