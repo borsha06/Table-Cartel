@@ -52,7 +52,7 @@
                         </ons-col>
                         <ons-col width="100%">
                             <div class="reserve_second_top_button">
-                                <input type="number" v-on:click="types" class="text-input" v-model="people" placeholder="Headcount" value="" >
+                                <input type="number" v-on:click="hidefooter" class="text-input" v-model="people" placeholder="Headcount" value="" >
                                 <!-- <button class="button button--light">Headcount</button> -->
                             </div>
                         </ons-col>
@@ -63,10 +63,10 @@
                                 <p>It will be joining them on</p>
                             </div>
                         </ons-col>
-                        <ons-col width="100%">
-                            <div class="reserve_third_top_button">
+                        <ons-col width="35%">
+                            <div class="reserve_third_top_button" @click="showfooter">
                                 <!--<input type="date" class="text-input" placeholder="Headcount" value="">-->
-                                <date-picker :date="date" :option="option"  :limit="limit" class="datepicker text-input"  ></date-picker>
+                                <date-picker :date="date"  :option="option"  :limit="limit" class="datepicker text-input"  ></date-picker>
                                 <!-- <button class="button button--light">DD/MM</button> -->
                             </div>
                         </ons-col>
@@ -320,8 +320,11 @@
                     this.$modal.show('error-modal');
                 }
             },
-            types (){
-              this.typing = false
+            hidefooter (){
+                this.typing = false
+            },
+            showfooter (){
+                this.typing = true
             },
             pop () {
                 this.pageStack.pop()

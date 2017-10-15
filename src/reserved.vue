@@ -46,7 +46,7 @@
                     </ons-col>
                     <ons-col width="100%">
                         <div class="reserve_second_top_button">
-                            <input type="number" class="text-input" v-model="people" placeholder="Headcount" value="">
+                            <input type="number"  v-on:click="hidefooter" class="text-input"  v-model="people" placeholder="Headcount" value="">
                              <!-- <button class="button button--light">Headcount</button> -->
                         </div>
                     </ons-col>
@@ -57,8 +57,8 @@
                             <p>It will be joining them on</p>
                         </div>
                     </ons-col>
-                    <ons-col width="100%">
-                        <div class="reserve_third_top_button">
+                    <ons-col width="35%">
+                        <div class="reserve_third_top_button" @click="showfooter">
                             <!--<input type="date" class="text-input" placeholder="Headcount" value="">-->
                             <date-picker :date="date" :option="option"  :limit="limit" class="datepicker text-input"  ></date-picker>
                              <!-- <button class="button button--light">DD/MM</button> -->
@@ -145,7 +145,7 @@
     </form>
 
         <!--Footer Carousel-->
-        <div class="cuisine_footer_carousel">
+        <div v-show="typing" class="cuisine_footer_carousel">
             <ons-row class="reserved_carousel_heading">
                 <p>Today's Special</p>
             </ons-row>
@@ -192,6 +192,7 @@
     export default {
         data () {
             return {
+                typing: true,
                 restaurant_id: '',
                 restaurant: '',
                 people: '',
@@ -281,6 +282,12 @@
                     console.log( 'empty' );
                     this.$modal.show('error-modal');
                 }
+            },
+            hidefooter (){
+                this.typing = false
+            },
+            showfooter (){
+                this.typing = true
             },
             pop () {
                 this.pageStack.pop()
