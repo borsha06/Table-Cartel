@@ -2,9 +2,9 @@
     <v-ons-page id="gray_bg">
         <div class="header_top">
             <ons-row align="top" width="100%">
-                <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
+                <ons-col width="50px" class="header_left_icon"><img :src="menuico" alt="" /></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
+                <ons-col width="50px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
         <div class="hello_jorge_bg">
@@ -81,6 +81,7 @@
 
 <script>
     import carousel from "assets/carousel.jpg"
+    import menuicon from "assets/menuicon.svg"
     import footerlogo from "assets/apple-touch-icon.png"
     import notification from "assets/notification.svg"
     import axios from 'axios'
@@ -93,6 +94,7 @@
         data () {
             return {
                 footerlogo: footerlogo,
+                menuico: menuicon,
                 footercarousel: carousel,
                 notificationicon: notification,
                 restaurant: {},

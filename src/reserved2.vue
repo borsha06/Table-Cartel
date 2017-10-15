@@ -2,9 +2,9 @@
     <v-ons-page>
         <div class="header_top">
             <ons-row align="top" width="100%">
-                <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
+                <ons-col width="50px" class="header_left_icon"><img :src="menuico" alt="" /></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
+                <ons-col width="50px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
         <div v-if="loading" class="loading" v-cloak>
@@ -187,6 +187,7 @@
 <script>
     import Vue from 'vue';
     import carousel from "assets/carousel.jpg"
+    import menuicon from "assets/menuicon.svg"
     import notification from "assets/notification.svg"
     import closeicon from "assets/close.svg"
     import axios from 'axios'
@@ -209,6 +210,7 @@
                 order_time: '',
                 confirm:'Yes',
                 footercarousel: carousel,
+                menuico: menuicon,
                 notificationicon: notification,
                 close: closeicon,
                 restaurants: {},

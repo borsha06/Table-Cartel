@@ -2,9 +2,9 @@
     <v-ons-page id="gray_bg">
         <div class="header_top">
             <ons-row align="top" width="100%">
-                <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
+                <ons-col width="50px" class="header_left_icon"><img :src="menuico" alt="" /></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
+                <ons-col width="50px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
 
@@ -182,6 +182,7 @@
 
 <script>
     import parking from "assets/parking.svg"
+    import menuicon from "assets/menuicon.svg"
     import book from "assets/book.svg"
     import tie from "assets/tie.svg"    
     import menu from "assets/menu.svg"
@@ -204,6 +205,7 @@
                 menuicon: menu,
                 alarmicon: alarm,
                 notificationicon: notification,
+                menuico: menuicon,
                 close: closeicon,
                 paymenticon: payment,
                 parkingicon: parking,

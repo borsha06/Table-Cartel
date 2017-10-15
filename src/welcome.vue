@@ -2,9 +2,9 @@
     <v-ons-page id="gray_bg">
         <div class="header_top">
             <ons-row align="top" width="100%">
-                <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
+                <ons-col width="50px" class="header_left_icon"><img :src="menuico" alt="" /></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
+                <ons-col width="50px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
         <div class="hello_jorge_bg">
@@ -19,7 +19,7 @@
             <ons-row align="" class="hello_jorge_button_area">
                 <ons-col width="100%">
                     <div class="hello_jorge_button">
-                        <button class="button button--light nay_button" @click="nyapage">Nay!</button>
+                        <button class="button button--light nay_button" @click="nyapage">Nay</button>
                         <button class="button button--light yay_button" @click="yaypage">Yay!</button>
                     </div>
                 </ons-col>
@@ -80,6 +80,7 @@
 
 
 <script>
+    import menuicon from "assets/menuicon.svg"
     import carousel from "assets/carousel.jpg"
     import footerlogo from "assets/apple-touch-icon.png"
     import notification from "assets/notification.svg"
@@ -92,6 +93,7 @@
     export default {
         data () {
             return {
+                menuico: menuicon,
                 footerlogo: footerlogo,
                 footercarousel: carousel,
                 notificationicon: notification,

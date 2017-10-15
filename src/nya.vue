@@ -2,9 +2,9 @@
     <v-ons-page id="gray_bg">
         <div class="header_top">
             <ons-row align="top" width="100%">
-                <ons-col width="40px" class="header_left_icon"><i class="fa fa-bars" aria-hidden="true"></i></ons-col>
+                <ons-col width="50px" class="header_left_icon"><img :src="menuico" alt="" /></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
-                <ons-col width="40px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
+                <ons-col width="50px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
 
@@ -19,9 +19,9 @@
             </ons-row>
             <ons-row align="" class="hello_jorge_headding_area">
                 <ons-col width="100%">
-                    <div class="hello_jorge_heading">
+                    <div class="nay_heading">
                         <h2>uh-ohh :(</h2>
-                        <p>Well you all ready here why not check out some your wonderful content.There are a good read :)</p>
+                        <p>Well since you all ready here why not check out some your wonderful content.There are a good read :)</p>
                     </div>
                 </ons-col>
             </ons-row>
@@ -29,8 +29,8 @@
 
         <!--Footer Carousel-->
         <div class="cuisine_footer_carousel" id="hellojorge-area">
-            <ons-row class="hellojorge_carousel_heading">
-                <p>Today's Special</p>
+            <ons-row class="nay_carousel_heading">
+                <p>The TableCartel Chronicles</p>
             </ons-row>
             <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
                 <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
@@ -81,6 +81,7 @@
 
 <script>
     import carousel from "assets/carousel.jpg"
+    import menuicon from "assets/menuicon.svg"
     import closeicon from "assets/close.svg"
     import footerlogo from "assets/apple-touch-icon.png"
     import notification from "assets/notification.svg"
@@ -93,6 +94,7 @@
         data () {
             return {
                 footerlogo: footerlogo,
+                menuico: menuicon,
                 close: closeicon,
                 notificationicon: notification,
                 footercarousel: carousel,

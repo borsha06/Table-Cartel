@@ -66,6 +66,9 @@
         height:100%;
 
     }
+    .page--material__background{
+        background:none !important;
+    }
     ::placeholder{
     color:#444;
     font-family: 'Nunito', sans-serif;
