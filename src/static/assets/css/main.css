@@ -342,7 +342,8 @@ background-color: #fff;
     margin-top: 8px;
     color: #666;
     font-size: 11px;
-    margin-bottom: 25px;  
+    margin-bottom: 25px;
+    padding-right: 2px;
 }
 .reserv_button{
     float:right;
