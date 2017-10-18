@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/register.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.vue" afterPath="$PROJECT_DIR$/src/login.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved.vue" afterPath="$PROJECT_DIR$/src/reserved.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved2.vue" afterPath="$PROJECT_DIR$/src/reserved2.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/assets/css/main.css" afterPath="$PROJECT_DIR$/src/static/assets/css/main.css" />
     </list>
@@ -37,14 +34,14 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="863" column="4" lean-forward="false" selection-start-line="863" selection-start-column="4" selection-end-line="863" selection-end-column="4" />
+            <state relative-caret-position="707">
+              <caret line="933" column="17" lean-forward="false" selection-start-line="933" selection-start-column="17" selection-end-line="933" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reserved.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reserved.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reserved.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -60,22 +57,22 @@
       <file leaf-file-name="reserved2.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="367">
               <caret line="345" column="5" lean-forward="false" selection-start-line="345" selection-start-column="5" selection-end-line="345" selection-end-column="5" />
               <folding>
-                <marker date="1508322665373" expanded="true" signature="9995:11131" ph="{&quot;rest&quot;: ''...}" />
+                <marker date="1508324729792" expanded="true" signature="15863:15878" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="189" column="5" lean-forward="false" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
+            <state relative-caret-position="257">
+              <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
               <folding>
-                <element signature="e#4045#4086#0" expanded="true" />
+                <element signature="e#5061#5102#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,10 +184,10 @@
         <option value="$PROJECT_DIR$/src/restaurant2.vue" />
         <option value="$PROJECT_DIR$/src/Registration.vue" />
         <option value="$PROJECT_DIR$/src/register.vue" />
-        <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/src/login.vue" />
         <option value="$PROJECT_DIR$/src/reserved2.vue" />
         <option value="$PROJECT_DIR$/src/reserved.vue" />
+        <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/src/login.vue" />
       </list>
     </option>
   </component>
@@ -290,7 +287,7 @@
       <workItem from="1507572355063" duration="353000" />
       <workItem from="1507606785260" duration="24398000" />
       <workItem from="1507693143002" duration="91066000" />
-      <workItem from="1508215169310" duration="13869000" />
+      <workItem from="1508215169310" duration="14461000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -310,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145510000" />
+    <option name="totallyTimeSpent" value="146102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -901,30 +898,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="863" column="4" lean-forward="false" selection-start-line="863" selection-start-column="4" selection-end-line="863" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="189" column="5" lean-forward="false" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
-          <folding>
-            <element signature="e#4045#4086#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="367">
           <caret line="345" column="5" lean-forward="false" selection-start-line="345" selection-start-column="5" selection-end-line="345" selection-end-column="5" />
           <folding>
-            <marker date="1508322665373" expanded="true" signature="9995:11131" ph="{&quot;rest&quot;: ''...}" />
+            <marker date="1508324729792" expanded="true" signature="15863:15878" ph="..." />
           </folding>
         </state>
       </provider>
@@ -936,6 +915,24 @@
           <folding>
             <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#1;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#8222#8264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="933" column="17" lean-forward="false" selection-start-line="933" selection-start-column="17" selection-end-line="933" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+          <folding>
+            <element signature="e#5061#5102#0" expanded="true" />
           </folding>
         </state>
       </provider>

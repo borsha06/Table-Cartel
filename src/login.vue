@@ -8,6 +8,7 @@
                     </div>
                 </ons-col>
             </ons-row>
+
             <form v-on:submit.prevent="login">
                 <ons-row align="center" class="loginarea">
                     <ons-col width="100%">
@@ -15,11 +16,30 @@
                             <input type="text" v-model="user" class="text-input form_name" placeholder="Username" required value="" />
                             <input type="password" v-model="pass" class="text-input form_pass"   placeholder="Password" required value="" />
                         </div>
-                        <button class="button button--light" type="submit">Sign in</button>
-                        <p class="button button--light" @click="registration">Sign up</p>
+                        <!--<button class="button button&#45;&#45;light" type="submit">Sign in</button>-->
+                        <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
+                    </ons-col>
+                </ons-row>
+                <ons-row align="left" class="submit">
+                    <ons-col width="100%">
+                        <div class="sign_in">
+                            <button type="button button--light" >Sign In</button>
+                            <p type="button button--light" @click="registration">Sign Up</p>
+                        </div>
                     </ons-col>
                 </ons-row>
             </form>
+            <!--<form>-->
+                <!--<ons-row align="center" class="loginarea">-->
+                    <!--<ons-col width="100%">-->
+                        <!--<div class="login_form">-->
+                            <!--<input type="text" class="text-input form_name" placeholder="Jorge Sims" value="" />-->
+                            <!--<input type="password" class="text-input form_pass" placeholder="Password" value="" />-->
+                        <!--</div>-->
+                    <!--</ons-col>-->
+                <!--</ons-row>-->
+
+            <!--</form>-->
             <modal name="error-modal"
                    transition="nice-modal-fade"
                    :min-width="200"
@@ -61,6 +81,7 @@
                     <!--<span>Loading...</span>-->
                 </div>
             </modal>
+
             <ons-row align="center" class="facebook_connect">
                 <ons-col width="100%">
                     <div class="facebook_button">                        
@@ -85,7 +106,6 @@
 
                 </ons-col>
             </ons-row>
-
     </div>
 
 
@@ -194,7 +214,7 @@
 
     }
     .page--material__background{
-        background:none !important;
+        background:#f3f5f7 !important;
     }
     ::placeholder{
     color:#444;
