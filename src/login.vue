@@ -17,6 +17,16 @@
                     </div>
                 </ons-col>
             </ons-row>
+            <ons-row align="left" class="submit">
+                <ons-col width="100%">
+                    <div class="sign_in">
+                        <button type="button button--light">Sign In</button>
+                        <p type="button button--light">Sign Up</p>
+                    </div>
+                </ons-col>
+            </ons-row>
+        </form>
+         
             <ons-row align="center" class="facebook_connect">
                 <ons-col width="100%">
                     <div class="facebook_button">                        
@@ -31,7 +41,7 @@
                     </div>
                 </ons-col>
             </ons-row>
-        </form>
+        
     </div>
 
 
@@ -67,7 +77,7 @@
 
     }
     .page--material__background{
-        background:none !important;
+        background:#f3f5f7 !important;
     }
     ::placeholder{
     color:#444;

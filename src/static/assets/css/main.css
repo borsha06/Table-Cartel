@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
-
+button:active{
+    background:#fff;
+    border:none;
+}
 ::-moz-placeholder{
     color:#444;
  
@@ -87,7 +90,7 @@ text-align: center !important;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 12px;
-    margin-top:-4px;
+    margin-top:-2px;
     text-shadow: 0 0 1px #bdbdbd;
 }
 .left_side_button{
@@ -590,7 +593,7 @@ padding:0px 17px;
     width: 100%;
     border-radius: 25px;
     text-transform: uppercase;
-    font-size: 8px;
+    font-size: 10px;
     padding: 0px 0px;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -831,6 +834,72 @@ font-size: 12px;
     margin-top: 61px;
 
 }
+.submit{
+    width: 48%;
+    margin: auto;
+    margin-top: -45px;
+    margin-bottom: 25px;
+}
+.sign_in button{
+    float: left;
+    background: #000;
+    border: none;
+    color: #fff;
+    padding: 8px 0px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 10px;
+    width: 70px;
+    margin: 5px;
+    margin-left: 0px;
+}
+.sign_in p{
+    float: right;
+    background: #000;
+    border: none;
+    color: #fff;
+    padding: 8px 0px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 10px;
+    margin-top: 5px;
+    width: 70px;
+    text-align: center;
+}
+/*.submit{}
+.signin_signup_form{
+
+}
+.signin_signup_form{
+    background: black;
+    padding: 0px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 18px;
+    width: 28%;
+    float: left;
+    margin: auto;
+}
+.signin_signup_form button{
+    color:#fff;
+}
+.signin_signup_form p{
+    color:#fff;
+}*/
+/*.signin_signup_form p{
+    background: black;
+    margin: 5px;
+    padding: 0px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 18px;
+    width:80%;
+}*/
+
+
+
 .facebook_connect{}
 .facebook_button{
         width: 170px;
@@ -849,7 +918,9 @@ font-size: 12px;
     box-shadow: 0px 0px 2px black;
 
 }
-.connect{}
+.connect{
+        background: #f3f5f7;
+}
 .connect_button {
     width: 170px;
     margin: auto;
@@ -861,6 +932,7 @@ font-size: 12px;
     padding: 0px 0px 0px 0px;
     margin-top: 18px;
     height: 33px;
+    margin-bottom:28px;
 
 }
 .connect_button p img{
