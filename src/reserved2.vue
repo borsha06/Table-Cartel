@@ -52,7 +52,7 @@
                         </ons-col>
                         <ons-col width="100%">
                             <div class="reserve_second_top_button">
-                                <input type="number" v-on:click="hidefooter" class="text-input" v-model="people" placeholder="Headcount" value="" >
+                                <input type="number" v-on:click="hidefooter" class="text-input" v-model="people" placeholder="Headcount" required value="" >
                                 <!-- <button class="button button--light">Headcount</button> -->
                             </div>
                         </ons-col>
@@ -339,6 +339,11 @@
     }
 </script>
 <style scoped>
+    .text-input:invalid {
+        border: none;
+        background-color: white;
+        color: #1f1f21;
+    }
 ::placeholder{
     color:black;
     text-transform: uppercase;
