@@ -1,7 +1,7 @@
 <template>
     <v-ons-page id="gray_bg">
         <div class="login_bg">
-            <ons-row align="center" class="menu_header_area">
+            <ons-row align="left" class="menu_header_area">
                 <ons-col width="85%">
                     <div class="menu_header">                        
                        <h2>Menu</h2>
@@ -15,7 +15,7 @@
                     </div>
                 </ons-col>
             </ons-row>
-            <ons-row align="center" class="menu_button_area">
+            <ons-row align="left" class="menu_button_area">
                 <ons-col width="100%">
                     <div class="menu_button">
                         <button class="button button--light">Discover</button>
@@ -28,7 +28,7 @@
                 </ons-col>
             </ons-row>
             <div class="menu_footer_fixed">
-            <ons-row align="center" class="menu_connect_area">
+            <ons-row align="left" class="menu_connect_area">
                 <ons-col width="100%">
                     <div class="menu_connect_button">
                         <button class="button button--light"><img :src="connect" alt="" /></button>
