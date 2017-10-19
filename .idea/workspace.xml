@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nya2.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.vue" afterPath="$PROJECT_DIR$/src/login.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nya.vue" afterPath="$PROJECT_DIR$/src/nya.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved.vue" afterPath="$PROJECT_DIR$/src/reserved.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved2.vue" afterPath="$PROJECT_DIR$/src/reserved2.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/assets/css/main.css" afterPath="$PROJECT_DIR$/src/static/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/welcome.vue" afterPath="$PROJECT_DIR$/src/welcome.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/welcome2.vue" afterPath="$PROJECT_DIR$/src/welcome2.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,8 +65,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="509" column="26" lean-forward="true" selection-start-line="509" selection-start-column="26" selection-end-line="509" selection-end-column="26" />
+            <state relative-caret-position="204">
+              <caret line="504" column="21" lean-forward="false" selection-start-line="504" selection-start-column="21" selection-end-line="504" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -306,7 +298,7 @@
       <workItem from="1507572355063" duration="353000" />
       <workItem from="1507606785260" duration="24398000" />
       <workItem from="1507693143002" duration="91066000" />
-      <workItem from="1508215169310" duration="26129000" />
+      <workItem from="1508215169310" duration="26746000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -326,7 +318,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157770000" />
+    <option name="totallyTimeSpent" value="158387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -953,8 +945,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="509" column="26" lean-forward="true" selection-start-line="509" selection-start-column="26" selection-end-line="509" selection-end-column="26" />
+        <state relative-caret-position="204">
+          <caret line="504" column="21" lean-forward="false" selection-start-line="504" selection-start-column="21" selection-end-line="504" selection-end-column="21" />
           <folding />
         </state>
       </provider>

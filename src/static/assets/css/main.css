@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 button:active{
     background:#fff;
     border:none;
@@ -13,11 +11,14 @@ button:active{
     color:#444;
 
 }
+button:focus{
+    outline:none;
+}
 .reserve_second_top_button input::placeholder{
     color:#000;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
-    text-shadow: 0 0 1px #adaaaa;
+    text-shadow: 0 0 1px rgba(173, 170, 170, 0.21);
 
 }
 .left_side_button button{
@@ -90,8 +91,9 @@ text-align: center !important;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 12px;
-    margin-top:-2px;
+    margin-top: -2px;
     text-shadow: 0 0 1px #bdbdbd;
+    letter-spacing: 0.4px;;
 }
 .left_side_button{
 	margin-left:17px;
@@ -351,7 +353,7 @@ background-color: #fff;
     font-weight: 700;
 }
 .vapianos_address p{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin-top: 8px;
     color: #666;
     font-size: 11px;
@@ -485,7 +487,7 @@ padding:0px 17px;
 }
 .reserve_top_button_text p{
     color: #444;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     margin-bottom: 8px;
 }
@@ -532,7 +534,7 @@ padding:0px 17px;
 .reserve_top_second_button_text{}
 .reserve_top_second_button_text p{
     color: #444;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     margin-bottom: 8px;
 
@@ -559,7 +561,7 @@ padding:0px 17px;
 .reserve_top_third_button_text{}
 .reserve_top_third_button_text p{
     color: #444;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     margin-bottom: 8px; 
 }
@@ -852,6 +854,10 @@ font-size: 12px;
     margin: 5px;
     margin-left: 0px;
 }
+
+.sign_in button:focus{
+    outline:none !important;
+}
 .sign_in p{
     float: right;
     background: #000;
@@ -960,7 +966,7 @@ font-size: 12px;
 
 }
 .menu_header p{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     color: #666;
     margin-bottom: 6px;
@@ -1054,7 +1060,9 @@ font-size: 12px;
     width: 25px;
 
 }
-.menu_footer_right_icon{}
+.menu_footer_right_icon{
+    float:right;
+}
 .menu_footer_right_icon img{
     width: 25px;
     padding-left: 17px;
