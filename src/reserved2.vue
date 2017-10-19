@@ -102,7 +102,7 @@
                            :delay="100"
                     >
                         <div class="example-modal-content">
-                            <div class="dialogs"> <font color="green"> <center>WOW!! Tablebooking Success</center> </font></div>
+                            <div class="dialogs"> <font color="green"> <center>WOW!! Bbooking Success</center> </font></div>
                             <button class="yes_button" @click="pop">OK</button>
                         </div>
                     </modal>

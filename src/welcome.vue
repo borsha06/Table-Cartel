@@ -121,9 +121,7 @@
     }
 </script>
 <style scoped>
-    .button{
-        float:left;
-    }
+
 
 
 </style>

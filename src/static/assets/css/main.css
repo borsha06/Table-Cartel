@@ -705,6 +705,7 @@ font-size: 12px;
     color: #2b2b2b;
     font-weight: 600;
     margin-bottom: 0px;
+    text-transform: capitalize
 
 }
 .nay_heading h2{

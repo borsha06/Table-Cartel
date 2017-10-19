@@ -24,7 +24,8 @@
                     <ons-col width="100%">
                         <div class="sign_in">
                             <button type="button button--light" >Sign In</button>
-                            <p type="button button--light" @click="registration">Sign Up</p>
+                            <!--<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>-->
+                            <p type="button button--light">Sign Up</p>
                         </div>
                     </ons-col>
                 </ons-row>
@@ -113,7 +114,7 @@
 //    Vue.use(FBSignInButton)
     import connects from "assets/connect.png"
     import logos from "assets/logo.png"
-    import welcome from './welcome2'
+    import welcome from './welcome'
     import registration from './register'
     import axios from 'axios';
     import $ from 'jquery';
