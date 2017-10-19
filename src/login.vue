@@ -29,17 +29,6 @@
                     </ons-col>
                 </ons-row>
             </form>
-            <!--<form>-->
-                <!--<ons-row align="center" class="loginarea">-->
-                    <!--<ons-col width="100%">-->
-                        <!--<div class="login_form">-->
-                            <!--<input type="text" class="text-input form_name" placeholder="Jorge Sims" value="" />-->
-                            <!--<input type="password" class="text-input form_pass" placeholder="Password" value="" />-->
-                        <!--</div>-->
-                    <!--</ons-col>-->
-                <!--</ons-row>-->
-
-            <!--</form>-->
             <modal name="error-modal"
                    transition="nice-modal-fade"
                    :min-width="200"
@@ -85,7 +74,8 @@
             <ons-row align="center" class="facebook_connect">
                 <ons-col width="100%">
                     <div class="facebook_button">                        
-                        <p class="button button--light" @click="push">facebook</p>
+                        <!--<p class="button button&#45;&#45;light" @click="push">facebook</p>-->
+                        <p class="button button--light" >facebook</p>
                         <!--<fb-signin-button-->
                                 <!--:params="fbSignInParams"-->
                                 <!--@success="onSignInSuccess"-->
@@ -98,7 +88,8 @@
             <ons-row align="center" class="connect">
                 <ons-col width="100%">
                     <div class="connect_button">                        
-                        <p class="button " @click="push"><img :src="connect" alt="" /></p>
+                        <!--<p class="button " @click="push"><img :src="connect" alt="" /></p>-->
+                        <p class="button " ><img :src="connect" alt="" /></p>
                     </div>
                 </ons-col>
             </ons-row><ons-row align="center" class="connect">
@@ -220,8 +211,6 @@
     color:#444;
     font-family: 'Nunito', sans-serif;
     font-weight:bold;
-
-
     }
     .button{
         float:left;
