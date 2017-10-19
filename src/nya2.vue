@@ -85,10 +85,11 @@
     import closeicon from "assets/close.svg"
     import footerlogo from "assets/apple-touch-icon.png"
     import notification from "assets/notification.svg"
+    import axios from 'axios'
     import {dataBus} from './static/assets/js/custom.js';
     import yay from "./yay"
     import reserved from './reserved2'
-    import welcome from './welcome';
+    import welcome from './welcome2';
     export default {
         data () {
             return {
@@ -97,6 +98,7 @@
                 close: closeicon,
                 notificationicon: notification,
                 footercarousel: carousel,
+                restaurant: {},
                 food: dataBus.$data,
                 loading:false,
             }
@@ -119,8 +121,17 @@
     }
 </script>
 <style scoped>
+    .page--material__background{
+        background:#A2A2A2 !important;
+
+    }
     .button{
         float:left;
+    }
+    .loading{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
 </style>

@@ -107,17 +107,19 @@
 
 
 <script>
-//    import Vue from 'vue';
+    import Vue from 'vue';
 //    import facebook from './facebook.js'
 //    import FBSignInButton from 'vue-facebook-signin-button'
 //    Vue.use(FBSignInButton)
     import connects from "assets/connect.png"
     import logos from "assets/logo.png"
-    import welcome from './welcome'
+    import welcome from './welcome2'
     import registration from './register'
     import axios from 'axios';
     import $ from 'jquery';
     import VModal from 'vue-js-modal';
+    import VueSession from 'vue-session'
+    Vue.use(VueSession)
 
     export default {
         data () {
@@ -156,6 +158,8 @@
                     console.log(this.logindata);
                     this.loading = false
                     if(this.logindata == 1){
+                        this.$session.start()
+                        this.$session.set('user', this.user)
                         this.username = '';
                         this.password = '';
                         this.pageStack.push(welcome);

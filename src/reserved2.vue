@@ -348,7 +348,7 @@
     color:black;
     text-transform: uppercase;
     font-size:10px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-family: 'Nunito', sans-serif;
     padding-top:-3px;
 }
