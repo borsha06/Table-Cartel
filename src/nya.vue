@@ -37,7 +37,6 @@
                     <div class="image_footer">
                         <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
                         <a href="" v-else><img :src="footercarousel" /></a>
-
                         <!--<img :src="footercarousel" alt="" />-->
                         <div class="image_overlay_content">
                             <h4 v-html="foo.short_title"></h4>
@@ -53,7 +52,7 @@
         <div class="hello_jorge_footer_option">
             <ons-row align="" class="hello_jorge_footer_area">
                 <ons-col width="25%">
-                    <div @click="welcomepage" class="left_logo">
+                    <div @click="welcomepages" class="left_logo">
                         <img  :src="footerlogo" alt="" />
                     </div>
                 </ons-col>
@@ -70,10 +69,6 @@
             </ons-row>
         </div>
 
-
-
-
-
     </v-ons-page>
 </template>
 
@@ -85,9 +80,8 @@
     import closeicon from "assets/close.svg"
     import footerlogo from "assets/apple-touch-icon.png"
     import notification from "assets/notification.svg"
-    import axios from 'axios'
     import {dataBus} from './static/assets/js/custom.js';
-    import yay from "./yay"
+    import yay from './yay'
     import reserved from './reserved2'
     import welcome from './welcome2';
     export default {
@@ -98,9 +92,7 @@
                 close: closeicon,
                 notificationicon: notification,
                 footercarousel: carousel,
-                restaurant: {},
                 food: dataBus.$data,
-                loading:false,
             }
         },
         methods:{
@@ -110,7 +102,7 @@
             reservedpage () {
                 this.pageStack.push(reserved)
             },
-            welcomepage () {
+            welcomepages () {
                 this.pageStack.push(welcome)
             },
             pop () {
@@ -120,18 +112,3 @@
         props: ['pageStack']
     }
 </script>
-<style scoped>
-    .page--material__background{
-        background:#A2A2A2 !important;
-
-    }
-    .button{
-        float:left;
-    }
-    .loading{
-        text-align: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-</style>

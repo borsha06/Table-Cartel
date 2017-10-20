@@ -11,7 +11,7 @@
             <ons-row align="" class="hello_jorge_headding_area">
                 <ons-col width="100%">
                     <div class="hello_jorge_heading">
-                        <h2>Hello Jorge!</h2>
+                        <h2>Hello {{username}}!</h2>
                         <p>Today is good day to<br /> eat out. Why not plan something?</p>
                     </div>
                 </ons-col>
@@ -19,7 +19,7 @@
             <ons-row align="" class="hello_jorge_button_area">
                 <ons-col width="100%">
                     <div class="hello_jorge_button">
-                        <!--<button class="button button&#45;&#45;light nay_button" @click="nyapage">Nay!</button>-->
+                        <button class="button button--light nay_button" >Nay!</button>
                         <button class="button button--light yay_button" @click="yaypage">Yay!</button>
                     </div>
                 </ons-col>
@@ -27,21 +27,16 @@
         </div>
 
         <!--Footer Carousel-->
-
         <div class="cuisine_footer_carousel" id="hellojorge-area">
-
             <ons-row class="cuisine_footer_carousel" id="hellojorge-area">
                 <ons-row class="hellojorge_carousel_heading">
                     <p>Today's Special</p>
                 </ons-row>
-
                 <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-
                     <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
                         <div class="image_footer">
                             <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
                             <a href="" ><img :src="footercarousel" /></a>
-
                             <!--<img :src="footercarousel" alt="" />-->
                             <div class="image_overlay_content">
                                 <h4 v-html="foo.short_title"></h4>
@@ -49,7 +44,6 @@
                             </div>
                         </div>
                     </ons-carousel-item>
-
                 </ons-carousel>
             </ons-row>
         </div>
@@ -87,8 +81,8 @@
     import axios from 'axios'
     import VModal from 'vue-js-modal';
     import {dataBus} from './static/assets/js/custom.js';
-    import yay from "./yay"
-    import nya from "./nya"
+    import yay from './yay'
+    import nya from './nya'
     import reserved from './reserved2'
     export default {
         data () {
@@ -99,8 +93,13 @@
                 notificationicon: notification,
                 restaurant: {},
                 food: dataBus.$data,
-                loading:false,
+                username: this.$session.get('user')
             }
+        },
+        created () {
+            this.$session.start()
+            console.log(this.$session.get('user'));
+
         },
         methods:{
             yaypage () {
@@ -117,17 +116,6 @@
     }
 </script>
 <style scoped>
-    .welcome_bg{
 
-
-    }
-    .button{
-        float:left;
-    }
-    .loading{
-        text-align: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
 
 </style>

@@ -24,7 +24,8 @@
                     <ons-col width="100%">
                         <div class="sign_in">
                             <button type="button button--light" >Sign In</button>
-                            <p type="button button--light" @click="registration">Sign Up</p>
+                            <!--<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>-->
+                            <p type="button button--light">Sign Up</p>
                         </div>
                     </ons-col>
                 </ons-row>
@@ -107,7 +108,7 @@
 
 
 <script>
-//    import Vue from 'vue';
+    import Vue from 'vue';
 //    import facebook from './facebook.js'
 //    import FBSignInButton from 'vue-facebook-signin-button'
 //    Vue.use(FBSignInButton)
@@ -118,6 +119,8 @@
     import axios from 'axios';
     import $ from 'jquery';
     import VModal from 'vue-js-modal';
+    import VueSession from 'vue-session'
+    Vue.use(VueSession)
 
     export default {
         data () {
@@ -156,6 +159,8 @@
                     console.log(this.logindata);
                     this.loading = false
                     if(this.logindata == 1){
+                        this.$session.start()
+                        this.$session.set('user', this.user)
                         this.username = '';
                         this.password = '';
                         this.pageStack.push(welcome);

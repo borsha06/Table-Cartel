@@ -82,7 +82,7 @@
                        :delay="100"
                 >
                     <div class="example-modal-content">
-                        <div class="dialogs"> <font color="green"> <center>Tablebooking ???</center> </font></div>
+                        <div class="dialogs"> <font color="green"> <center>Are You Sure ???</center> </font></div>
                         <button class="yes_button" @click="onSubmit">YES</button>
                     </div>
                 </modal>
@@ -96,7 +96,7 @@
                        :delay="100"
                 >
                     <div class="example-modal-content">
-                        <div class="dialogs"> <font color="green"> <center>Tablebooking Success</center> </font></div>
+                        <div class="dialogs"> <font color="green"> <center>WOW!! Booking Success</center> </font></div>
                         <button class="yes_button" @click="pop">OK</button>
                     </div>
                 </modal>
@@ -312,7 +312,7 @@
     color:black;
     text-transform: uppercase;
     font-size:10px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-family: 'Nunito', sans-serif;
     padding-top:-3px;
 }
