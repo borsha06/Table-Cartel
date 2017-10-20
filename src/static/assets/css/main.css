@@ -25,7 +25,7 @@ button:focus{
     background: white !important;
     border: none;
     margin-bottom: 9px;
-    padding: 1px 19px;
+    padding: 1px 20px;
     font-size: 10px;
     border-radius: 18px;
     color: #333;
@@ -36,6 +36,10 @@ button:focus{
     margin-right: 8px;
     font-family: 'Nunito', sans-serif;
 
+
+}
+.area_button_change{
+    padding: 0px 27px !important;
 }
 .left_side_button_customize{
     margin-left:13px;
@@ -91,7 +95,7 @@ text-align: center !important;
     font-weight: bolder;
     font-size: 12px;
     margin-top: -2px;
-    text-shadow: 0 0 1px rgba(189, 189, 189, 0.71);
+    text-shadow: 0 0 1px rgba(189, 189, 189, 0.67);
     letter-spacing: 0.7px;
 }
 .left_side_button{
@@ -137,6 +141,7 @@ text-align: center !important;
     font-family: 'Nunito', sans-serif;
     padding-right: 17px;
     font-weight: 600;
+    font-size: 15px;
 
 }
 .cross_icon{
@@ -224,6 +229,7 @@ text-align: center !important;
     text-transform: uppercase;
     word-spacing: 1px;
     letter-spacing: 1px;
+    width: 172px;
 
 }
 /*Vapianos css*/
@@ -674,12 +680,18 @@ padding:0px 17px;
 }
 .discover_button{}
 .discover_button button{
-    width:100%;
-    background:#000;
-    text-align:center;
-    border:none;
-    border-radius:25px;
-    color:#fff;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 0px 0px;
 }
 .hello_jorge_footer_area{
     padding: 16px 0px;
@@ -691,33 +703,35 @@ font-size: 12px;
 }
 .nay_button{
     background: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.56);
-    padding: 1px 33px;
+    border: 2px solid rgba(0, 0, 0, .56);
+    padding: 0px 20px;
     border-radius: 25px;
     margin-right: 10px;
     text-transform: uppercase;
     font-weight: 800;
     color: #000;
     font-family: 'Nunito', sans-serif;
+    width: 80px;
 }
 .yay_button{
     background: #fff;
     border: 1px solid #fff;
-    padding: 1px 33px;
+    padding: 0px 20px;
     border-radius: 25px;
     margin-right: 10px;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
     color: #000;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .13);
+    width: 82px;
 
 }
 #hellojorge-area{
     bottom: 14%;
 }
 .hello_jorge_heading h2{
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Nunito', sans-serif;
     color: #2b2b2b;
     font-weight: 600;
@@ -726,7 +740,7 @@ font-size: 12px;
 
 }
 .nay_heading h2{
-    font-size: 33px;
+    font-size: 30px;
     font-family: 'Nunito', sans-serif;
     color: #0e0e0e;
     font-weight: 600;
@@ -738,25 +752,27 @@ font-size: 12px;
     color: #6d6d6d;
     font-family: 'Nunito', sans-serif;
     margin-top: 2px;
-    font-size: 18px;
+    font-size: 15px;
 }
 .hello_jorge_heading p{
     line-height: 22px;
     color: #6d6d6d;
     font-family: 'Nunito', sans-serif;
     margin-top: 2px;
-    font-size: 19px;
+    font-size:15px;
 }
 .reserve_button_customize{
     background: #fff;
-    padding: 1px 15px;
+    padding: 0px 16px;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 9px;
     border-radius: 25px;
     margin-left: 10px;
-    color: #444;
-    font-weight: bold;
-    border:none;
+    color: #000;
+    font-weight: 800;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    float: right;
 
 }
 .hellojorge_carousel_heading{
@@ -808,7 +824,7 @@ font-size: 12px;
 
 }
 .hello_jorge_heading{
-    margin-top: 85px;
+    margin-top: 150px;
 
 
 }
