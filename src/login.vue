@@ -161,8 +161,8 @@
                     if(this.logindata == 1){
                         this.$session.start()
                         this.$session.set('user', this.user)
-                        this.username = '';
-                        this.password = '';
+                        this.user = '';
+                        this.pass = '';
                         this.pageStack.push(welcome);
                     }
                     else{
