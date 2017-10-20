@@ -36,7 +36,7 @@
                     <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
                         <div class="image_footer">
                             <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
-                            <a href="" ><img :src="footercarousel" /></a>
+                            <a href="" v-else><img :src="footercarousel" /></a>
                             <!--<img :src="footercarousel" alt="" />-->
                             <div class="image_overlay_content">
                                 <h4 v-html="foo.short_title"></h4>
