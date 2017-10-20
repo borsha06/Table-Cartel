@@ -29,7 +29,7 @@
                 <ons-col width="100%">
                     <div class="left_side_button">
                         <button class="button button--light button_customize" @click="cuisine">Cuisine</button>
-                        <button class="button button--light button_customize" @click="area__a">Area</button>
+                        <button class="button button--light button_customize area_button_change" @click="area__a">Area</button>
                         <!--<h2 v-for="foo in food['foods']">{{foo.ID}}/10</h2>-->
                     </div>
                 </ons-col>

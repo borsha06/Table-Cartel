@@ -16,7 +16,7 @@
 
         <div v-show="pageloading">
             <div class="background_white" id="bg-restaurant">
-                <ons-row align="center">
+                <ons-row align="left">
                     <ons-col width="80%">
                         <div class="vapianos_left_side_heading">
                             <h2 v-html="rest.post_title"></h2>
@@ -33,7 +33,7 @@
 
             </div>
             <div class="vapianos_order_load_wallet">
-                <ons-row align="center">
+                <ons-row align="left">
                     <ons-col width="70%">
                         <div class="vapianos_left_side_wallet">
                             <ons-row>
@@ -67,7 +67,7 @@
                             </ons-row>
                         </div>
                     </ons-col>
-                    <ons-col width="30%">
+                    <ons-col align="right" width="30%">
                         <div class="vapianos_right_side_rating">
                             <div class="card">
                                 <div class="card__content card_text">
@@ -84,7 +84,7 @@
 
             </div>
             <div class="vapianos_menu_button">
-                <ons-row align="center">
+                <ons-row align="left">
                     <ons-col width="25%">
 
                     </ons-col>
@@ -116,7 +116,7 @@
                             </div>
                             <div class="icon_text">
                                 <strong>Price</strong>
-                                <p>{{rest.price_range}}</p>
+                                <p class="price_uppercase">{{rest.price_range}}</p>
                             </div>
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
@@ -136,7 +136,7 @@
                             </div>
                             <div class="icon_text">
                                 <strong>Hours</strong>
-                                <p>{{rest.restaurant_hours}}</p>
+                                <p class="hours_capitalize">{{rest.restaurant_hours}}</p>
                             </div>
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
@@ -145,7 +145,7 @@
                             </div>
                             <div class="icon_text">
                                 <strong>Parking</strong>
-                                <p>{{rest.parking}}</p>
+                                <p class="parking_capitalize">{{rest.parking}}</p>
                             </div>
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
@@ -154,7 +154,7 @@
                             </div>
                             <div class="icon_text">
                                 <strong>Dresscode</strong>
-                                <p>{{rest.dress_code}}</p>
+                                <p class="parking_dresscode">{{rest.dress_code}}</p>
                             </div>
                         </ons-row>
                     </ons-col>
