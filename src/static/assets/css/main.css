@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900');
 button:active{
     background:#fff;
     border:none;
@@ -87,13 +87,12 @@ text-align: center !important;
 }
 
 #table-cartel-heading{
-	text-align:center;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 12px;
     margin-top: -2px;
-    text-shadow: 0 0 1px #bdbdbd;
-    letter-spacing: 0.4px;;
+    text-shadow: 0 0 1px rgba(189, 189, 189, 0.71);
+    letter-spacing: 0.7px;
 }
 .left_side_button{
 	margin-left:17px;
@@ -315,6 +314,7 @@ background-color: #fff;
 }
 .vapianos_right_side_rating{
     margin-right: 8px;
+
 }
 .vapianos_right_side_rating>.card{
     text-align: center;
@@ -333,10 +333,11 @@ background-color: #fff;
 }
 .card_text span{
     font-size: 25px;
-    font-weight: normal;
+    font-weight: 200;
     display: block;
     margin-top: 10px;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Nunito', sans-serif;
+
 }
 .card_text p{
     margin-top: 3px;
@@ -345,7 +346,10 @@ background-color: #fff;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
 }
-.vapianos_address{}
+.vapianos_address{
+    float: left;
+    margin-top: 12px;
+}
 .vapianos_address strong{
     font-size: 13px;
     color: #191919;
@@ -354,11 +358,25 @@ background-color: #fff;
 }
 .vapianos_address p{
     font-family: 'Nunito', sans-serif;
-    margin-top: 8px;
+    margin-top: 2px;
     color: #666;
     font-size: 11px;
     margin-bottom: 25px;
     padding-right: 2px;
+    text-transform: capitalize;
+}
+.price_uppercase{
+    text-transform: uppercase;
+
+}
+.hours_capitalize{
+    text-transform: capitalize;
+}
+.parking_capitalize{
+    text-transform: capitalize;
+}
+.parking_dresscode{
+    text-transform: capitalize;    
 }
 .reserv_button{
     float:right;
@@ -644,7 +662,6 @@ padding:0px 17px;
 /*Hello Jorge CSS*/
 .hello_jorge_bg{
     background: #f3f5f7;
-    margin-top: 46px;
     padding: 0px 17px;
     height: 100%;
 
@@ -761,7 +778,7 @@ font-size: 12px;
 
 }
 .hello_jorge_button_area{
-    height:60%;
+
 
 }
 .hellojorge_carousel_heading p{
@@ -791,7 +808,7 @@ font-size: 12px;
 
 }
 .hello_jorge_heading{
-    margin-top: 136px;
+    margin-top: 85px;
 
 
 }
@@ -978,6 +995,9 @@ font-size: 12px;
     color: #444;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+}
+.header_left_icon{
+    margin-top: -2px;
 }
 .header_left_icon img{
         width: 18px;

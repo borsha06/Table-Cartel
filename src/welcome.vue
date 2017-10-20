@@ -117,6 +117,10 @@
     }
 </script>
 <style scoped>
+.page--material__background{
+    background:red;
+
+}
 .welcome_bg{
 
 
