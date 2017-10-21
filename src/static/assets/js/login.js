@@ -9,7 +9,7 @@
 
     	});
     	$("#login-body").focusout(function(){
-    		$(".logo-area").show();
+    		$(".logos>img").show();
 
     	});
     	// $("body").click(function(){
