@@ -13,8 +13,8 @@
                 <ons-row align="center" class="loginarea">
                     <ons-col width="100%">
                         <div class="login_form">
-                            <input type="text" v-model="user" class="text-input form_name" placeholder="Username" required value="" />
-                            <input type="password" v-model="pass" class="text-input form_pass"   placeholder="Password" required value="" />
+                            <input type="text"  v-model="user" class="text-input form_name" placeholder="Username" required value="" />
+                            <input type="password"  v-model="pass" class="text-input form_pass"   placeholder="Password" required value="" />
                         </div>
                         <!--<button class="button button&#45;&#45;light" type="submit">Sign in</button>-->
                         <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
@@ -93,10 +93,6 @@
                         <p class="button " ><img :src="connect" alt="" /></p>
                     </div>
                 </ons-col>
-            </ons-row><ons-row align="center" class="connect">
-                <ons-col width="100%">
-
-                </ons-col>
             </ons-row>
     </div>
 
@@ -130,7 +126,7 @@
                 user: '',
                 pass: '',
                 logindata: '',
-                loading: false
+                loading: false,
 //                fbSignInParams: {
 //                    scope: 'email,user_likes',
 //                    return_scopes: true
@@ -185,7 +181,7 @@
             },
             registration (){
                 this.pageStack.push(registration)
-            }
+            },
 //            onSignInSuccess (response) {
 //                FB.api('/me', dude => {
 //                    console.log(`Good to see you, ${dude.name}.`)
@@ -206,10 +202,8 @@
     }
     .login_bg{
         background:#f3f5f7 !important;
+        height: 100%;
 
-    }
-    .page--material__background{
-        background:#f3f5f7 !important;
     }
     ::placeholder{
     color:#444;
@@ -236,8 +230,9 @@
         text-align: center;
         color: black;
     }
-    .page--material__background{
-        background: #f3f5f7 important;
+    .space{
+        height: 90px;
+        background:#f3f5f7 !important;
     }
 
 </style>
