@@ -9,8 +9,8 @@
         </div>
 
         <div v-if="loading" class="loading" v-cloak>
-                <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-                <!--<span>Loading...</span>-->
+            <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+            <!--<span>Loading...</span>-->
         </div>
 
 
@@ -25,11 +25,12 @@
                     </ons-col>
                     <ons-col width="20%">
                         <div class="vapianos_cross_icon">
-                             <!--  <i class="fa fa-times-circle-o" aria-hidden="true"></i> -->
-                                <img @click="pop" :src="close" alt="close" />
+                            <!--  <i class="fa fa-times-circle-o" aria-hidden="true"></i> -->
+                            <img @click="pop" :src="close" alt="close" />
                         </div>
                     </ons-col>
                 </ons-row>
+
             </div>
             <div class="vapianos_order_load_wallet">
                 <ons-row align="left">
@@ -42,7 +43,7 @@
                                     </div>
                                     <div class="wallet_progressr">
                                         <div class="progress-bar">
-                                          <div class="progress-bar__primary" style="width: 60%"></div>
+                                            <div class="progress-bar__primary" style="width: 60%"></div>
 
                                         </div>
                                     </div>
@@ -66,7 +67,7 @@
                             </ons-row>
                         </div>
                     </ons-col>
-                    <ons-col width="30%">
+                    <ons-col align="right" width="30%">
                         <div class="vapianos_right_side_rating">
                             <div class="card">
                                 <div class="card__content card_text">
@@ -115,7 +116,7 @@
                             </div>
                             <div class="icon_text">
                                 <strong>Price</strong>
-                                <p>{{rest.price_range}}</p>
+                                <p class="price_uppercase">{{rest.price_range}}</p>
                             </div>
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
@@ -135,7 +136,7 @@
                             </div>
                             <div class="icon_text">
                                 <strong>Hours</strong>
-                                <p>{{rest.restaurant_hours}}</p>
+                                <p class="hours_capitalize">{{rest.restaurant_hours}}</p>
                             </div>
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
@@ -144,7 +145,7 @@
                             </div>
                             <div class="icon_text">
                                 <strong>Parking</strong>
-                                <p>{{rest.parking}}</p>
+                                <p class="parking_capitalize">{{rest.parking}}</p>
                             </div>
                         </ons-row>
                         <ons-row align="left" class="vapianos_icon_row">
@@ -153,7 +154,7 @@
                             </div>
                             <div class="icon_text">
                                 <strong>Dresscode</strong>
-                                <p>{{rest.dress_code}}</p>
+                                <p class="parking_dresscode">{{rest.dress_code}}</p>
                             </div>
                         </ons-row>
                     </ons-col>
@@ -165,7 +166,7 @@
                             <div class="icon_text another_icon_text">
                                 <strong>Description</strong>
                                 <p v-html="rest.post_content"></p>
-                               
+
                             </div>
                         </ons-row>
                     </ons-col>

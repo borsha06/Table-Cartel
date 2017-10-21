@@ -652,6 +652,9 @@ padding:0px 17px;
 .cross_icon img, .nay_cross_icon img, .reserved_cross_icon img,.vapianos_cross_icon img{
     width:30px;
 }
+.nay_cross_icon img{
+    margin-top: 45px;
+}
 .reserved_carousel_heading{
     font-size: 14px;
     color: #000;
@@ -818,13 +821,13 @@ font-size: 12px;
     width:74%;
 }
 .nay_heading{
-    margin-top: 136px;
+    margin-top: 110px;
     margin-bottom:275px;
 
 
 }
 .hello_jorge_heading{
-    margin-top: 150px;
+    margin-top: 180px;
 
 
 }
