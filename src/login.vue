@@ -211,6 +211,7 @@
     }
     .login_bg{
         background:#f3f5f7 !important;
+        height:100%;
 
     }
     .page--material__background{

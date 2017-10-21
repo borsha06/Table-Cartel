@@ -1,11 +1,11 @@
     import $ from 'jquery';
     $(document).ready(function(){
     	$(".form_name").focus(function(){
-    		$(".logo-area").hide();
+    		$(".logos>img").hide();
 
     	});
     	$(".form_pass").focus(function(){
-    		$(".logo-area").hide();
+    		$(".logos>img").hide();
 
     	});
     	$("#login-body").focusout(function(){
