@@ -1,5 +1,5 @@
 <template>
-    <v-ons-page id="">
+    <v-ons-page id="login-body">
         <div class="login_bg">
             <ons-row align="center" class="logo-area">
                 <ons-col width="100%">
@@ -196,7 +196,12 @@
 //            }
         },
         props: ['pageStack']
+
     }
+
+
+
+
 </script>
 <style scoped>
     .text-input:invalid {
@@ -236,8 +241,13 @@
         text-align: center;
         color: black;
     }
-    .page--material__background{
-        background: #f3f5f7 important;
+    .page__content{
+        background:red !important;
+
+    }
+    .page__background{
+        background:#f3f5f7 !important;
+
     }
 
 </style>

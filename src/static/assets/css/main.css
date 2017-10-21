@@ -841,7 +841,8 @@ font-size: 12px;
 }
 .logos{
     margin: auto;
-    width: 65%;
+    width: 50%;
+    margin-top: -22px;
 }
 .logos img{
     width:100%;
@@ -868,7 +869,17 @@ font-size: 12px;
     margin-bottom: 64px;
     margin-top: 61px;
 
-}
+}/*
+.form_name:focus, .form_pass:focus{
+color:blue;
+position:absolute;
+top:30%;
+
+}*/
+/*.form_name:focus{
+display:none;
+}*/
+
 .submit{
     width: 48%;
     margin: auto;
@@ -881,12 +892,14 @@ font-size: 12px;
     border: none;
     color: #fff;
     padding: 8px 0px;
-    text-transform: uppercase;
     border-radius: 25px;
     font-size: 10px;
     width: 70px;
     margin: 5px;
     margin-left: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.6px;
 }
 
 .sign_in button:focus{
@@ -898,12 +911,14 @@ font-size: 12px;
     border: none;
     color: #fff;
     padding: 8px 0px;
-    text-transform: uppercase;
     border-radius: 25px;
     font-size: 10px;
     margin-top: 5px;
     width: 70px;
     text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.6px;
 }
 /*.submit{}
 .signin_signup_form{
