@@ -1,5 +1,5 @@
 <template>
-    <v-ons-page id="">
+    <v-ons-page id="login-body">
         <div class="login_bg">
             <ons-row align="center" class="logo-area">
                 <ons-col width="100%">
@@ -76,13 +76,13 @@
                 <ons-col width="100%">
                     <div class="facebook_button">                        
                         <!--<p class="button button&#45;&#45;light" @click="push">facebook</p>-->
-                        <p class="button button--light" >facebook</p>
-                        <!--<fb-signin-button-->
-                                <!--:params="fbSignInParams"-->
-                                <!--@success="onSignInSuccess"-->
-                                <!--@error="onSignInError">-->
-                             <!--facebook-->
-                        <!--</fb-signin-button>-->
+                        <!--<p class="button button&#45;&#45;light" >facebook</p>-->
+                        <fb-signin-button
+                                :params="fbSignInParams"
+                                @success="onSignInSuccess"
+                                @error="onSignInError">
+                             facebook
+                        </fb-signin-button>
                     </div>
                 </ons-col>
             </ons-row>
@@ -105,9 +105,9 @@
 
 <script>
     import Vue from 'vue';
-//    import facebook from './facebook.js'
-//    import FBSignInButton from 'vue-facebook-signin-button'
-//    Vue.use(FBSignInButton)
+    import facebook from './facebook.js'
+    import FBSignInButton from 'vue-facebook-signin-button'
+    Vue.use(FBSignInButton)
     import connects from "assets/connect.png"
     import logos from "assets/logo.png"
     import welcome from './welcome'
@@ -127,10 +127,10 @@
                 pass: '',
                 logindata: '',
                 loading: false,
-//                fbSignInParams: {
-//                    scope: 'email,user_likes',
-//                    return_scopes: true
-//                }
+                fbSignInParams: {
+                    scope: 'email,user_likes',
+                    return_scopes: true
+                }
             }
         },
         methods: {
@@ -159,6 +159,7 @@
                         this.$session.set('user', this.user)
                         this.user = '';
                         this.pass = '';
+                        this.$modal.hide('loading-modal')
                         this.pageStack.push(welcome);
                     }
                     else{
@@ -182,17 +183,22 @@
             registration (){
                 this.pageStack.push(registration)
             },
-//            onSignInSuccess (response) {
-//                FB.api('/me', dude => {
-//                    console.log(`Good to see you, ${dude.name}.`)
-//                })
-//            },
-//            onSignInError (error) {
-//                console.log('OH NOES', error)
-//            }
+            onSignInSuccess (response) {
+                FB.api('/me', dude => {
+                    console.log(`Good to see you, ${dude.name}.`)
+                })
+            },
+            onSignInError (error) {
+                console.log('OH NOES', error)
+            }
         },
         props: ['pageStack']
+
     }
+
+
+
+
 </script>
 <style scoped>
     .text-input:invalid {
@@ -213,26 +219,31 @@
     .button{
         float:left;
     }
-    /*.fb-signin-button {*/
-        /*!* This is where you control how the button looks. Be creative! *!*/
-        /*width: 100%;*/
-        /*border-radius: 25px;*/
-        /*background: #000;*/
-        /*color: #fff;*/
-        /*font-family: 'Nunito', sans-serif;*/
-        /*font-size: 14px;*/
-        /*padding: 7px 0px;*/
-        /*font-weight: bold;*/
-        /*text-align: center;*/
-        /*box-shadow: 0px 0px 2px black;*/
-    /*}*/
+    .fb-signin-button {
+        /* This is where you control how the button looks. Be creative! */
+        width: 100%;
+        border-radius: 25px;
+        background: #000;
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        padding: 7px 0px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0px 0px 2px black;
+    }
     .loadingp{
         text-align: center;
         color: black;
     }
-    .space{
-        height: 90px;
+
+    .page__content{
+        background:red !important;
+
+    }
+    .page__background{
         background:#f3f5f7 !important;
+
     }
 
 </style>

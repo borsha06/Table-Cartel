@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/assets/js/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/android.json" afterPath="$PROJECT_DIR$/platforms/android/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="$PROJECT_DIR$/plugins/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.vue" afterPath="$PROJECT_DIR$/src/login.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/assets/css/main.css" afterPath="$PROJECT_DIR$/src/static/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.bundle.js" afterPath="$PROJECT_DIR$/www/app.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.css" afterPath="$PROJECT_DIR$/www/app.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,23 +44,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="welcome.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/welcome.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="45" />
-              <folding>
-                <element signature="e#3433#3475#0" expanded="true" />
-                <marker date="1508500276729" expanded="true" signature="3921:4185" ph="{&quot;footerlogo&quot;: footerlogo...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="welcome2.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
+            <state relative-caret-position="421">
               <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-row#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
@@ -60,20 +74,11 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13991">
-              <caret line="823" column="19" lean-forward="false" selection-start-line="823" selection-start-column="19" selection-end-line="823" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurant.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/restaurant.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4318">
-              <caret line="268" column="8" lean-forward="false" selection-start-line="268" selection-start-column="8" selection-end-line="268" selection-end-column="8" />
+            <state relative-caret-position="789">
+              <caret line="852" column="19" lean-forward="false" selection-start-line="852" selection-start-column="19" selection-end-line="852" selection-end-column="19" />
               <folding>
-                <marker date="1508501897439" expanded="true" signature="9323:9579" ph="{&quot;phonecallicon&quot;: phonecall...}" />
+                <marker date="1508577629964" expanded="true" signature="15686:15706" ph="{...}" />
+                <marker date="1508577629964" expanded="true" signature="17004:17007" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -82,7 +87,7 @@
       <file leaf-file-name="restaurant2.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/restaurant2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
+            <state relative-caret-position="17">
               <caret line="96" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="268" selection-end-column="8" />
               <folding>
                 <marker date="1508500276666" expanded="true" signature="9382:9638" ph="{&quot;phonecallicon&quot;: phonecall...}" />
@@ -91,48 +96,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+            <state relative-caret-position="-225">
+              <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
               <folding>
-                <element signature="e#4609#4650#0" expanded="true" />
+                <element signature="e#4430#4452#0" expanded="true" />
+                <element signature="e#4586#4627#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arearest.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/arearest.vue">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" column="11" lean-forward="true" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
-              <folding>
-                <element signature="e#2294#2315#0" expanded="true" />
-                <marker date="1508066371547" expanded="true" signature="2811:2973" ph="{&quot;footercarousel&quot;: carousel...}" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cuisine.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cuisine.vue">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/android/res/xml/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="86" lean-forward="false" selection-start-line="42" selection-start-column="86" selection-end-line="42" selection-end-column="86" />
-              <folding>
-                <marker date="1508066371610" expanded="true" signature="2631:2756" ph="{&quot;notificationicon&quot;: notification...}" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cuisine_rest.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1228">
+              <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -142,7 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bu</find>
       <find>reserve_top_button</find>
       <find>button</find>
       <find>connect_button</find>
@@ -172,6 +192,7 @@
       <find>.hello_jorge_heading h2</find>
       <find>.hello_jorge_heading</find>
       <find>.nay_heading</find>
+      <find>.l</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -180,7 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/arias_rest.vue" />
         <option value="$PROJECT_DIR$/src/arias_restaurant.vue" />
         <option value="$PROJECT_DIR$/src/Page2.vue" />
@@ -207,6 +227,10 @@
         <option value="$PROJECT_DIR$/src/restaurant.vue" />
         <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
         <option value="$PROJECT_DIR$/src/login.vue" />
+        <option value="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -253,28 +277,7 @@
             <path>
               <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
               <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,7 +326,7 @@
       <workItem from="1507693143002" duration="91066000" />
       <workItem from="1508215169310" duration="31866000" />
       <workItem from="1508481927913" duration="5961000" />
-      <workItem from="1508558432586" duration="2920000" />
+      <workItem from="1508558432586" duration="10984000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -343,12 +346,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172388000" />
+    <option name="totallyTimeSpent" value="180452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16071428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16071428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1898527" sideWeight="0.50595236" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -382,35 +386,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/yay.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="94" lean-forward="false" selection-start-line="28" selection-start-column="94" selection-end-line="28" selection-end-column="94" />
-          <folding>
-            <marker date="1508500276669" expanded="true" signature="3836:3925" ph="{&quot;footercarousel&quot;: carousel...}" />
-            <marker date="1508500276669" expanded="true" signature="3836:3935" ph="{...}" />
-            <marker date="1508500276669" expanded="true" signature="3836:4531" ph="{...}" />
-            <marker date="1508500276669" expanded="true" signature="3836:4540" ph="..." />
-            <marker date="1508500276669" expanded="true" signature="3954:4495" ph="{...}" />
-            <marker date="1508500276669" expanded="true" signature="3979:4248" ph="{...}" />
-            <marker date="1508500276669" expanded="true" signature="4017:4232" ph="{&quot;extends&quot;: restaurant...}" />
-            <marker date="1508500276669" expanded="true" signature="4087:4214" ph="{...}" />
-            <marker date="1508500276669" expanded="true" signature="4120:4192" ph="{...}" />
-            <marker date="1508500276669" expanded="true" signature="4267:4320" ph="{...}" />
-            <marker date="1508500276669" expanded="true" signature="4344:4401" ph="{...}" />
-            <marker date="1508500276669" expanded="true" signature="4425:4485" ph="{...}" />
-            <marker date="1508500276669" expanded="true" signature="4555:4604" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/area_rest.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cuisine_rest.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -423,6 +398,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <marker date="1508066371545" expanded="true" signature="3337:3500" ph="{&quot;notificationicon&quot;: notification...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -439,6 +417,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -446,6 +425,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <marker date="1508066371545" expanded="true" signature="3337:3500" ph="{&quot;notificationicon&quot;: notification...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -453,7 +435,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1904">
           <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
-          <folding />
+          <folding>
+            <marker date="1508577629964" expanded="true" signature="15686:15706" ph="{...}" />
+            <marker date="1508577629964" expanded="true" signature="17004:17007" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -528,27 +513,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/arias_rest.vue" />
     <entry file="file://$PROJECT_DIR$/src/arias_restaurant.vue" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="33" column="3" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="33" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -626,13 +597,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1001">
           <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <element signature="e#3537#3582#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,6 +608,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-799">
           <caret line="98" column="82" lean-forward="false" selection-start-line="98" selection-start-column="82" selection-end-line="98" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#1;n#v-ons-page#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#8223#8265#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -669,6 +640,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="58" column="11" lean-forward="false" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+          <folding>
+            <marker date="1508066371545" expanded="true" signature="3337:3500" ph="{&quot;notificationicon&quot;: notification...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -695,7 +669,7 @@
         <state relative-caret-position="714">
           <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="45" />
           <folding>
-            <element signature="e#3433#3475#0" expanded="true" />
+            <element signature="e#3433#3475#0" expanded="false" />
             <marker date="1508500276729" expanded="true" signature="3921:4185" ph="{&quot;footerlogo&quot;: footerlogo...}" />
           </folding>
         </state>
@@ -711,20 +685,10 @@
     <entry file="file://$PROJECT_DIR$/src/arearest.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
-          <caret line="70" column="11" lean-forward="true" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+          <caret line="70" column="11" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
           <folding>
-            <element signature="e#2294#2315#0" expanded="true" />
+            <element signature="e#2294#2315#0" expanded="false" />
             <marker date="1508066371547" expanded="true" signature="2811:2973" ph="{&quot;footercarousel&quot;: carousel...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/restaurant2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="268" selection-end-column="8" />
-          <folding>
-            <marker date="1508500276666" expanded="true" signature="9382:9638" ph="{&quot;phonecallicon&quot;: phonecall...}" />
           </folding>
         </state>
       </provider>
@@ -735,26 +699,6 @@
           <caret line="268" column="8" lean-forward="false" selection-start-line="268" selection-start-column="8" selection-end-line="268" selection-end-column="8" />
           <folding>
             <marker date="1508501897439" expanded="true" signature="9323:9579" ph="{&quot;phonecallicon&quot;: phonecall...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13991">
-          <caret line="823" column="19" lean-forward="false" selection-start-line="823" selection-start-column="19" selection-end-line="823" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-row#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3399#3441#0" expanded="true" />
-            <marker date="1508497922090" expanded="true" signature="3956:4182" ph="{&quot;footerlogo&quot;: footerlogo...}" />
           </folding>
         </state>
       </provider>
@@ -770,13 +714,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/restaurant2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="268" selection-end-column="8" />
+          <folding>
+            <marker date="1508500276666" expanded="true" signature="9382:9638" ph="{&quot;phonecallicon&quot;: phonecall...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="852" column="19" lean-forward="false" selection-start-line="852" selection-start-column="19" selection-end-line="852" selection-end-column="19" />
+          <folding>
+            <marker date="1508577629964" expanded="true" signature="15686:15706" ph="{...}" />
+            <marker date="1508577629964" expanded="true" signature="17004:17007" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/login.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="-225">
+          <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
           <folding>
-            <element signature="e#4609#4650#0" expanded="true" />
+            <element signature="e#4430#4452#0" expanded="true" />
+            <element signature="e#4586#4627#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/res/xml/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-row#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#3399#3441#0" expanded="true" />
+            <marker date="1508497922090" expanded="true" signature="3956:4182" ph="{&quot;footerlogo&quot;: footerlogo...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1228">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
