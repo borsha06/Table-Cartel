@@ -28,6 +28,7 @@
                             </div>
                         </ons-col>
                     </ons-row>
+
                     <ons-row align="center" class="top_button_area">
                         <ons-col width="100%">
                             <div class="reserve_top_button_text">
@@ -38,7 +39,9 @@
                             <div class="reserve_top_button">
                                 <!--<input type="text" class="text-input" v-model="restaurant" placeholder="Vapianos italian's gourment" value="">-->
                                 <!--<p class="button button&#45;&#45;light">{{this.data.name}}</p>-->
+                                
                                 <select v-model="restaurant_id" required="">
+                                    <option selected="selected">Select Please</option>
                                     <option id="select_align" v-for="item in restaurants" v-bind:value="item.ID">{{ item.post_title }}</option>
                                 </select>
                             </div>
@@ -78,6 +81,7 @@
                             </div>
                         </ons-col>
                     </ons-row>
+                    
                     <modal name="permit-modal"
                            transition="nice-modal-fade"
                            :min-width="200"
