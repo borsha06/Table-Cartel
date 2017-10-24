@@ -737,9 +737,10 @@ font-size: 12px;
     font-size: 30px;
     font-family: 'Nunito', sans-serif;
     color: #2b2b2b;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 0px;
-    text-transform: capitalize
+    text-transform: capitalize;
+    letter-spacing: 0.6px;
 
 }
 .nay_heading h2{
@@ -758,11 +759,12 @@ font-size: 12px;
     font-size: 15px;
 }
 .hello_jorge_heading p{
-    line-height: 22px;
+    line-height: 23px;
     color: #6d6d6d;
     font-family: 'Nunito', sans-serif;
     margin-top: 2px;
-    font-size:15px;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 .reserve_button_customize{
     background: #fff;
@@ -811,7 +813,7 @@ font-size: 12px;
     margin-left: 17px;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    color: #666;
+    color: #000;
     font-size:15px;
 }
 .left_logo{
@@ -821,8 +823,8 @@ font-size: 12px;
     width:74%;
 }
 .nay_heading{
-    margin-top: 110px;
-    margin-bottom:275px;
+    margin-top: 147px;
+    margin-bottom: 45px;
 
 
 }
@@ -1047,8 +1049,7 @@ display:none;
 
 }
 .menu_button{
-    height: 400px;
-    overflow: scroll;
+    height: 350px;
     padding: 0px 17px;
 
 }
@@ -1087,7 +1088,7 @@ display:none;
 
 }
 .menu_button_area{
-    margin-top:133px;
+    margin-top:88px;
 
 }
 .menu_connect_button{
