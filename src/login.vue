@@ -9,7 +9,7 @@
                 </ons-col>
             </ons-row>
 
-            <form v-on:submit.prevent="login">
+            <form v-on:submit.prevent="loginuser">
                 <ons-row align="center" class="loginarea">
                     <ons-col width="100%">
                         <div class="login_form">
@@ -76,13 +76,13 @@
                 <ons-col width="100%">
                     <div class="facebook_button">                        
                         <!--<p class="button button&#45;&#45;light" @click="push">facebook</p>-->
-                        <!--<p class="button button&#45;&#45;light" >facebook</p>-->
-                        <fb-signin-button
-                                :params="fbSignInParams"
-                                @success="onSignInSuccess"
-                                @error="onSignInError">
-                             facebook
-                        </fb-signin-button>
+                        <p class="button button--light" @click="login" >facebook</p>
+                        <!--<fb-signin-button-->
+                                <!--:params="fbSignInParams"-->
+                                <!--@success="onSignInSuccess"-->
+                                <!--@error="onSignInError">-->
+                             <!--facebook-->
+                        <!--</fb-signin-button>-->
                     </div>
                 </ons-col>
             </ons-row>
@@ -118,6 +118,7 @@
     import VueSession from 'vue-session'
     Vue.use(VueSession)
 
+
     export default {
         data () {
             return {
@@ -137,7 +138,7 @@
             push() {
                 this.pageStack.push(welcome)
             },
-            login (){
+            loginuser (){
                 this.loading = true
                 this.$modal.show('loading-modal')
                 $.ajax({
@@ -190,7 +191,39 @@
             },
             onSignInError (error) {
                 console.log('OH NOES', error)
+            },
+            login () {
+                console.log('login')
+                facebookConnectPlugin.login(['email'], function (response) {
+                    alert('loged in');
+                    alert(JSON.stringify(response.authResponse));
+                }, function (error) {
+                    alert(error);
+                })
+//                facebookConnectPlugin.getLoginStatus(function(response){
+//                    if(response.status === 'connected'){
+//                        authenticate(response.authResponse.accessToken)
+//                    }
+//                    else {
+//                        facebookConnectPlugin.login(['email', 'public_profile'], function(response) {
+//                            authenticate(response.authResponse.accessToken);
+//                            alert('loged in');
+//                            alert(JSON.stringify(response.authResponse));
+//                        }, function(err) {
+//                            alert({
+//                                title: "Oops!",
+//                                template: err.errorMessage || err
+//                            })
+//                        });
+//                    }
+//                });
+            },
+            logout () {
+                facebookConnectPlugin.logout((response) => {
+                    alert(JSON.stringify(response.authResponse));
+                })
             }
+
         },
         props: ['pageStack']
 

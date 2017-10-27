@@ -15,6 +15,11 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.example.helloworld"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "1546786438716692",
+      "APP_NAME": "Android",
+      "PACKAGE_NAME": "com.example.helloworld"
     }
   },
   "dependent_plugins": {}
