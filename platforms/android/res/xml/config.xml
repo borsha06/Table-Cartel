@@ -50,7 +50,7 @@
     <preference name="KeepRunning" value="true" />
     <preference name="monaca:WebViewEngine" value="default" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="1000" />
+    <preference name="SplashScreenDelay" value="3000" />
     <preference name="Orientation" value="default" />
     <preference name="monaca:DisableCookie" value="false" />
     <preference name="monaca:AndroidIsPackageNameSeparate" value="false" />
@@ -58,11 +58,11 @@
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="EnableViewportScale" value="false" />
-    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreen" value="false" />
     <preference name="FadeSplashScreenDuration" value="250" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
-    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
     <preference name="SuppressesIncrementalRendering" value="false" />
     <preference name="TopActivityIndicator" value="gray" />
     <preference name="GapBetweenPages" value="0" />

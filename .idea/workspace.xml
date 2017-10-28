@@ -2,141 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/.ratignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/NOTICE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/RELEASENOTES.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/de/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/de/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/es/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/es/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/fr/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/fr/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/it/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/it/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/ja/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/ja/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/ko/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/ko/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/pl/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/pl/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/ru/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/zh/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/doc/zh/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/android/NetworkManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/blackberry10/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/browser/network.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/firefoxos/NetworkProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/ios/CDVConnection.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/ios/CDVConnection.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/ios/CDVReachability.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/ios/CDVReachability.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/tizen/NetworkProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/ubuntu/network_information.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/ubuntu/network_information.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/windows/NetworkInfoProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/src/wp/NetworkStatus.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/tests/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/tests/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/tests/tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/types/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/www/Connection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-network-information/www/network.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/cordova-plugin-network-information/www/Connection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/cordova-plugin-network-information/www/network.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/platform_www/plugins/cordova-plugin-network-information/www/Connection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/platform_www/plugins/cordova-plugin-network-information/www/network.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/src/com/example/helloworld/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/src/org/apache/cordova/networkinformation/NetworkManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/NOTICE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/RELEASENOTES.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/de/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/de/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/es/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/es/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/fr/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/fr/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/it/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/it/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/ja/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/ja/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/ko/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/ko/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/pl/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/pl/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/ru/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/zh/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/doc/zh/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/android/NetworkManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/blackberry10/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/browser/network.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/firefoxos/NetworkProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/ios/CDVConnection.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/ios/CDVConnection.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/ios/CDVReachability.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/ios/CDVReachability.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/tizen/NetworkProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/ubuntu/network_information.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/ubuntu/network_information.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/windows/NetworkInfoProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/src/wp/NetworkStatus.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/tests/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/tests/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/tests/tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/types/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/www/Connection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/www/network.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/assets/phone-call.4690d2c00fb1dbf99bf437366dbe1cf2.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-release.aar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-release.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/android/screen/splash-port-hdpi.9.png" afterPath="$PROJECT_DIR$/res/android/screen/splash-port-hdpi.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/android/screen/splash-port-ldpi.9.png" afterPath="$PROJECT_DIR$/res/android/screen/splash-port-ldpi.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/android/screen/splash-port-mdpi.9.png" afterPath="$PROJECT_DIR$/res/android/screen/splash-port-mdpi.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/android/screen/splash-port-xhdpi.9.png" afterPath="$PROJECT_DIR$/res/android/screen/splash-port-xhdpi.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/android/screen/splash-port-xxhdpi.9.png" afterPath="$PROJECT_DIR$/res/android/screen/splash-port-xxhdpi.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/android/screen/splash-port-xxxhdpi.9.png" afterPath="$PROJECT_DIR$/res/android/screen/splash-port-xxxhdpi.9.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/android.json" afterPath="$PROJECT_DIR$/platforms/android/android.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/values/facebookconnect.xml" afterPath="$PROJECT_DIR$/platforms/android/res/values/facebookconnect.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/browser.json" afterPath="$PROJECT_DIR$/platforms/browser/browser.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/config.xml" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/platform_www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/browser/platform_www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/platform_www/plugins/cordova-plugin-facebook4/www/facebook-browser.js" afterPath="$PROJECT_DIR$/platforms/browser/platform_www/plugins/cordova-plugin-facebook4/www/facebook-browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/app.bundle.js" afterPath="$PROJECT_DIR$/platforms/browser/www/app.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/config.xml" afterPath="$PROJECT_DIR$/platforms/browser/www/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/browser/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterPath="$PROJECT_DIR$/platforms/browser/www/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-facebook4/www/facebook-browser.js" afterPath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-facebook4/www/facebook-browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="$PROJECT_DIR$/plugins/android.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/browser.json" afterPath="$PROJECT_DIR$/plugins/browser.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.vue" afterPath="$PROJECT_DIR$/src/login.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.bundle.js" afterPath="$PROJECT_DIR$/www/app.bundle.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -154,7 +34,7 @@
       <file leaf-file-name="welcome2.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
+            <state relative-caret-position="0">
               <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-row#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
@@ -203,8 +83,8 @@
       <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="228" column="19" lean-forward="false" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="19" />
+            <state relative-caret-position="-130">
+              <caret line="226" column="27" lean-forward="false" selection-start-line="226" selection-start-column="27" selection-end-line="226" selection-end-column="27" />
               <folding>
                 <element signature="e#4492#4514#0" expanded="true" />
                 <element signature="e#4648#4689#0" expanded="true" />
@@ -217,40 +97,8 @@
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="146">
-              <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="45" />
+              <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectPlugin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-facebook4/src/android/ConnectPlugin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebookconnect.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-facebook4/src/android/facebookconnect.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebook-browser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-facebook4/www/facebook-browser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -259,7 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>button</find>
       <find>connect_button</find>
       <find>.menu_button button</find>
       <find>.reserve_second_top_button input</find>
@@ -289,6 +136,7 @@
       <find>.nay_heading</find>
       <find>.l</find>
       <find>facebookConnectPlugin</find>
+      <find>ShowSplashScreenSpinner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -340,7 +188,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
@@ -369,17 +217,6 @@
             <path>
               <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
               <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="cordova-plugin-facebook4" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -431,7 +268,7 @@
       <workItem from="1508481927913" duration="5961000" />
       <workItem from="1508558432586" duration="27998000" />
       <workItem from="1509014457285" duration="10422000" />
-      <workItem from="1509167011417" duration="6661000" />
+      <workItem from="1509167011417" duration="8094000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -451,10 +288,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214549000" />
+    <option name="totallyTimeSpent" value="215982000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22619048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -678,7 +515,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
+        <state relative-caret-position="0">
           <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-row#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
@@ -796,14 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-facebook4/src/android/ConnectPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-facebook4/www/facebook-browser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2091">
@@ -811,6 +640,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-facebook4/src/android/ConnectPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -824,8 +661,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/login.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="228" column="19" lean-forward="false" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="19" />
+        <state relative-caret-position="-130">
+          <caret line="226" column="27" lean-forward="false" selection-start-line="226" selection-start-column="27" selection-end-line="226" selection-end-column="27" />
           <folding>
             <element signature="e#4492#4514#0" expanded="true" />
             <element signature="e#4648#4689#0" expanded="true" />
@@ -836,7 +673,7 @@
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
-          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="45" />
+          <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
           <folding />
         </state>
       </provider>
