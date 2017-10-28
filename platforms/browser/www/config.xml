@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.tablecartelapp.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Table-Cartel</name>
     <description />
     <author />
     <access origin="*" />
+    <access origin="*facebook.com*" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <content src="index.html" />

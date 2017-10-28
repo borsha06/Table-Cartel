@@ -142,7 +142,7 @@ if (window.location.protocol === "file:") {
 } else {
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : 1546786438716692,  // 1546786438716692 is populated by the cordova after_prepare hook
+      appId      : 208052816401741,  // 208052816401741 is populated by the cordova after_prepare hook
       xfbml      : true,
       version    : 'v2.7'
     });
