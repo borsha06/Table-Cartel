@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+<widget id="com.tablecartelapp.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
     <name>Table-Cartel</name>
     <description />
     <author />
     <access origin="*" />
+    <access origin="*facebook.com*" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <content src="index.html" />
@@ -16,7 +17,7 @@
     <preference name="KeepRunning" value="true" />
     <preference name="monaca:WebViewEngine" value="default" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="1000" />
+    <preference name="SplashScreenDelay" value="3000" />
     <preference name="Orientation" value="default" />
     <preference name="monaca:DisableCookie" value="false" />
     <preference name="monaca:AndroidIsPackageNameSeparate" value="false" />
@@ -27,7 +28,7 @@
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="EnableViewportScale" value="false" />
-    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreen" value="false" />
     <preference name="FadeSplashScreenDuration" value="250" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
@@ -102,11 +103,11 @@
     </platform>
     <engine name="android" spec="^6.2.3" />
     <engine name="browser" spec="^5.0.1" />
-    <plugin name="cordova-plugin-network-information" spec="^1.3.3" />
     <plugin name="cordova-plugin-inappbrowser" spec="^1.7.1" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
     <plugin name="cordova-plugin-facebook4" spec="^1.9.1">
-        <variable name="APP_ID" value="1546786438716692" />
-        <variable name="APP_NAME" value="Android" />
+        <variable name="APP_ID" value="208052816401741" />
+        <variable name="APP_NAME" value="TableCartelApp" />
     </plugin>
+    <plugin name="cordova-plugin-splashscreen" spec="git+https://github.com/apache/cordova-plugin-splashscreen.git" />
 </widget>

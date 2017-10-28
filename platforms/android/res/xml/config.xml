@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
-    <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-    </feature>
+<widget id="com.tablecartelapp.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
@@ -19,10 +16,15 @@
     <access origin="https://api.facebook.com" />
     <access origin="https://*.fbcdn.net" />
     <access origin="https://*.akamaihd.net" />
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Table-Cartel</name>
     <description />
     <author />
     <access origin="*" />
+    <access origin="*facebook.com*" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <content src="index.html" />

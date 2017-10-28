@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.example.helloworld"
-    },
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.example.helloworld"
     },
@@ -17,9 +14,12 @@
       "PACKAGE_NAME": "com.example.helloworld"
     },
     "cordova-plugin-facebook4": {
-      "APP_ID": "1546786438716692",
-      "APP_NAME": "Android",
+      "APP_ID": "208052816401741",
+      "APP_NAME": "TableCartelApp",
       "PACKAGE_NAME": "com.example.helloworld"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.tablecartelapp.app"
     }
   },
   "dependent_plugins": {}

@@ -1,12 +1,4 @@
 {
-  "cordova-plugin-network-information": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-network-information"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-inappbrowser": {
     "source": {
       "type": "registry",
@@ -30,8 +22,16 @@
     },
     "is_top_level": true,
     "variables": {
-      "APP_ID": "1546786438716692",
-      "APP_NAME": "Android"
+      "APP_ID": "208052816401741",
+      "APP_NAME": "TableCartelApp"
     }
+  },
+  "cordova-plugin-splashscreen": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/apache/cordova-plugin-splashscreen.git"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

@@ -90,7 +90,7 @@
                 <ons-col width="100%">
                     <div class="connect_button">                        
                         <!--<p class="button " @click="push"><img :src="connect" alt="" /></p>-->
-                        <p class="button " ><img :src="connect" alt="" /></p>
+                        <p class="button" @click="logout"  ><img :src="connect" alt="" /></p>
                     </div>
                 </ons-col>
             </ons-row>
@@ -194,33 +194,43 @@
             },
             login () {
                 console.log('login')
-                facebookConnectPlugin.login(['email'], function (response) {
-                    alert('loged in');
-                    alert(JSON.stringify(response.authResponse));
-                }, function (error) {
-                    alert(error);
-                })
-//                facebookConnectPlugin.getLoginStatus(function(response){
-//                    if(response.status === 'connected'){
-//                        authenticate(response.authResponse.accessToken)
-//                    }
-//                    else {
-//                        facebookConnectPlugin.login(['email', 'public_profile'], function(response) {
-//                            authenticate(response.authResponse.accessToken);
-//                            alert('loged in');
-//                            alert(JSON.stringify(response.authResponse));
-//                        }, function(err) {
-//                            alert({
-//                                title: "Oops!",
-//                                template: err.errorMessage || err
-//                            })
-//                        });
-//                    }
-//                });
+//                facebookConnectPlugin.login(['email'], function (response) {
+//                    alert('loged in');
+//                    alert(JSON.stringify(response.authResponse));
+//                }, function (error) {
+//                    alert(error);
+//                })
+                var that = this;
+                facebookConnectPlugin.getLoginStatus(function(response){
+                    if(response.status == 'connected'){
+                        alert('loged in');
+                        that.pageStack.push(welcome);
+                    }
+                    else {
+                        facebookConnectPlugin.login(['email', 'public_profile'], function(response) {
+                            alert('loged in');
+                            alert(JSON.stringify(response.authResponse));
+                            facebookConnectPlugin.api('/' + response.authResponse.userID +'/?fields=id,name,email,gender,birthday',[],
+                                function onSuccess (result) {
+                                    alert(JSON.stringify(result.id));
+                                    alert(JSON.stringify(result.name));
+                                }, function onError (error) {
+                                    alert(JSON.stringify(error));
+                                }
+                            )
+                            that.pageStack.push(welcome);
+                        }, function(err) {
+                            alert({
+                                title: "Oops!",
+                                template: err.errorMessage || err
+                            })
+                        });
+                    }
+                });
             },
             logout () {
                 facebookConnectPlugin.logout((response) => {
-                    alert(JSON.stringify(response.authResponse));
+                    alert(JSON.stringify(response));
                 })
             }
 
