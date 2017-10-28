@@ -3,10 +3,28 @@
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="FacebookConnectPlugin">
+        <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <access origin="https://m.facebook.com" />
+    <access origin="https://graph.facebook.com" />
+    <access origin="https://api.facebook.com" />
+    <access origin="https://*.fbcdn.net" />
+    <access origin="https://*.akamaihd.net" />
     <name>Table-Cartel</name>
     <description />
     <author />
     <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
     <content src="index.html" />
     <preference name="ErrorUrl" value="" />
     <icon density="ldpi" src="/res/android/icon/ldpi.png" />
@@ -21,6 +39,7 @@
     <splash density="port-xhdpi" src="/res/android/screen/splash-port-xhdpi.9.png" />
     <splash density="port-xxhdpi" src="/res/android/screen/splash-port-xxhdpi.9.png" />
     <splash density="port-xxxhdpi" src="/res/android/screen/splash-port-xxxhdpi.9.png" />
+    <preference name="android-minSdkVersion" value="15" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="AndroidLaunchMode" value="singleTop" />
     <preference name="BackgroundColor" value="0xffffffff" />

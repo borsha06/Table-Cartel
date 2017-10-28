@@ -9,12 +9,12 @@
                 </ons-col>
             </ons-row>
 
-            <form v-on:submit.prevent="login">
+            <form v-on:submit.prevent="loginuser">
                 <ons-row align="center" class="loginarea">
                     <ons-col width="100%">
                         <div class="login_form">
-                            <input type="text" v-model="user" class="text-input form_name" placeholder="Username" required value="" />
-                            <input type="password" v-model="pass" class="text-input form_pass"   placeholder="Password" required value="" />
+                            <input type="text"  v-model="user" class="text-input form_name" placeholder="Username" required value="" />
+                            <input type="password"  v-model="pass" class="text-input form_pass"   placeholder="Password" required value="" />
                         </div>
                         <!--<button class="button button&#45;&#45;light" type="submit">Sign in</button>-->
                         <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
@@ -76,7 +76,7 @@
                 <ons-col width="100%">
                     <div class="facebook_button">                        
                         <!--<p class="button button&#45;&#45;light" @click="push">facebook</p>-->
-                        <p class="button button--light" >facebook</p>
+                        <p class="button button--light" @click="login" >facebook</p>
                         <!--<fb-signin-button-->
                                 <!--:params="fbSignInParams"-->
                                 <!--@success="onSignInSuccess"-->
@@ -93,10 +93,6 @@
                         <p class="button " ><img :src="connect" alt="" /></p>
                     </div>
                 </ons-col>
-            </ons-row><ons-row align="center" class="connect">
-                <ons-col width="100%">
-
-                </ons-col>
             </ons-row>
     </div>
 
@@ -109,9 +105,9 @@
 
 <script>
     import Vue from 'vue';
-//    import facebook from './facebook.js'
-//    import FBSignInButton from 'vue-facebook-signin-button'
-//    Vue.use(FBSignInButton)
+    import facebook from './facebook.js'
+    import FBSignInButton from 'vue-facebook-signin-button'
+    Vue.use(FBSignInButton)
     import connects from "assets/connect.png"
     import logos from "assets/logo.png"
     import welcome from './welcome'
@@ -122,6 +118,7 @@
     import VueSession from 'vue-session'
     Vue.use(VueSession)
 
+
     export default {
         data () {
             return {
@@ -130,18 +127,18 @@
                 user: '',
                 pass: '',
                 logindata: '',
-                loading: false
-//                fbSignInParams: {
-//                    scope: 'email,user_likes',
-//                    return_scopes: true
-//                }
+                loading: false,
+                fbSignInParams: {
+                    scope: 'email,user_likes',
+                    return_scopes: true
+                }
             }
         },
         methods: {
             push() {
                 this.pageStack.push(welcome)
             },
-            login (){
+            loginuser (){
                 this.loading = true
                 this.$modal.show('loading-modal')
                 $.ajax({
@@ -163,6 +160,7 @@
                         this.$session.set('user', this.user)
                         this.user = '';
                         this.pass = '';
+                        this.$modal.hide('loading-modal')
                         this.pageStack.push(welcome);
                     }
                     else{
@@ -185,15 +183,47 @@
             },
             registration (){
                 this.pageStack.push(registration)
+            },
+            onSignInSuccess (response) {
+                FB.api('/me', dude => {
+                    console.log(`Good to see you, ${dude.name}.`)
+                })
+            },
+            onSignInError (error) {
+                console.log('OH NOES', error)
+            },
+            login () {
+                console.log('login')
+                facebookConnectPlugin.login(['email'], function (response) {
+                    alert('loged in');
+                    alert(JSON.stringify(response.authResponse));
+                }, function (error) {
+                    alert(error);
+                })
+//                facebookConnectPlugin.getLoginStatus(function(response){
+//                    if(response.status === 'connected'){
+//                        authenticate(response.authResponse.accessToken)
+//                    }
+//                    else {
+//                        facebookConnectPlugin.login(['email', 'public_profile'], function(response) {
+//                            authenticate(response.authResponse.accessToken);
+//                            alert('loged in');
+//                            alert(JSON.stringify(response.authResponse));
+//                        }, function(err) {
+//                            alert({
+//                                title: "Oops!",
+//                                template: err.errorMessage || err
+//                            })
+//                        });
+//                    }
+//                });
+            },
+            logout () {
+                facebookConnectPlugin.logout((response) => {
+                    alert(JSON.stringify(response.authResponse));
+                })
             }
-//            onSignInSuccess (response) {
-//                FB.api('/me', dude => {
-//                    console.log(`Good to see you, ${dude.name}.`)
-//                })
-//            },
-//            onSignInError (error) {
-//                console.log('OH NOES', error)
-//            }
+
         },
         props: ['pageStack']
 
@@ -211,11 +241,8 @@
     }
     .login_bg{
         background:#f3f5f7 !important;
-        height:100%;
+        height: 100%;
 
-    }
-    .page--material__background{
-        background:#f3f5f7 !important;
     }
     ::placeholder{
     color:#444;
@@ -225,23 +252,24 @@
     .button{
         float:left;
     }
-    /*.fb-signin-button {*/
-        /*!* This is where you control how the button looks. Be creative! *!*/
-        /*width: 100%;*/
-        /*border-radius: 25px;*/
-        /*background: #000;*/
-        /*color: #fff;*/
-        /*font-family: 'Nunito', sans-serif;*/
-        /*font-size: 14px;*/
-        /*padding: 7px 0px;*/
-        /*font-weight: bold;*/
-        /*text-align: center;*/
-        /*box-shadow: 0px 0px 2px black;*/
-    /*}*/
+    .fb-signin-button {
+        /* This is where you control how the button looks. Be creative! */
+        width: 100%;
+        border-radius: 25px;
+        background: #000;
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        padding: 7px 0px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0px 0px 2px black;
+    }
     .loadingp{
         text-align: center;
         color: black;
     }
+
     .page__content{
         background:red !important;
 

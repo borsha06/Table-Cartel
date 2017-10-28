@@ -845,13 +845,14 @@ font-size: 12px;
         background: #f3f5f7;
 }
 .logos{
-    margin: auto;
-    width: 50%;
+    margin:  auto;
+    width: 63%;
     margin-top: -22px;
+
 }
 .logos img{
     width:100%;
-    padding-top: 40px;
+    padding-top: 65px;
 
 }
 /*Login Form*/
