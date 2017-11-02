@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import VueOnsen from 'vue-onsenui';
+var VueResource = require('vue-resource');
+
 import $ from 'jquery';
 
 import 'onsenui';
@@ -12,7 +14,7 @@ require('static/assets/js/login.js');
 
 import App from './App';
 Vue.use(VueOnsen);
-
+Vue.use(VueResource);
 
 
 

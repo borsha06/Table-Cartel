@@ -20,42 +20,17 @@
                         <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
                     </ons-col>
                 </ons-row>
-                <ons-row align="left" class="submit">
-                    <ons-col width="100%">
-                        <div class="sign_in">
-                            <button type="button button--light" >Sign In</button>
-                            <!--<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>-->
-                            <p type="button button--light">Sign Up</p>
-                        </div>
-                    </ons-col>
-                </ons-row>
+                <!--<ons-row align="left" class="submit">-->
+                    <!--<ons-col width="100%">-->
+                        <!--<div class="sign_in">-->
+                            <!--<button type="button button&#45;&#45;light" >Sign In</button>-->
+                            <!--&lt;!&ndash;<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>&ndash;&gt;-->
+                            <!--<p @click="" type="button button&#45;&#45;light">Sign Up</p>-->
+                        <!--</div>-->
+                    <!--</ons-col>-->
+                <!--</ons-row>-->
             </form>
-            <modal name="error-modal"
-                   transition="nice-modal-fade"
-                   :min-width="200"
-                   :min-height="200"
-                   :pivot-y="0.65"
-                   width="60%"
-                   height="auto"
-                   :delay="100"
-            >
-                <div class="example-modal-content errors">
-                    <font color="#8b0000"> <center>There is an error</center> </font>
-                </div>
-            </modal>
-            <modal name="username-modal"
-                   transition="nice-modal-fade"
-                   :min-width="200"
-                   :min-height="200"
-                   :pivot-y="0.75"
-                   width="60%"
-                   height="auto"
-                   :delay="100"
-            >
-                <div class="example-modal-content errors">
-                    <font color="#8b0000"> <center>Invalid Username or Password.</center> </font>
-                </div>
-            </modal>
+
             <modal name="loading-modal"
                    transition="nice-modal-fade"
                    :min-width="200"
@@ -90,7 +65,7 @@
                 <ons-col width="100%">
                     <div class="connect_button">                        
                         <!--<p class="button " @click="push"><img :src="connect" alt="" /></p>-->
-                        <p class="button" @click="logout"  ><img :src="connect" alt="" /></p>
+                        <p class="button" @click="check"  ><img :src="connect" alt="" /></p>
                     </div>
                 </ons-col>
             </ons-row>
@@ -123,6 +98,7 @@
         data () {
             return {
                 connect: connects,
+                email: '',
                 logo: logos,
                 user: '',
                 pass: '',
@@ -164,9 +140,8 @@
                         this.pageStack.push(welcome);
                     }
                     else{
-                        console.log('there is an error')
                         this.$modal.hide('loading-modal')
-                        this.$modal.show('username-modal')
+                        alert('Invalid  Username or Password')
                     }
 //                        this.loading = false
 //
@@ -175,64 +150,95 @@
                         console.log(err)
                         this.loading = false
                         this.$modal.hide('loading-modal')
-                        this.$modal.show('error-modal')
+                        alert('There is an error')
                     })
-            },
-            check () {
-                console.log('error')
             },
             registration (){
                 this.pageStack.push(registration)
             },
-            onSignInSuccess (response) {
-                FB.api('/me', dude => {
-                    console.log(`Good to see you, ${dude.name}.`)
-                })
-            },
-            onSignInError (error) {
-                console.log('OH NOES', error)
+            check(){
+                this.pageStack.push(welcome)
             },
             login () {
-                console.log('login')
-//                facebookConnectPlugin.login(['email'], function (response) {
-//                    alert('loged in');
-//                    alert(JSON.stringify(response.authResponse));
-//                }, function (error) {
-//                    alert(error);
-//                })
                 var that = this;
-                facebookConnectPlugin.getLoginStatus(function(response){
-                    if(response.status == 'connected'){
-                        alert('loged in');
-                        that.pageStack.push(welcome);
+                facebookConnectPlugin.getLoginStatus(function onLoginStatus(result_get) {
+                    if(((result_get.status!='unknown') ? ((result_get.authResponse.session_key) ? true : false) : false)) {
+                        //alert('logged in');
+                        //alert(JSON.stringify(result_get));
+                        facebookConnectPlugin.api("/me?fields=email,name,picture", ["public_profile","email"], function(result){
+                            //alert(JSON.stringify(result));
+                            that.$session.start()
+                            that.$session.set('user', result.name)
+                            that.$session.set('email', result.email)
+                            that.pageStack.push(welcome);
+                        },function(error){
+                            alert(JSON.stringify(error));
+                        });
                     }
                     else {
-                        facebookConnectPlugin.login(['email', 'public_profile'], function(response) {
-                            alert('loged in');
-                            alert(JSON.stringify(response.authResponse));
-                            facebookConnectPlugin.api('/' + response.authResponse.userID +'/?fields=id,name,email,gender,birthday',[],
+                        facebookConnectPlugin.login(['email', 'public_profile','user_birthday'], function(response) {
+                            //alert('logged in');
+                            //alert(JSON.stringify(response.authResponse));
+                            facebookConnectPlugin.api('/' + response.authResponse.userID +'/?fields=id,name,email,gender,age_range',[],
                                 function onSuccess (result) {
-                                    alert(JSON.stringify(result.id));
-                                    alert(JSON.stringify(result.name));
+                                    ///alert(JSON.stringify(result.age_range));
+                                    that.$http.post('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-app-facebook-users/', {
+                                        username: 'itsd@dmin',
+                                        password: 'itsd321#',
+                                        id: result.id,
+                                    }, {emulateJSON:true}).then(function(res){
+                                        // alert(JSON.stringify(res));
+                                        //alert(JSON.stringify(res.body));
+                                        //alert(res.body.length);
+                                        if(res.body.length == 1){
+                                            that.$session.start()
+                                            that.$session.set('user', result.name)
+                                            that.$session.set('email', result.email)
+                                            that.pageStack.push(welcome);
+                                        }else{
+                                            that.$http.post('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/post-app-facebook-users/', {
+                                                username: 'itsd@dmin',
+                                                password: 'itsd321#',
+                                                id: result.id,
+                                                email: result.email,
+                                                name: result.name,
+                                                birthday: result.age_range,
+                                                gender: result.gender,
+                                                title: result.name,
+                                            }, {emulateJSON:true}).then(function(res){
+                                                //alert(JSON.stringify(res));
+                                                that.$session.start()
+                                                that.$session.set('user', result.name)
+                                                that.$session.set('email', result.email)
+                                                that.pageStack.push(welcome);
+                                            }).catch((err)=>{
+                                                alert(JSON.stringify(err));
+                                            });
+                                        }
+                                    }).catch((err)=>{
+                                        alert(JSON.stringify(err));
+                                    });
                                 }, function onError (error) {
                                     alert(JSON.stringify(error));
                                 }
                             )
-                            that.pageStack.push(welcome);
                         }, function(err) {
-                            alert({
-                                title: "Oops!",
-                                template: err.errorMessage || err
-                            })
+                            alert(err.errorMessage || err)
                         });
+
+
                     }
+                },function(err) {
+                    alert(err.errorMessage || err)
                 });
             },
             logout () {
-                facebookConnectPlugin.logout((response) => {
-                    alert(JSON.stringify(response));
-                })
-            }
+                facebookConnectPlugin.logout(function(data){
+                    alert(JSON.stringify(data));
+                },function(error){
+                    alert(JSON.stringify(error));
+                });
+            },
 
         },
         props: ['pageStack']

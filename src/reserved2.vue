@@ -81,61 +81,7 @@
                             </div>
                         </ons-col>
                     </ons-row>
-                    
-                    <modal name="permit-modal"
-                           transition="nice-modal-fade"
-                           :min-width="200"
-                           :min-height="200"
-                           :pivot-y="0.60"
-                           width="60%"
-                           height="auto"
-                           :delay="100"
-                    >
-                        <div class="example-modal-content">
-                            <div class="dialogs"> <font color="green"> <center>Are You Sure ???</center> </font></div>
-                            <button class="yes_button" @click="onSubmit">YES</button>
-                        </div>
-                    </modal>
-                    <modal name="success-modal"
-                           transition="nice-modal-fade"
-                           :min-width="200"
-                           :min-height="200"
-                           :pivot-y="0.60"
-                           width="60%"
-                           height="auto"
-                           :delay="100"
-                    >
-                        <div class="example-modal-content">
-                            <div class="dialogs"> <font color="green"> <center>WOW!! Bbooking Success</center> </font></div>
-                            <button class="yes_button" @click="pop">OK</button>
-                        </div>
-                    </modal>
-                    <modal name="error-modal"
-                           transition="nice-modal-fade"
-                           :min-width="200"
-                           :min-height="200"
-                           :pivot-y="0.60"
-                           width="60%"
-                           height="auto"
-                           :delay="100"
-                    >
-                        <div class="example-modal-content errors">
-                            <font color="#8b0000"> <center>Booking Time is Empty.</center> </font>
-                        </div>
-                    </modal>
-                    <modal name="error2-modal"
-                           transition="nice-modal-fade"
-                           :min-width="200"
-                           :min-height="200"
-                           :pivot-y="0.60"
-                           width="60%"
-                           height="auto"
-                           :delay="100"
-                    >
-                        <div class="example-modal-content errors">
-                            <font color="#8b0000"> <center>Tablebooking Failed</center> </font>
-                        </div>
-                    </modal>
+
                     <modal name="loading-modal"
                            transition="nice-modal-fade"
                            :min-width="200"
@@ -162,15 +108,45 @@
                 </ons-row>
                 <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
 
-                    <ons-carousel-item v-for="foo in food['foods']"  style="background-color: #085078;">
+                    <ons-carousel-item v-for="(item,index) in food['foods']"  style="background-color: #085078;">
                         <div class="image_footer">
-                            <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
-                            <a href="" v-else><img :src="footercarousel" /></a>
-
+                            <a href="" v-if="item.img"><img v-bind:src="item.img" /></a>
+                            <a href="" v-else>
+                                <div v-if="index==0">
+                                    <img :src="footercarousel" />
+                                </div>
+                                <div v-else-if="index==1">
+                                    <img :src="footercarousel2" />
+                                </div>
+                                <div v-else-if="index==2">
+                                    <img :src="footercarousel3" />
+                                </div>
+                                <div v-else-if="index==3">
+                                    <img :src="footercarousel4" />
+                                </div>
+                                <div v-else-if="index==4">
+                                    <img :src="footercarousel5" />
+                                </div>
+                                <div v-else-if="index==5">
+                                    <img :src="footercarousel6" />
+                                </div>
+                                <div v-else-if="index==6">
+                                    <img :src="footercarousel7" />
+                                </div>
+                                <div v-else-if="index==7">
+                                    <img :src="footercarousel8" />
+                                </div>
+                                <div v-else-if="index==8">
+                                    <img :src="footercarousel9" />
+                                </div>
+                                <div v-else>
+                                    <img :src="footercarousel10" />
+                                </div>
+                            </a>
                             <!--<img :src="footercarousel" alt="" />-->
                             <div class="image_overlay_content">
-                                <h4 v-html="foo.short_title"></h4>
-                                <p v-html="foo.short_content"> </p>
+                                <h4 v-html="item.short_title"></h4>
+                                <p v-html="item.short_content"> </p>
                             </div>
                         </div>
                     </ons-carousel-item>
@@ -191,6 +167,15 @@
 <script>
     import Vue from 'vue';
     import carousel from "assets/carousel.jpg"
+    import carousel2 from "assets/carousel2.jpg"
+    import carousel3 from "assets/carousel3.jpg"
+    import carousel4 from "assets/carousel4.jpg"
+    import carousel5 from "assets/carousel5.jpg"
+    import carousel6 from "assets/carousel6.jpg"
+    import carousel7 from "assets/carousel7.jpg"
+    import carousel8 from "assets/carousel8.jpg"
+    import carousel9 from "assets/carousel9.jpg"
+    import carousel10 from "assets/carousel10.jpg"
     import menuicon from "assets/menuicon.svg"
     import notification from "assets/notification.svg"
     import closeicon from "assets/close.svg"
@@ -204,16 +189,26 @@
     export default {
         data () {
             return {
+                name: this.$session.get('user'),
                 typing: true,
                 rest: '',
                 restaurant_id: '',
                 restaurant: '',
                 people: '',
                 mobile: '',
-                email: '',
+                email: this.$session.get('email'),
                 order_time: '',
-                confirm:'Yes',
-                footercarousel: carousel,
+                confirm:'No',
+                footercarousel: carousel2,
+                footercarousel2: carousel3,
+                footercarousel3: carousel10,
+                footercarousel4: carousel4,
+                footercarousel5: carousel5,
+                footercarousel6: carousel6,
+                footercarousel7: carousel7,
+                footercarousel8: carousel8,
+                footercarousel9: carousel9,
+                footercarousel10: carousel,
                 menuico: menuicon,
                 notificationicon: notification,
                 close: closeicon,
@@ -248,7 +243,8 @@
             }
         },
         created () {
-            this.fetchData()
+            this.fetchData();
+            this.$session.start()
         },
         watch: {
             '$route': 'fetchData'
@@ -268,7 +264,6 @@
             },
             onSubmit: function () {
                 this.loading= true
-                this.$modal.hide('permit-modal')
                 this.$modal.show('loading-modal')
                 if(this.date.time) {
                     axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-single-rest/' + this.restaurant_id + '/')
@@ -281,9 +276,9 @@
                                 url: 'http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/orders',
                                 data: {
                                     restaurant_id: this.restaurant_id,
-                                    title: 'Riaydh',
-//                            mobile: this.mobile,
-//                            email: this.email,
+                                    title: this.name,
+                                    mobile: this.mobile,
+                                    email: this.email,
                                     restaurant: this.rest.post_title,
                                     table_number: this.people,
                                     booking_time: this.date.time,
@@ -293,18 +288,20 @@
                                 }
                             }).then((resp) => {
                                 console.log(resp);
-                                this.name= '';
+                                this.restaurant_id = ''
                                 this.mobile= '';
-                                this.email= '';
-                                this.table_number= '';
+                                this.people = '';
                                 this.date.time = '';
                                 this.loading= false
                                 this.$modal.hide('loading-modal');
-                                this.$modal.show('success-modal');
+                                //this.$modal.show('success-modal');
+                                alert('Reservation request submited.')
                             })
                                 .catch((err) => {
                                     console.log(err)
-                                    this.$modal.show('error2-modal');
+                                    //this.$modal.show('error2-modal');
+                                    this.$modal.hide('loading-modal');
+                                    alert('Reservation Failed')
                                 })
                         })
                         .catch((err) => {
@@ -315,15 +312,31 @@
                 else{
                     console.log( 'empty' );
 //                    this.$modal.show('error-modal');
+                    this.$modal.hide('loading-modal');
+                    alert('There is an error')
                 }
             },
             permit(){
                 if(this.date.time) {
-                    this.$modal.show('permit-modal');
+                    //this.$modal.show('permit-modal');
+                    var txt;
+                    this.mobile = prompt("Please enter your mobile number:", "");
+                    if (this.mobile == null || this.mobile == "") {
+                        txt = "User cancelled the prompt.";
+                    } else {
+                        if (confirm("Are you sure???") == true) {
+                            this.onSubmit();
+                        } else {
+                            txt = "You pressed Cancel!";
+                        }
+                    }
+
+
                 }
                 else{
                     console.log( 'empty' );
-                    this.$modal.show('error-modal');
+                    //this.$modal.show('error-modal');
+                    alert('Time is empty')
                 }
             },
             hidefooter (){
