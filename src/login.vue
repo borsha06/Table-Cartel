@@ -20,15 +20,15 @@
                         <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
                     </ons-col>
                 </ons-row>
-                <!--<ons-row align="left" class="submit">-->
-                    <!--<ons-col width="100%">-->
-                        <!--<div class="sign_in">-->
-                            <!--<button type="button button&#45;&#45;light" >Sign In</button>-->
-                            <!--&lt;!&ndash;<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>&ndash;&gt;-->
-                            <!--<p @click="" type="button button&#45;&#45;light">Sign Up</p>-->
-                        <!--</div>-->
-                    <!--</ons-col>-->
-                <!--</ons-row>-->
+                <ons-row align="left" class="submit">
+                    <ons-col width="100%">
+                        <div class="sign_in">
+                            <button type="button button--light" >Sign In</button>
+                            <!--<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>-->
+                            <p @click="" type="button button--light">Sign Up</p>
+                        </div>
+                    </ons-col>
+                </ons-row>
             </form>
 
             <modal name="loading-modal"
@@ -65,7 +65,7 @@
                 <ons-col width="100%">
                     <div class="connect_button">                        
                         <!--<p class="button " @click="push"><img :src="connect" alt="" /></p>-->
-                        <p class="button" @click="check"  ><img :src="connect" alt="" /></p>
+                        <p class="button" @click="logout"  ><img :src="connect" alt="" /></p>
                     </div>
                 </ons-col>
             </ons-row>
@@ -98,7 +98,6 @@
         data () {
             return {
                 connect: connects,
-                email: '',
                 logo: logos,
                 user: '',
                 pass: '',
@@ -157,7 +156,7 @@
                 this.pageStack.push(registration)
             },
             check(){
-                this.pageStack.push(welcome)
+                alert('hello')
             },
             login () {
                 var that = this;
@@ -169,7 +168,6 @@
                             //alert(JSON.stringify(result));
                             that.$session.start()
                             that.$session.set('user', result.name)
-                            that.$session.set('email', result.email)
                             that.pageStack.push(welcome);
                         },function(error){
                             alert(JSON.stringify(error));
@@ -193,7 +191,6 @@
                                         if(res.body.length == 1){
                                             that.$session.start()
                                             that.$session.set('user', result.name)
-                                            that.$session.set('email', result.email)
                                             that.pageStack.push(welcome);
                                         }else{
                                             that.$http.post('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/post-app-facebook-users/', {
@@ -209,7 +206,6 @@
                                                 //alert(JSON.stringify(res));
                                                 that.$session.start()
                                                 that.$session.set('user', result.name)
-                                                that.$session.set('email', result.email)
                                                 that.pageStack.push(welcome);
                                             }).catch((err)=>{
                                                 alert(JSON.stringify(err));

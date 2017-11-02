@@ -2,48 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/New folder/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/New folder/hdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/New folder/ldpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/New folder/mdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/New folder/xhdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/New folder/xxhdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/New folder/xxxhdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/New folder/xxxhdpi.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/logos/hdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/logos/ldpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/logos/mdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/logos/xhdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/logos/xxhdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/icon/logos/xxxhdpi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/splash-port-hdpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/splash-port-ldpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/splash-port-mdpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/splash-port-xhdpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/splash-port-xxhdpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/splash-port-xxxhdpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/area_rest.vue" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/area.vue" afterPath="$PROJECT_DIR$/src/area.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/arearest.vue" afterPath="$PROJECT_DIR$/src/arearest.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cuisine.vue" afterPath="$PROJECT_DIR$/src/cuisine.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cuisine_rest.vue" afterPath="$PROJECT_DIR$/src/cuisine_rest.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.vue" afterPath="$PROJECT_DIR$/src/login.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nya.vue" afterPath="$PROJECT_DIR$/src/nya.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved.vue" afterPath="$PROJECT_DIR$/src/reserved.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved2.vue" afterPath="$PROJECT_DIR$/src/reserved2.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/assets/js/custom.js" afterPath="$PROJECT_DIR$/src/static/assets/js/custom.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/welcome.vue" afterPath="$PROJECT_DIR$/src/welcome.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/welcome2.vue" afterPath="$PROJECT_DIR$/src/welcome2.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/yay.vue" afterPath="$PROJECT_DIR$/src/yay.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.bundle.js" afterPath="$PROJECT_DIR$/www/app.bundle.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,10 +28,23 @@
       <file leaf-file-name="welcome2.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="80" column="40" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="80" selection-end-column="40" />
+            <state relative-caret-position="984">
+              <caret line="117" column="14" lean-forward="true" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
               <folding>
-                <element signature="e#5063#5105#0" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-row#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#3399#3441#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/welcome.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1766">
+              <caret line="120" column="48" lean-forward="true" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
+              <folding>
+                <marker date="1509604010597" expanded="true" signature="6022:6684" ph="{&quot;footerlogo&quot;: footerlogo...}" />
               </folding>
             </state>
           </provider>
@@ -82,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static/assets/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -101,6 +81,19 @@
               <caret line="133" column="39" lean-forward="false" selection-start-line="124" selection-start-column="12" selection-end-line="133" selection-end-column="39" />
               <folding>
                 <element signature="e#3077#3119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="171" column="42" lean-forward="true" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
+              <folding>
+                <element signature="e#3502#3524#0" expanded="true" />
+                <element signature="e#3658#3699#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,9 +172,6 @@
         <option value="$PROJECT_DIR$/platforms/android/res/values/facebookconnect.xml" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/src/login.vue" />
-        <option value="$PROJECT_DIR$/src/welcome.vue" />
-        <option value="$PROJECT_DIR$/src/welcome2.vue" />
         <option value="$PROJECT_DIR$/src/reserved.vue" />
         <option value="$PROJECT_DIR$/src/reserved2.vue" />
         <option value="$PROJECT_DIR$/src/nya.vue" />
@@ -191,6 +181,9 @@
         <option value="$PROJECT_DIR$/src/cuisine_rest.vue" />
         <option value="$PROJECT_DIR$/src/arearest.vue" />
         <option value="$PROJECT_DIR$/src/static/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/src/welcome2.vue" />
+        <option value="$PROJECT_DIR$/src/welcome.vue" />
+        <option value="$PROJECT_DIR$/src/login.vue" />
       </list>
     </option>
   </component>
@@ -203,7 +196,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="11" />
     <option name="y" value="34" />
     <option name="width" value="1346" />
@@ -243,21 +236,6 @@
               <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -310,7 +288,7 @@
       <workItem from="1508558432586" duration="27998000" />
       <workItem from="1509014457285" duration="10422000" />
       <workItem from="1509167011417" duration="16242000" />
-      <workItem from="1509249677804" duration="64991000" />
+      <workItem from="1509249677804" duration="67057000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -330,10 +308,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289121000" />
+    <option name="totallyTimeSpent" value="291187000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21949404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -612,28 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="55" lean-forward="false" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
-          <folding>
-            <element signature="e#3596#3618#0" expanded="false" />
-            <element signature="e#3752#3793#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/welcome.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="176" selection-end-column="8" />
-          <folding>
-            <element signature="e#5076#5118#0" expanded="true" />
-            <marker date="1509531449637" expanded="true" signature="6028:6690" ph="{&quot;footerlogo&quot;: footerlogo...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nya.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -715,16 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="80" column="40" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="80" selection-end-column="40" />
-          <folding>
-            <element signature="e#5063#5105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/arearest.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1205">
@@ -738,9 +684,41 @@
     <entry file="file://$PROJECT_DIR$/src/static/assets/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/welcome2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="117" column="14" lean-forward="true" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-row#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#3399#3441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/welcome.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1766">
+          <caret line="120" column="48" lean-forward="true" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
+          <folding>
+            <marker date="1509604010597" expanded="true" signature="6022:6684" ph="{&quot;footerlogo&quot;: footerlogo...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="171" column="42" lean-forward="true" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
+          <folding>
+            <element signature="e#3502#3524#0" expanded="true" />
+            <element signature="e#3658#3699#0" expanded="true" />
           </folding>
         </state>
       </provider>
