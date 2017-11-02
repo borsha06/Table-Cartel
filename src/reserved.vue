@@ -174,6 +174,7 @@
     import {dataBus} from './static/assets/js/custom.js';
     import myDatepicker from 'vue-datepicker';
     import Vue from 'vue';
+    import swal from 'sweetalert'
     Vue.use(VModal)
     export default {
         data () {
@@ -260,39 +261,89 @@
                         this.loading= false
                         this.$modal.hide('loading-modal');
                         //this.$modal.show('success-modal');
-                        alert('Reservation request submited')
+                        //confirm("Reservation request submited!")
+                        swal({
+                            title: "Good job!",
+                            text: "Reservation request submited.",
+                            icon: "success",
+                        });
+
                     })
                         .catch((err) => {
                             console.log(err)
                             //this.$modal.show('error2-modal');
                             this.$modal.hide('loading-modal');
-                            alert('Reservation Failed')
+                            //alert('Reservation Failed')
+                            swal({
+                                title: "Oops!",
+                                text: "Reservation Failed",
+                                icon: "error",
+                            });
                         })
                 }
                 else{
 //                  this.$modal.show('error-modal');
                     this.$modal.hide('loading-modal');
-                    alert('There is an error')
+                    //alert('There is an error')
+                    swal({
+                        title: "Oops!",
+                        text: "There is an error",
+                        icon: "error",
+                    });
                 }
             },
             permit(){
                 if(this.date.time) {
                     //this.$modal.show('permit-modal');
-                    var txt;
-                    this.mobile = prompt("Please enter your mobile number:", "");
-                    if (this.mobile == null || this.mobile == "") {
-                        txt = "User cancelled the prompt.";
-                    } else {
-                        if (confirm("Are you sure???") == true) {
-                            this.onSubmit();
-                        } else {
-                            txt = "You pressed Cancel!";
+//                    var txt;
+//                    this.mobile = prompt("Please enter your mobile number:", "");
+//                    if (this.mobile == null || this.mobile == "") {
+//                        txt = "User cancelled the prompt.";
+//                    } else {
+//                        if (confirm("Are you sure???") == true) {
+//                            this.onSubmit();
+//                        } else {
+//                            txt = "You pressed Cancel!";
+//                        }
+//                    }
+                    swal({
+                        content: {
+                            element: "input",
+                            attributes: {
+                                placeholder: "Type your mobile number",
+                                type: "number",
+                            },
+                        },
+                    }).then(mobile => {
+                        if (!mobile){
+                            swal({
+                                title: "Oops",
+                                text: "Not a mobile number",
+                                icon: "warning",
+                                buttons: true,
+                            })
+                        }else{
+                            this.mobile = mobile;
+                            swal({
+                                title: "Are you sure?",
+                                //text: "Once deleted, you will not be able to recover this imaginary file!",
+                                icon: "warning",
+                                buttons: true,
+                                dangerMode: true,
+                            }).then((response) => {
+                                this.onSubmit();
+                            });
                         }
-                    }
+                    })
                 }
                 else{
                     //this.$modal.show('error-modal');
-                    alert('Time is empty')
+                    //alert('Time is empty')
+                    swal({
+                        title: "Oops!",
+                        text: "Time is empty",
+                        icon: "error",
+                    });
                 }
             },
             hidefooter (){

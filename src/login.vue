@@ -24,7 +24,7 @@
                     <ons-col width="100%">
                         <div class="sign_in">
                             <button type="button button--light" >Sign In</button>
-                            <!--<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>-->
+                            <!--<p type="button button--light" @click="registration">Sign Up</p>-->
                             <p @click="" type="button button--light">Sign Up</p>
                         </div>
                     </ons-col>
@@ -52,12 +52,6 @@
                     <div class="facebook_button">                        
                         <!--<p class="button button&#45;&#45;light" @click="push">facebook</p>-->
                         <p class="button button--light" @click="login" >facebook</p>
-                        <!--<fb-signin-button-->
-                                <!--:params="fbSignInParams"-->
-                                <!--@success="onSignInSuccess"-->
-                                <!--@error="onSignInError">-->
-                             <!--facebook-->
-                        <!--</fb-signin-button>-->
                     </div>
                 </ons-col>
             </ons-row>
@@ -91,12 +85,14 @@
     import $ from 'jquery';
     import VModal from 'vue-js-modal';
     import VueSession from 'vue-session'
+    import swal from 'sweetalert'
     Vue.use(VueSession)
 
 
     export default {
         data () {
             return {
+                last_name: '',
                 connect: connects,
                 logo: logos,
                 user: '',
@@ -140,7 +136,12 @@
                     }
                     else{
                         this.$modal.hide('loading-modal')
-                        alert('Invalid  Username or Password')
+                        //alert('Invalid  Username or Password')
+                        swal({
+                            title: "Oops!",
+                            text: "Invalid  Username or Password",
+                            icon: "warning",
+                        });
                     }
 //                        this.loading = false
 //
@@ -149,14 +150,19 @@
                         console.log(err)
                         this.loading = false
                         this.$modal.hide('loading-modal')
-                        alert('There is an error')
+                        //alert('There is an error')
+                        swal({
+                            title: "Oops!",
+                            text: "There is an error",
+                            icon: "error",
+                        });
                     })
             },
             registration (){
                 this.pageStack.push(registration)
             },
             check(){
-                alert('hello')
+                this.pageStack.push(welcome)
             },
             login () {
                 var that = this;
@@ -164,22 +170,29 @@
                     if(((result_get.status!='unknown') ? ((result_get.authResponse.session_key) ? true : false) : false)) {
                         //alert('logged in');
                         //alert(JSON.stringify(result_get));
-                        facebookConnectPlugin.api("/me?fields=email,name,picture", ["public_profile","email"], function(result){
+                        facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email","user_birthday"], function(result){
                             //alert(JSON.stringify(result));
                             that.$session.start()
                             that.$session.set('user', result.name)
+                            that.$session.set('last_name', result.last_name)
+                            that.$session.set('email', result.email)
                             that.pageStack.push(welcome);
                         },function(error){
-                            alert(JSON.stringify(error));
+                           // alert(JSON.stringify(error));
+                            swal({
+                                title: "Oops!",
+                                text: "There is an error",
+                                icon: "error",
+                            });
                         });
                     }
                     else {
-                        facebookConnectPlugin.login(['email', 'public_profile','user_birthday'], function(response) {
+                        facebookConnectPlugin.login(['email', 'public_profile','user_birthday',], function(response) {
                             //alert('logged in');
                             //alert(JSON.stringify(response.authResponse));
-                            facebookConnectPlugin.api('/' + response.authResponse.userID +'/?fields=id,name,email,gender,age_range',[],
+                            facebookConnectPlugin.api('/' + response.authResponse.userID +'/?fields=id,name,email,gender,age_range,last_name',[],
                                 function onSuccess (result) {
-                                    ///alert(JSON.stringify(result.age_range));
+                                    //alert(JSON.stringify(result.last_name));
                                     that.$http.post('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-app-facebook-users/', {
                                         username: 'itsd@dmin',
                                         password: 'itsd321#',
@@ -191,6 +204,8 @@
                                         if(res.body.length == 1){
                                             that.$session.start()
                                             that.$session.set('user', result.name)
+                                            that.$session.set('last_name', result.last_name)
+                                            that.$session.set('email', result.email)
                                             that.pageStack.push(welcome);
                                         }else{
                                             that.$http.post('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/post-app-facebook-users/', {
@@ -206,33 +221,70 @@
                                                 //alert(JSON.stringify(res));
                                                 that.$session.start()
                                                 that.$session.set('user', result.name)
+                                                that.$session.set('last_name', result.last_name)
+                                                that.$session.set('email', result.email)
                                                 that.pageStack.push(welcome);
                                             }).catch((err)=>{
-                                                alert(JSON.stringify(err));
+                                                //alert('There is an error');
+                                                swal({
+                                                    title: "Oops!",
+                                                    text: "There is an error",
+                                                    icon: "error",
+                                                });
                                             });
                                         }
                                     }).catch((err)=>{
-                                        alert(JSON.stringify(err));
+                                        //alert('There is an error');
+                                        swal({
+                                            title: "Oops!",
+                                            text: "There is an error",
+                                            icon: "error",
+                                        });
                                     });
                                 }, function onError (error) {
-                                    alert(JSON.stringify(error));
+                                   // alert('There is an error');
+                                    swal({
+                                        title: "Oops!",
+                                        text: "There is an error",
+                                        icon: "error",
+                                    });
                                 }
                             )
                         }, function(err) {
-                            alert(err.errorMessage || err)
+                            //alert('There is an error');
+                            swal({
+                                title: "Oops!",
+                                text: "There is an error",
+                                icon: "error",
+                            });
                         });
 
 
                     }
                 },function(err) {
-                    alert(err.errorMessage || err)
+                    //alert('There is an error');
+                    swal({
+                        title: "Oops!",
+                        text: "There is an error",
+                        icon: "error",
+                    });
                 });
             },
             logout () {
                 facebookConnectPlugin.logout(function(data){
-                    alert(JSON.stringify(data));
+                    //alert(JSON.stringify(data));
+                    swal({
+                        title: "Oops!",
+                        text: "Logout",
+                        icon: "success",
+                    });
                 },function(error){
-                    alert(JSON.stringify(error));
+                    //alert(JSON.stringify(error));
+                    swal({
+                        title: "Oops!",
+                        text: "There is an error",
+                        icon: "error",
+                    });
                 });
             },
 

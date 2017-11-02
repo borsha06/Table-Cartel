@@ -37,9 +37,9 @@
 
                 <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
 
-                    <ons-carousel-item v-for="(foo,index) in food['foods']"  style="background-color: #085078;">
+                    <ons-carousel-item v-for="(item,index) in food['foods']"  style="background-color: #085078;">
                         <div class="image_footer">
-                            <a href="" v-if="foo.img"><img v-bind:src="foo.img" /></a>
+                            <a href="" v-if="item.img"><img v-bind:src="item.img" /></a>
                             <a href="" v-else>
                                 <div v-if="index==0">
                                     <img :src="footercarousel" />
@@ -56,16 +56,16 @@
                                 <div v-else-if="index==4">
                                     <img :src="footercarousel5" />
                                 </div>
-                                <div v-else-if="index==">
+                                <div v-else-if="index==5">
                                     <img :src="footercarousel6" />
                                 </div>
-                                <div v-else-if="index==0">
+                                <div v-else-if="index==6">
                                     <img :src="footercarousel7" />
                                 </div>
-                                <div v-else-if="index==0">
+                                <div v-else-if="index==7">
                                     <img :src="footercarousel8" />
                                 </div>
-                                <div v-else-if="index==0">
+                                <div v-else-if="index==8">
                                     <img :src="footercarousel9" />
                                 </div>
                                 <div v-else>
@@ -74,8 +74,8 @@
                             </a>
                             <!--<img :src="footercarousel" alt="" />-->
                             <div class="image_overlay_content">
-                                <h4 v-html="foo.short_title"></h4>
-                                <p v-html="foo.short_content"> </p>
+                                <h4 v-html="item.short_title"></h4>
+                                <p v-html="item.short_content"> </p>
                             </div>
                         </div>
                     </ons-carousel-item>
@@ -147,7 +147,7 @@
                 notificationicon: notification,
                 food: dataBus.$data,
                 loading:false,
-                username: this.$session.get('user')
+                username: this.$session.get('last_name')
             }
         },
         created () {
