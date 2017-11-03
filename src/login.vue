@@ -20,15 +20,15 @@
                         <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
                     </ons-col>
                 </ons-row>
-                <ons-row align="left" class="submit">
-                    <ons-col width="100%">
-                        <div class="sign_in">
-                            <button type="button button--light" >Sign In</button>
-                            <!--<p type="button button--light" @click="registration">Sign Up</p>-->
-                            <p @click="" type="button button--light">Sign Up</p>
-                        </div>
-                    </ons-col>
-                </ons-row>
+                <!--<ons-row align="left" class="submit">-->
+                    <!--<ons-col width="100%">-->
+                        <!--<div class="sign_in">-->
+                            <!--<button type="button button&#45;&#45;light" >Sign In</button>-->
+                            <!--&lt;!&ndash;<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>&ndash;&gt;-->
+                            <!--<p @click="" type="button button&#45;&#45;light">Sign Up</p>-->
+                        <!--</div>-->
+                    <!--</ons-col>-->
+                <!--</ons-row>-->
             </form>
 
             <modal name="loading-modal"
