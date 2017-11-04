@@ -331,7 +331,10 @@
     }
     .loadingp{
         text-align: center;
-        color: black;
+        color: #06b9b3;
+        font-size:10px;
+        
+
     }
 
     .page__content{
