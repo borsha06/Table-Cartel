@@ -20,15 +20,15 @@
                         <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
                     </ons-col>
                 </ons-row>
-                <!--<ons-row align="left" class="submit">-->
-                    <!--<ons-col width="100%">-->
-                        <!--<div class="sign_in">-->
-                            <!--<button type="button button&#45;&#45;light" >Sign In</button>-->
-                            <!--&lt;!&ndash;<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>&ndash;&gt;-->
-                            <!--<p @click="" type="button button&#45;&#45;light">Sign Up</p>-->
-                        <!--</div>-->
-                    <!--</ons-col>-->
-                <!--</ons-row>-->
+                <ons-row align="left" class="submit">
+                    <ons-col width="100%">
+                        <div class="sign_in">
+                            <button type="button button--light" >Sign In</button>
+                            <!--<p type="button button--light" @click="registration">Sign Up</p>-->
+                            <p @click="" type="button button--light">Sign Up</p>
+                        </div>
+                    </ons-col>
+                </ons-row>
             </form>
 
             <modal name="loading-modal"
@@ -129,6 +129,7 @@
                     if(this.logindata == 1){
                         this.$session.start()
                         this.$session.set('last_name', this.user)
+                        this.$session.set('user', this.user)
                         this.user = '';
                         this.pass = '';
                         this.$modal.hide('loading-modal')
@@ -136,24 +137,19 @@
                     }
                     else{
                         this.$modal.hide('loading-modal')
-                        //alert('Invalid  Username or Password')
                         swal({
                             title: "Oops!",
                             text: "Invalid  Username or Password",
                             icon: "warning",
                         });
                     }
-//                        this.loading = false
-//
-                })
-                    .catch((err) => {
+                }).catch((err) => {
                         console.log(err)
                         this.loading = false
                         this.$modal.hide('loading-modal')
-                        //alert('There is an error')
                         swal({
                             title: "Oops!",
-                            text: "There is an error",
+                            text: "Please Connect your Internet",
                             icon: "error",
                         });
                     })
@@ -168,7 +164,7 @@
                 var that = this;
                 facebookConnectPlugin.getLoginStatus(function onLoginStatus(result_get) {
                     if(((result_get.status!='unknown') ? ((result_get.authResponse.session_key) ? true : false) : false)) {
-                        alert('logged in');
+                        //alert('logged in');
                         //alert(JSON.stringify(result_get));
                         facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email"], function(result){
                             //alert(JSON.stringify(result));
@@ -178,10 +174,9 @@
                             that.$session.set('email', result.email)
                             that.pageStack.push(welcome);
                         },function(error){
-                           // alert(JSON.stringify(error));
                             swal({
                                 title: "Oops!",
-                                text: (JSON.stringify(error)),
+                                text: "There is an error",
                                 icon: "error",
                             });
                         });
@@ -237,7 +232,7 @@
                                         //alert('There is an error');
                                         swal({
                                             title: "Oops!",
-                                            text: JSON.stringify(err),
+                                            text: "There is an error",
                                             icon: "error",
                                         });
                                     });
@@ -245,7 +240,7 @@
                                    // alert('There is an error');
                                     swal({
                                         title: "Oops!",
-                                        text: JSON.stringify(error),
+                                        text: "There is an error",
                                         icon: "error",
                                     });
                                 }
@@ -254,7 +249,7 @@
                             //alert('There is an error');
                             swal({
                                 title: "Oops!",
-                                text: JSON.stringify(err),
+                                text: "There is an error",
                                 icon: "error",
                             });
                         });
@@ -265,7 +260,7 @@
                     //alert('There is an error');
                     swal({
                         title: "Oops!",
-                        text: JSON.stringify(err),
+                        text: "There is an error or Connetion Failed",
                         icon: "error",
                     });
                 });

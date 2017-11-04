@@ -130,7 +130,7 @@ text-align: center !important;
     padding: 0;
     margin-top: -24px;
     font-family: 'Nunito', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 24px;
 
 }
@@ -240,7 +240,7 @@ text-align: center !important;
 .vapianos_cross_icon{
     top: 20px;
     position: absolute;
-    right: 10px;
+    right: 15px;
     font-size: 30px;
 }
 .vapianos_left_side_heading{
