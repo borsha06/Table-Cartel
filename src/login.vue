@@ -20,15 +20,15 @@
                         <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
                     </ons-col>
                 </ons-row>
-                <ons-row align="left" class="submit">
-                    <ons-col width="100%">
-                        <div class="sign_in">
-                            <button type="button button--light" >Sign In</button>
-                            <!--<p type="button button--light" @click="registration">Sign Up</p>-->
-                            <p @click="" type="button button--light">Sign Up</p>
-                        </div>
-                    </ons-col>
-                </ons-row>
+                <!--<ons-row align="left" class="submit">-->
+                    <!--<ons-col width="100%">-->
+                        <!--<div class="sign_in">-->
+                            <!--<button type="button button&#45;&#45;light" >Sign In</button>-->
+                            <!--&lt;!&ndash;<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>&ndash;&gt;-->
+                            <!--<p @click="" type="button button&#45;&#45;light">Sign Up</p>-->
+                        <!--</div>-->
+                    <!--</ons-col>-->
+                <!--</ons-row>-->
             </form>
 
             <modal name="loading-modal"
@@ -128,7 +128,7 @@
                     this.loading = false
                     if(this.logindata == 1){
                         this.$session.start()
-                        this.$session.set('user', this.user)
+                        this.$session.set('last_name', this.user)
                         this.user = '';
                         this.pass = '';
                         this.$modal.hide('loading-modal')
@@ -168,9 +168,9 @@
                 var that = this;
                 facebookConnectPlugin.getLoginStatus(function onLoginStatus(result_get) {
                     if(((result_get.status!='unknown') ? ((result_get.authResponse.session_key) ? true : false) : false)) {
-                        //alert('logged in');
+                        alert('logged in');
                         //alert(JSON.stringify(result_get));
-                        facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email","user_birthday"], function(result){
+                        facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email"], function(result){
                             //alert(JSON.stringify(result));
                             that.$session.start()
                             that.$session.set('user', result.name)
@@ -181,7 +181,7 @@
                            // alert(JSON.stringify(error));
                             swal({
                                 title: "Oops!",
-                                text: "There is an error",
+                                text: (JSON.stringify(error)),
                                 icon: "error",
                             });
                         });
@@ -228,7 +228,7 @@
                                                 //alert('There is an error');
                                                 swal({
                                                     title: "Oops!",
-                                                    text: "There is an error",
+                                                    text: JSON.stringify(err),
                                                     icon: "error",
                                                 });
                                             });
@@ -237,7 +237,7 @@
                                         //alert('There is an error');
                                         swal({
                                             title: "Oops!",
-                                            text: "There is an error",
+                                            text: JSON.stringify(err),
                                             icon: "error",
                                         });
                                     });
@@ -245,7 +245,7 @@
                                    // alert('There is an error');
                                     swal({
                                         title: "Oops!",
-                                        text: "There is an error",
+                                        text: JSON.stringify(error),
                                         icon: "error",
                                     });
                                 }
@@ -254,7 +254,7 @@
                             //alert('There is an error');
                             swal({
                                 title: "Oops!",
-                                text: "There is an error",
+                                text: JSON.stringify(err),
                                 icon: "error",
                             });
                         });
@@ -265,7 +265,7 @@
                     //alert('There is an error');
                     swal({
                         title: "Oops!",
-                        text: "There is an error",
+                        text: JSON.stringify(err),
                         icon: "error",
                     });
                 });
