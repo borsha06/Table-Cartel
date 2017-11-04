@@ -166,7 +166,7 @@
                     if(((result_get.status!='unknown') ? ((result_get.authResponse.session_key) ? true : false) : false)) {
                         //alert('logged in');
                         //alert(JSON.stringify(result_get));
-                        facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email"], function(result){
+                        facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email","user_birthday"], function(result){
                             //alert(JSON.stringify(result));
                             that.$session.start()
                             that.$session.set('user', result.name)
@@ -223,7 +223,7 @@
                                                 //alert('There is an error');
                                                 swal({
                                                     title: "Oops!",
-                                                    text: JSON.stringify(err),
+                                                    text: "There is an error",
                                                     icon: "error",
                                                 });
                                             });
@@ -310,19 +310,6 @@
     }
     .button{
         float:left;
-    }
-    .fb-signin-button {
-        /* This is where you control how the button looks. Be creative! */
-        width: 100%;
-        border-radius: 25px;
-        background: #000;
-        color: #fff;
-        font-family: 'Nunito', sans-serif;
-        font-size: 14px;
-        padding: 7px 0px;
-        font-weight: bold;
-        text-align: center;
-        box-shadow: 0px 0px 2px black;
     }
     .loadingp{
         text-align: center;

@@ -28,13 +28,14 @@ button:focus{
     padding: 1px 20px;
     font-size: 10px;
     border-radius: 18px;
-    color: #333;
+    color: #000;
     font-weight: 800;
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: 0px 0px 1px white;
     margin-right: 8px;
     font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.7px;
 
 
 }
@@ -386,7 +387,7 @@ background-color: #fff;
 }
 .reserv_button{
     float:right;
-    margin-right:14px;
+    margin-right:16px;
     margin-bottom: 10px;
 }
 select, option {
