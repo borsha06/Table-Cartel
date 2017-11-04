@@ -2,21 +2,102 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/screen2/splash-port-hdpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/screen2/splash-port-ldpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/screen2/splash-port-mdpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/screen2/splash-port-xhdpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/screen2/splash-port-xxhdpi.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/android/screen2/splash-port-xxxhdpi.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/app.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/app.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/Material-Design-Iconic-Font.a4d31128b633bc0b1cc1f18a34fb3851.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/Material-Design-Iconic-Font.b351bd62abcd96e924d9f44a3da169a7.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/Material-Design-Iconic-Font.d2a55d331bdd1a7ea97a8a1fbb3c569c.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/account.d383bc3c6cab503788116d50407e8afd.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/alarm-clock.468ab4bc45c20fc449f4949b975d03c6.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/android-search-input-icon.ff2d3e39ba1d03c8c0539764cf5e89fe.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/apple-touch-icon.e35981ea9d619481840cd6eed295782a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/book.c462336ec3de5d39dc8439a2faabd452.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/carousel.1d7c7afa780a01f1a8b11f860bb5abb2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/close.16e41ecfd562af13869a66868e5d1162.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/connect.b79dcbd098af45756e5bcc7183292007.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.1dc35d25e61d819a9c357074014867ab.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.25a32416abee198dd821b0b17a198a8f.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.674f50d287a8c48dc19ba404d20fe713.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.912ec66d7572ff821749319396470bde.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.af7ae505a9eed503f8b8e6982036873e.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.b06871f281fee6b241d60582ae9369b9.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.c8ddf1e5e5bf3682bc7bebf30f394148.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.d7c639084f684d66a1bc66855d193ed8.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.e6cf7c6ec7c2d6f670ae9d762604cb0b.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/fontawesome-webfont.fee66e712a8a08eef5805a46892932ad.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/ionicons.19e65b89cee273a249fba4c09b951b74.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/ionicons.2c159d0d05473040b53ec79df8797d32.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/ionicons.aff28a207631f39ee0272d5cdde43ee7.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/ionicons.dd4781d1acc57ba4c4808d1b44301201.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/ios-search-input-icon.121708398e3ee97fba5bf0eacee69e53.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/logo.5385f3aafb72df8fde17c8ab4bc96230.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/menu.2fc2954cf73bbe36101d22e0c31358b4.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/menuback.3554392c8cff903df3877ae807507bfc.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/menuicon.8d7f976676d37438a6a24338bd234628.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/notification.d9ce4fd2e3eeaba8c534820f11363ed7.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/parking.00b1a4b8debe90f91c6157846bddf1be.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/payment.62a39957dfdcd696438e1e5220e5a88a.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/phone-call.4690d2c00fb1dbf99bf437366dbe1cf2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/phone-call.e3ed12dfe4703a7ff15662a1f0061cae.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/select-arrow.7666ad5100c5b47389a7847f76753883.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/settings.9e8133e2f01e728da63cfae083a300a3.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/tie.4b7d464374e218927a151bf25983f810.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/components/loader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/components/loader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/components/monaca-cordova-loader/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/components/monaca-cordova-loader/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/components/monaca-cordova-loader/cordova-loader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/components/monaca-core-utils/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/components/monaca-core-utils/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/components/monaca-core-utils/monaca-core-utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/cordova-js-src/confighelper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/cordova-js-src/exec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/cordova-js-src/platform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/cordova.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/cordova_plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-facebook4/www/facebook-browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-inappbrowser/src/browser/InAppBrowserProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-network-information/src/browser/network.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-network-information/www/Connection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-network-information/www/network.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/vendor.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/screen/android/screen-hdpi-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/screen/android/screen-ldpi-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/screen/android/screen-mdpi-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/screen/android/screen-xhdpi-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/screen/android/screen-xxhdpi-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/screen/android/screen-xxxhdpi-portrait.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-release.aar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-release.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/login.vue" afterPath="$PROJECT_DIR$/src/login.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/menu.vue" afterPath="$PROJECT_DIR$/src/menu.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/assets/css/main.css" afterPath="$PROJECT_DIR$/src/static/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.bundle.js" afterPath="$PROJECT_DIR$/www/app.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.css" afterPath="$PROJECT_DIR$/www/app.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +111,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+            <state relative-caret-position="306">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
                 <element signature="e#3259#3281#0" expanded="true" />
                 <element signature="e#3415#3456#0" expanded="true" />
@@ -43,10 +124,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="menu.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/menu.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="52" column="49" lean-forward="false" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="reserved.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reserved.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="1672">
               <caret line="312" column="49" lean-forward="false" selection-start-line="312" selection-start-column="49" selection-end-line="312" selection-end-column="49" />
               <folding>
                 <element signature="e#7352#7394#0" expanded="true" />
@@ -67,10 +158,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="17">
               <caret line="82" column="64" lean-forward="false" selection-start-line="82" selection-start-column="64" selection-end-line="82" selection-end-column="64" />
               <folding />
             </state>
@@ -104,13 +195,13 @@
       <find>.reserve_top_button p</find>
       <find>menuico</find>
       <find>.hello_jorge_heading h2</find>
-      <find>.hello_jorge_heading</find>
       <find>.nay_heading</find>
       <find>.l</find>
       <find>facebookConnectPlugin</find>
       <find>ShowSplashScreenSpinner</find>
       <find>SplashMaintainAspectRatio</find>
       <find>opp</find>
+      <find>.hello_jorge_heading</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,14 +215,12 @@
         <option value="$PROJECT_DIR$/src/Page2.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/menu.vue" />
         <option value="$PROJECT_DIR$/src/area_rest.vue" />
         <option value="$PROJECT_DIR$/src/restaurant2.vue" />
         <option value="$PROJECT_DIR$/src/Registration.vue" />
         <option value="$PROJECT_DIR$/src/register.vue" />
         <option value="$PROJECT_DIR$/src/nya2.vue" />
         <option value="$PROJECT_DIR$/src/restaurant.vue" />
-        <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
         <option value="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
@@ -148,8 +237,10 @@
         <option value="$PROJECT_DIR$/src/welcome2.vue" />
         <option value="$PROJECT_DIR$/src/reserved2.vue" />
         <option value="$PROJECT_DIR$/src/reserved.vue" />
-        <option value="$PROJECT_DIR$/src/login.vue" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/src/menu.vue" />
+        <option value="$PROJECT_DIR$/src/static/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/src/login.vue" />
       </list>
     </option>
   </component>
@@ -203,6 +294,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Table-Cartel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Table-Cartel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -254,7 +360,7 @@
       <workItem from="1508558432586" duration="27998000" />
       <workItem from="1509014457285" duration="10422000" />
       <workItem from="1509167011417" duration="16242000" />
-      <workItem from="1509249677804" duration="85856000" />
+      <workItem from="1509249677804" duration="90612000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -274,7 +380,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309986000" />
+    <option name="totallyTimeSpent" value="314742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -374,13 +480,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hello.vue" />
     <entry file="file://$PROJECT_DIR$/src/Registration.vue" />
-    <entry file="file://$PROJECT_DIR$/src/menu.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1001">
-          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nya2.vue" />
     <entry file="file://$PROJECT_DIR$/src/area_rest.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -558,17 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="854" column="19" lean-forward="false" selection-start-line="854" selection-start-column="19" selection-end-line="854" selection-end-column="19" />
-          <folding>
-            <marker date="1508825888043" expanded="true" signature="13834:13933" ph="{...}" />
-            <marker date="1508825888043" expanded="true" signature="19730:19736" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/yay.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -650,16 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reserved.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="312" column="49" lean-forward="false" selection-start-line="312" selection-start-column="49" selection-end-line="312" selection-end-column="49" />
-          <folding>
-            <element signature="e#7352#7394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -670,22 +748,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/login.vue">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        <state relative-caret-position="17">
+          <caret line="82" column="64" lean-forward="false" selection-start-line="82" selection-start-column="64" selection-end-line="82" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reserved.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="312" column="49" lean-forward="false" selection-start-line="312" selection-start-column="49" selection-end-line="312" selection-end-column="49" />
           <folding>
-            <element signature="e#3259#3281#0" expanded="true" />
-            <element signature="e#3415#3456#0" expanded="true" />
+            <element signature="e#7352#7394#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/src/menu.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="82" column="64" lean-forward="false" selection-start-line="82" selection-start-column="64" selection-end-line="82" selection-end-column="64" />
+        <state relative-caret-position="629">
+          <caret line="52" column="49" lean-forward="false" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="831" column="19" lean-forward="false" selection-start-line="831" selection-start-column="19" selection-end-line="831" selection-end-column="19" />
+          <folding>
+            <marker date="1509776834362" expanded="true" signature="13834:13933" ph="{...}" />
+            <marker date="1509776834362" expanded="true" signature="19730:19736" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#3259#3281#0" expanded="true" />
+            <element signature="e#3415#3456#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

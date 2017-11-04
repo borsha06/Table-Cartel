@@ -50,7 +50,7 @@
                             </ons-col>
                             <ons-col width="35%">
                                 <div class="menu_footer_settings">
-                                   <p>Settings & <br />Preferences</p>
+                                   <p>Settings & Preferences</p>
                                 </div>
                             </ons-col>
                             <ons-col width="15%">
