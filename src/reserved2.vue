@@ -54,7 +54,7 @@
                         </ons-col>
                         <ons-col width="100%">
                             <div class="reserve_second_top_button">
-                                <input type="number" v-on:click="hidefooter" class="text-input" v-model="people" placeholder="Headcount" required value="" >
+                                <input type="number" v-on:click="hidefooter" onfocus="this.placeholder=''" class="text-input" v-model="people"  placeholder="Headcount" required  >
                                 <!-- <button class="button button--light">Headcount</button> -->
                             </div>
                         </ons-col>
@@ -354,23 +354,32 @@
                             },
                         },
                     }).then(mobile => {
+
                         if (!mobile){
-                            swal({
-                                title: "Oops",
-                                text: "Not a mobile number",
-                                icon: "warning",
-                                buttons: true,
-                            })
+                                swal({
+                                    title: "Oops",
+                                    text: "Not a mobile number",
+                                    icon: "warning",
+                                })
                         }else{
                             this.mobile = mobile;
                             swal({
                                 title: "Are you sure?",
                                 //text: "Once deleted, you will not be able to recover this imaginary file!",
-                                icon: "warning",
+                                icon: "info",
                                 buttons: true,
                                 dangerMode: true,
                             }).then((response) => {
-                                this.onSubmit();
+                                if(response){
+                                    this.onSubmit();
+                                }
+                                else{
+                                    swal({
+                                        title: "Oops",
+                                        text: "You Cancel the reservation",
+                                        icon: "info",
+                                    })
+                                }
                             });
                         }
                     })
@@ -423,30 +432,21 @@
     }
     .loading{
         text-align: center;
+        color: #009688;
+        font-size: 13px;
         margin-top: 300px;
         margin-bottom: 100px;
     }
-    .dialogs{
-        margin-top: 6px;
-    }
-    .errors{
-        margin: 6px;
-    }
+
     .loadingp{
         text-align: center;
+        color: #009688;
+        font-size: 13px;
         /*color: white;*/
         /*margin-top: 250px;*/
         /*margin-bottom: 150px;*/
     }
-    .yes_button{
-        background: black;
-        border: 1px solid rgba(255, 255, 255, 0.86);
-        color: #fff;
-        padding: 4px 20px;
-        width: 100%;
-        margin-top: 8px
 
-    }
     .v--modal-box>.v--modal{
         top:275px;
     }

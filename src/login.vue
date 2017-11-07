@@ -13,8 +13,8 @@
                 <ons-row align="center" class="loginarea">
                     <ons-col width="100%">
                         <div class="login_form">
-                            <input type="text"  v-model="user" class="text-input form_name" placeholder="Username" required value="" />
-                            <input type="password"  v-model="pass" class="text-input form_pass"   placeholder="Password" required value="" />
+                            <input type="text"  v-model="user" onfocus="this.placeholder=''" class="text-input form_name" placeholder="Username" required value="" />
+                            <input type="password"  v-model="pass" onfocus="this.placeholder=''" class="text-input form_pass"   placeholder="Password" required value="" />
                         </div>
                         <!--<button class="button button&#45;&#45;light" type="submit">Sign in</button>-->
                         <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
@@ -59,7 +59,7 @@
                 <ons-col width="100%">
                     <div class="connect_button">                        
                         <!--<p class="button " @click="push"><img :src="connect" alt="" /></p>-->
-                        <p class="button" @click="logout"  ><img :src="connect" alt="" /></p>
+                        <p class="button" @click=""  ><img :src="connect" alt="" /></p>
                     </div>
                 </ons-col>
             </ons-row>
@@ -166,7 +166,7 @@
                     if(((result_get.status!='unknown') ? ((result_get.authResponse.session_key) ? true : false) : false)) {
                         //alert('logged in');
                         //alert(JSON.stringify(result_get));
-                        facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email","user_birthday"], function(result){
+                        facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email"], function(result){
                             //alert(JSON.stringify(result));
                             that.$session.start()
                             that.$session.set('user', result.name)
@@ -176,13 +176,13 @@
                         },function(error){
                             swal({
                                 title: "Oops!",
-                                text: "There is an error",
+                                text: "There is an error or Connetion Failed",
                                 icon: "error",
                             });
                         });
                     }
                     else {
-                        facebookConnectPlugin.login(['email', 'public_profile','user_birthday',], function(response) {
+                        facebookConnectPlugin.login(['email', 'public_profile',], function(response) {
                             //alert('logged in');
                             //alert(JSON.stringify(response.authResponse));
                             facebookConnectPlugin.api('/' + response.authResponse.userID +'/?fields=id,name,email,gender,age_range,last_name',[],
@@ -249,7 +249,7 @@
                             //alert('There is an error');
                             swal({
                                 title: "Oops!",
-                                text: "There is an error",
+                                text: "There is an error or Connetion Failed",
                                 icon: "error",
                             });
                         });
@@ -313,7 +313,8 @@
     }
     .loadingp{
         text-align: center;
-        color: black;
+        color: #009688;
+        font-size: 13px;
     }
 
     .page__content{

@@ -17,9 +17,6 @@
       "APP_ID": "208052816401741",
       "APP_NAME": "TableCartelApp",
       "PACKAGE_NAME": "com.example.helloworld"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.example.helloworld"
     }
   },
   "dependent_plugins": {}

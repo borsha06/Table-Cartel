@@ -16,6 +16,16 @@
     	// 	$(".logo-area").show();
 
     	// });
+        $("input[placeholder]").each(function () {
+            $(this).attr("data-placeholder", this.placeholder);
+
+            $(this).bind("focus", function () {
+                this.placeholder = '';
+            });
+            $(this).bind("blur", function () {
+                this.placeholder = $(this).attr("data-placeholder");
+            });
+        });
 
 
 

@@ -110,5 +110,4 @@
         <variable name="APP_ID" value="208052816401741" />
         <variable name="APP_NAME" value="TableCartelApp" />
     </plugin>
-    <plugin name="cordova-plugin-splashscreen" spec="git+https://github.com/apache/cordova-plugin-splashscreen.git" />
 </widget>
