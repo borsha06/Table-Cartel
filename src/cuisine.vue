@@ -12,7 +12,7 @@
 		    <ons-col width="80%">
 		      <div class="left_side_search_heading">
 		      	<h2>search by cuisine</h2>
-		      	<p>Here is the list of cuisinnes on offer!</p>
+		      	<p>Here is the list of cuisines on offer!</p>
 		      </div>
 		    </ons-col>
 		    <ons-col width="20%">
