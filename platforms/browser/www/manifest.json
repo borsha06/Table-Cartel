@@ -1,0 +1,10 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Table-Cartel",
+  "short_name": "Table-Cartel",
+  "version": "com.tablecartelapp.app",
+  "icons": [],
+  "orientation": "any",
+  "start_url": "index.html"
+}

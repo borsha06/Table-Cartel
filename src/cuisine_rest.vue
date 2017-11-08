@@ -182,5 +182,7 @@
         text-align: center;
         margin-top: 100px;
         margin-bottom: 100px;
+        color: #009688;
+        font-size: 13px;
     }
 </style>

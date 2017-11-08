@@ -25,13 +25,5 @@
       "APP_ID": "208052816401741",
       "APP_NAME": "TableCartelApp"
     }
-  },
-  "cordova-plugin-splashscreen": {
-    "source": {
-      "type": "registry",
-      "id": "https://github.com/apache/cordova-plugin-splashscreen.git"
-    },
-    "is_top_level": true,
-    "variables": {}
   }
 }

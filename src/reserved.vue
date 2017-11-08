@@ -13,7 +13,7 @@
                     <ons-col width="80%">
                         <div class="left_side_reserved_heading">
                             <h2>Reservations</h2>
-                            <p>You are almost there!</p>
+                            <p>You’re almost there</p>
                         </div>
                     </ons-col>
                     <ons-col width="20%">
@@ -26,13 +26,13 @@
                 <ons-row align="center" class="top_button_area">
                     <ons-col width="100%">
                         <div class="reserve_top_button_text">
-                            <p>You want us to reserve you seats at</p>
+                            <p>You want us to reserve your seats at</p>
                         </div>
                     </ons-col>
                     <ons-col width="100%">
                         <div class="reserve_top_button">
                             <!--<input type="text" class="text-input" v-model="restaurant = this.data.name" placeholder="Vapianos italian's gourment" value="">-->
-                             <p class="button button--light">{{this.data.name}}</p>
+                             <p class="">{{this.data.name}}</p>
                             <input type="hidden"  v-model="restaurant_id = this.data.id">
                             <input type="hidden"  v-model="restaurant = this.data.name">
                         </div>
@@ -46,7 +46,7 @@
                     </ons-col>
                     <ons-col width="100%">
                         <div class="reserve_second_top_button">
-                            <input type="number"  v-on:click="hidefooter" class="text-input"  v-model="people" placeholder="Headcount" required value="">
+                            <input type="number"  v-on:click="hidefooter" class="text-input"  onfocus="this.placeholder=''" v-model="people" placeholder="Headcount" required value="">
                              <!-- <button class="button button--light">Headcount</button> -->
                         </div>
                     </ons-col>
@@ -320,18 +320,27 @@
                                 title: "Oops",
                                 text: "Not a mobile number",
                                 icon: "warning",
-                                buttons: true,
                             })
                         }else{
                             this.mobile = mobile;
                             swal({
                                 title: "Are you sure?",
                                 //text: "Once deleted, you will not be able to recover this imaginary file!",
-                                icon: "warning",
+                                icon: "info",
                                 buttons: true,
                                 dangerMode: true,
                             }).then((response) => {
-                                this.onSubmit();
+                                if(response){
+                                    this.onSubmit();
+                                }
+                                else{
+                                    swal({
+                                        title: "Oops",
+                                        text: "You Cancel the reservation",
+                                        icon: "info",
+                                    })
+                                }
+
                             });
                         }
                     })
@@ -382,17 +391,15 @@
     }
     .loading{
         text-align: center;
+        color: #009688;
+        font-size: 13px;
         margin-top: 100px;
         margin-bottom: 100px;
     }
-    .dialogs{
-        margin-top: 6px;
-    }
-    .errors{
-        margin: 6px;
-    }
     .loadingp{
         text-align: center;
+        color: #009688;
+        font-size: 13px;
         /*color: white;*/
         /*margin-top: 250px;*/
         /*margin-bottom: 150px;*/

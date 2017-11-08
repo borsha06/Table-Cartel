@@ -13,8 +13,8 @@
                 <ons-row align="center" class="loginarea">
                     <ons-col width="100%">
                         <div class="login_form">
-                            <input type="text"  v-model="user" class="text-input form_name" placeholder="Username" required value="" />
-                            <input type="password"  v-model="pass" class="text-input form_pass"   placeholder="Password" required value="" />
+                            <input type="text"  v-model="user" onfocus="this.placeholder=''" class="text-input form_name" placeholder="Username" required value="" />
+                            <input type="password"  v-model="pass" onfocus="this.placeholder=''" class="text-input form_pass"   placeholder="Password" required value="" />
                         </div>
                         <!--<button class="button button&#45;&#45;light" type="submit">Sign in</button>-->
                         <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
@@ -59,7 +59,7 @@
                 <ons-col width="100%">
                     <div class="connect_button">                        
                         <!--<p class="button " @click="push"><img :src="connect" alt="" /></p>-->
-                        <p class="button" @click="logout"  ><img :src="connect" alt="" /></p>
+                        <p class="button" @click=""  ><img :src="connect" alt="" /></p>
                     </div>
                 </ons-col>
             </ons-row>
@@ -128,6 +128,7 @@
                     this.loading = false
                     if(this.logindata == 1){
                         this.$session.start()
+                        this.$session.set('last_name', this.user)
                         this.$session.set('user', this.user)
                         this.user = '';
                         this.pass = '';
@@ -136,24 +137,19 @@
                     }
                     else{
                         this.$modal.hide('loading-modal')
-                        //alert('Invalid  Username or Password')
                         swal({
                             title: "Oops!",
                             text: "Invalid  Username or Password",
                             icon: "warning",
                         });
                     }
-//                        this.loading = false
-//
-                })
-                    .catch((err) => {
+                }).catch((err) => {
                         console.log(err)
                         this.loading = false
                         this.$modal.hide('loading-modal')
-                        //alert('There is an error')
                         swal({
                             title: "Oops!",
-                            text: "There is an error",
+                            text: "Please Connect your Internet",
                             icon: "error",
                         });
                     })
@@ -170,7 +166,7 @@
                     if(((result_get.status!='unknown') ? ((result_get.authResponse.session_key) ? true : false) : false)) {
                         //alert('logged in');
                         //alert(JSON.stringify(result_get));
-                        facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email","user_birthday"], function(result){
+                        facebookConnectPlugin.api("/me?fields=email,name,picture,last_name", ["public_profile","email"], function(result){
                             //alert(JSON.stringify(result));
                             that.$session.start()
                             that.$session.set('user', result.name)
@@ -178,16 +174,15 @@
                             that.$session.set('email', result.email)
                             that.pageStack.push(welcome);
                         },function(error){
-                           // alert(JSON.stringify(error));
                             swal({
                                 title: "Oops!",
-                                text: "There is an error",
+                                text: "There is an error or Connetion Failed",
                                 icon: "error",
                             });
                         });
                     }
                     else {
-                        facebookConnectPlugin.login(['email', 'public_profile','user_birthday',], function(response) {
+                        facebookConnectPlugin.login(['email', 'public_profile',], function(response) {
                             //alert('logged in');
                             //alert(JSON.stringify(response.authResponse));
                             facebookConnectPlugin.api('/' + response.authResponse.userID +'/?fields=id,name,email,gender,age_range,last_name',[],
@@ -254,7 +249,7 @@
                             //alert('There is an error');
                             swal({
                                 title: "Oops!",
-                                text: "There is an error",
+                                text: "There is an error or Connetion Failed",
                                 icon: "error",
                             });
                         });
@@ -265,7 +260,7 @@
                     //alert('There is an error');
                     swal({
                         title: "Oops!",
-                        text: "There is an error",
+                        text: "There is an error or Connetion Failed",
                         icon: "error",
                     });
                 });
@@ -316,25 +311,11 @@
     .button{
         float:left;
     }
-    .fb-signin-button {
-        /* This is where you control how the button looks. Be creative! */
-        width: 100%;
-        border-radius: 25px;
-        background: #000;
-        color: #fff;
-        font-family: 'Nunito', sans-serif;
-        font-size: 14px;
-        padding: 7px 0px;
-        font-weight: bold;
-        text-align: center;
-        box-shadow: 0px 0px 2px black;
-    }
     .loadingp{
         text-align: center;
-        color: #06b9b3;
-        font-size:10px;
-        
 
+        color: #009688;
+        font-size: 13px;
     }
 
     .page__content{

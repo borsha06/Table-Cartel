@@ -43,10 +43,6 @@
             {
               "xml": "<preference name=\"android-minSdkVersion\" value=\"15\" />",
               "count": 1
-            },
-            {
-              "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
             }
           ]
         }
@@ -97,9 +93,6 @@
       "APP_ID": "208052816401741",
       "APP_NAME": "TableCartelApp",
       "PACKAGE_NAME": "com.example.helloworld"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.tablecartelapp.app"
     }
   },
   "dependent_plugins": {},
@@ -120,20 +113,11 @@
       "clobbers": [
         "facebookConnectPlugin"
       ]
-    },
-    {
-      "id": "cordova-plugin-splashscreen.SplashScreen",
-      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-      "pluginId": "cordova-plugin-splashscreen",
-      "clobbers": [
-        "navigator.splashscreen"
-      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-inappbrowser": "1.7.1",
     "cordova-plugin-whitelist": "1.3.2",
-    "cordova-plugin-facebook4": "1.9.1",
-    "cordova-plugin-splashscreen": "4.0.4-dev"
+    "cordova-plugin-facebook4": "1.9.1"
   }
 }
