@@ -8,8 +8,12 @@
     		$(".logos>img").hide();
 
     	});
-    	$("#login-body").focusout(function(){
-    		$(".logos>img").show();
+        $("#login-body").focusout(function(){
+            $(".logos>img").show();
+
+        });
+    	$(".reserve_background reserved_side").click(function(){
+    		$(".cuisine_footer_carousel").show();
 
     	});
     	// $("body").click(function(){

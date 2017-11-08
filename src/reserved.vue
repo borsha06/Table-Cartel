@@ -32,7 +32,7 @@
                     <ons-col width="100%">
                         <div class="reserve_top_button">
                             <!--<input type="text" class="text-input" v-model="restaurant = this.data.name" placeholder="Vapianos italian's gourment" value="">-->
-                             <p class="button button--light">{{this.data.name}}</p>
+                             <p class="">{{this.data.name}}</p>
                             <input type="hidden"  v-model="restaurant_id = this.data.id">
                             <input type="hidden"  v-model="restaurant = this.data.name">
                         </div>

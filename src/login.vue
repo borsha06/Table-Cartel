@@ -313,6 +313,7 @@
     }
     .loadingp{
         text-align: center;
+
         color: #009688;
         font-size: 13px;
     }

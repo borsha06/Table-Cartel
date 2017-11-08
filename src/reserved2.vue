@@ -1,4 +1,4 @@
-<template>
+<template class="footer_show_hide">
     <v-ons-page>
         <div class="header_top">
             <ons-row align="top" width="100%">

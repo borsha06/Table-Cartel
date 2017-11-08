@@ -124,6 +124,7 @@ text-align: center !important;
     margin-top: 20px;
     font-family: 'Nunito', sans-serif;
     color: #000;
+    font-size: 30px;
 
 }
 .left_side_search_heading p{
@@ -136,13 +137,13 @@ text-align: center !important;
 
 }
 .yah_side_search_heading p{
-    color: #6d6d6d;
+	color: #6d6d6d;
     padding: 0;
     margin-top: -24px;
     font-family: 'Nunito', sans-serif;
     padding-right: 17px;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 200;
+    font-size: 18px;
 
 }
 .cross_icon{
@@ -329,7 +330,7 @@ background-color: #fff;
     padding: 0px !important;
     width: 70px;
     float: right;
-    margin-right: 10px;
+    margin-right: 6px;
     border-radius: 11px;
 }
 .card_text{
@@ -400,7 +401,7 @@ padding-left: 30px;
 .reserv_button button{
     border-radius: 40px;
     font-size: 8px;
-    padding: 0px 21px;
+    padding: 0px 16px;
     border: none;
     color: #191919;
     text-transform: uppercase;
@@ -411,6 +412,10 @@ padding-left: 30px;
     font-family: 'Nunito', sans-serif;
     margin-right: -3px;
     text-shadow: 0px 1px #ddd;
+    height: 29px;
+}
+.cuisine{
+	margin-bottom:2px;
 }
 .vapianos_menu_button_text{}
 .vapianos_menu_button_text button{
@@ -453,7 +458,7 @@ padding-left: 30px;
 }
 .icon_text{
     float: right;
-    width: 60%;
+    width: 68%;
     margin-top: 3px;
     margin-left: 5px;
 }
@@ -517,18 +522,19 @@ padding:0px 17px;
     margin-bottom: 8px;
 }
 .reserve_top_button p{
-    width: 100%;
+	width: 100%;
     border-radius: 25px;
     background: #fff;
     color: #000;
     font-size: 9px;
     text-transform: uppercase;
-    padding: 1px 0px;
+    padding: 10px 0px;
     text-align: center;
     border: none;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
+    font-size:11px;
 }
 .reserve_top_button p:active{
     border:none;
@@ -1165,3 +1171,35 @@ display:none;
     bottom: 0;
     background: #f3f5f7;
 }
+/*################## DATE PICKER ####################*/
+.cov-date-body{
+	background:#000000 !important;
+    width: 250px !important;
+    font-size: 13px !important;
+
+}
+.hour-item[data-v-36b1b8b5], .min-item[data-v-36b1b8b5]{
+	font-size:13px !important;
+}
+.cov-picker-box[data-v-36b1b8b5]{
+	padding:25px 25px 0px 25px;
+}
+.cov-date-monthly[data-v-36b1b8b5]{
+	height:70px !important;
+}
+.cov-date-caption{
+	margin-top:-43px !important;
+}
+.cov-date-monthly > div[data-v-36b1b8b5]{
+	height:60px !important;
+}
+
+
+
+
+
+
+
+
+
+
