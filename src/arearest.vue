@@ -24,7 +24,7 @@
       </ons-row>
       <ons-row align="">
         <ons-col width="100%">
-          <div class="left_side_button" v-for="rest in restaurant">
+          <div class="left_side_button" v-for="rest in sortedArray">
             <button class="button button--light button_customize" @click="restaurants(rest.ID)">{{ rest.post_title }}</button>
           </div>
         </ons-col>
@@ -131,7 +131,7 @@
                 menuico: menuicon,
                 close: closeicon,
                 notificationicon: notification,
-                restaurant: {},
+                restaurant: [],
                 food: dataBus.$data,
                 loading:true,
             }
@@ -169,6 +169,19 @@
             pop(){
                 this.pageStack.pop();
             },
+        },
+        computed: {
+            sortedArray: function() {
+                function compare(a, b) {
+                    if (a.post_title < b.post_title)
+                        return -1;
+                    if (a.post_title > b.post_title)
+                        return 1;
+                    return 0;
+                }
+
+                return this.restaurant.sort(compare);
+            }
         },
         props: ['pageStack']
     }

@@ -13,7 +13,7 @@
                     <ons-col width="80%">
                         <div class="left_side_reserved_heading">
                             <h2>Reservations</h2>
-                            <p>You are almost there!</p>
+                            <p>You’re almost there!</p>
                         </div>
                     </ons-col>
                     <ons-col width="20%">
@@ -26,7 +26,7 @@
                 <ons-row align="center" class="top_button_area">
                     <ons-col width="100%">
                         <div class="reserve_top_button_text">
-                            <p>You want us to reserve you seats at</p>
+                            <p>You want us to reserve your seats at</p>
                         </div>
                     </ons-col>
                     <ons-col width="100%">
@@ -154,6 +154,7 @@
 
 
 <script>
+    import welcome from './welcome'
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
     import carousel3 from "assets/carousel3.jpg"
@@ -214,8 +215,8 @@
                     type: 'min',
                     week: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
                     month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-                    format: 'MM-DD HH:mm',
-                    placeholder: 'MM-DD HH:mm',
+                    format: 'DD/MM/YYYY HH:mm',
+                    placeholder: 'DD/MM',
                     required: true,
                 },
                 limit: [{},
@@ -264,8 +265,10 @@
                         //confirm("Reservation request submited!")
                         swal({
                             title: "Good job!",
-                            text: "Reservation request submited.",
+                            text: "Reservation request submitted.",
                             icon: "success",
+                        }).then((resp) => {
+                            this.pageStack.push(welcome)
                         });
 
                     })
@@ -334,9 +337,12 @@
                                     this.onSubmit();
                                 }
                                 else{
+                                    this.mobile= '';
+                                    this.people = '';
+                                    this.date.time = '';
                                     swal({
                                         title: "Oops",
-                                        text: "You Cancel the reservation",
+                                        text: "You have canceled the reservation!",
                                         icon: "info",
                                     })
                                 }

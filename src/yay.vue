@@ -21,7 +21,7 @@
                     <div class="yah_side_search_heading">
                         <h2>Woohoo! Let's plan</h2>
                         <!--<p>Today is good day to eat out.Why not plan somethink? !</p>-->
-                        <p>Do you have a cuisine in mind or you want to choose by area? Better still you know the restaurant you visit? </p>
+                        <p>Do you have a cuisine in mind or you want to choose by area? Better still you know the restaurant you want to visit? </p>
                     </div>
                 </ons-col>
             </ons-row>

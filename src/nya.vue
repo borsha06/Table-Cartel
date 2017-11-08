@@ -21,7 +21,7 @@
                 <ons-col width="100%">
                     <div class="nay_heading">
                         <h2>uh-ohh :(</h2>
-                        <p>Well since you all ready here why not check out some your wonderful content.There are a good read :)</p>
+                        <p>Well since you already here why not check out some of our wonderful content.They are a good read :)</p>
                     </div>
                 </ons-col>
             </ons-row>

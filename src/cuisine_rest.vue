@@ -12,7 +12,7 @@
                 <ons-col width="80%">
                     <div class="left_side_search_heading">
                         <h2>Listings for {{this.data.name}}</h2>
-                        <p>Select place you want to go!</p>
+                        <p>Select place you want to go to</p>
                     </div>
                 </ons-col>
                 <ons-col width="20%">
@@ -24,7 +24,7 @@
             </ons-row>
             <ons-row align="">
                 <ons-col width="100%">
-                    <div class="left_side_button" v-for="rest in restaurant">
+                    <div class="left_side_button" v-for="rest in sortedArray">
                         <button class="button button--light button_customize" @click="restaurants(rest.ID)">{{ rest.post_title }}</button>
                     </div>
                 </ons-col>
@@ -132,7 +132,7 @@
                 footercarousel8: carousel8,
                 footercarousel9: carousel9,
                 footercarousel10: carousel,
-                restaurant: {},
+                restaurant: [],
                 food: dataBus.$data,
                 loading:true,
             }
@@ -170,6 +170,19 @@
             pop(){
                 this.pageStack.pop();
             },
+        },
+        computed: {
+            sortedArray: function() {
+                function compare(a, b) {
+                    if (a.post_title < b.post_title)
+                        return -1;
+                    if (a.post_title > b.post_title)
+                        return 1;
+                    return 0;
+                }
+
+                return this.restaurant.sort(compare);
+            }
         },
         props: ['pageStack']
     }

@@ -18,7 +18,7 @@
                         <ons-col width="80%">
                             <div class="left_side_reserved_heading">
                                 <h2>Reservations</h2>
-                                <p>You are almost there!</p>
+                                <p>You’re almost there!</p>
                             </div>
                         </ons-col>
                         <ons-col width="20%">
@@ -32,7 +32,7 @@
                     <ons-row align="center" class="top_button_area">
                         <ons-col width="100%">
                             <div class="reserve_top_button_text">
-                                <p>You want us to reserve you seats at</p>
+                                <p>You want us to reserve your seats at</p>
                             </div>
                         </ons-col>
                         <ons-col width="100%">
@@ -41,8 +41,9 @@
                                 <!--<p class="button button&#45;&#45;light">{{this.data.name}}</p>-->
                                 
                                 <select v-model="restaurant_id" required="">
-                                    <option id="select_align" v-for="item in restaurants" v-bind:value="item.ID">{{ item.post_title }}</option>
+                                    <option id="select_align" v-for="item in sortedArray" v-bind:value="item.ID">{{ item.post_title }}</option>
                                 </select>
+                                <v-select :value.sync="selected" :options="options"></v-select>
                             </div>
                         </ons-col>
                     </ons-row>
@@ -62,7 +63,7 @@
                     <ons-row align="center" class="top_third_button_area">
                         <ons-col width="100%">
                             <div class="reserve_top_third_button_text">
-                                <p>It will be joining them on</p>
+                                <p>You will be joining them on</p>
                             </div>
                         </ons-col>
                         <ons-col width="35%">
@@ -164,6 +165,7 @@
 
 
 <script>
+    import welcome from './welcome'
     import Vue from 'vue';
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
@@ -184,11 +186,14 @@
     import {dataBus} from './static/assets/js/custom.js';
     import myDatepicker from 'vue-datepicker';
     import swal from 'sweetalert'
+    import vSelect from "vue-select"
 
     Vue.use(VModal)
     export default {
         data () {
             return {
+                options: ['foo','bar','baz'],
+                selected: '',
                 name: this.$session.get('user'),
                 typing: true,
                 rest: '',
@@ -212,7 +217,7 @@
                 menuico: menuicon,
                 notificationicon: notification,
                 close: closeicon,
-                restaurants: {},
+                restaurants: [],
                 food: dataBus.$data,
                 loading:false,
                 pageloading: false,
@@ -226,8 +231,8 @@
                     type: 'min',
                     week: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
                     month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-                    format: 'MM-DD HH:mm',
-                    placeholder: 'MM-DD HH:mm',
+                    format: 'DD/MM/YYYY HH:mm',
+                    placeholder: 'DD/MM',
                     required: true,
                 },
                 limit: [{},
@@ -300,7 +305,10 @@
                                     title: "Good job!",
                                     text: "Reservation request submited.",
                                     icon: "success",
+                                }).then((resp) => {
+                                    this.pageStack.push(welcome)
                                 });
+
                             })
                                 .catch((err) => {
                                     console.log(err)
@@ -408,7 +416,20 @@
             }
         },
         components: {
-            'date-picker': myDatepicker,
+            'date-picker': myDatepicker, vSelect,
+        },
+        computed: {
+            sortedArray: function() {
+                function compare(a, b) {
+                    if (a.post_title < b.post_title)
+                        return -1;
+                    if (a.post_title > b.post_title)
+                        return 1;
+                    return 0;
+                }
+
+                return this.restaurants.sort(compare);
+            }
         },
         props: ['pageStack']
     }
