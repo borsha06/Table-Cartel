@@ -165,7 +165,7 @@
 
 
 <script>
-    import welcome from './welcome'
+    import welcome from './landing2'
     import Vue from 'vue';
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
@@ -190,6 +190,7 @@
 
     Vue.use(VModal)
     export default {
+        name: 'reserved2',
         data () {
             return {
                 options: ['foo','bar','baz'],
@@ -306,6 +307,10 @@
                                     text: "Reservation request submited.",
                                     icon: "success",
                                 }).then((resp) => {
+                                    this.pageStack.length
+                                    for (i = 0; i < this.pageStack.length; i++) {
+                                        console.log(i.name)
+                                    }
                                     this.pageStack.push(welcome)
                                 });
 

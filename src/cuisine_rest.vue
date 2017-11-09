@@ -117,6 +117,7 @@
     import restaurant from './restaurant'
     import {dataBus} from './static/assets/js/custom.js';
     export default {
+        name: 'cuisinerest',
         data () {
             return {
                 notificationicon: notification,

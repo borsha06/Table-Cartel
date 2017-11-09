@@ -121,10 +121,10 @@
     import closeicon from "assets/close.svg"
     import axios from 'axios'
     import cuisine from './cuisine'
-    import restaurant from './restaurant'
     import area from './area'
     import {dataBus} from './static/assets/js/custom.js';
     export default {
+        name: 'yay',
         data () {
             return {
                 footercarousel: carousel2,
@@ -140,7 +140,6 @@
                 menuico: menuicon,
                 notificationicon: notification,
                 close: closeicon,
-                restauranttexo: {},
                 food: dataBus.$data
             }
         },

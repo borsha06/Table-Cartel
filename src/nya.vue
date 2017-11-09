@@ -1,5 +1,5 @@
 <template>
-    <v-ons-page id="gray_bg">
+    <v-ons-page>
         <div class="header_top">
             <ons-row align="top" width="100%">
                 <ons-col width="50px" class="header_left_icon"><img :src="menuico" alt="" /></ons-col>
@@ -27,7 +27,7 @@
             </ons-row>
         </div>
 
-        <!--Footer Carousel-->
+        Footer Carousel
         <div class="cuisine_footer_carousel" id="hellojorge-area">
             <ons-row class="nay_carousel_heading">
                 <p>The TableCartel Chronicles</p>
@@ -79,12 +79,17 @@
             </ons-carousel>
         </div>
         <!--Footer Carousel-->
+        <!--<div @click="landindpage">-->
+            <!--&lt;!&ndash;<img  :src="footerlogo" alt="" />&ndash;&gt;-->
+            <!--hello-->
+        <!--</div>-->
 
         <div class="hello_jorge_footer_option">
             <ons-row align="" class="hello_jorge_footer_area">
                 <ons-col width="25%">
-                    <div @click="welcomepages" class="left_logo">
+                    <div @click="landindpage()" class="left_logo">
                         <img  :src="footerlogo" alt="" />
+
                     </div>
                 </ons-col>
                 <ons-col width="45%">
@@ -118,20 +123,19 @@
     import carousel10 from "assets/carousel10.jpg"
     import menuicon from "assets/menuicon.svg"
     import closeicon from "assets/close.svg"
-    import footerlogo from "assets/apple-touch-icon.png"
+    import footerlogos from "assets/appleicon.png"
     import notification from "assets/notification.svg"
     import {dataBus} from './static/assets/js/custom.js';
     import yay from './yay'
     import reserved from './reserved2'
-    import welcome from './welcome2';
     export default {
+        name: 'nya',
         data () {
             return {
-                footerlogo: footerlogo,
                 menuico: menuicon,
                 close: closeicon,
                 notificationicon: notification,
-                footerlogo: footerlogo,
+                footerlogo: footerlogos,
                 footercarousel: carousel2,
                 footercarousel2: carousel3,
                 footercarousel3: carousel10,
@@ -145,20 +149,21 @@
                 food: dataBus.$data,
             }
         },
-        methods:{
+        methods: {
             yaypage () {
                 this.pageStack.push(yay)
             },
             reservedpage () {
                 this.pageStack.push(reserved)
             },
-            welcomepages () {
-                this.pageStack.push(welcome)
+            landindpage () {
+                this.pageStack.pop()
             },
             pop () {
                 this.pageStack.pop()
             }
         },
+
         props: ['pageStack']
     }
 </script>

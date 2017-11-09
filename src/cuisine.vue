@@ -117,6 +117,7 @@
   import cuisine_rest from './cuisine_rest'
   import {dataBus} from './static/assets/js/custom.js';
   export default {
+      name: 'cuisine',
   	data (){
   		return {
   			notificationicon: notification,

@@ -12,11 +12,8 @@
         <ons-col width="80%">
           <div class="left_side_search_heading">
             <h2>Listings for {{this.data.name}}</h2>
-<<<<<<< HEAD
             <p>Select the place you want to go to</p>
-=======
-            <p>Select place you want to go to</p>
->>>>>>> b7e2337684450064af610f2dfb058f506367270a
+
           </div>
         </ons-col>
         <ons-col width="20%">
@@ -120,6 +117,7 @@
     import restaurant2 from './restaurant2'
     import {dataBus} from './static/assets/js/custom.js';
     export default {
+        name: 'arearest',
         data () {
             return {
                 footercarousel: carousel2,

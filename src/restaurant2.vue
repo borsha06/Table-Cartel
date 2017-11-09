@@ -197,6 +197,7 @@
     import reserved from './reserved'
     import menus from './menu'
     export default {
+        name: 'restaurant2',
         data () {
             return {
                 bookicon: book,

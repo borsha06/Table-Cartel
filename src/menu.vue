@@ -89,6 +89,7 @@
     import logo from "assets/logo.png"
     import axios from 'axios'
     export default {
+        name: 'menu',
         data () {
             return {
                 notificationicon: notification,

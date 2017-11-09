@@ -74,22 +74,21 @@
 
 <script>
     import Vue from 'vue';
-    import facebook from './facebook.js'
-    import FBSignInButton from 'vue-facebook-signin-button'
-    Vue.use(FBSignInButton)
     import connects from "assets/connect.png"
     import logos from "assets/logo.png"
-    import welcome from './welcome'
+    import welcome from './landing'
     import registration from './register'
     import axios from 'axios';
     import $ from 'jquery';
     import VModal from 'vue-js-modal';
     import VueSession from 'vue-session'
     import swal from 'sweetalert'
+    Vue.use(VModal)
     Vue.use(VueSession)
 
 
     export default {
+        name: 'login',
         data () {
             return {
                 last_name: '',
@@ -122,9 +121,9 @@
                 }).then((resp)=>{
 //                    this.logindata = resp.data.length
                     this.logindata = resp.length
-                    console.log('--------------------------------')
-                    console.log(resp);
-                    console.log(this.logindata);
+//                    console.log('--------------------------------')
+//                    console.log(resp);
+//                    console.log(this.logindata);
                     this.loading = false
                     if(this.logindata == 1){
                         this.$session.start()
@@ -134,6 +133,8 @@
                         this.pass = '';
                         this.$modal.hide('loading-modal')
                         this.pageStack.push(welcome);
+
+
                     }
                     else{
                         this.$modal.hide('loading-modal')
@@ -149,7 +150,7 @@
                         this.$modal.hide('loading-modal')
                         swal({
                             title: "Oops!",
-                            text: "Please Connect your Internet",
+                            text: "Please connect your internet",
                             icon: "error",
                         });
                     })

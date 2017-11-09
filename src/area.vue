@@ -114,9 +114,10 @@
     import notification from "assets/notification.svg"
     import closeicon from "assets/close.svg"
     import axios from 'axios'
-    import arearest from './arearest'
+    import arearest from './area_rest'
     import {dataBus} from './static/assets/js/custom.js';
     export default {
+        name: 'area',
         data (){
             return {
                 notificationicon: notification,

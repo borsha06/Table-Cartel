@@ -1,8 +1,8 @@
 <template>
-    <v-ons-page id="gray_bg">
+    <v-ons-page>
         <div class="header_top">
             <ons-row align="top" width="100%">
-                <ons-col width="50px" class="header_left_icon"><img :src="menuico" alt="" /></ons-col>
+                <ons-col width="50px" class="header_left_icon"><img :src="menuicon" alt="" /></ons-col>
                 <ons-col id="table-cartel-heading">Tablecartel.com</ons-col>
                 <ons-col width="50px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
@@ -26,14 +26,14 @@
             </ons-row>
         </div>
 
-        <!--Footer Carousel-->
+        Footer Carousel
 
         <div class="cuisine_footer_carousel" id="hellojorge-area">
 
             <ons-row class="cuisine_footer_carousel" id="hellojorge-area">
-                <ons-row class="hellojorge_carousel_heading">
-                    <p>Today's Special</p>
-                </ons-row>
+                    <ons-row class="hellojorge_carousel_heading">
+                        <p>Today's Special</p>
+                    </ons-row>
 
                 <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
 
@@ -83,7 +83,7 @@
                 </ons-carousel>
             </ons-row>
         </div>
-        <!--Footer Carousel-->
+        Footer Carousel
         <div class="hello_jorge_footer_option">
             <ons-row align="" class="hello_jorge_footer_area">
                 <ons-col width="25%">
@@ -93,7 +93,7 @@
                 </ons-col>
                 <ons-col width="45%">
                     <div class="discover_button">
-                        <button class="button button--light" @click="yaypage">Discover</button>
+                         <button class="button button--light" @click="yaypage">Discover</button>
                     </div>
                 </ons-col>
                 <ons-col width="25%">
@@ -110,7 +110,7 @@
 
 
 <script>
-    import menuicon from "assets/menuicon.svg"
+    import menuicons from "assets/menuicon.svg"
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
     import carousel3 from "assets/carousel3.jpg"
@@ -121,7 +121,7 @@
     import carousel8 from "assets/carousel8.jpg"
     import carousel9 from "assets/carousel9.jpg"
     import carousel10 from "assets/carousel10.jpg"
-    import footerlogo from "assets/apple-touch-icon.png"
+    import footerlogos from "assets/appleicon.png"
     import notification from "assets/notification.svg"
     import VModal from 'vue-js-modal';
     import {dataBus} from './static/assets/js/custom.js';
@@ -129,11 +129,11 @@
     import nya from "./nya"
     import reserved from './reserved2'
     export default {
+        name: 'landing2',
         data () {
             return {
-                x:0,
-                menuico: menuicon,
-                footerlogo: footerlogo,
+                menuicon: menuicons,
+                footerlogo: footerlogos,
                 footercarousel: carousel2,
                 footercarousel2: carousel3,
                 footercarousel3: carousel10,
@@ -146,18 +146,16 @@
                 footercarousel10: carousel,
                 notificationicon: notification,
                 food: dataBus.$data,
-                loading:false,
                 username: this.$session.get('last_name')
             }
         },
         created () {
             this.$session.start()
-            console.log(this.$session.get('user'));
 
         },
-        methods:{
+        methods: {
             yaypage () {
-                this.pageStack.push(yay)
+               this.pageStack.push(yay)
             },
             nyapage () {
                 this.pageStack.push(nya)
@@ -169,9 +167,3 @@
         props: ['pageStack']
     }
 </script>
-<style scoped>
-
-
-
-
-</style>
