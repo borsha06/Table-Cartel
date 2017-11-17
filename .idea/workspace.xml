@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vue-select/src/components/Select.vue" afterPath="$PROJECT_DIR$/node_modules/vue-select/src/components/Select.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/area.vue" afterPath="$PROJECT_DIR$/src/area.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/area_rest.vue" afterPath="$PROJECT_DIR$/src/area_rest.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cuisine.vue" afterPath="$PROJECT_DIR$/src/cuisine.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cuisine_rest.vue" afterPath="$PROJECT_DIR$/src/cuisine_rest.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved.vue" afterPath="$PROJECT_DIR$/src/reserved.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved2.vue" afterPath="$PROJECT_DIR$/src/reserved2.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/restaurant.vue" afterPath="$PROJECT_DIR$/src/restaurant.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/restaurant2.vue" afterPath="$PROJECT_DIR$/src/restaurant2.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.bundle.js" afterPath="$PROJECT_DIR$/www/app.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.css" afterPath="$PROJECT_DIR$/www/app.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,11 +44,11 @@
       <file leaf-file-name="reserved2.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="485" column="24" lean-forward="true" selection-start-line="485" selection-start-column="24" selection-end-line="485" selection-end-column="24" />
+            <state relative-caret-position="-7242">
+              <caret line="45" column="91" lean-forward="false" selection-start-line="45" selection-start-column="91" selection-end-line="45" selection-end-column="91" />
               <folding>
-                <element signature="e#8467#8489#0" expanded="true" />
-                <marker date="1510899402346" expanded="true" signature="9:8449" ph="..." />
+                <element signature="e#8504#8526#0" expanded="true" />
+                <marker date="1510928000089" expanded="true" signature="9:8486" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/login.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="164" column="32" lean-forward="true" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="32" />
+              <caret line="164" column="32" lean-forward="false" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -301,7 +304,7 @@
       <workItem from="1509167011417" duration="16242000" />
       <workItem from="1509249677804" duration="138733000" />
       <workItem from="1510156748145" duration="2514000" />
-      <workItem from="1510196630452" duration="73665000" />
+      <workItem from="1510196630452" duration="91013000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -321,7 +324,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="439042000" />
+    <option name="totallyTimeSpent" value="456390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -714,18 +717,18 @@
     <entry file="file://$PROJECT_DIR$/src/login.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="164" column="32" lean-forward="true" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="32" />
+          <caret line="164" column="32" lean-forward="false" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="485" column="24" lean-forward="true" selection-start-line="485" selection-start-column="24" selection-end-line="485" selection-end-column="24" />
+        <state relative-caret-position="-7242">
+          <caret line="45" column="91" lean-forward="false" selection-start-line="45" selection-start-column="91" selection-end-line="45" selection-end-column="91" />
           <folding>
-            <element signature="e#8467#8489#0" expanded="true" />
-            <marker date="1510899402346" expanded="true" signature="9:8449" ph="..." />
+            <element signature="e#8504#8526#0" expanded="true" />
+            <marker date="1510928000089" expanded="true" signature="9:8486" ph="..." />
           </folding>
         </state>
       </provider>

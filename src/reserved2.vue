@@ -11,7 +11,7 @@
             <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
             <!--<span>Loading...</span>-->
         </div>
-        <div v-show="pageloading">
+        <!--<div v-show="pageloading">-->
             <form v-on:submit.prevent="permit">
                 <div class="reserve_background reserved_side">
                     <ons-row align="center">
@@ -43,8 +43,8 @@
                                 <!--<select v-model="restaurant_id" required="">-->
                                     <!--<option id="select_align"  v-for="item in sortedArray" v-bind:value="item.ID">{{ item.post_title }}</option>-->
                                 <!--</select>-->
-                                <v-select  v-model="selected" :on-search="getOptions"  :options="options"></v-select>
-                                {{selected}}
+                                <v-select  v-model="selected" onfocus="this.placeholder=''" placeholder="Search your restaurant" :on-search="getOptions"  :options="options"></v-select>
+
                             </div>
                         </ons-col>
                     </ons-row>
@@ -155,7 +155,7 @@
                 </ons-carousel>
             </div>
             <!--Footer Carousel-->
-        </div>
+        <!--</div>-->
 
 
 
@@ -193,8 +193,7 @@
         name: 'reserved2',
         data () {
             return {
-                id: [],
-                value: '',
+                id: false,
                 options: [],
                 selected: null,
                 name: this.$session.get('user'),
@@ -250,13 +249,13 @@
                 required: true
             }
         },
-        created () {
-            this.fetchData();
-            this.$session.start()
-        },
-        watch: {
-            '$route': 'fetchData'
-        },
+//        created () {
+//            this.fetchData();
+//            this.$session.start()
+//        },
+//        watch: {
+//            '$route': 'fetchData'
+//        },
         methods:{
             getOptions(search, loading) {
                 loading(true)
@@ -265,10 +264,29 @@
                     //this.options = resp.data
                     this.restaurants = resp.data
                     console.log(this.restaurants)
+                    this.options = []
                     var that = this;
-                    this.restaurants.forEach(function(entry) {
-                        if(entry.type == 'restaurant'){
-                            that.options.push(entry)
+                    this.restaurants.forEach(function(entrys) {
+                        if(entrys.type == 'restaurant'){
+                            if(that.options.length > 0){
+                                console.log(that.options);
+                                var thats = this;
+                                that.id = false
+                                that.options.forEach(function(entry){
+                                    if(entrys.id != entry.id){
+                                        that.id = true
+                                    }
+                                })
+                                if(that.id == true){
+                                    that.options.push(entrys)
+                                    that.id = false
+                                }
+
+                            }
+                            else{
+                                that.options.push(entrys)
+                            }
+                            console.log(that.options)
                         }
 
                     });
@@ -276,25 +294,25 @@
                     loading(false)
                 })
             },
-            fetchData () {
-                this.loadings = true
-                axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-rest-by-loc/0')
-                    .then((resp) => {
-                         console.log(resp.data)
-                        this.restaurants = resp.data
-                        console.log(this.restaurants)
-                        this.loadings = false
-                        this.pageloading = true
-                    })
-                    .catch((err) => {
-                        console.log(err)
-                    });
-            },
+//            fetchData () {
+//                this.loadings = true
+//                axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-rest-by-loc/0')
+//                    .then((resp) => {
+//                         console.log(resp.data)
+//                        this.restaurants = resp.data
+//                        console.log(this.restaurants)
+//                        this.loadings = false
+//                        this.pageloading = true
+//                    })
+//                    .catch((err) => {
+//                        console.log(err)
+//                    });
+//            },
             onSubmit: function () {
-                this.loading= true
+                this.loadings = true
                 this.$modal.show('loading-modal')
                 if(this.date.time) {
-                    axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-single-rest/' + this.restaurant_id + '/')
+                    axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-single-rest/' + this.selected.value + '/')
                         .then((resp) => {
                             this.rest = resp.data
                             console.log('--------------------------------')
