@@ -150,12 +150,12 @@
 			 axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/wp/v2/all-terms?term=cuisine_type')
 				 .then((resp) => {
 					 this.restauranttexo = resp.data
-	          console.log('--------------------------------')
-	          console.log(resp.data)
+//	          console.log('--------------------------------')
+//	          console.log(resp.data)
 					 this.loading = false
 				 })
 				 .catch((err) => {
-					 console.log(err)
+//					 console.log(err)
 				 })
 	   },
 	   rest_list(id,name) {

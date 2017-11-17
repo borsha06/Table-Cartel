@@ -150,12 +150,12 @@
                 axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-all-term-restaurant/' + this.data.id +'/')
                     .then((resp) => {
                         this.restaurant = resp.data
-                        console.log('--------------------------------')
-                        console.log(resp.data)
+//                        console.log('--------------------------------')
+//                        console.log(resp.data)
                         this.loading = false
                     })
                     .catch((err) => {
-                        console.log(err)
+//                        console.log(err)
                     })
             },
             restaurants (id) {

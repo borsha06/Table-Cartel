@@ -7,7 +7,7 @@
                 <ons-col width="50px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
-        <div v-if="loading" class="loading" v-cloak>
+        <div v-if="loadings" class="loadingrequest" v-cloak>
             <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
             <!--<span>Loading...</span>-->
         </div>
@@ -40,10 +40,11 @@
                                 <!--<input type="text" class="text-input" v-model="restaurant" placeholder="Vapianos italian's gourment" value="">-->
                                 <!--<p class="button button&#45;&#45;light">{{this.data.name}}</p>-->
                                 
-                                <select v-model="restaurant_id" required="">
-                                    <option id="select_align" v-for="item in sortedArray" v-bind:value="item.ID">{{ item.post_title }}</option>
-                                </select>
-                                <v-select :value.sync="selected" :options="options"></v-select>
+                                <!--<select v-model="restaurant_id" required="">-->
+                                    <!--<option id="select_align"  v-for="item in sortedArray" v-bind:value="item.ID">{{ item.post_title }}</option>-->
+                                <!--</select>-->
+                                <v-select  v-model="selected" :on-search="getOptions"  :options="options"></v-select>
+                                {{selected}}
                             </div>
                         </ons-col>
                     </ons-row>
@@ -92,7 +93,7 @@
                            :delay="100"
                            classes="false"
                     >
-                        <div v-if="loading" class="loadingp">
+                        <div v-if="loadings" class="loadingp">
                             <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
                             <!--<span>Loading...</span>-->
                         </div>
@@ -165,7 +166,6 @@
 
 
 <script>
-    import welcome from './landing2'
     import Vue from 'vue';
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
@@ -193,8 +193,10 @@
         name: 'reserved2',
         data () {
             return {
-                options: ['foo','bar','baz'],
-                selected: '',
+                id: [],
+                value: '',
+                options: [],
+                selected: null,
                 name: this.$session.get('user'),
                 typing: true,
                 rest: '',
@@ -220,7 +222,7 @@
                 close: closeicon,
                 restaurants: [],
                 food: dataBus.$data,
-                loading:false,
+                loadings:false,
                 pageloading: false,
                 startTime: {
                     time: ''
@@ -256,12 +258,32 @@
             '$route': 'fetchData'
         },
         methods:{
+            getOptions(search, loading) {
+                loading(true)
+                this.$http.get('http://clients.itsd.com.bd/table-cartel/wp-json/wp/v2/search/' + search + '/').then(resp => {
+                    //console.log(JSON.stringify(resp.data))
+                    //this.options = resp.data
+                    this.restaurants = resp.data
+                    console.log(this.restaurants)
+                    var that = this;
+                    this.restaurants.forEach(function(entry) {
+                        if(entry.type == 'restaurant'){
+                            that.options.push(entry)
+                        }
+
+                    });
+
+                    loading(false)
+                })
+            },
             fetchData () {
-                this.loading = true
+                this.loadings = true
                 axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-rest-by-loc/0')
                     .then((resp) => {
+                         console.log(resp.data)
                         this.restaurants = resp.data
-                        this.loading = false
+                        console.log(this.restaurants)
+                        this.loadings = false
                         this.pageloading = true
                     })
                     .catch((err) => {
@@ -298,7 +320,7 @@
                                 this.mobile= '';
                                 this.people = '';
                                 this.date.time = '';
-                                this.loading= false
+                                this.loadings= false
                                 this.$modal.hide('loading-modal');
                                 //this.$modal.show('success-modal');
                                 //alert('Reservation request submited.')
@@ -307,11 +329,9 @@
                                     text: "Reservation request submited.",
                                     icon: "success",
                                 }).then((resp) => {
-                                    this.pageStack.length
-                                    for (i = 0; i < this.pageStack.length; i++) {
-                                        console.log(i.name)
+                                    for (this.i = 0; this.i <1; this.i++) {
+                                        this.pageStack.pop()
                                     }
-                                    this.pageStack.push(welcome)
                                 });
 
                             })
@@ -387,6 +407,9 @@
                                     this.onSubmit();
                                 }
                                 else{
+                                    this.mobile= '';
+                                    this.people = '';
+                                    this.date.time = '';
                                     swal({
                                         title: "Oops",
                                         text: "You Cancel the reservation",
@@ -421,7 +444,8 @@
             }
         },
         components: {
-            'date-picker': myDatepicker, vSelect,
+            'date-picker': myDatepicker,
+            'v-select': vSelect,
         },
         computed: {
             sortedArray: function() {
@@ -456,7 +480,7 @@
     .button{
         float:left;
     }
-    .loading{
+    .loadingrequest{
         text-align: center;
         color: #009688;
         font-size: 13px;

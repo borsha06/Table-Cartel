@@ -154,7 +154,6 @@
 
 
 <script>
-    import welcome from './landing2'
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
     import carousel3 from "assets/carousel3.jpg"
@@ -245,6 +244,7 @@
                         method: "POST",
                         url: 'http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/orders',
                         data: {
+                            i: 0,
                             restaurant_id: this.restaurant_id,
                             title: this.name,
                             mobile: this.mobile,
@@ -257,7 +257,7 @@
                             password: 'itsd321#',
                         }
                     }).then((resp) => {
-                        console.log(resp);
+                        //console.log(resp);
                         this.mobile= '';
                         this.people = '';
                         this.date.time = '';
@@ -270,16 +270,17 @@
                             text: "Reservation request submitted.",
                             icon: "success",
                         }).then((resp) => {
-                            this.pageStack.length
-                            for (this.i = 0; this.i < this.pageStack.length; i++) {
-                                console.log(this.i.name)
+                            for (this.i = 0; this.i <5; this.i++) {
+                                this.pageStack.pop()
                             }
-                            this.pageStack.push(welcome)
-                        });
+//                            this.pageStack.forEach(function(res) {
+//                                console.log(res.name);
+//                            });
 
+                        })
                     })
                         .catch((err) => {
-                            console.log(err)
+                            //console.log(err)
                             //this.$modal.show('error2-modal');
                             this.$modal.hide('loading-modal');
                             //alert('Reservation Failed')

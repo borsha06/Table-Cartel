@@ -181,21 +181,21 @@
 </template>
 
 <script>
-    import parking from "assets/parking.svg"
-    import menuicon from "assets/menuicon.svg"
     import book from "assets/book.svg"
-    import tie from "assets/tie.svg"    
-    import menu from "assets/menu.svg"
-    import notification from "assets/notification.svg"
-    import closeicon from "assets/close.svg"
-    import alarm from "assets/alarm-clock.svg"
-    import payment from "assets/payment.svg"
+    import tie from "assets/tie.svg"
     import phonecall from "assets/phone-call.svg"
+    import menu from "assets/menu.svg"
+    import alarm from "assets/alarm-clock.svg"
+    import notification from "assets/notification.svg"
+    import menuicon from "assets/menuicon.svg"
+    import closeicon from "assets/close.svg"
+    import payment from "assets/payment.svg"
+    import parking from "assets/parking.svg"
     import axios from 'axios'
     import cuisine from './cuisine'
     import area from './area'
     import reserved from './reserved'
-    import menus from './menu'
+
     export default {
         name: 'restaurant2',
         data () {
@@ -210,7 +210,6 @@
                 close: closeicon,
                 paymenticon: payment,
                 parkingicon: parking,
-                restauranttexo: {},
                 rest: {},
                 loading: false,
                 pageloading: false
