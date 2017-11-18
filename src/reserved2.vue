@@ -56,7 +56,7 @@
                         </ons-col>
                         <ons-col width="100%">
                             <div class="reserve_second_top_button">
-                                <input type="number" v-on:click="hidefooter" onfocus="this.placeholder=''" class="text-input" v-model="people"  placeholder="Headcount" required  >
+                                <input type="number" v-on:click="hidefooter"  class="text-input" v-model="people"  placeholder="Headcount" required  >
                                 <!-- <button class="button button--light">Headcount</button> -->
                             </div>
                         </ons-col>
@@ -518,5 +518,15 @@
     .v--modal-box>.v--modal{
         top:275px;
     }
+
+
+
+
+
+
+
+
+
+
 
 </style>

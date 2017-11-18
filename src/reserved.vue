@@ -46,7 +46,7 @@
                     </ons-col>
                     <ons-col width="100%">
                         <div class="reserve_second_top_button">
-                            <input type="number"  v-on:click="hidefooter" class="text-input"  onfocus="this.placeholder=''" v-model="people" placeholder="Headcount" required value="">
+                            <input type="number"  v-on:click="hidefooter" class="text-input"  v-model="people" placeholder="Headcount" required value="">
                              <!-- <button class="button button--light">Headcount</button> -->
                         </div>
                     </ons-col>
