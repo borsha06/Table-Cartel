@@ -12,10 +12,11 @@
             $(".logos>img").show();
 
         });
-    	$(".reserve_background reserved_side").click(function(){
-    		$(".cuisine_footer_carousel").show();
+        $(".reserve_background reserved_side").click(function(){
+            $(".cuisine_footer_carousel").show();
 
-    	});
+        });
+
     	// $("body").click(function(){
     	// 	$(".logo-area").show();
 

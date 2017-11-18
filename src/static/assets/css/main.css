@@ -21,6 +21,7 @@ button:focus{
     text-shadow: 0 0 1px rgba(173, 170, 170, 0.21);
 
 }
+
 .left_side_button button{
     background: white !important;
     border: none;
@@ -572,7 +573,6 @@ padding:0px 17px;
 }
 .reserve_second_top_button{
       
-
     color: #333;
     font-weight: bolder;
     font-size: 11px;
@@ -763,15 +763,17 @@ font-size: 12px;
     color: #6d6d6d;
     font-family: 'Nunito', sans-serif;
     margin-top: 2px;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 200;
 }
 .hello_jorge_heading p{
     line-height: 23px;
     color: #6d6d6d;
     font-family: 'Nunito', sans-serif;
     margin-top: 2px;
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 15px;
+    font-weight:200;
 }
 .reserve_button_customize{
     background: #fff;
@@ -1193,8 +1195,28 @@ display:none;
 .cov-date-monthly > div[data-v-36b1b8b5]{
 	height:60px !important;
 }
+.dropdown-toggle{
+    border: none !important;
+    border-radius: 30px !important;
+    background: #fff !important;
+}
+.dropdown-toggle>::-webkit-input-placeholder{
+    color:black;
+    font-size:10px;
+    text-transform:uppercase;
+    font-family:'Nunito', sans-serif;
+    font-weight:800;
+    letter-spacing:0.7px;
+    text-shadow: 0 0 1px rgba(173, 170, 170, 0.21);
+}
 
 
+.dropdown-toggle>:focus::-webkit-input-placeholder{
+    opacity:0;
+}
+.reserve_second_top_button>:focus::-webkit-input-placeholder{
+  opacity:0;
+}
 
 
 
