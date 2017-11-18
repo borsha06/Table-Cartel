@@ -36,7 +36,7 @@
                             </div>
                         </ons-col>
                         <ons-col width="100%">
-                            <div class="reserve_top_button">
+                            <div class="reserve_top_button" v-on:click="hidefooter">
                                 <!--<input type="text" class="text-input" v-model="restaurant" placeholder="Vapianos italian's gourment" value="">-->
                                 <!--<p class="button button&#45;&#45;light">{{this.data.name}}</p>-->
                                 
@@ -532,14 +532,7 @@
         top:275px;
     }
 
-
-
-
-
-
-
-
-
-
-
+    .swal-icon img {
+        max-width: 85% !important;
+    }
 </style>

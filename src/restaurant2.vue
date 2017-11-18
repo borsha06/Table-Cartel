@@ -195,6 +195,7 @@
     import cuisine from './cuisine'
     import area from './area'
     import reserved from './reserved'
+    import menus from './menu'
 
     export default {
         name: 'restaurant2',
