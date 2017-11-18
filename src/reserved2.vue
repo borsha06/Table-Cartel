@@ -166,6 +166,7 @@
 
 
 <script>
+    import reservation from "assets/restaurant.svg"
     import Vue from 'vue';
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
@@ -321,7 +322,7 @@
                                 method: "POST",
                                 url: 'http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/orders',
                                 data: {
-                                    restaurant_id: this.restaurant_id,
+                                    restaurant_id: this.selected.value,
                                     title: this.name,
                                     mobile: this.mobile,
                                     email: this.email,
@@ -343,9 +344,9 @@
                                 //this.$modal.show('success-modal');
                                 //alert('Reservation request submited.')
                                 swal({
-                                    title: "Good job!",
-                                    text: "Reservation request submited.",
-                                    icon: "success",
+                                    title:"We are processing your request.",
+                                    text: "We will notify ASAP!!",
+                                    icon: reservation,
                                 }).then((resp) => {
                                     for (this.i = 0; this.i <1; this.i++) {
                                         this.pageStack.pop()
@@ -405,39 +406,51 @@
                             },
                         },
                     }).then(mobile => {
-
-                        if (!mobile){
+                        var valueC = mobile
+                        if (valueC != ""){
+                            var bd_phone_no_regX = /^(?:\+?88)?0?1[15-9]\d{8}$/i;
+                            if (bd_phone_no_regX.test(valueC)) {
+                                valueC = '01' + valueC.substring(valueC.length - 9, valueC.length);
+                                this.mobile = valueC;
+                                swal({
+                                    title: "Are you sure?",
+                                    //text: "Once deleted, you will not be able to recover this imaginary file!",
+                                    icon: "info",
+                                    buttons: true,
+                                    dangerMode: true,
+                                }).then((response) => {
+                                    if(response){
+                                        this.onSubmit();
+                                    }
+                                    else{
+                                        this.mobile= '';
+                                        this.people = '';
+                                        this.date.time = '';
+                                        swal({
+                                            title: "Oops",
+                                            text: "You Cancel the reservation",
+                                            icon: "info",
+                                        })
+                                    }
+                                });
+                            }
+                            else{
                                 swal({
                                     title: "Oops",
                                     text: "Not a mobile number",
                                     icon: "warning",
                                 })
-                        }else{
-                            this.mobile = mobile;
-                            swal({
-                                title: "Are you sure?",
-                                //text: "Once deleted, you will not be able to recover this imaginary file!",
-                                icon: "info",
-                                buttons: true,
-                                dangerMode: true,
-                            }).then((response) => {
-                                if(response){
-                                    this.onSubmit();
-                                }
-                                else{
-                                    this.mobile= '';
-                                    this.people = '';
-                                    this.date.time = '';
-                                    swal({
-                                        title: "Oops",
-                                        text: "You Cancel the reservation",
-                                        icon: "info",
-                                    })
-                                }
-                            });
+                            }
                         }
-                    })
+                        else{
+                            swal({
+                                   title: "Oops",
+                                   text: "Mobile number is empty",
+                                   icon: "warning",
+                               })
+                        }
 
+                    })
                 }
                 else{
                     console.log( 'empty' );
@@ -487,14 +500,14 @@
         background-color: white;
         color: #1f1f21;
     }
-::placeholder{
-    color:black;
-    text-transform: uppercase;
-    font-size:10px;
-    /*font-weight: bold;*/
-    font-family: 'Nunito', sans-serif;
-    padding-top:-3px;
-}
+    ::placeholder{
+        color:black;
+        text-transform: uppercase;
+        font-size:10px;
+        /*font-weight: bold;*/
+        font-family: 'Nunito', sans-serif;
+        padding-top:-3px;
+    }
     .button{
         float:left;
     }

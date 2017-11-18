@@ -154,6 +154,7 @@
 
 
 <script>
+    import reservation from "assets/restaurant.svg"
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
     import carousel3 from "assets/carousel3.jpg"
@@ -181,6 +182,7 @@
         data () {
             return {
                 i: 0,
+                reservationicon: reservation,
                 name: this.$session.get('user'),
                 typing: true,
                 restaurant_id: '',
@@ -266,9 +268,10 @@
                         //this.$modal.show('success-modal');
                         //confirm("Reservation request submited!")
                         swal({
-                            title: "Good job!",
-                            text: "Reservation request submitted.",
-                            icon: "success",
+                            title:"We are processing your request.",
+                            text: "We will notify ASAP!!",
+                            icon: reservation,
+//
                         }).then((resp) => {
                             for (this.i = 0; this.i <5; this.i++) {
                                 this.pageStack.pop()
@@ -279,17 +282,17 @@
 
                         })
                     })
-                        .catch((err) => {
-                            //console.log(err)
-                            //this.$modal.show('error2-modal');
-                            this.$modal.hide('loading-modal');
-                            //alert('Reservation Failed')
-                            swal({
-                                title: "Oops!",
-                                text: "Reservation Failed",
-                                icon: "error",
-                            });
-                        })
+                    .catch((err) => {
+                        console.log(err)
+                        //this.$modal.show('error2-modal');
+                        this.$modal.hide('loading-modal');
+                        //alert('Reservation Failed')
+                        swal({
+                            title: "Oops!",
+                            text: "Reservation Failed",
+                            icon: "error",
+                        });
+                    })
                 }
                 else{
 //                  this.$modal.show('error-modal');
@@ -325,36 +328,48 @@
                             },
                         },
                     }).then(mobile => {
-                        if (!mobile){
+                        var valueC = mobile
+                        if (valueC != ""){
+                            var bd_phone_no_regX = /^(?:\+?88)?0?1[15-9]\d{8}$/i;
+                            if (bd_phone_no_regX.test(valueC)) {
+                                valueC = '01' + valueC.substring(valueC.length - 9, valueC.length);
+                                this.mobile = valueC;
+                                swal({
+                                    title: "Are you sure?",
+                                    //text: "Once deleted, you will not be able to recover this imaginary file!",
+                                    icon: "info",
+                                    buttons: true,
+                                    dangerMode: true,
+                                }).then((response) => {
+                                    if(response){
+                                        this.onSubmit();
+                                    }
+                                    else{
+                                        this.mobile= '';
+                                        this.people = '';
+                                        this.date.time = '';
+                                        swal({
+                                            title: "Oops",
+                                            text: "You Cancel the reservation",
+                                            icon: "info",
+                                        })
+                                    }
+                                });
+                            }
+                            else{
+                                swal({
+                                    title: "Oops",
+                                    text: "Not a mobile number",
+                                    icon: "warning",
+                                })
+                            }
+                        }
+                        else{
                             swal({
                                 title: "Oops",
-                                text: "Not a mobile number",
+                                text: "Mobile number is empty",
                                 icon: "warning",
                             })
-                        }else{
-                            this.mobile = mobile;
-                            swal({
-                                title: "Are you sure?",
-                                //text: "Once deleted, you will not be able to recover this imaginary file!",
-                                icon: "info",
-                                buttons: true,
-                                dangerMode: true,
-                            }).then((response) => {
-                                if(response){
-                                    this.onSubmit();
-                                }
-                                else{
-                                    this.mobile= '';
-                                    this.people = '';
-                                    this.date.time = '';
-                                    swal({
-                                        title: "Oops",
-                                        text: "You have canceled the reservation!",
-                                        icon: "info",
-                                    })
-                                }
-
-                            });
                         }
                     })
                 }
@@ -391,23 +406,16 @@
         color: #1f1f21;
     }
 
-::placeholder{
-    color:black;
-    text-transform: uppercase;
-    font-size:10px;
-    /*font-weight: bold;*/
-    font-family: 'Nunito', sans-serif;
-    padding-top:-3px;
-}
+    ::placeholder{
+        color:black;
+        text-transform: uppercase;
+        font-size:10px;
+        /*font-weight: bold;*/
+        font-family: 'Nunito', sans-serif;
+        padding-top:-3px;
+    }
     .button{
         float:left;
-    }
-    .loading{
-        text-align: center;
-        color: #009688;
-        font-size: 13px;
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
     .loadingp{
         text-align: center;
@@ -417,14 +425,8 @@
         /*margin-top: 250px;*/
         /*margin-bottom: 150px;*/
     }
-    .yes_button{
-        background: black;
-        border: 1px solid rgba(255, 255, 255, 0.86);
-        color: #fff;
-        padding: 4px 20px;
-        width: 100%;
-        margin-top: 8px
-
+    .swal-icon img {
+        max-width: 85% !important;
     }
 
 </style>
