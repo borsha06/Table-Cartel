@@ -385,7 +385,7 @@
                 }
             },
             permit(){
-                if(this.date.time&&this.selected.value) {
+                if(this.date.time && this.selected) {
                     //this.$modal.show('permit-modal');
 //                    var txt;
 //                    this.mobile = prompt("Please enter your mobile number:", "");
