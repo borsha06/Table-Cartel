@@ -241,8 +241,7 @@
                 limit: [{},
                     {
                         type: 'fromto',
-                        //from: new Date(new Date() -1 * 86400000),
-                        from: '2017-11-18 10:34',
+                        from: new Date(new Date() -1 * 86400000),
                         to: '2040-02-20'
                     }],
                 date: {

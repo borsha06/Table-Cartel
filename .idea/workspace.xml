@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reserved2.vue" afterPath="$PROJECT_DIR$/src/reserved2.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app.bundle.js" afterPath="$PROJECT_DIR$/www/app.bundle.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +31,8 @@
       <file leaf-file-name="reserved2.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3196">
-              <caret line="380" column="39" lean-forward="false" selection-start-line="380" selection-start-column="39" selection-end-line="380" selection-end-column="39" />
+            <state relative-caret-position="238">
+              <caret line="242" column="39" lean-forward="true" selection-start-line="242" selection-start-column="39" selection-end-line="242" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#8499#8546#0" expanded="true" />
@@ -362,7 +355,7 @@
       <workItem from="1509249677804" duration="138733000" />
       <workItem from="1510156748145" duration="2514000" />
       <workItem from="1510196630452" duration="114774000" />
-      <workItem from="1511060688161" duration="5008000" />
+      <workItem from="1511060688161" duration="6118000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -382,7 +375,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="485159000" />
+    <option name="totallyTimeSpent" value="486269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -737,8 +730,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reserved2.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
-          <caret line="380" column="39" lean-forward="false" selection-start-line="380" selection-start-column="39" selection-end-line="380" selection-end-column="39" />
+        <state relative-caret-position="238">
+          <caret line="242" column="39" lean-forward="true" selection-start-line="242" selection-start-column="39" selection-end-line="242" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#2;n#v-ons-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#8499#8546#0" expanded="true" />
