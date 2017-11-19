@@ -241,7 +241,8 @@
                 limit: [{},
                     {
                         type: 'fromto',
-                        from: new Date(new Date() -1 * 86400000),
+                        //from: new Date(new Date() -1 * 86400000),
+                        from: '2017-11-18 10:34',
                         to: '2040-02-20'
                     }],
                 date: {
@@ -384,7 +385,7 @@
                 }
             },
             permit(){
-                if(this.date.time) {
+                if(this.date.time&&this.selected.value) {
                     //this.$modal.show('permit-modal');
 //                    var txt;
 //                    this.mobile = prompt("Please enter your mobile number:", "");
@@ -458,7 +459,7 @@
                     //alert('Time is empty')
                     swal({
                         title: "Oops!",
-                        text: "Time is empty",
+                        text: "Time or Restaurant is empty",
                         icon: "error",
                     });
 
