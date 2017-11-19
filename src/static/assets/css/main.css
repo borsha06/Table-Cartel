@@ -763,7 +763,7 @@ font-size: 12px;
     color: #6d6d6d;
     font-family: 'Nunito', sans-serif;
     margin-top: 2px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 200;
 }
 .hello_jorge_heading p{
@@ -985,6 +985,7 @@ display:none;
     font-weight: bold;
     text-align: center;
     box-shadow: 0px 0px 2px black;
+    margin-top:25px;
 
 }
 .connect{
@@ -999,7 +1000,7 @@ display:none;
     border-radius: 25px;
     background: #000;
     padding: 0px 0px 0px 0px;
-    margin-top: 18px;
+    margin-top: 30px;
     height: 33px;
     box-shadow: 0px 0px 2px black;
     margin-bottom:28px;
@@ -1217,8 +1218,38 @@ display:none;
 .reserve_second_top_button>:focus::-webkit-input-placeholder{
   opacity:0;
 }
+.swal-icon--custom{
+    padding:0px 20px !important;
+}
+.v-select.single .selected-tag{
+    position:absolute;
+
+}
+.login_with{
+    text-align:center;
+    margin-top:100px;
+}
+.login_with span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+/*################################# Over Right Design CSS #############################*/
+.facebook_button p{
+    font-size: 20px;
+    padding: 5px 0px;  
+}
+.connect_button p img{
+    width:68px;
+    margin-top:16px;
+    margin-left: 52px;
+}
+.connect_button p{
+    height:45px;
+}
 
 
+/*################################# Over Right Design CSS #############################*/
 
 
 
