@@ -1247,6 +1247,10 @@ display:none;
 .connect_button p{
     height:45px;
 }
+.v-select .spinner, .v-select .spinner:after{
+    width: 4em !important;
+    height: 4em !important;
+}
 
 
 /*################################# Over Right Design CSS #############################*/
