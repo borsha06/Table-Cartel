@@ -385,78 +385,86 @@
             },
             permit(){
                 if(this.date.time && this.selected) {
-                    var days = this.date.time
-                    const dateString = this.date.time;
-                    const changedDate = dateString.replace(/(..)\/(..)\/(....) (..):(..)/, '$3-$2-$1 $4:$5');
-                    var date = new Date(changedDate);
-                    var requesttime = date.getTime()
-                    console.log(requesttime);
-                    var now = new Date();
-                    var nowtime = now.getTime();
-                    console.log(nowtime);
+                    if(this.people > 0){
+                        var days = this.date.time
+                        const dateString = this.date.time;
+                        const changedDate = dateString.replace(/(..)\/(..)\/(....) (..):(..)/, '$3-$2-$1 $4:$5');
+                        var date = new Date(changedDate);
+                        var requesttime = date.getTime()
+                        console.log(requesttime);
+                        var now = new Date();
+                        var nowtime = now.getTime();
+                        console.log(nowtime);
 
-                    if(requesttime > nowtime){
-                        swal({
-                            content: {
-                                element: "input",
-                                attributes: {
-                                    placeholder: "Type your mobile number",
-                                    type: "number",
+                        if(requesttime > nowtime){
+                            swal({
+                                content: {
+                                    element: "input",
+                                    attributes: {
+                                        placeholder: "Type your mobile number",
+                                        type: "number",
+                                    },
                                 },
-                            },
-                        }).then(mobile => {
-                            var valueC = mobile
-                            if (valueC != ""){
-                                var bd_phone_no_regX = /^(?:\+?88)?0?1[15-9]\d{8}$/i;
-                                if (bd_phone_no_regX.test(valueC)) {
-                                    valueC = '01' + valueC.substring(valueC.length - 9, valueC.length);
-                                    this.mobile = valueC;
-                                    swal({
-                                        title: "Are you sure?",
-                                        //text: "Once deleted, you will not be able to recover this imaginary file!",
-                                        icon: "info",
-                                        buttons: true,
-                                        dangerMode: true,
-                                    }).then((response) => {
-                                        if(response){
-                                            this.onSubmit();
-                                        }
-                                        else{
-                                            this.mobile= '';
-                                            this.people = '';
-                                            this.date.time = '';
-                                            swal({
-                                                title: "Oops",
-                                                text: "You Cancel the reservation",
-                                                icon: "info",
-                                            })
-                                        }
-                                    });
+                            }).then(mobile => {
+                                var valueC = mobile
+                                if (valueC != ""){
+                                    var bd_phone_no_regX = /^(?:\+?88)?0?1[15-9]\d{8}$/i;
+                                    if (bd_phone_no_regX.test(valueC)) {
+                                        valueC = '01' + valueC.substring(valueC.length - 9, valueC.length);
+                                        this.mobile = valueC;
+                                        swal({
+                                            title: "Are you sure?",
+                                            //text: "Once deleted, you will not be able to recover this imaginary file!",
+                                            icon: "info",
+                                            buttons: ["NO", "YES"],
+                                            dangerMode: true,
+                                        }).then((response) => {
+                                            if(response){
+                                                this.onSubmit();
+                                            }
+                                            else{
+                                                this.mobile= '';
+                                                this.people = '';
+                                                this.date.time = '';
+                                                swal({
+                                                    title: "Oops",
+                                                    text: "You Cancel the reservation",
+                                                    icon: "info",
+                                                })
+                                            }
+                                        });
+                                    }
+                                    else{
+                                        swal({
+                                            title: "Oops",
+                                            text: "Not a mobile number",
+                                            icon: "warning",
+                                        })
+                                    }
                                 }
                                 else{
                                     swal({
                                         title: "Oops",
-                                        text: "Not a mobile number",
+                                        text: "Mobile number is empty",
                                         icon: "warning",
                                     })
                                 }
-                            }
-                            else{
-                                swal({
-                                    title: "Oops",
-                                    text: "Mobile number is empty",
-                                    icon: "warning",
-                                })
-                            }
 
-                        })
+                            })
 
+                        }else{
+                            swal({
+                                title: "Oops!",
+                                text: "You can't reserve at past time",
+                                icon: "error",
+                            });
+                        }
                     }else{
                         swal({
-                            title: "Oops!",
-                            text: "You can't reserve past time",
-                            icon: "error",
-                        });
+                            title: "Oops",
+                            text: "Headcount number is invalid",
+                            icon: "warning",
+                        })
                     }
                 }
                 else{
