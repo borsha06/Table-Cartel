@@ -1248,10 +1248,12 @@ display:none;
     height:45px;
 }
 .v-select .spinner, .v-select .spinner:after{
-    width: 4em !important;
-    height: 4em !important;
+    width: 3em !important;
+    height: 3em !important;
 }
-
+.button:active{
+    border:none !important;
+}
 
 /*################################# Over Right Design CSS #############################*/
 
