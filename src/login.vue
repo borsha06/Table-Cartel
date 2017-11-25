@@ -16,8 +16,6 @@
                             <input type="text"  v-model="user" onfocus="this.placeholder=''" class="text-input form_name" placeholder="Username" required value="" />
                             <input type="password"  v-model="pass" onfocus="this.placeholder=''" class="text-input form_pass"   placeholder="Password" required value="" />
                         </div>
-                        <!--<button class="button button--light" type="submit">Sign in</button>-->
-                        <!--<p class="button button--light" @click="registration">Sign up</p>-->
                      </ons-col>
                  </ons-row>
                  <ons-row align="left" class="submit">

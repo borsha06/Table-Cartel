@@ -196,6 +196,7 @@
     import area from './area'
     import reserved from './reserved'
     import menus from './menu'
+    import foodmenu from './foodmenu'
 
     export default {
         name: 'restaurant2',
@@ -249,7 +250,7 @@
                 });
             },
             menupage() {
-                this.pageStack.push(menus)
+                this.pageStack.push(foodmenu)
             },
             pop() {
                 this.pageStack.pop();
