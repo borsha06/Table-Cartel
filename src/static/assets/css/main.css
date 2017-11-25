@@ -1233,6 +1233,88 @@ display:none;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
 }
+/*FOOD MENU CSS*/
+.food_menu_header_left{
+    margin-left: 17px;
+}
+.food_menu_header_left h2{
+    margin-top: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.food_menu_header_left p{
+    color: #1f1f21;
+    padding: 0;
+    margin-top: -24px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+.food_menu_bg{
+    margin-bottom: 35px;
+}
+.food_menu_title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1.5em;
+}
+.single_food_menu_title{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: #000;
+}
+.single_food_menu_para{
+    margin-top: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+}
+.food_menu_dollar{
+    margin-top: 5px;
+    color: #444;
+    font-size: 14px;
+    text-align: right;   
+}
+.menu_card_bg{
+border-radius:2px;
+
+}
+.single_food_menu_items_desc{
+    margin-bottom: 13px;
+}
+.gray_bg_border{
+    background: #f3f5f7;
+    height: 30px;
+}
+
+
+
+/*FOOD MENU CSS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*################################# Over Right Design CSS #############################*/
 .facebook_button p{
