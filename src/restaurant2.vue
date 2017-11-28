@@ -90,7 +90,7 @@
                     </ons-col>
                     <ons-col width="50%">
                         <div class="vapianos_menu_button_text">
-                            <button class="button button--light" @click="menupage">Menu</button>
+                            <button class="button button--light" @click="menupage(rest.ID)">Menu</button>
                         </div>
                     </ons-col>
                     <ons-col width="25%">
@@ -249,8 +249,15 @@
                     }
                 });
             },
-            menupage() {
-                this.pageStack.push(foodmenu)
+            menupage(id) {
+                this.pageStack.push({
+                    extends: foodmenu,
+                    data() {
+                        return {
+                            data: {'id': id}
+                        }
+                    }
+                })
             },
             pop() {
                 this.pageStack.pop();
