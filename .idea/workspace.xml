@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be5dac5-a68b-4f00-a6cc-028870e71118" name="Default" comment="second commit.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/foodmenu.vue" afterPath="$PROJECT_DIR$/src/foodmenu.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/restaurant.vue" afterPath="$PROJECT_DIR$/src/restaurant.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/restaurant2.vue" afterPath="$PROJECT_DIR$/src/restaurant2.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,10 +89,10 @@
       <file leaf-file-name="foodmenu.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/foodmenu.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+            <state relative-caret-position="286">
+              <caret line="44" column="83" lean-forward="false" selection-start-line="44" selection-start-column="83" selection-end-line="44" selection-end-column="83" />
               <folding>
-                <element signature="e#3921#3963#0" expanded="true" />
+                <element signature="e#2882#2924#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -305,7 +302,7 @@
       <workItem from="1510156748145" duration="2514000" />
       <workItem from="1510196630452" duration="114774000" />
       <workItem from="1511060688161" duration="36365000" />
-      <workItem from="1511678293843" duration="4166000" />
+      <workItem from="1511678293843" duration="5596000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1507444731182</created>
@@ -325,7 +322,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="520682000" />
+    <option name="totallyTimeSpent" value="522112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -695,10 +692,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/foodmenu.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+        <state relative-caret-position="286">
+          <caret line="44" column="83" lean-forward="false" selection-start-line="44" selection-start-column="83" selection-end-line="44" selection-end-column="83" />
           <folding>
-            <element signature="e#3921#3963#0" expanded="true" />
+            <element signature="e#2882#2924#0" expanded="true" />
           </folding>
         </state>
       </provider>
