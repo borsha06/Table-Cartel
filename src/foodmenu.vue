@@ -22,12 +22,12 @@
                     </div>
                 </ons-col>
             </ons-row>
-
+<div class="gray_bg_border"></div>
             <div v-for="texo in restaurantfood" class="food_menu_top">
                 <ons-row align="left" width="100%" class="food_menu_bg">
                     <ons-col width="100%">
                         <div class="">                        
-                           <div style="height: 200px; padding: 1px 0 0 0;">
+                           <div style="padding: 1px 0 0 0;">
                               <div class="card menu_card_bg">
                                 <h2 class="card__title food_menu_title" align="center">{{texo.name}}</h2>
 

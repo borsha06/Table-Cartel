@@ -1285,9 +1285,9 @@ display:none;
     font-size: 14px;
     text-align: right;   
 }
-.menu_card_bg{
-border-radius:2px;
-
+.menu_card_bg {
+    border-radius: 2px;
+    margin-bottom: -16px;
 }
 .single_food_menu_items_desc{
     margin-bottom: 13px;
