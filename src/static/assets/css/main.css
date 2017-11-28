@@ -1240,7 +1240,7 @@ display:none;
 .food_menu_header_left h2{
     margin-top: 15px;
     font-family: 'Nunito', sans-serif;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -1251,7 +1251,7 @@ display:none;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     margin-bottom: 24px;
-    font-weight: 700;
+    font-weight: 200;
 }
 .food_menu_bg{
     margin-bottom: 35px;
@@ -1267,7 +1267,7 @@ display:none;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 3px;
     color: #000;
     letter-spacing: 0.5px;
