@@ -33,7 +33,7 @@
 
                                 <div v-for="fd in texo.all_foods" class="single_food_menu_items_desc">
                                     <ons-row>
-                                        <ons-col width="85%" align="left">
+                                        <ons-col width="80%" align="left">
                                             <div class="card__content">
                                                 <h4 class="card__title single_food_menu_title">
                                                     {{fd.short_title}}
@@ -41,7 +41,7 @@
                                                 <p class="single_food_menu_para">{{fd.short_content}}</p>
                                             </div>                                     
                                         </ons-col>
-                                        <ons-col width="15%" align="left">
+                                        <ons-col width="20%" align="left">
                                             <h4 class="food_menu_dollar">{{fd.price}}</h4>
                                         </ons-col>
                                     </ons-row>

@@ -1267,9 +1267,10 @@ display:none;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 12px;
-    margin-bottom: 0px;
+    font-size: 13px;
+    margin-bottom: 3px;
     color: #000;
+    letter-spacing: 0.5px;
 }
 .single_food_menu_para{
     margin-top: 0px;
