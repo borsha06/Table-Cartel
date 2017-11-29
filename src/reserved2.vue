@@ -43,7 +43,7 @@
                                 <!--<select v-model="restaurant_id" required="">-->
                                     <!--<option id="select_align"  v-for="item in sortedArray" v-bind:value="item.ID">{{ item.post_title }}</option>-->
                                 <!--</select>-->
-                                <v-select  v-model="selected" onfocus="this.placeholder=''" placeholder="Search your restaurant" :on-search="getOptions"  :options="options"></v-select>
+                                <v-select  v-model="selected" onfocus="this.placeholder=''" placeholder="Search your restaurant" :debounce="250" :on-search="getOptions"  :options="sortedArray"></v-select>
 
                             </div>
                         </ons-col>
@@ -383,6 +383,62 @@
                     });
                 }
             },
+            mobilecheck(){
+                swal({
+                    content: {
+                        element: "input",
+                        attributes: {
+                            placeholder: "Type your mobile number",
+                            type: "number",
+                        },
+                    },
+                }).then(mobile => {
+                    var valueC = mobile
+                    if (valueC != ""){
+                        var bd_phone_no_regX = /^(?:\+?88)?0?1[15-9]\d{8}$/i;
+                        if (bd_phone_no_regX.test(valueC)) {
+                            valueC = '01' + valueC.substring(valueC.length - 9, valueC.length);
+                            this.mobile = valueC;
+                            swal({
+                                title: "Are you sure?",
+                                //text: "Once deleted, you will not be able to recover this imaginary file!",
+                                icon: "info",
+                                buttons: ["NO", "YES"],
+                                dangerMode: true,
+                            }).then((response) => {
+                                if(response){
+                                    this.onSubmit();
+                                }
+                                else{
+                                    this.mobile= '';
+                                    this.people = '';
+                                    this.date.time = '';
+                                    swal({
+                                        title: "Oops",
+                                        text: "You have canceled the reservation!",
+                                        icon: "info",
+                                    })
+                                }
+                            });
+                        }
+                        else{
+                            swal({
+                                title: "Oops",
+                                text: "Not a mobile number",
+                                icon: "warning",
+                            })
+                        }
+                    }
+                    else{
+                        swal({
+                            title: "Oops",
+                            text: "Mobile number is empty",
+                            icon: "warning",
+                        })
+                    }
+
+                })
+            },
             permit(){
                 if(this.date.time && this.selected) {
                     if(this.people > 0){
@@ -397,73 +453,29 @@
                         console.log(nowtime);
 
                         if(requesttime > nowtime){
-                            swal({
-                                content: {
-                                    element: "input",
-                                    attributes: {
-                                        placeholder: "Type your mobile number",
-                                        type: "number",
-                                    },
-                                },
-                            }).then(mobile => {
-                                var valueC = mobile
-                                if (valueC != ""){
-                                    var bd_phone_no_regX = /^(?:\+?88)?0?1[15-9]\d{8}$/i;
-                                    if (bd_phone_no_regX.test(valueC)) {
-                                        valueC = '01' + valueC.substring(valueC.length - 9, valueC.length);
-                                        this.mobile = valueC;
-                                        swal({
-                                            title: "Are you sure?",
-                                            //text: "Once deleted, you will not be able to recover this imaginary file!",
-                                            icon: "info",
-                                            buttons: ["NO", "YES"],
-                                            dangerMode: true,
-                                        }).then((response) => {
-                                            if(response){
-                                                this.onSubmit();
-                                            }
-                                            else{
-                                                this.mobile= '';
-                                                this.people = '';
-                                                this.date.time = '';
-                                                swal({
-                                                    title: "Oops",
-                                                    text: "You have canceled the reservation!",
-                                                    icon: "info",
-                                                })
-                                            }
-                                        });
-                                    }
-                                    else{
-                                        swal({
-                                            title: "Oops",
-                                            text: "Not a mobile number",
-                                            icon: "warning",
-                                        })
-                                    }
-                                }
-                                else{
-                                    swal({
-                                        title: "Oops",
-                                        text: "Mobile number is empty",
-                                        icon: "warning",
-                                    })
-                                }
-
-                            })
-
+                            this.mobilecheck()
                         }else{
                             swal({
                                 title: "Oops!",
                                 text: "You can't reserve at past time",
                                 icon: "error",
-                            });
+                                buttons: ["CANCEL", "GO BACK"],
+                            }).then((yes) =>{
+                                if(yes){
+                                    this.mobilecheck()
+                                }
+                            })
                         }
                     }else{
                         swal({
                             title: "Oops",
                             text: "Headcount number is invalid",
                             icon: "warning",
+                            buttons: ["CANCEL", "GO BACK"],
+                        }).then((yes) =>{
+                            if(yes){
+                                this.mobilecheck()
+                            }
                         })
                     }
                 }
@@ -496,14 +508,14 @@
         computed: {
             sortedArray: function() {
                 function compare(a, b) {
-                    if (a.post_title < b.post_title)
+                    if (a.label < b.label)
                         return -1;
-                    if (a.post_title > b.post_title)
+                    if (a.label > b.label)
                         return 1;
                     return 0;
                 }
 
-                return this.restaurants.sort(compare);
+                return this.options.sort(compare);
             }
         },
         props: ['pageStack']

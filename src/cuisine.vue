@@ -11,7 +11,7 @@
 	    <ons-row align="center">
 		    <ons-col width="80%">
 		      <div class="left_side_search_heading">
-		      	<h2>search by cuisine</h2>
+		      	<h2>Search by cuisine</h2>
 		      	<p>Here is the list of cuisines on offer!</p>
 		      </div>
 		    </ons-col>
