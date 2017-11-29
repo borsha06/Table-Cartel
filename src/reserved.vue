@@ -54,7 +54,7 @@
                 <ons-row align="center" class="top_third_button_area">
                     <ons-col width="100%">
                         <div class="reserve_top_third_button_text">
-                            <p>It will be joining them on</p>
+                            <p>It will be joining them at</p>
                         </div>
                     </ons-col>
                     <ons-col width="35%">
@@ -353,7 +353,7 @@
                                                 this.date.time = '';
                                                 swal({
                                                     title: "Oops",
-                                                    text: "You Cancel the reservation",
+                                                    text: "You have canceled the reservation!",
                                                     icon: "info",
                                                 })
                                             }

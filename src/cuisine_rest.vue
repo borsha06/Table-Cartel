@@ -12,7 +12,7 @@
                 <ons-col width="80%">
                     <div class="left_side_search_heading">
                         <h2>Listings for {{this.data.name}}</h2>
-                        <p>Select place you want to go to</p>
+                        <p>Select the place you want to go to</p>
                     </div>
                 </ons-col>
                 <ons-col width="20%">

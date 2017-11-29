@@ -21,7 +21,7 @@
                         <button class="button button--light">Discover</button>
                         <button class="button button--light">Benefits</button>
                         <button class="button button--light">Ingredients</button>
-                        <button class="button button--light">Recpies</button>
+                        <button class="button button--light">Recipes</button>
                         <button class="button button--light">Mastercalss</button>
                         <button class="button button--light">Marketplace</button>
                     </div>
@@ -45,7 +45,7 @@
                             </ons-col>
                             <ons-col width="35%">
                                 <div class="menu_footer_notifications">
-                                    <p>Notification<br /> & Updates</p>
+                                    <p>Notifications<br /> & Updates</p>
                                 </div>
                             </ons-col>
                             <ons-col width="35%">

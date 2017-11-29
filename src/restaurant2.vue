@@ -90,7 +90,7 @@
                     </ons-col>
                     <ons-col width="50%">
                         <div class="vapianos_menu_button_text">
-                            <button class="button button--light" @click="menupage(rest.ID)">Menu</button>
+                            <button class="button button--light" @click="menupage(rest.ID,rest.post_title)">Menu</button>
                         </div>
                     </ons-col>
                     <ons-col width="25%">
@@ -249,12 +249,12 @@
                     }
                 });
             },
-            menupage(id) {
+            menupage(id,name) {
                 this.pageStack.push({
                     extends: foodmenu,
                     data() {
                         return {
-                            data: {'id': id}
+                            data: {'id': id,'name':name}
                         }
                     }
                 })
