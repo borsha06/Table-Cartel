@@ -426,6 +426,11 @@
                                 title: "Oops",
                                 text: "Not a mobile number",
                                 icon: "warning",
+                                buttons: ["CANCEL", "GO BACK"],
+                            }).then((yes) =>{
+                                if(yes){
+                                    this.mobilecheck()
+                                }
                             })
                         }
                     }
@@ -434,6 +439,11 @@
                             title: "Oops",
                             text: "Mobile number is empty",
                             icon: "warning",
+                            buttons: ["CANCEL", "GO BACK"],
+                        }).then((yes) =>{
+                            if(yes){
+                                this.mobilecheck()
+                            }
                         })
                     }
 
@@ -459,11 +469,6 @@
                                 title: "Oops!",
                                 text: "You can't reserve at past time",
                                 icon: "error",
-                                buttons: ["CANCEL", "GO BACK"],
-                            }).then((yes) =>{
-                                if(yes){
-                                    this.mobilecheck()
-                                }
                             })
                         }
                     }else{
@@ -471,11 +476,6 @@
                             title: "Oops",
                             text: "Headcount number is invalid",
                             icon: "warning",
-                            buttons: ["CANCEL", "GO BACK"],
-                        }).then((yes) =>{
-                            if(yes){
-                                this.mobilecheck()
-                            }
                         })
                     }
                 }

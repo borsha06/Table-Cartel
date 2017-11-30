@@ -91,7 +91,12 @@
     import swal from 'sweetalert'
     Vue.use(VModal)
     Vue.use(VueSession)
-
+    
+    document.addEventListener("backbutton", onBackKeyDown, false);
+    function onBackKeyDown(e) {
+        e.preventDefault();
+        alert('Back Button is Pressed!');
+    }
 
     export default {
         name: 'login',
@@ -289,6 +294,15 @@
                     });
                 });
             },
+            pop() {
+                swal({
+                    title: "Oops!",
+                    text: "There is an error",
+                    icon: "error",
+                }).then((response)=>{
+                    this.pageStack.pop();
+                })
+            }
 
         },
         props: ['pageStack']
