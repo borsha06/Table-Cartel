@@ -37,7 +37,7 @@
             <!--Footer Carousel-->
              <div class="cuisine_footer_carousel">
                 <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-                 <ons-row class="carousel_heading">
+                 <ons-row class="carousel_heading area_heading">
                     <p>Today's Special</p>
                 </ons-row>
                     <ons-carousel-item v-for="(item,index) in food['foods']"  style="background-color: #085078;">

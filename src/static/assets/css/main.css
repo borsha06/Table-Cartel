@@ -1337,6 +1337,12 @@ display:none;
 .button:active{
     border:none !important;
 }
+.area_heading{
+    background: #f3f5f7 !important;
+    width: 161% !important;
+    position: absolute !important;
+
+}
 
 /*################################# Over Right Design CSS #############################*/
 
