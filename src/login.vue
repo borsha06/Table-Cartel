@@ -10,24 +10,24 @@
             </ons-row>
 
             <form v-on:submit.prevent="loginuser">
-                 <ons-row align="center" class="loginarea">
-                    <ons-col width="100%">
-                        <div class="login_form">
-                            <input type="text"  v-model="user" onfocus="this.placeholder=''" class="text-input form_name" placeholder="Username" required value="" />
-                            <input type="password"  v-model="pass" onfocus="this.placeholder=''" class="text-input form_pass"   placeholder="Password" required value="" />
-                        </div>
-                     </ons-col>
-                 </ons-row>
-                 <ons-row align="left" class="submit">
-                    <ons-col width="100%">
+                 <!--<ons-row align="center" class="loginarea">-->
+                    <!--<ons-col width="100%">-->
+                        <!--<div class="login_form">-->
+                            <!--<input type="text"  v-model="user" onfocus="this.placeholder=''" class="text-input form_name" placeholder="Username" required value="" />-->
+                            <!--<input type="password"  v-model="pass" onfocus="this.placeholder=''" class="text-input form_pass"   placeholder="Password" required value="" />-->
+                        <!--</div>-->
+                     <!--</ons-col>-->
+                 <!--</ons-row>-->
+                 <!--<ons-row align="left" class="submit">-->
+                    <!--<ons-col width="100%">-->
 
-                        <div class="sign_in">
-                            <button type="button button&#45;&#45;light" >Sign In</button>
-                            &lt;!&ndash;<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>&ndash;&gt;
+                        <!--<div class="sign_in">-->
+                            <!--<button type="button button&#45;&#45;light" >Sign In</button>-->
+                            <!--&lt;!&ndash;&lt;!&ndash;<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>&ndash;&gt;&ndash;&gt;-->
                             <!--<p @click="" type="button button&#45;&#45;light">Sign Up</p>-->
-                        </div>
-                    </ons-col>
-                </ons-row>
+                        <!--</div>-->
+                    <!--</ons-col>-->
+                <!--</ons-row>-->
                 <ons-row>
                     <ons-col width="100%">
                         <div class="login_with">
@@ -76,7 +76,13 @@
     </v-ons-page>
 </template>
 
-
+<!--<script scoped>-->
+    <!--document.addEventListener("backbutton", onBackKeyDown, false);-->
+    <!--function onBackKeyDown(e) {-->
+        <!--e.preventDefault();-->
+        <!--alert('Back Button is Pressed!');-->
+    <!--}-->
+<!--</script>-->
 
 <script>
     import Vue from 'vue';
@@ -92,11 +98,7 @@
     Vue.use(VModal)
     Vue.use(VueSession)
     
-    document.addEventListener("backbutton", onBackKeyDown, false);
-    function onBackKeyDown(e) {
-        e.preventDefault();
-        alert('Back Button is Pressed!');
-    }
+
 
     export default {
         name: 'login',

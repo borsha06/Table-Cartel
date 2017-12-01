@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.tablecartelapp.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
-    <name>Table-Cartel</name>
+    <name>TableCartel</name>
     <description />
     <author />
     <access origin="*" />
