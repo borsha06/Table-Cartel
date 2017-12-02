@@ -76,13 +76,6 @@
     </v-ons-page>
 </template>
 
-<!--<script scoped>-->
-    <!--document.addEventListener("backbutton", onBackKeyDown, false);-->
-    <!--function onBackKeyDown(e) {-->
-        <!--e.preventDefault();-->
-        <!--alert('Back Button is Pressed!');-->
-    <!--}-->
-<!--</script>-->
 
 <script>
     import Vue from 'vue';
@@ -97,7 +90,12 @@
     import swal from 'sweetalert'
     Vue.use(VModal)
     Vue.use(VueSession)
-    
+
+//    document.addEventListener("backbutton", onBackKeyDown, false);
+//    function onBackKeyDown(e) {
+//        e.preventDefault();
+//        alert('Back Button is Pressed!');
+//    }
 
 
     export default {
