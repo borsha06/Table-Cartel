@@ -7,11 +7,11 @@
                 <ons-col width="50px" class="header_right_icon"><img :src="notificationicon" alt="" /></ons-col>
             </ons-row>
         </div>
-        <div v-if="loading" class="loading" v-cloak>
+        <div v-if="loadings" class="loadingrequest" v-cloak>
             <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
             <!--<span>Loading...</span>-->
         </div>
-        <div v-show="pageloading">
+        <!--<div v-show="pageloading">-->
             <form v-on:submit.prevent="permit">
                 <div class="reserve_background reserved_side">
                     <ons-row align="center">
@@ -36,14 +36,15 @@
                             </div>
                         </ons-col>
                         <ons-col width="100%">
-                            <div class="reserve_top_button">
+                            <div class="reserve_top_button" v-on:click="hidefooter">
                                 <!--<input type="text" class="text-input" v-model="restaurant" placeholder="Vapianos italian's gourment" value="">-->
                                 <!--<p class="button button&#45;&#45;light">{{this.data.name}}</p>-->
                                 
-                                <select v-model="restaurant_id" required="">
-                                    <option id="select_align" v-for="item in sortedArray" v-bind:value="item.ID">{{ item.post_title }}</option>
-                                </select>
-                                <v-select :value.sync="selected" :options="options"></v-select>
+                                <!--<select v-model="restaurant_id" required="">-->
+                                    <!--<option id="select_align"  v-for="item in sortedArray" v-bind:value="item.ID">{{ item.post_title }}</option>-->
+                                <!--</select>-->
+                                <v-select  v-model="selected" onfocus="this.placeholder=''" placeholder="Search your restaurant" :debounce="250" :on-search="getOptions"  :options="sortedArray"></v-select>
+
                             </div>
                         </ons-col>
                     </ons-row>
@@ -55,7 +56,7 @@
                         </ons-col>
                         <ons-col width="100%">
                             <div class="reserve_second_top_button">
-                                <input type="number" v-on:click="hidefooter" onfocus="this.placeholder=''" class="text-input" v-model="people"  placeholder="Headcount" required  >
+                                <input type="number" v-on:click="hidefooter"  class="text-input" v-model="people"  placeholder="Headcount" required  >
                                 <!-- <button class="button button--light">Headcount</button> -->
                             </div>
                         </ons-col>
@@ -63,7 +64,7 @@
                     <ons-row align="center" class="top_third_button_area">
                         <ons-col width="100%">
                             <div class="reserve_top_third_button_text">
-                                <p>You will be joining them on</p>
+                                <p>You will be joining them at</p>
                             </div>
                         </ons-col>
                         <ons-col width="35%">
@@ -92,7 +93,7 @@
                            :delay="100"
                            classes="false"
                     >
-                        <div v-if="loading" class="loadingp">
+                        <div v-if="loadings" class="loadingp">
                             <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
                             <!--<span>Loading...</span>-->
                         </div>
@@ -154,7 +155,7 @@
                 </ons-carousel>
             </div>
             <!--Footer Carousel-->
-        </div>
+        <!--</div>-->
 
 
 
@@ -165,7 +166,7 @@
 
 
 <script>
-    import welcome from './landing2'
+    import reservation from "assets/restaurant.svg"
     import Vue from 'vue';
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
@@ -193,8 +194,9 @@
         name: 'reserved2',
         data () {
             return {
-                options: ['foo','bar','baz'],
-                selected: '',
+                id: false,
+                options: [],
+                selected: null,
                 name: this.$session.get('user'),
                 typing: true,
                 rest: '',
@@ -220,7 +222,7 @@
                 close: closeicon,
                 restaurants: [],
                 food: dataBus.$data,
-                loading:false,
+                loadings:false,
                 pageloading: false,
                 startTime: {
                     time: ''
@@ -248,31 +250,70 @@
                 required: true
             }
         },
-        created () {
-            this.fetchData();
-            this.$session.start()
-        },
-        watch: {
-            '$route': 'fetchData'
-        },
+//        created () {
+//            this.fetchData();
+//            this.$session.start()
+//        },
+//        watch: {
+//            '$route': 'fetchData'
+//        },
         methods:{
-            fetchData () {
-                this.loading = true
-                axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-rest-by-loc/0')
-                    .then((resp) => {
-                        this.restaurants = resp.data
-                        this.loading = false
-                        this.pageloading = true
-                    })
-                    .catch((err) => {
-                        console.log(err)
+            getOptions(search, loading) {
+                loading(true)
+                this.$http.get('http://clients.itsd.com.bd/table-cartel/wp-json/wp/v2/search/' + search + '/').then(resp => {
+                    //console.log(JSON.stringify(resp.data))
+                    //this.options = resp.data
+                    this.restaurants = resp.data
+                    console.log(this.restaurants)
+                    this.options = []
+                    var that = this;
+                    this.restaurants.forEach(function(entrys) {
+                        if(entrys.type == 'restaurant'){
+                            if(that.options.length > 0){
+                                console.log(that.options);
+                                var thats = this;
+                                that.id = false
+                                that.options.forEach(function(entry){
+                                    if(entrys.id != entry.id){
+                                        that.id = true
+                                    }
+                                })
+                                if(that.id == true){
+                                    that.options.push(entrys)
+                                    that.id = false
+                                }
+
+                            }
+                            else{
+                                that.options.push(entrys)
+                            }
+                            console.log(that.options)
+                        }
+
                     });
+
+                    loading(false)
+                })
             },
+//            fetchData () {
+//                this.loadings = true
+//                axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-rest-by-loc/0')
+//                    .then((resp) => {
+//                         console.log(resp.data)
+//                        this.restaurants = resp.data
+//                        console.log(this.restaurants)
+//                        this.loadings = false
+//                        this.pageloading = true
+//                    })
+//                    .catch((err) => {
+//                        console.log(err)
+//                    });
+//            },
             onSubmit: function () {
-                this.loading= true
+                this.loadings = true
                 this.$modal.show('loading-modal')
                 if(this.date.time) {
-                    axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-single-rest/' + this.restaurant_id + '/')
+                    axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-single-rest/' + this.selected.value + '/')
                         .then((resp) => {
                             this.rest = resp.data
                             console.log('--------------------------------')
@@ -281,7 +322,7 @@
                                 method: "POST",
                                 url: 'http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/orders',
                                 data: {
-                                    restaurant_id: this.restaurant_id,
+                                    restaurant_id: this.selected.value,
                                     title: this.name,
                                     mobile: this.mobile,
                                     email: this.email,
@@ -298,20 +339,18 @@
                                 this.mobile= '';
                                 this.people = '';
                                 this.date.time = '';
-                                this.loading= false
+                                this.loadings= false
                                 this.$modal.hide('loading-modal');
                                 //this.$modal.show('success-modal');
                                 //alert('Reservation request submited.')
                                 swal({
-                                    title: "Good job!",
-                                    text: "Reservation request submited.",
-                                    icon: "success",
+                                    title:"We are processing your request.",
+                                    text: "We will notify ASAP!!",
+                                    icon: reservation,
                                 }).then((resp) => {
-                                    this.pageStack.length
-                                    for (i = 0; i < this.pageStack.length; i++) {
-                                        console.log(i.name)
+                                    for (this.i = 0; this.i <1; this.i++) {
+                                        this.pageStack.pop()
                                     }
-                                    this.pageStack.push(welcome)
                                 });
 
                             })
@@ -344,59 +383,101 @@
                     });
                 }
             },
-            permit(){
-                if(this.date.time) {
-                    //this.$modal.show('permit-modal');
-//                    var txt;
-//                    this.mobile = prompt("Please enter your mobile number:", "");
-//                    if (this.mobile == null || this.mobile == "") {
-//                        txt = "User cancelled the prompt.";
-//                    } else {
-//                        if (confirm("Are you sure???") == true) {
-//                            this.onSubmit();
-//                        } else {
-//                            txt = "You pressed Cancel!";
-//                        }
-//                    }
-                    swal({
-                        content: {
-                            element: "input",
-                            attributes: {
-                                placeholder: "Type your mobile number",
-                                type: "number",
-                            },
+            mobilecheck(){
+                swal({
+                    content: {
+                        element: "input",
+                        attributes: {
+                            placeholder: "Type your mobile number",
+                            type: "number",
                         },
-                    }).then(mobile => {
-
-                        if (!mobile){
-                                swal({
-                                    title: "Oops",
-                                    text: "Not a mobile number",
-                                    icon: "warning",
-                                })
-                        }else{
-                            this.mobile = mobile;
+                    },
+                }).then(mobile => {
+                    var valueC = mobile
+                    if (valueC != ""){
+                        var bd_phone_no_regX = /^(?:\+?88)?0?1[15-9]\d{8}$/i;
+                        if (bd_phone_no_regX.test(valueC)) {
+                            valueC = '01' + valueC.substring(valueC.length - 9, valueC.length);
+                            this.mobile = valueC;
                             swal({
                                 title: "Are you sure?",
                                 //text: "Once deleted, you will not be able to recover this imaginary file!",
                                 icon: "info",
-                                buttons: true,
+                                buttons: ["NO", "YES"],
                                 dangerMode: true,
                             }).then((response) => {
                                 if(response){
                                     this.onSubmit();
                                 }
                                 else{
+                                    this.mobile= '';
+                                    this.people = '';
+                                    this.date.time = '';
                                     swal({
                                         title: "Oops",
-                                        text: "You Cancel the reservation",
+                                        text: "You have canceled the reservation!",
                                         icon: "info",
                                     })
                                 }
                             });
                         }
-                    })
+                        else{
+                            swal({
+                                title: "Oops",
+                                text: "Not a mobile number",
+                                icon: "warning",
+                                buttons: ["CANCEL", "GO BACK"],
+                            }).then((yes) =>{
+                                if(yes){
+                                    this.mobilecheck()
+                                }
+                            })
+                        }
+                    }
+                    else{
+                        swal({
+                            title: "Oops",
+                            text: "Mobile number is empty",
+                            icon: "warning",
+                            buttons: ["CANCEL", "GO BACK"],
+                        }).then((yes) =>{
+                            if(yes){
+                                this.mobilecheck()
+                            }
+                        })
+                    }
 
+                })
+            },
+            permit(){
+                if(this.date.time && this.selected) {
+                    if(this.people > 0){
+                        var days = this.date.time
+                        const dateString = this.date.time;
+                        const changedDate = dateString.replace(/(..)\/(..)\/(....) (..):(..)/, '$3-$2-$1 $4:$5');
+                        var date = new Date(changedDate);
+                        var requesttime = date.getTime()
+                        console.log(requesttime);
+                        var now = new Date();
+                        var nowtime = now.getTime();
+                        console.log(nowtime);
+
+                        if(requesttime > nowtime){
+                            this.mobilecheck()
+                        }else{
+                            swal({
+                                title: "Oops!",
+                                text: "You can't reserve at past time",
+                                icon: "error",
+                            })
+                        }
+                    }else{
+                        swal({
+                            title: "Oops",
+                            text: "Headcount number is invalid",
+                            icon: "warning",
+                        })
+                    }
                 }
                 else{
                     console.log( 'empty' );
@@ -404,7 +485,7 @@
                     //alert('Time is empty')
                     swal({
                         title: "Oops!",
-                        text: "Time is empty",
+                        text: "Time or Restaurant is empty",
                         icon: "error",
                     });
 
@@ -421,19 +502,20 @@
             }
         },
         components: {
-            'date-picker': myDatepicker, vSelect,
+            'date-picker': myDatepicker,
+            'v-select': vSelect,
         },
         computed: {
             sortedArray: function() {
                 function compare(a, b) {
-                    if (a.post_title < b.post_title)
+                    if (a.label < b.label)
                         return -1;
-                    if (a.post_title > b.post_title)
+                    if (a.label > b.label)
                         return 1;
                     return 0;
                 }
 
-                return this.restaurants.sort(compare);
+                return this.options.sort(compare);
             }
         },
         props: ['pageStack']
@@ -445,18 +527,18 @@
         background-color: white;
         color: #1f1f21;
     }
-::placeholder{
-    color:black;
-    text-transform: uppercase;
-    font-size:10px;
-    /*font-weight: bold;*/
-    font-family: 'Nunito', sans-serif;
-    padding-top:-3px;
-}
+    ::placeholder{
+        color:black;
+        text-transform: uppercase;
+        font-size:10px;
+        /*font-weight: bold;*/
+        font-family: 'Nunito', sans-serif;
+        padding-top:-3px;
+    }
     .button{
         float:left;
     }
-    .loading{
+    .loadingrequest{
         text-align: center;
         color: #009688;
         font-size: 13px;
@@ -477,4 +559,7 @@
         top:275px;
     }
 
+    .swal-icon img {
+        max-width: 85% !important;
+    }
 </style>

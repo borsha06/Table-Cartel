@@ -11,7 +11,7 @@
             <ons-row align="center">
                 <ons-col width="80%">
                     <div class="left_side_search_heading">
-                        <h2>search by area</h2>
+                        <h2>Search by area</h2>
                         <p>Here is the list of restaurants on offer!</p>
                     </div>
                 </ons-col>
@@ -37,7 +37,7 @@
             <!--Footer Carousel-->
              <div class="cuisine_footer_carousel">
                 <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-                 <ons-row class="carousel_heading">
+                 <ons-row class="carousel_heading area_heading">
                     <p>Today's Special</p>
                 </ons-row>
                     <ons-carousel-item v-for="(item,index) in food['foods']"  style="background-color: #085078;">
@@ -150,12 +150,12 @@
                 axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/wp/v2/all-terms?term=location')
                     .then((resp) => {
                         this.restauranttexo = resp.data
-                        console.log('--------------------------------')
-                        console.log(resp.data)
+//                        console.log('--------------------------------')
+//                        console.log(resp.data)
                         this.loading = false
                     })
                     .catch((err) => {
-                        console.log(err)
+//                        console.log(err)
                     })
             },
             rest_list(id,name) {

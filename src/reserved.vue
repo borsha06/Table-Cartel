@@ -46,7 +46,7 @@
                     </ons-col>
                     <ons-col width="100%">
                         <div class="reserve_second_top_button">
-                            <input type="number"  v-on:click="hidefooter" class="text-input"  onfocus="this.placeholder=''" v-model="people" placeholder="Headcount" required value="">
+                            <input type="number"  v-on:click="hidefooter" class="text-input"  v-model="people" placeholder="Headcount" required value="">
                              <!-- <button class="button button--light">Headcount</button> -->
                         </div>
                     </ons-col>
@@ -54,7 +54,7 @@
                 <ons-row align="center" class="top_third_button_area">
                     <ons-col width="100%">
                         <div class="reserve_top_third_button_text">
-                            <p>It will be joining them on</p>
+                            <p>It will be joining them at</p>
                         </div>
                     </ons-col>
                     <ons-col width="35%">
@@ -154,7 +154,7 @@
 
 
 <script>
-    import welcome from './landing2'
+    import reservation from "assets/restaurant.svg"
     import carousel from "assets/carousel.jpg"
     import carousel2 from "assets/carousel2.jpg"
     import carousel3 from "assets/carousel3.jpg"
@@ -176,12 +176,16 @@
     import myDatepicker from 'vue-datepicker';
     import Vue from 'vue';
     import swal from 'sweetalert'
+    import moment from 'moment'
+    Vue.use(require('vue-moment'));
     Vue.use(VModal)
     export default {
         name: 'reserved',
         data () {
             return {
                 i: 0,
+                checkingtime: new Date(),
+                reservationicon: reservation,
                 name: this.$session.get('user'),
                 typing: true,
                 restaurant_id: '',
@@ -245,6 +249,7 @@
                         method: "POST",
                         url: 'http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/orders',
                         data: {
+                            i: 0,
                             restaurant_id: this.restaurant_id,
                             title: this.name,
                             mobile: this.mobile,
@@ -257,7 +262,7 @@
                             password: 'itsd321#',
                         }
                     }).then((resp) => {
-                        console.log(resp);
+                        //console.log(resp);
                         this.mobile= '';
                         this.people = '';
                         this.date.time = '';
@@ -266,29 +271,31 @@
                         //this.$modal.show('success-modal');
                         //confirm("Reservation request submited!")
                         swal({
-                            title: "Good job!",
-                            text: "Reservation request submitted.",
-                            icon: "success",
+                            title:"We are processing your request.",
+                            text: "We will notify ASAP!!",
+                            icon: reservation,
+//
                         }).then((resp) => {
-                            this.pageStack.length
-                            for (this.i = 0; this.i < this.pageStack.length; i++) {
-                                console.log(this.i.name)
+                            for (this.i = 0; this.i <5; this.i++) {
+                                this.pageStack.pop()
                             }
-                            this.pageStack.push(welcome)
-                        });
+//                            this.pageStack.forEach(function(res) {
+//                                console.log(res.name);
+//                            });
 
-                    })
-                        .catch((err) => {
-                            console.log(err)
-                            //this.$modal.show('error2-modal');
-                            this.$modal.hide('loading-modal');
-                            //alert('Reservation Failed')
-                            swal({
-                                title: "Oops!",
-                                text: "Reservation Failed",
-                                icon: "error",
-                            });
                         })
+                    })
+                    .catch((err) => {
+                        console.log(err)
+                        //this.$modal.show('error2-modal');
+                        this.$modal.hide('loading-modal');
+                        //alert('Reservation Failed')
+                        swal({
+                            title: "Oops!",
+                            text: "Reservation Failed",
+                            icon: "error",
+                        });
+                    })
                 }
                 else{
 //                  this.$modal.show('error-modal');
@@ -301,42 +308,27 @@
                     });
                 }
             },
-            permit(){
-                if(this.date.time) {
-                    //this.$modal.show('permit-modal');
-//                    var txt;
-//                    this.mobile = prompt("Please enter your mobile number:", "");
-//                    if (this.mobile == null || this.mobile == "") {
-//                        txt = "User cancelled the prompt.";
-//                    } else {
-//                        if (confirm("Are you sure???") == true) {
-//                            this.onSubmit();
-//                        } else {
-//                            txt = "You pressed Cancel!";
-//                        }
-//                    }
-                    swal({
-                        content: {
-                            element: "input",
-                            attributes: {
-                                placeholder: "Type your mobile number",
-                                type: "number",
-                            },
+            mobilecheck(){
+                swal({
+                    content: {
+                        element: "input",
+                        attributes: {
+                            placeholder: "Type your mobile number",
+                            type: "number",
                         },
-                    }).then(mobile => {
-                        if (!mobile){
-                            swal({
-                                title: "Oops",
-                                text: "Not a mobile number",
-                                icon: "warning",
-                            })
-                        }else{
-                            this.mobile = mobile;
+                    },
+                }).then(mobile => {
+                    var valueC = mobile
+                    if (valueC != ""){
+                        var bd_phone_no_regX = /^(?:\+?88)?0?1[15-9]\d{8}$/i;
+                        if (bd_phone_no_regX.test(valueC)) {
+                            valueC = '01' + valueC.substring(valueC.length - 9, valueC.length);
+                            this.mobile = valueC;
                             swal({
                                 title: "Are you sure?",
                                 //text: "Once deleted, you will not be able to recover this imaginary file!",
                                 icon: "info",
-                                buttons: true,
+                                buttons: ["NO", "YES"],
                                 dangerMode: true,
                             }).then((response) => {
                                 if(response){
@@ -352,10 +344,77 @@
                                         icon: "info",
                                     })
                                 }
-
                             });
                         }
-                    })
+                        else{
+                            swal({
+                                title: "Oops",
+                                text: "Not a mobile number",
+                                icon: "warning",
+                                buttons: ["CANCEL", "GO BACK"],
+                            }).then((yes) =>{
+                                if(yes){
+                                    this.mobilecheck()
+                                }
+                            })
+                        }
+                    }
+                    else{
+                        swal({
+                            title: "Oops",
+                            text: "Mobile number is empty",
+                            icon: "warning",
+                            buttons: ["CANCEL", "GO BACK"],
+                        }).then((yes) =>{
+                            if(yes){
+                                this.mobilecheck()
+                            }
+                        })
+                    }
+                })
+            },
+            permit(){
+                if(this.date.time) {
+                    if(this.people > 0){
+                        var days = this.date.time
+                        const dateString = this.date.time;
+                        const changedDate = dateString.replace(/(..)\/(..)\/(....) (..):(..)/, '$3-$2-$1 $4:$5');
+                        var date = new Date(changedDate);
+                        var requesttime = date.getTime()
+                        console.log(requesttime);
+                        var now = new Date();
+                        var nowtime = now.getTime();
+                        console.log(nowtime);
+
+                        if(requesttime > nowtime){
+                            this.mobilecheck()
+                        }else{
+                            swal({
+                                title: "Oops!",
+                                text: "You can't reserve at past time",
+                                icon: "error",
+                            });
+                        }
+                        //this.$modal.show('permit-modal');
+//                    var txt;
+//                    this.mobile = prompt("Please enter your mobile number:", "");
+//                    if (this.mobile == null || this.mobile == "") {
+//                        txt = "User cancelled the prompt.";
+//                    } else {
+//                        if (confirm("Are you sure???") == true) {
+//                            this.onSubmit();
+//                        } else {
+//                            txt = "You pressed Cancel!";
+//                        }
+//                    }
+                    }else{
+                        swal({
+                            title: "Oops",
+                            text: "Headcount number is invalid",
+                            icon: "warning",
+                        })
+                    }
+
                 }
                 else{
                     //this.$modal.show('error-modal');
@@ -390,23 +449,16 @@
         color: #1f1f21;
     }
 
-::placeholder{
-    color:black;
-    text-transform: uppercase;
-    font-size:10px;
-    /*font-weight: bold;*/
-    font-family: 'Nunito', sans-serif;
-    padding-top:-3px;
-}
+    ::placeholder{
+        color:black;
+        text-transform: uppercase;
+        font-size:10px;
+        /*font-weight: bold;*/
+        font-family: 'Nunito', sans-serif;
+        padding-top:-3px;
+    }
     .button{
         float:left;
-    }
-    .loading{
-        text-align: center;
-        color: #009688;
-        font-size: 13px;
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
     .loadingp{
         text-align: center;
@@ -416,14 +468,8 @@
         /*margin-top: 250px;*/
         /*margin-bottom: 150px;*/
     }
-    .yes_button{
-        background: black;
-        border: 1px solid rgba(255, 255, 255, 0.86);
-        color: #fff;
-        padding: 4px 20px;
-        width: 100%;
-        margin-top: 8px
-
+    .swal-icon img {
+        max-width: 85% !important;
     }
 
 </style>

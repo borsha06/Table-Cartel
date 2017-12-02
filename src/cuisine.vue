@@ -11,7 +11,7 @@
 	    <ons-row align="center">
 		    <ons-col width="80%">
 		      <div class="left_side_search_heading">
-		      	<h2>search by cuisine</h2>
+		      	<h2>Search by cuisine</h2>
 		      	<p>Here is the list of cuisines on offer!</p>
 		      </div>
 		    </ons-col>
@@ -150,12 +150,12 @@
 			 axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/wp/v2/all-terms?term=cuisine_type')
 				 .then((resp) => {
 					 this.restauranttexo = resp.data
-	          console.log('--------------------------------')
-	          console.log(resp.data)
+//	          console.log('--------------------------------')
+//	          console.log(resp.data)
 					 this.loading = false
 				 })
 				 .catch((err) => {
-					 console.log(err)
+//					 console.log(err)
 				 })
 	   },
 	   rest_list(id,name) {

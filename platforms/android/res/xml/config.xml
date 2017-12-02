@@ -16,7 +16,7 @@
     <access origin="https://api.facebook.com" />
     <access origin="https://*.fbcdn.net" />
     <access origin="https://*.akamaihd.net" />
-    <name>Table-Cartel</name>
+    <name>TableCartel</name>
     <description />
     <author />
     <access origin="*" />

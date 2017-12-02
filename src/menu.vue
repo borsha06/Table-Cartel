@@ -6,7 +6,7 @@
                     <div class="menu_header">                        
                        <h2>Menu</h2>
                        <p>Select any of the service below</p>
-                       <strong>Today 30th of sept 2017</strong>
+                       <strong>Today {{day}} of {{month}} {{year}}</strong>
                     </div>
                 </ons-col>
                 <ons-col width="15%">
@@ -21,22 +21,22 @@
                         <button class="button button--light">Discover</button>
                         <button class="button button--light">Benefits</button>
                         <button class="button button--light">Ingredients</button>
-                        <button class="button button--light">Recpies</button>
+                        <button class="button button--light">Recipes</button>
                         <button class="button button--light">Mastercalss</button>
                         <button class="button button--light">Marketplace</button>
                     </div>
                 </ons-col>
             </ons-row>
             <div class="menu_footer_fixed">
-            <ons-row align="left" class="menu_connect_area">
-                <ons-col width="100%">
-                    <div class="menu_connect_button">
-                        <button class="button button--light"><img :src="connect" alt="" /></button>
-                    </div>
-                </ons-col>
-            </ons-row>
-            <div class="card card--material">
-                <div class="card__content card--material__content">
+                <ons-row align="left" class="menu_connect_area">
+                    <ons-col width="100%">
+                        <div class="menu_connect_button">
+                            <button class="button button--light"><img :src="connect" alt="" /></button>
+                        </div>
+                    </ons-col>
+                </ons-row>
+                <div class="card card--material">
+                    <div class="card__content card--material__content">
                         <ons-row align="center" class="menu_footer_area">
                             <ons-col width="15%">
                                 <div class="menu_footer_left_icon">
@@ -45,7 +45,7 @@
                             </ons-col>
                             <ons-col width="35%">
                                 <div class="menu_footer_notifications">
-                                    <p>Notification<br /> & Updates</p>
+                                    <p>Notifications<br /> & Updates</p>
                                 </div>
                             </ons-col>
                             <ons-col width="35%">
@@ -62,18 +62,14 @@
                         <ons-row align="center" class="menu_footer_row">
                             <ons-col width="100%">
                                 <div class="menu_footer_row_black">
-                                   
+
                                 </div>
                             </ons-col>
                         </ons-row>
                     </div>
-              </div>
-          </div>
-
+                </div>
+            </div>
         </div>
-
-
-
     </v-ons-page>
 </template>
 
@@ -101,12 +97,45 @@
                 footercarousel: carousel,
                 restaurant: {},
                 loading:false,
+                day : this.daycal(),
+                month: this.monthcal(),
+                year: this.yearcal(),
+
             }
         },
         methods: {
             pop() {
                 this.pageStack.pop();
+            },
+            daycal(){
+                var date = new Date();
+                var day = date.getDate()
+                var d = date.getDate()
+
+                if(d>3 && d<21) d = 'th'; // thanks kennebec
+                switch (d % 10) {
+                    case 1:  d = "st";
+                    case 2:  d = "nd";
+                    case 3:  d = "rd";
+                    default: d = "th";
+                }
+                var days = day + d
+                return days;
+            },
+            monthcal() {
+                var months = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', 'aug', 'sept', 'oct', 'nov', 'dec'];
+                var date = new Date();
+                var day = months[date.getMonth()];
+                return day;
+            },
+            yearcal(){
+                var date = new Date();
+                var year = date.getFullYear();
+                return year;
             }
+        },
+        computed:{
+
         },
         props: ['pageStack']
     }

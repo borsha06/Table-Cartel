@@ -21,6 +21,7 @@ button:focus{
     text-shadow: 0 0 1px rgba(173, 170, 170, 0.21);
 
 }
+
 .left_side_button button{
     background: white !important;
     border: none;
@@ -132,7 +133,7 @@ text-align: center !important;
     padding: 0;
     margin-top: -24px;
     font-family: 'Nunito', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 24px;
 
 }
@@ -572,7 +573,6 @@ padding:0px 17px;
 }
 .reserve_second_top_button{
       
-
     color: #333;
     font-weight: bolder;
     font-size: 11px;
@@ -678,7 +678,7 @@ padding:0px 17px;
 .hello_jorge_bg{
     background: #f3f5f7;
     padding: 0px 17px;
-    height: 100%;
+    height: 97%;
 
 }
 .hello_jorge_footer_option{
@@ -763,15 +763,17 @@ font-size: 12px;
     color: #6d6d6d;
     font-family: 'Nunito', sans-serif;
     margin-top: 2px;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 200;
 }
 .hello_jorge_heading p{
     line-height: 23px;
     color: #6d6d6d;
     font-family: 'Nunito', sans-serif;
     margin-top: 2px;
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 15px;
+    font-weight:200;
 }
 .reserve_button_customize{
     background: #fff;
@@ -983,6 +985,7 @@ display:none;
     font-weight: bold;
     text-align: center;
     box-shadow: 0px 0px 2px black;
+    margin-top:25px;
 
 }
 .connect{
@@ -997,7 +1000,7 @@ display:none;
     border-radius: 25px;
     background: #000;
     padding: 0px 0px 0px 0px;
-    margin-top: 18px;
+    margin-top: 30px;
     height: 33px;
     box-shadow: 0px 0px 2px black;
     margin-bottom:28px;
@@ -1193,10 +1196,155 @@ display:none;
 .cov-date-monthly > div[data-v-36b1b8b5]{
 	height:60px !important;
 }
+.dropdown-toggle{
+    border: none !important;
+    border-radius: 30px !important;
+    background: #fff !important;
+}
+.dropdown-toggle>::-webkit-input-placeholder{
+    color:black;
+    font-size:10px;
+    text-transform:uppercase;
+    font-family:'Nunito', sans-serif;
+    font-weight:800;
+    letter-spacing:0.7px;
+    text-shadow: 0 0 1px rgba(173, 170, 170, 0.21);
+}
+
+
+.dropdown-toggle>:focus::-webkit-input-placeholder{
+    opacity:0;
+}
+.reserve_second_top_button>:focus::-webkit-input-placeholder{
+  opacity:0;
+}
+.swal-icon--custom{
+    padding:0px 20px !important;
+}
+.v-select.single .selected-tag{
+    position:absolute;
+
+}
+.login_with{
+    text-align:center;
+    margin-top:100px;
+}
+.login_with span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+/*FOOD MENU CSS*/
+.food_menu_header_left{
+    margin-left: 17px;
+}
+.food_menu_header_left h2{
+    margin-top: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.food_menu_header_left p{
+    color: #1f1f21;
+    padding: 0;
+    margin-top: -24px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: 200;
+}
+.food_menu_bg{
+    margin-bottom: 35px;
+}
+.food_menu_title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1.5em;
+}
+.single_food_menu_title{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+.single_food_menu_para{
+    margin-top: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+}
+.food_menu_dollar{
+    margin-top: 5px;
+    color: #444;
+    font-size: 14px;
+    text-align: right;   
+}
+.menu_card_bg {
+    border-radius: 2px;
+    margin-bottom: -16px;
+}
+.single_food_menu_items_desc{
+    margin-bottom: 13px;
+}
+.gray_bg_border{
+    background: #f3f5f7;
+    height: 30px;
+}
+
+
+
+/*FOOD MENU CSS*/
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*################################# Over Right Design CSS #############################*/
+.facebook_button p{
+    font-size: 20px;
+    padding: 5px 0px;  
+}
+.connect_button p img{
+    width:68px;
+    margin-top:16px;
+    margin-left: 52px;
+}
+.connect_button p{
+    height:45px;
+}
+.v-select .spinner, .v-select .spinner:after{
+    width: 3em !important;
+    height: 3em !important;
+}
+.button:active{
+    border:none !important;
+}
+.area_heading{
+    background: #f3f5f7 !important;
+    width: 161% !important;
+    position: absolute !important;
+
+}
+
+/*################################# Over Right Design CSS #############################*/
 
 
 

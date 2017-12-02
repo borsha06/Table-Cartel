@@ -12,7 +12,7 @@
                 <ons-col width="80%">
                     <div class="left_side_search_heading">
                         <h2>Listings for {{this.data.name}}</h2>
-                        <p>Select place you want to go to</p>
+                        <p>Select the place you want to go to</p>
                     </div>
                 </ons-col>
                 <ons-col width="20%">
@@ -150,12 +150,12 @@
                 axios.get('http://clients.itsd.com.bd/table-cartel/wp-json/Table-cartel/v1/get-all-term-restaurant/' + this.data.id +'/')
                     .then((resp) => {
                         this.restaurant = resp.data
-                        console.log('--------------------------------')
-                        console.log(resp.data)
+//                        console.log('--------------------------------')
+//                        console.log(resp.data)
                         this.loading = false
                     })
                     .catch((err) => {
-                        console.log(err)
+//                        console.log(err)
                     })
             },
             restaurants (id) {

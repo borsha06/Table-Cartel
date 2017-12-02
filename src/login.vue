@@ -10,22 +10,28 @@
             </ons-row>
 
             <form v-on:submit.prevent="loginuser">
-                <ons-row align="center" class="loginarea">
+                 <!--<ons-row align="center" class="loginarea">-->
+                    <!--<ons-col width="100%">-->
+                        <!--<div class="login_form">-->
+                            <!--<input type="text"  v-model="user" onfocus="this.placeholder=''" class="text-input form_name" placeholder="Username" required value="" />-->
+                            <!--<input type="password"  v-model="pass" onfocus="this.placeholder=''" class="text-input form_pass"   placeholder="Password" required value="" />-->
+                        <!--</div>-->
+                     <!--</ons-col>-->
+                 <!--</ons-row>-->
+                 <!--<ons-row align="left" class="submit">-->
+                    <!--<ons-col width="100%">-->
+
+                        <!--<div class="sign_in">-->
+                            <!--<button type="button button&#45;&#45;light" >Sign In</button>-->
+                            <!--&lt;!&ndash;&lt;!&ndash;<p type="button button&#45;&#45;light" @click="registration">Sign Up</p>&ndash;&gt;&ndash;&gt;-->
+                            <!--<p @click="" type="button button&#45;&#45;light">Sign Up</p>-->
+                        <!--</div>-->
+                    <!--</ons-col>-->
+                <!--</ons-row>-->
+                <ons-row>
                     <ons-col width="100%">
-                        <div class="login_form">
-                            <input type="text"  v-model="user" onfocus="this.placeholder=''" class="text-input form_name" placeholder="Username" required value="" />
-                            <input type="password"  v-model="pass" onfocus="this.placeholder=''" class="text-input form_pass"   placeholder="Password" required value="" />
-                        </div>
-                        <!--<button class="button button&#45;&#45;light" type="submit">Sign in</button>-->
-                        <!--<p class="button button&#45;&#45;light" @click="registration">Sign up</p>-->
-                    </ons-col>
-                </ons-row>
-                <ons-row align="left" class="submit">
-                    <ons-col width="100%">
-                        <div class="sign_in">
-                            <button type="button button--light" >Sign In</button>
-                            <!--<p type="button button--light" @click="registration">Sign Up</p>-->
-                            <p @click="" type="button button--light">Sign Up</p>
+                        <div class="login_with">
+                            <span>Login With</span>
                         </div>
                     </ons-col>
                 </ons-row>
@@ -71,7 +77,6 @@
 </template>
 
 
-
 <script>
     import Vue from 'vue';
     import connects from "assets/connect.png"
@@ -85,6 +90,12 @@
     import swal from 'sweetalert'
     Vue.use(VModal)
     Vue.use(VueSession)
+
+//    document.addEventListener("backbutton", onBackKeyDown, false);
+//    function onBackKeyDown(e) {
+//        e.preventDefault();
+//        alert('Back Button is Pressed!');
+//    }
 
 
     export default {
@@ -283,6 +294,15 @@
                     });
                 });
             },
+            pop() {
+                swal({
+                    title: "Oops!",
+                    text: "There is an error",
+                    icon: "error",
+                }).then((response)=>{
+                    this.pageStack.pop();
+                })
+            }
 
         },
         props: ['pageStack']
